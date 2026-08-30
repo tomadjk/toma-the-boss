@@ -1,17 +1,13 @@
 package com.tomatheboss.app;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.UiModeManager;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.text.InputType;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -20,16 +16,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.media3.common.MediaItem;
-import androidx.media3.exoplayer.ExoPlayer;
-import androidx.media3.ui.PlayerView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -59,11 +48,7 @@ public class MainActivity extends Activity {
     private TextView forecastView;
     private TextView sourceView;
     private Button autoButton;
-
     private WebView webView;
-    private PlayerView playerView;
-    private ExoPlayer player;
-    private SharedPreferences prefs;
     private int index = 0;
     private boolean autoRotate = true;
     private boolean tvMode;
@@ -77,7 +62,6 @@ public class MainActivity extends Activity {
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        prefs = getSharedPreferences("toma_the_boss", MODE_PRIVATE);
         UiModeManager ui = (UiModeManager) getSystemService(Context.UI_MODE_SERVICE);
         tvMode = ui != null && ui.getCurrentModeType() == Configuration.UI_MODE_TYPE_TELEVISION;
         if (tvMode) {
@@ -87,9 +71,8 @@ public class MainActivity extends Activity {
                     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         }
         buildUi();
-        rebuildCameraList();
-        if (!cameras.isEmpty()) showCamera(0);
-        scheduleRotation();
+        buildCameraList();
+        showCamera(0);
     }
 
     private void buildUi() {
@@ -103,7 +86,6 @@ public class MainActivity extends Activity {
         header.setGravity(Gravity.CENTER_VERTICAL);
 
         titleView = new TextView(this);
-        titleView.setText("Toma the Boss");
         titleView.setTextColor(Color.WHITE);
         titleView.setTextSize(tvMode ? 24 : 21);
         titleView.setTypeface(null, 1);
@@ -112,13 +94,12 @@ public class MainActivity extends Activity {
 
         LinearLayout weatherBox = new LinearLayout(this);
         weatherBox.setOrientation(LinearLayout.VERTICAL);
-        weatherBox.setGravity(tvMode ? Gravity.END : Gravity.START);
         weatherView = new TextView(this);
         weatherView.setTextColor(Color.WHITE);
-        weatherView.setTextSize(tvMode ? 20 : 17);
+        weatherView.setTextSize(tvMode ? 18 : 16);
         forecastView = new TextView(this);
         forecastView.setTextColor(0xFFCCCCCC);
-        forecastView.setTextSize(tvMode ? 15 : 13);
+        forecastView.setTextSize(tvMode ? 14 : 12);
         weatherBox.addView(weatherView);
         weatherBox.addView(forecastView);
         header.addView(weatherBox, new LinearLayout.LayoutParams(tvMode ? dp(620) : ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -126,11 +107,9 @@ public class MainActivity extends Activity {
 
         LinearLayout quick = new LinearLayout(this);
         quick.setOrientation(LinearLayout.HORIZONTAL);
-        quick.setGravity(Gravity.CENTER);
-        addQuickButton(quick, "Split", "Split");
-        addQuickButton(quick, "Đakovo", "Đakovo");
-        addQuickButton(quick, "Vir", "Vir");
-        addQuickButton(quick, "Imou", "Imou");
+        addQuickButton(quick, "Split");
+        addQuickButton(quick, "Đakovo");
+        addQuickButton(quick, "Vir");
         root.addView(quick, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
         viewer = new FrameLayout(this);
@@ -140,35 +119,31 @@ public class MainActivity extends Activity {
         root.addView(viewer, vp);
 
         sourceView = new TextView(this);
+        sourceView.setText("Javna live kamera • LiveCamCroatia");
         sourceView.setTextColor(0xFFAAAAAA);
         sourceView.setTextSize(12);
         sourceView.setGravity(Gravity.CENTER);
-        sourceView.setPadding(4, 4, 4, 4);
         root.addView(sourceView);
 
         LinearLayout controls = new LinearLayout(this);
         controls.setGravity(Gravity.CENTER);
-        controls.setOrientation(LinearLayout.HORIZONTAL);
         Button prev = makeButton("◀");
         autoButton = makeButton("PAUZA");
         Button next = makeButton("▶");
-        Button settings = makeButton("IMOU ⚙");
         prev.setOnClickListener(v -> previousCamera());
         next.setOnClickListener(v -> nextCamera());
         autoButton.setOnClickListener(v -> toggleAuto());
-        settings.setOnClickListener(v -> showImouSettings());
         controls.addView(prev);
         controls.addView(autoButton);
         controls.addView(next);
-        controls.addView(settings);
         root.addView(controls);
 
         setContentView(root);
         if (tvMode) next.requestFocus();
     }
 
-    private void addQuickButton(LinearLayout row, String label, String city) {
-        Button b = makeButton(label);
+    private void addQuickButton(LinearLayout row, String city) {
+        Button b = makeButton(city);
         b.setTextSize(tvMode ? 17 : 13);
         b.setOnClickListener(v -> jumpTo(city));
         row.addView(b, new LinearLayout.LayoutParams(0, dp(tvMode ? 54 : 46), 1f));
@@ -187,39 +162,23 @@ public class MainActivity extends Activity {
         return b;
     }
 
-    private void rebuildCameraList() {
+    private void buildCameraList() {
         cameras.clear();
-        cameras.add(new CameraItem("Split", "Prokurative / Riva", "https://www.livecamcroatia.com/hr/kamera/split-prokurative-riva", CameraType.WEB));
-        cameras.add(new CameraItem("Split", "Matejuška", "https://www.livecamcroatia.com/hr/kamera/split-matejuska", CameraType.WEB));
-        cameras.add(new CameraItem("Split", "Riva Hrvatskog preporoda", "https://www.livecamcroatia.com/hr/kamera/split-riva-hrvatskog-preporoda", CameraType.WEB));
-        cameras.add(new CameraItem("Đakovo", "Katedrala", "https://www.livecamcroatia.com/hr/kamera/dakovo-katedrala", CameraType.WEB));
-        cameras.add(new CameraItem("Đakovo", "Korzo", "https://www.livecamcroatia.com/hr/kamera/dakovo-korzo-pjesacka-zona", CameraType.WEB));
-        cameras.add(new CameraItem("Vir", "Glavni trg", "https://www.livecamcroatia.com/hr/kamera/vir-glavni-trg", CameraType.WEB));
-        cameras.add(new CameraItem("Vir", "Plaža - okretna HD", "https://www.livecamcroatia.com/hr/kamera/vir-plaza-okretna-hd-kamera", CameraType.WEB));
-
-        addPrivateCamera(1);
-        addPrivateCamera(2);
-    }
-
-    private void addPrivateCamera(int slot) {
-        String url = prefs.getString("imou_url_" + slot, "").trim();
-        if (!url.isEmpty()) {
-            String name = prefs.getString("imou_name_" + slot, "Imou " + slot).trim();
-            if (name.isEmpty()) name = "Imou " + slot;
-            cameras.add(new CameraItem("Imou", name, url, CameraType.RTSP));
-        }
+        cameras.add(new CameraItem("Split", "Prokurative / Riva", "https://www.livecamcroatia.com/hr/kamera/split-prokurative-riva"));
+        cameras.add(new CameraItem("Split", "Matejuška", "https://www.livecamcroatia.com/hr/kamera/split-matejuska"));
+        cameras.add(new CameraItem("Split", "Riva Hrvatskog preporoda", "https://www.livecamcroatia.com/hr/kamera/split-riva-hrvatskog-preporoda"));
+        cameras.add(new CameraItem("Đakovo", "Katedrala", "https://www.livecamcroatia.com/hr/kamera/dakovo-katedrala"));
+        cameras.add(new CameraItem("Đakovo", "Korzo", "https://www.livecamcroatia.com/hr/kamera/dakovo-korzo-pjesacka-zona"));
+        cameras.add(new CameraItem("Vir", "Glavni trg", "https://www.livecamcroatia.com/hr/kamera/vir-glavni-trg"));
+        cameras.add(new CameraItem("Vir", "Plaža - okretna HD", "https://www.livecamcroatia.com/hr/kamera/vir-plaza-okretna-hd-kamera"));
     }
 
     private void jumpTo(String city) {
-        if ("Imou".equals(city)) {
-            for (int i = 0; i < cameras.size(); i++) {
-                if (cameras.get(i).type == CameraType.RTSP) { showCamera(i); return; }
-            }
-            showImouSettings();
-            return;
-        }
         for (int i = 0; i < cameras.size(); i++) {
-            if (city.equals(cameras.get(i).city)) { showCamera(i); return; }
+            if (city.equals(cameras.get(i).city)) {
+                showCamera(i);
+                return;
+            }
         }
     }
 
@@ -227,17 +186,8 @@ public class MainActivity extends Activity {
         if (cameras.isEmpty()) return;
         index = (newIndex + cameras.size()) % cameras.size();
         CameraItem cam = cameras.get(index);
-        titleView.setText(cam.city + " — " + cam.name);
-        sourceView.setText(cam.type == CameraType.RTSP ? "Privatna Imou kamera • lokalni RTSP" : "Javna live kamera • LiveCamCroatia");
-        stopCurrentViewer();
-        viewer.removeAllViews();
-        if (cam.type == CameraType.RTSP) showRtsp(cam.url); else showWeb(cam.url);
-        updateWeather(cam.city);
-        handler.removeCallbacks(rotateRunnable);
-        scheduleRotation();
-    }
-
-    private void showWeb(String url) {
+        titleView.setText("Toma the Boss • " + cam.city + " — " + cam.name);
+        stopWeb();
         webView = new WebView(this);
         WebSettings s = webView.getSettings();
         s.setJavaScriptEnabled(true);
@@ -245,57 +195,38 @@ public class MainActivity extends Activity {
         s.setMediaPlaybackRequiresUserGesture(false);
         s.setLoadWithOverviewMode(true);
         s.setUseWideViewPort(true);
-        s.setBuiltInZoomControls(false);
         s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         webView.setBackgroundColor(Color.BLACK);
         webView.setWebViewClient(new WebViewClient() {
-            @Override public void onPageFinished(WebView view, String pageUrl) {
+            @Override public void onPageFinished(WebView view, String url) {
                 String js = "javascript:(function(){" +
                         "document.body.style.background='#000';" +
-                        "var h=['header','footer','nav','.navbar','.cookie','.cookies','.cookie-banner','.advertisement','.adsbygoogle'];" +
-                        "h.forEach(function(s){document.querySelectorAll(s).forEach(function(e){e.style.display='none';});});" +
+                        "['header','footer','nav','.navbar','.cookie','.cookies','.cookie-banner','.advertisement','.adsbygoogle'].forEach(function(s){document.querySelectorAll(s).forEach(function(e){e.style.display='none';});});" +
                         "var v=document.querySelector('video')||document.querySelector('.camera iframe')||document.querySelector('iframe');" +
                         "if(v){v.scrollIntoView({block:'center'});v.style.maxWidth='100%';}" +
                         "})();";
                 view.evaluateJavascript(js, null);
             }
         });
+        viewer.removeAllViews();
         viewer.addView(webView, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        webView.loadUrl(url);
+        webView.loadUrl(cam.url);
+        updateWeather(cam.city);
+        handler.removeCallbacks(rotateRunnable);
+        scheduleRotation();
     }
 
-    private void showRtsp(String url) {
-        playerView = new PlayerView(this);
-        playerView.setUseController(!tvMode);
-        playerView.setBackgroundColor(Color.BLACK);
-        player = new ExoPlayer.Builder(this).build();
-        playerView.setPlayer(player);
-        viewer.addView(playerView, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        try {
-            player.setMediaItem(MediaItem.fromUri(Uri.parse(url)));
-            player.prepare();
-            player.play();
-        } catch (Exception e) {
-            Toast.makeText(this, "Imou RTSP veza nije uspjela", Toast.LENGTH_LONG).show();
-        }
-    }
-
-    private void stopCurrentViewer() {
+    private void stopWeb() {
         if (webView != null) {
             webView.stopLoading();
             webView.loadUrl("about:blank");
             webView.destroy();
             webView = null;
         }
-        if (player != null) {
-            player.release();
-            player = null;
-        }
-        playerView = null;
     }
 
-    private void nextCamera() { if (!cameras.isEmpty()) showCamera(index + 1); }
-    private void previousCamera() { if (!cameras.isEmpty()) showCamera(index - 1); }
+    private void nextCamera() { showCamera(index + 1); }
+    private void previousCamera() { showCamera(index - 1); }
 
     private void toggleAuto() {
         autoRotate = !autoRotate;
@@ -311,11 +242,6 @@ public class MainActivity extends Activity {
 
     private void updateWeather(String city) {
         Location loc = locationFor(city);
-        if (loc == null) {
-            weatherView.setText("Privatna kamera");
-            forecastView.setText("");
-            return;
-        }
         weatherView.setText(city + " • učitavanje vremena…");
         forecastView.setText("");
         io.execute(() -> {
@@ -333,6 +259,7 @@ public class MainActivity extends Activity {
                 String line;
                 while ((line = br.readLine()) != null) sb.append(line);
                 br.close();
+
                 JSONObject root = new JSONObject(sb.toString());
                 JSONObject current = root.getJSONObject("current");
                 double temp = current.getDouble("temperature_2m");
@@ -345,8 +272,7 @@ public class MainActivity extends Activity {
                 JSONArray min = daily.getJSONArray("temperature_2m_min");
                 JSONArray codes = daily.getJSONArray("weather_code");
 
-                String now = String.format(Locale.getDefault(), "%s • %.0f°C • osjet %.0f°C • vjetar %.0f km/h",
-                        weatherText(code), temp, feel, wind);
+                String now = String.format(Locale.getDefault(), "%s • %.0f°C • osjet %.0f°C • vjetar %.0f km/h", weatherText(code), temp, feel, wind);
                 StringBuilder fc = new StringBuilder();
                 SimpleDateFormat src = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
                 SimpleDateFormat dst = new SimpleDateFormat("EEE", new Locale("hr", "HR"));
@@ -359,16 +285,14 @@ public class MainActivity extends Activity {
                             .append(weatherIcon(codes.getInt(i)));
                 }
                 runOnUiThread(() -> {
-                    CameraItem currentCam = cameras.isEmpty() ? null : cameras.get(index);
-                    if (currentCam != null && city.equals(currentCam.city)) {
+                    if (!cameras.isEmpty() && city.equals(cameras.get(index).city)) {
                         weatherView.setText(city + " • " + now);
                         forecastView.setText(fc.toString());
                     }
                 });
             } catch (Exception e) {
                 runOnUiThread(() -> {
-                    CameraItem currentCam = cameras.isEmpty() ? null : cameras.get(index);
-                    if (currentCam != null && city.equals(currentCam.city)) {
+                    if (!cameras.isEmpty() && city.equals(cameras.get(index).city)) {
                         weatherView.setText(city + " • prognoza trenutno nedostupna");
                         forecastView.setText("");
                     }
@@ -380,8 +304,7 @@ public class MainActivity extends Activity {
     private Location locationFor(String city) {
         if ("Split".equals(city)) return new Location(43.5081, 16.4402);
         if ("Đakovo".equals(city)) return new Location(45.3074, 18.4120);
-        if ("Vir".equals(city)) return new Location(44.2979, 15.0851);
-        return null;
+        return new Location(44.2979, 15.0851);
     }
 
     private String weatherText(int code) {
@@ -404,95 +327,50 @@ public class MainActivity extends Activity {
         return "•";
     }
 
-    private void showImouSettings() {
-        ScrollView scroll = new ScrollView(this);
-        LinearLayout box = new LinearLayout(this);
-        box.setOrientation(LinearLayout.VERTICAL);
-        box.setPadding(dp(18), dp(10), dp(18), dp(10));
-        scroll.addView(box);
-
-        TextView help = new TextView(this);
-        help.setText("Imou kamere se spremaju samo na ovom uređaju, ne u GitHub. Unesi puni RTSP URL. Čest primjer: rtsp://korisnik:lozinka@192.168.1.50:554/cam/realmonitor?channel=1&subtype=0");
-        help.setTextSize(14);
-        box.addView(help);
-
-        EditText n1 = edit("Naziv kamere 1", prefs.getString("imou_name_1", "Imou 1"));
-        EditText u1 = edit("RTSP URL kamere 1", prefs.getString("imou_url_1", ""));
-        EditText n2 = edit("Naziv kamere 2", prefs.getString("imou_name_2", "Imou 2"));
-        EditText u2 = edit("RTSP URL kamere 2", prefs.getString("imou_url_2", ""));
-        u1.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_URI);
-        u2.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_URI);
-        box.addView(n1); box.addView(u1); box.addView(n2); box.addView(u2);
-
-        new AlertDialog.Builder(this)
-                .setTitle("Imou kamere")
-                .setView(scroll)
-                .setNegativeButton("Odustani", null)
-                .setNeutralButton("Obriši", (d, w) -> {
-                    prefs.edit().remove("imou_name_1").remove("imou_url_1").remove("imou_name_2").remove("imou_url_2").apply();
-                    rebuildCameraList();
-                    if (!cameras.isEmpty()) showCamera(0);
-                })
-                .setPositiveButton("Spremi", (d, w) -> {
-                    prefs.edit()
-                            .putString("imou_name_1", n1.getText().toString().trim())
-                            .putString("imou_url_1", u1.getText().toString().trim())
-                            .putString("imou_name_2", n2.getText().toString().trim())
-                            .putString("imou_url_2", u2.getText().toString().trim())
-                            .apply();
-                    rebuildCameraList();
-                    Toast.makeText(this, "Imou postavke spremljene", Toast.LENGTH_SHORT).show();
-                })
-                .show();
-    }
-
-    private EditText edit(String hint, String value) {
-        EditText e = new EditText(this);
-        e.setHint(hint);
-        e.setText(value);
-        e.setSingleLine(true);
-        e.setTextSize(16);
-        e.setPadding(dp(8), dp(10), dp(8), dp(10));
-        return e;
-    }
-
     @Override public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_DPAD_RIGHT || keyCode == KeyEvent.KEYCODE_MEDIA_NEXT) {
-            nextCamera(); return true;
+            nextCamera();
+            return true;
         }
         if (keyCode == KeyEvent.KEYCODE_DPAD_LEFT || keyCode == KeyEvent.KEYCODE_MEDIA_PREVIOUS) {
-            previousCamera(); return true;
+            previousCamera();
+            return true;
         }
         if (keyCode == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE) {
-            toggleAuto(); return true;
-        }
-        if (keyCode == KeyEvent.KEYCODE_MENU) {
-            showImouSettings(); return true;
+            toggleAuto();
+            return true;
         }
         return super.onKeyDown(keyCode, event);
     }
 
     @Override protected void onDestroy() {
         handler.removeCallbacksAndMessages(null);
-        stopCurrentViewer();
+        stopWeb();
         io.shutdownNow();
         super.onDestroy();
     }
 
-    private int dp(int n) { return (int) (n * getResources().getDisplayMetrics().density + 0.5f); }
-
-    private enum CameraType { WEB, RTSP }
+    private int dp(int n) {
+        return (int) (n * getResources().getDisplayMetrics().density + 0.5f);
+    }
 
     private static class CameraItem {
-        final String city, name, url;
-        final CameraType type;
-        CameraItem(String city, String name, String url, CameraType type) {
-            this.city = city; this.name = name; this.url = url; this.type = type;
+        final String city;
+        final String name;
+        final String url;
+        CameraItem(String city, String name, String url) {
+            this.city = city;
+            this.name = name;
+            this.url = url;
         }
     }
 
     private static class Location {
-        final double lat, lon;
-        Location(double lat, double lon) { this.lat = lat; this.lon = lon; }
+        final double lat;
+        final double lon;
+        Location(double lat, double lon) {
+            this.lat = lat;
+            this.lon = lon;
+        }
     }
 }
