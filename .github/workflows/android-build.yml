@@ -36,13 +36,13 @@ jobs:
         run: gradle --no-daemon assembleDebug
 
       - name: Rename APK
-        run: cp app/build/outputs/apk/debug/app-debug.apk TomaTheBoss.apk
+        run: cp app/build/outputs/apk/debug/app-debug.apk t.apk
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
           name: TomaTheBoss-APK
-          path: TomaTheBoss.apk
+          path: t.apk
           if-no-files-found: error
 
       - name: Create beta release if missing
@@ -56,4 +56,4 @@ jobs:
       - name: Publish latest APK
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload beta TomaTheBoss.apk --clobber
+        run: gh release upload beta t.apk --clobber
