@@ -12,6 +12,7 @@ import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -119,7 +120,7 @@ public class MainActivity extends Activity {
         root.addView(viewer, vp);
 
         sourceView = new TextView(this);
-        sourceView.setText("Javna live kamera • LiveCamCroatia");
+        sourceView.setText("Službeni ugrađeni live player • WhatsUpCams");
         sourceView.setTextColor(0xFFAAAAAA);
         sourceView.setTextSize(12);
         sourceView.setGravity(Gravity.CENTER);
@@ -164,13 +165,16 @@ public class MainActivity extends Activity {
 
     private void buildCameraList() {
         cameras.clear();
-        cameras.add(new CameraItem("Split", "Prokurative / Riva", "https://www.livecamcroatia.com/hr/kamera/split-prokurative-riva"));
-        cameras.add(new CameraItem("Split", "Matejuška", "https://www.livecamcroatia.com/hr/kamera/split-matejuska"));
-        cameras.add(new CameraItem("Split", "Riva Hrvatskog preporoda", "https://www.livecamcroatia.com/hr/kamera/split-riva-hrvatskog-preporoda"));
-        cameras.add(new CameraItem("Đakovo", "Katedrala", "https://www.livecamcroatia.com/hr/kamera/dakovo-katedrala"));
-        cameras.add(new CameraItem("Đakovo", "Korzo", "https://www.livecamcroatia.com/hr/kamera/dakovo-korzo-pjesacka-zona"));
-        cameras.add(new CameraItem("Vir", "Glavni trg", "https://www.livecamcroatia.com/hr/kamera/vir-glavni-trg"));
-        cameras.add(new CameraItem("Vir", "Plaža - okretna HD", "https://www.livecamcroatia.com/hr/kamera/vir-plaza-okretna-hd-kamera"));
+        cameras.add(new CameraItem("Split", "Riva / Prokurative", "https://services.whatsupcams.com/wgt/hr_split07"));
+        cameras.add(new CameraItem("Split", "Panorama Rive", "https://services.whatsupcams.com/wgt/hr_split06"));
+        cameras.add(new CameraItem("Split", "Riva Hrvatskog preporoda", "https://services.whatsupcams.com/wgt/hr_split04"));
+
+        cameras.add(new CameraItem("Đakovo", "Katedrala", "https://services.whatsupcams.com/wgt/hr_djakovo01"));
+        cameras.add(new CameraItem("Đakovo", "Korzo", "https://services.whatsupcams.com/wgt/hr_djakovo02"));
+
+        cameras.add(new CameraItem("Vir", "Trg sv. Jurja", "https://services.whatsupcams.com/wgt/hr_vir1"));
+        cameras.add(new CameraItem("Vir", "Plaža", "https://services.whatsupcams.com/wgt/hr_vir2"));
+        cameras.add(new CameraItem("Vir", "Plaža – Vir Adria", "https://services.whatsupcams.com/wgt/hr_vir3"));
     }
 
     private void jumpTo(String city) {
@@ -188,6 +192,7 @@ public class MainActivity extends Activity {
         CameraItem cam = cameras.get(index);
         titleView.setText("Toma the Boss • " + cam.city + " — " + cam.name);
         stopWeb();
+
         webView = new WebView(this);
         WebSettings s = webView.getSettings();
         s.setJavaScriptEnabled(true);
@@ -195,19 +200,27 @@ public class MainActivity extends Activity {
         s.setMediaPlaybackRequiresUserGesture(false);
         s.setLoadWithOverviewMode(true);
         s.setUseWideViewPort(true);
-        s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+        s.setSupportZoom(false);
+        s.setBuiltInZoomControls(false);
+        s.setDisplayZoomControls(false);
+        s.setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);
         webView.setBackgroundColor(Color.BLACK);
+        webView.setWebChromeClient(new WebChromeClient());
         webView.setWebViewClient(new WebViewClient() {
             @Override public void onPageFinished(WebView view, String url) {
                 String js = "javascript:(function(){" +
+                        "document.documentElement.style.background='#000';" +
                         "document.body.style.background='#000';" +
-                        "['header','footer','nav','.navbar','.cookie','.cookies','.cookie-banner','.advertisement','.adsbygoogle'].forEach(function(s){document.querySelectorAll(s).forEach(function(e){e.style.display='none';});});" +
-                        "var v=document.querySelector('video')||document.querySelector('.camera iframe')||document.querySelector('iframe');" +
-                        "if(v){v.scrollIntoView({block:'center'});v.style.maxWidth='100%';}" +
+                        "document.body.style.margin='0';" +
+                        "document.body.style.padding='0';" +
+                        "document.body.style.overflow='hidden';" +
+                        "var v=document.querySelector('video');" +
+                        "if(v){v.style.width='100vw';v.style.height='100vh';v.style.objectFit='contain';v.setAttribute('playsinline','');try{v.play();}catch(e){}}" +
                         "})();";
                 view.evaluateJavascript(js, null);
             }
         });
+
         viewer.removeAllViews();
         viewer.addView(webView, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         webView.loadUrl(cam.url);
