@@ -5,6 +5,8 @@ import android.app.UiModeManager;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.media.AudioAttributes;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -38,6 +40,7 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends Activity {
     private static final long ROTATE_MS = 45_000L;
+    private static final String RADIO_URL = "http://c5.hostingcentar.com:8059/stream";
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private final ExecutorService io = Executors.newSingleThreadExecutor();
@@ -49,9 +52,12 @@ public class MainActivity extends Activity {
     private TextView forecastView;
     private TextView sourceView;
     private Button autoButton;
+    private Button radioButton;
     private WebView webView;
+    private MediaPlayer radioPlayer;
     private int index = 0;
     private boolean autoRotate = true;
+    private boolean radioWanted = true;
     private boolean tvMode;
 
     private final Runnable rotateRunnable = new Runnable() {
@@ -74,6 +80,7 @@ public class MainActivity extends Activity {
         buildUi();
         buildCameraList();
         showCamera(0);
+        startRadio();
     }
 
     private void buildUi() {
@@ -120,7 +127,7 @@ public class MainActivity extends Activity {
         root.addView(viewer, vp);
 
         sourceView = new TextView(this);
-        sourceView.setText("Službeni ugrađeni live player • WhatsUpCams");
+        sourceView.setText("Službeni ugrađeni live player • WhatsUpCams • Bravo radio u pozadini");
         sourceView.setTextColor(0xFFAAAAAA);
         sourceView.setTextSize(12);
         sourceView.setGravity(Gravity.CENTER);
@@ -128,15 +135,19 @@ public class MainActivity extends Activity {
 
         LinearLayout controls = new LinearLayout(this);
         controls.setGravity(Gravity.CENTER);
+        controls.setOrientation(LinearLayout.HORIZONTAL);
         Button prev = makeButton("◀");
         autoButton = makeButton("PAUZA");
         Button next = makeButton("▶");
+        radioButton = makeButton("BRAVO 🔊");
         prev.setOnClickListener(v -> previousCamera());
         next.setOnClickListener(v -> nextCamera());
         autoButton.setOnClickListener(v -> toggleAuto());
+        radioButton.setOnClickListener(v -> toggleRadio());
         controls.addView(prev);
         controls.addView(autoButton);
         controls.addView(next);
+        controls.addView(radioButton);
         root.addView(controls);
 
         setContentView(root);
@@ -215,7 +226,7 @@ public class MainActivity extends Activity {
                         "document.body.style.padding='0';" +
                         "document.body.style.overflow='hidden';" +
                         "var v=document.querySelector('video');" +
-                        "if(v){v.style.width='100vw';v.style.height='100vh';v.style.objectFit='contain';v.setAttribute('playsinline','');try{v.play();}catch(e){}}" +
+                        "if(v){v.muted=true;v.volume=0;v.style.width='100vw';v.style.height='100vh';v.style.objectFit='contain';v.setAttribute('playsinline','');try{v.play();}catch(e){}}" +
                         "})();";
                 view.evaluateJavascript(js, null);
             }
@@ -246,6 +257,53 @@ public class MainActivity extends Activity {
         autoButton.setText(autoRotate ? "PAUZA" : "NASTAVI");
         handler.removeCallbacks(rotateRunnable);
         scheduleRotation();
+    }
+
+    private void startRadio() {
+        radioWanted = true;
+        releaseRadio();
+        if (radioButton != null) radioButton.setText("BRAVO …");
+        try {
+            radioPlayer = new MediaPlayer();
+            radioPlayer.setAudioAttributes(new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .build());
+            radioPlayer.setDataSource(RADIO_URL);
+            radioPlayer.setOnPreparedListener(mp -> {
+                if (radioWanted) {
+                    mp.start();
+                    if (radioButton != null) radioButton.setText("BRAVO 🔊");
+                }
+            });
+            radioPlayer.setOnErrorListener((mp, what, extra) -> {
+                if (radioButton != null) radioButton.setText("BRAVO OFF");
+                return true;
+            });
+            radioPlayer.prepareAsync();
+        } catch (Exception e) {
+            if (radioButton != null) radioButton.setText("BRAVO OFF");
+            releaseRadio();
+        }
+    }
+
+    private void stopRadio() {
+        radioWanted = false;
+        releaseRadio();
+        if (radioButton != null) radioButton.setText("BRAVO 🔇");
+    }
+
+    private void toggleRadio() {
+        if (radioWanted) stopRadio(); else startRadio();
+    }
+
+    private void releaseRadio() {
+        if (radioPlayer != null) {
+            try { radioPlayer.stop(); } catch (Exception ignored) { }
+            radioPlayer.reset();
+            radioPlayer.release();
+            radioPlayer = null;
+        }
     }
 
     private void scheduleRotation() {
@@ -350,7 +408,7 @@ public class MainActivity extends Activity {
             return true;
         }
         if (keyCode == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE) {
-            toggleAuto();
+            toggleRadio();
             return true;
         }
         return super.onKeyDown(keyCode, event);
@@ -359,6 +417,7 @@ public class MainActivity extends Activity {
     @Override protected void onDestroy() {
         handler.removeCallbacksAndMessages(null);
         stopWeb();
+        releaseRadio();
         io.shutdownNow();
         super.onDestroy();
     }
