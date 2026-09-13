@@ -1,0 +1,39 @@
+name: Tomi BMA Field r10 modes
+on:
+  push:
+    paths:
+      - '.r10-trigger'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply r10 mode update
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('tomi-bma-field-demo/index.html')
+          s=p.read_text()
+          s=s.replace('<title>Tomi BMA Field r9</title>','<title>Tomi BMA Field r10</title>')
+          s=s.replace('Bietigheim · DEMO r9 · offline-first','Bietigheim · DEMO r10 · offline-first')
+          s=s.replace("const VERSION='r9';","const VERSION='r10';")
+          s=s.replace("if(migrated&&!meta.lastBackup)snapshot('Migration von r7 auf r9');","if(migrated&&!meta.lastBackup)snapshot('Migration von r7 auf r10');")
+          s=s.replace('.qs{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.qs button{height:58px;border:1px solid #ccd6de;border-radius:12px;background:white;font-size:19px;font-weight:900}', '.qs{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.qs button{height:58px;border:1px solid #ccd6de;border-radius:12px;background:white;font-size:19px;font-weight:900}.workmodes{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}.workmodes button{min-height:58px;border:1px solid #ccd6de;border-radius:12px;background:white;font-size:17px;font-weight:900;padding:8px}.workmodes button.on{background:#0b3158;color:white}')
+          old='''<div id="gate" class="overlay"><div class="gate">\n  <h2>Prüfquartal auswählen</h2>\n  <div class="qs"><button data-q="Q1">Q1</button><button data-q="Q2">Q2</button><button data-q="Q3">Q3</button><button data-q="Q4">Q4</button></div>\n  <button id="go" class="start">Prüfung starten</button>\n</div></div>'''
+          new='''<div id="gate" class="overlay"><div class="gate">\n  <h2>Arbeitsart auswählen</h2>\n  <div class="qs"><button data-q="Q1">Q1</button><button data-q="Q2">Q2</button><button data-q="Q3">Q3</button><button data-q="Q4">Q4</button></div>\n  <div class="workmodes"><button data-q="Jahresprüfung">Jahresprüfung</button><button data-q="Montage">Montage</button></div>\n  <div class="meta" style="margin-top:8px">Montage: Grundversion – der Ablauf wird noch erweitert.</div>\n  <button id="go" class="start">Starten</button>\n</div></div>'''
+          s=s.replace(old,new)
+          old2='''function icon(d){\n let s=state(d),q=last(d),badge=q?`<g transform="translate(18 17)"><circle class="qbg" r="11"/><text class="qt" y="1">${q}</text></g>`:'';'''
+          new2='''function badgeLabel(q){return q==='Jahresprüfung'?'J':q==='Montage'?'M':q}\nfunction icon(d){\n let s=state(d),q=last(d),badge=q?`<g transform="translate(18 17)"><circle class="qbg" r="11"/><text class="qt" y="1">${badgeLabel(q)}</text></g>`:'';'''
+          s=s.replace(old2,new2)
+          p.write_text(s)
+          PY
+      - name: Commit r10
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tomi-bma-field-demo/index.html
+          git commit -m 'Tomi BMA Field r10: add annual inspection and installation modes'
+          git push
