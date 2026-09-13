@@ -1,0 +1,41 @@
+name: Tomi BMA Field r9 backup fix
+on:
+  push:
+    paths:
+      - '.r9-trigger'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply r9 backup fix
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('tomi-bma-field-demo/index.html')
+          s=p.read_text()
+          if 'Tomi BMA Field r9' in s:
+              raise SystemExit(0)
+          s=s.replace('<title>Tomi BMA Field r8</title>','<title>Tomi BMA Field r9</title>')
+          s=s.replace('Bietigheim · DEMO r8 · offline-first','Bietigheim · DEMO r9 · offline-first')
+          s=s.replace('<button id="backup">💾 Sicherung jetzt erstellen</button>','<button id="backup">💾 Sicherung speichern</button><button id="restore">↩ Sicherung laden</button><input id="backupfile" type="file" accept=".json,application/json" hidden>')
+          s=s.replace("const VERSION='r8';","const VERSION='r9';")
+          s=s.replace("let meta=parseJSON(localStorage.getItem(STORE.meta),{});\nlet cur=null", "let meta=parseJSON(localStorage.getItem(STORE.meta),{});\nif(meta.appVersion!==VERSION){delete meta.currentHash;meta.appVersion=VERSION;localStorage.setItem(STORE.meta,JSON.stringify(meta))}\nlet cur=null")
+          marker="""function markDevice(d){\n if(d)dirtyDevices.add(K(d));\n persist();\n if(dirtyDevices.size>=3)snapshot('Automatische Sicherung nach 3 Geräten');\n}\n"""
+          add="""function backupPackage(){\n return {app:'Tomi BMA Field',format:'tbma-field-backup',schema:1,version:VERSION,exportedAt:new Date().toISOString(),quarter:cq,data:{db,svc,bmz}};\n}\nfunction backupFilename(){\n const d=new Date(),p=n=>String(n).padStart(2,'0');\n return `Tomi-BMA-Field_Sicherung_${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}_${p(d.getHours())}-${p(d.getMinutes())}.json`;\n}\nfunction saveBackupFile(){\n if(!snapshot('Manuelle Sicherung'))return;\n try{\n   const blob=new Blob([JSON.stringify(backupPackage(),null,2)],{type:'application/json'});\n   const url=URL.createObjectURL(blob),a=document.createElement('a');\n   a.href=url;a.download=backupFilename();document.body.appendChild(a);a.click();a.remove();\n   setTimeout(()=>URL.revokeObjectURL(url),5000);\n   lastBackupMessage='Sicherung gespeichert · Datei heruntergeladen';updateBackupStatus();\n }catch(e){\n   lastBackupMessage='Lokale Sicherung erstellt · Dateidownload nicht möglich.';updateBackupStatus(true);\n }\n}\nasync function loadBackupFile(file){\n if(!file)return;\n try{\n   const pkg=JSON.parse(await file.text());\n   const data=pkg&&pkg.format==='tbma-field-backup'?pkg.data:(pkg&&pkg.data&&pkg.data.db?pkg.data:null);\n   if(!data||typeof data.db!=='object'||typeof data.svc!=='object'||typeof data.bmz!=='object')throw new Error('Ungültige Sicherungsdatei');\n   snapshot('Sicherung vor Import');\n   db=data.db||{};svc=data.svc||{};bmz=data.bmz||{};persist();snapshot('Importierte Sicherung');\n   lastBackupMessage='Sicherung geladen: '+file.name;updateBackupStatus();render();\n   alert('Sicherung erfolgreich geladen.');\n }catch(e){\n   lastBackupMessage='Sicherungsdatei konnte nicht geladen werden.';updateBackupStatus(true);\n   alert('Sicherungsdatei ist ungültig oder beschädigt.');\n }finally{\n   $('#backupfile').value='';\n }\n}\n\n"""
+          if marker not in s:
+              raise SystemExit('markDevice marker not found')
+          s=s.replace(marker,add+marker)
+          s=s.replace("$('#backup').onclick=()=>snapshot('Manuelle Sicherung');","$('#backup').onclick=saveBackupFile;$('#restore').onclick=()=>$('#backupfile').click();$('#backupfile').onchange=e=>loadBackupFile(e.target.files&&e.target.files[0]);")
+          p.write_text(s)
+          PY
+      - name: Commit r9
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tomi-bma-field-demo/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'Tomi BMA Field r9: downloadable backup and restore'
+          git push
