@@ -1,0 +1,178 @@
+===== STRANICA 141 =====
+HRVATSKI PRIJEVOD - stranica 141
+Moduli
+Spajanje UAC 150
+Za priključivanje UAC 150 potrebno je skinuti gornji dio blister kućišta te ga nakon spajanja ponovno postaviti. Za
+dovod kabela postoje po dva otvora gore i dolje na kućištu.
+Napomena
+Ako se u daljnjoj modernizaciji nakon modula i HX/HSZ centrala zamijeni centralom Integral EvoxX M, moduli se
+priključuju na B8-LEE23 za Stich odnosno B8-LEE24 za Ring. Vidi pripadajuća poglavlja dokumentacije.
+Sučelje Ring
+UAC 150 ima Linientrenner za izoliranje kratkog spoja u prstenu. Da bi izolator bio aktivan, modul mora biti
+spojen serijski. DIP 10 = ON; priključke X1/X2 spojiti prema originalnoj shemi.
+Sučelje Stich
+Kod Stich rada izolator kratkog spoja UAC 150 je deaktiviran, zato se modul spaja paralelno. Ako je UAC 150
+zadnji sudionik Stichleitung na Integral centrali, DIP 7 mora biti OFF. DIP 10 = OFF; X1/X2 spojiti prema izvorniku.
+
+===== STRANICA 142 =====
+HRVATSKI PRIJEVOD - stranica 142
+Moduli
+UAC 150 - upravljački izlaz
+Signalni relej preko X3 upravlja vanjskim potrošačem. NC/COM/NO i priključke spojiti prema originalnoj shemi.
+PAŽNJA
+Maksimalna duljina voda između upravljačkog izlaza i vanjskog potrošača je 3 m!
+Ako se koristi upravljački izlaz, upravljački ulaz na stezaljkama 10/11 mora se završiti otpornikom 2 MΩ koji je u
+isporuci. Alternativno se na stezaljke 11/12 upravljačkog ulaza može postaviti žičani most.
+Upravljački ulaz
+Kod aktiviranog ulaza UAC 150 može centrali poslati Alarmmeldung ako je DIP 8 = OFF ili Störmeldung ako je DIP
+8 = ON. U Stich radu pri zamjeni SBS 157 ili UAS 159 moguća je samo dojava smetnje.
+2-žilna tehnika: ako se aktuator nalazi izvan kućišta UAC 150, spojni vod mora biti nadziran na smetnju; aktuator
+završiti otpornikom 2 MΩ. DIP 9 = ON.
+3-žilna tehnika: ako je aktuator unutar istog kućišta, zahtjevi nadzora voda su jednostavniji i završni otpornik nije
+potreban, ali treba izvesti 3-žilnu vezu. DIP 9 = OFF.
+PAŽNJA
+Maksimalna duljina voda između upravljačkog ulaza i aktuatora je 3 m.
+
+===== STRANICA 143 =====
+HRVATSKI PRIJEVOD - stranica 143
+Napajanje
+8. Napajanje
+OPASNOST
+Opasnost po život zbog visokog priključnog napona 230 V - moguć smrtonosan strujni udar.
+► Spajanje smiju obavljati samo kvalificirani električari.
+► Poštovati pet sigurnosnih pravila.
+► Sve radove izvoditi samo u beznaponskom stanju.
+► Pročitati i slijediti dokumentaciju: BE-PSE01-IOM (7002719), BE-PSE02-IOM (7003057), BE-PSE03 (7002653),
+BE-PSE12 (7002654).
+► Prije prvog uključivanja još jednom provjeriti sve priključke.
+Prema VDE 0800-1 i VDE 0100-520 mali i niski napon uvijek se vode odvojeno. Vodove naponskog područja I do
+120 V DC i područja II do 1.000 V AC odvojiti kako bi se spriječilo preslušavanje i posljedične smetnje nadzora
+prekida/kratkog spoja.
+Tijekom montaže uređaj pokriti ako bi strugotine od bušenja mogle dospjeti na ili u uređaj - opasnost od kratkog
+spoja.
+Napomena: ovdje je prikazano samo osnovno spajanje; za detalje koristiti tehničku dokumentaciju navedenih
+BE-PSE uređaja.
+Redoslijed: osigurati zaseban, posebno označen strujni krug s osiguračem 16 A; osigurati propisan izjednačivač
+potencijala prema BMZ; postaviti jumpere; spojiti signalni kontakt; spojiti Ring na ugrađene module; spojiti
+potrošače/signalizatore i jasno ih označiti prema DIN VDE 0100-560; spojiti akumulatore; zatim priključiti mrežni
+napon nakon usporedbe tehničkih podataka.
+
+===== STRANICA 144 =====
+HRVATSKI PRIJEVOD - stranica 144
+Napajanje
+8.1 BE-PSE01-IOM - montaža
+Sve mjere na crtežu su u mm. Oko kućišta mora ostati najmanje 75 mm slobodnog prostora.
+Za otvaranje otpustiti križni vijak na vratima. Vrata mogu ostati otvorena ili se, nakon odspajanja uzemljenja
+vrata, mogu skinuti sa šarki.
+Mjesto montaže treba biti uključeno u zaštitni koncept automatskim javljačima te zaštićeno od vibracija, dima,
+prašine, vode, plinova i drugih štetnih utjecaja. Mora se poštovati dopuštena radna temperatura.
+Radi cirkulacije zraka ostaviti najmanje 75 mm do susjednih uređaja; ispod kućišta ne smiju biti izvori topline. Zid
+mora imati dovoljnu nosivost.
+Kućište uvijek montirati tako da su kabelski uvodi gore, a akumulatori dolje; drugačiji položaj nije dopušten.
+Izbušiti rupe prema mjernom crtežu i pričvrstiti na sva četiri mjesta vijcima M5. Alternativno je moguća montaža
+na DIN šinu 35 mm uz zaseban nosač.
+Nakon montaže vratiti vrata, ponovno spojiti kabel uzemljenja vrata ako je bio odspojen i zatvoriti vijak. Na vrata
+postaviti zasebno dostupnu naljepnicu „Externe Energieversorgung für Brandmeldeanlage”.
+
+===== STRANICA 145 =====
+HRVATSKI PRIJEVOD - stranica 145
+Napajanje
+BE-PSE01-IOM - primjeri spajanja
+Gornja shema: napajanje signalizatora preko jednog izlaza s povezivanjem na BX-IOM. Izlaz se može zaštititi
+osiguračem 2 A. U shemi je prikazan otpornik 680 Ω i osigurači prema izvorniku.
+Donja shema: napajanje signalizatora preko dva izlaza uz BX-IOM. Oba izlaza smiju biti osigurana samo s po 1 A.
+Drugi BX-IOM umeće se u drugi Steckplatz kako je prikazano.
+Oznake GNDEXT, VEXT, IM1±, OM1±, L1/L2, GND, SHLD, -Fault/+Fault, -UA/+UA i -UB/+UB ostaju tehničke
+oznake i spajaju se točno prema originalnoj shemi.
+
+===== STRANICA 146 =====
+HRVATSKI PRIJEVOD - stranica 146
+Napajanje
+Shema BE-PSE0x-IOM i X-LINE potrošača
+BE-PSE0x-IOM smije pustiti u rad i ispitivati samo certificirano stručno osoblje.
+Prikazano je povezivanje vanjskog napajanja preko BX-IOM s X-LINE prstenom, USB 502 podnožjima, javljačima s
+i bez -ES izvedbe te BX-FLES.
+Za BMA kabel tipa J-Y(St)Y 2x2x0,8 mm koristiti parove i oklop točno prema shemi: L1/L2 Data(+), GND, SHLD i
+dodatni par za vanjsko napajanje. Prikazane WAGO stezaljke, zaštita od uvrtanja i podjela na Stichleitung 1/2
+moraju se izvesti prema originalu.
+Oznake boja rt = crveno, sw = crno, ws = bijelo, ge = žuto gdje su prikazane u originalu. Priključne oznake
+ostaju neprevedene zbog sigurnog servisnog rada.
+
+===== STRANICA 147 =====
+HRVATSKI PRIJEVOD - stranica 147
+Napajanje
+UPOZORENJE
+Opasnost od opeklina zbog električnog luka ili užarenih dijelova.
+► Provjeriti nazivni napon i polaritet.
+► NIKADA ne zamijeniti polaritet niti kratko spojiti akumulatore.
+► Koristiti samo nove akumulatore istog tipa, proizvođača, kapaciteta, napona i datuma proizvodnje.
+► Polove zaštititi odgovarajućim kapicama.
+Dva akumulatora 2,3 Ah tvornički su ugrađena i ožičena. Za priključivanje utaknuti konektor priključnog voda u
+utičnicu BE-PSE te u spojni kabel (+/- most) umetnuti plosnati osigurač 3 A FK2/FKS.
+Polaritet Akku 1 / Akku 2 i mjesto osigurača 3 A slijediti točno prema shemi.
+
+===== STRANICA 148 =====
+HRVATSKI PRIJEVOD - stranica 148
+Napajanje
+8.2 BE-PSE02-IOM - montaža
+Sve mjere u mm; oko kućišta ostaviti najmanje 75 mm slobodnog prostora.
+Za otvaranje otpustiti križni vijak. Vrata se nakon odspajanja uzemljenja mogu podignuti i skinuti sa šarki.
+Mjesto montaže mora biti uključeno u zaštitni koncept i zaštićeno od vibracija, dima, prašine, vode, plinova i
+drugih štetnih utjecaja; poštovati radno temperaturno područje.
+Radi cirkulacije zraka ostaviti najmanje 75 mm do susjednih uređaja i ne postavljati izvore topline ispod kućišta.
+Zid mora imati dovoljnu nosivost.
+Kućište montirati isključivo s kabelskim uvodima gore i akumulatorima dolje. Pričvrstiti na sva četiri mjesta
+vijcima M5 prema crtežu.
+Dva akumulatora postavljaju se uspravno pri dnu kućišta i učvršćuju priloženim zateznim trakama provučenim
+kroz ušice stražnje stijenke te metalnim kopčama.
+Nakon završetka vratiti vrata, spojiti uzemljenje vrata i zatvoriti vijak. Na vrata postaviti naljepnicu „Externe
+Energieversorgung für Brandmeldeanlage”.
+
+===== STRANICA 149 =====
+HRVATSKI PRIJEVOD - stranica 149
+Napajanje
+BE-PSE02-IOM - spajanje
+Zbog veće snage BE-PSE02-IOM, uz primjere iz poglavlja BE-PSE01-IOM mogu se realizirati dodatne varijante.
+Prva shema: napajanje jednog posebnog javljača (Sonderbrandmelder) preko jednog izlaza; taj izlaz može biti
+osiguran s 2 A. Prikazan je BX-IOM i napajanje GND/+24 V posebnog javljača.
+Druga shema: napajanje posebnih javljača preko dva izlaza; oba izlaza smiju biti osigurana samo s po 1 A.
+Sve oznake -Fault/+Fault, -UA/+UA, -UB/+UB, GNDEXT, VEXT, IM1±, OM1±, L1/L2, GND i SHLD spojiti prema
+originalu.
+
+===== STRANICA 150 =====
+HRVATSKI PRIJEVOD - stranica 150
+Napajanje
+BE-PSE02-IOM - dodatni primjeri spajanja
+Prva shema: napajanje signalizatora povezanog preko BX-IOM i posebnog javljača preko dva izlaza. Oba izlaza
+smiju biti osigurana samo s po 1 A. Za nadzor signalizatora prikazan je otpornik 680 Ω.
+Druga shema: signalizator preko BX-IOM i posebni javljač preko BX-OI3, također preko dva izlaza s po 1 A.
+BX-OI3 koristi ulaze za Störung/Alarm posebnog javljača i relej prema originalnoj shemi; prikazani otpornici su 18
+Ω prema izvorniku.
+Treći BX-IOM prikazan je za umetanje u drugi Steckplatz.
+Sondermelder = posebni javljač; Störung = smetnja; Alarm = alarm. Sve terminalne oznake zadržati i spojiti
+prema izvornom nacrtu.
+
+===== STRANICA 151 =====
+HRVATSKI PRIJEVOD - stranica 151
+Napajanje
+8.3 BE-PSE03 - montaža
+Stranica s mjernim crtežima za izvedbe BE-PSE03-C i BE-PSE03-P. Sve dimenzije su u mm. Za točne položaje
+rupa, širine, visine i dubine koristiti originalni crtež na lijevoj strani.
+
+===== STRANICA 152 =====
+HRVATSKI PRIJEVOD - stranica 152
+Napajanje
+BE-PSE03 - montaža
+Kod BE-PSE03-C skinuti gornji dio kućišta nakon otpuštanja četiri križna vijka. BE-PSE03-P otvara se dvama
+bravama na prednjoj strani priloženim ključem. Kod izvedbe P ugraditi potrebne kabelske uvodnice te crijevo i
+uvodnicu za izlaz zraka. Kućište pričvrstiti na gornjim i donjim točkama vijcima M8. Nakon toga ugraditi Ring
+modul, po potrebi dodatnu ploču osigurača i akumulatore.
+Zahtjevi: prostor treba biti nadziran automatskim javljačima; suh, dovoljno osvijetljen i ograničeno dostupan;
+zaštićen od vibracija, dima, prašine, plinova te štetnih instalacija poput plina, vode, pare i sprinklera; poštovati
+radnu temperaturu.
+Ostaviti najmanje 200 mm do susjednih uređaja i bez izvora topline ispod kućišta. Zid mora imati dovoljnu
+nosivost. Preporučuje se montaža s akumulatorima dolje.
+Tipsku pločicu postaviti vidljivo u razini pristupa 1, a dodatno naljepnicu „Externe Energieversorgungseinrichtung
+für Brandmelderzentrale”. Kućište zaštititi i tijekom gradnje od prašine, boje, vode i ekstremnih temperatura.
+Vodove naponskog područja I do 120 V DC i područja II do 1.000 V AC voditi odvojeno radi sprečavanja
+preslušavanja i smetnji nadzora prema EN 54-13.
