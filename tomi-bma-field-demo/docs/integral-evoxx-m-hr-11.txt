@@ -1,0 +1,197 @@
+===== STRANICA 201 =====
+HRVATSKI PRIJEVOD - stranica 201
+Vatrogasna periferija
+FBF 2001 PAR - spajanje
+FBF 2001 PAR može se priključiti preko B8-BAF, vanjskog Bedienfelda B5-MMI-CIP ili B3-MMI-FAT.
+Napomena
+Premosnici su tvornički već postavljeni za Integral, pa dodatno podešavanje nije potrebno. Opće postavke:
+J21-J72 na „+”, JT na „-”.
+Shema prikazuje tipke/LED: ÜE prüfen, ÜE ab, BMZ rückstellen, Akustische Signale ab, Brandfallsteuerungen ab,
+Löschanlage ausgelöst, Bedienfeld in Betrieb i ÜE ausgelöst.
+Tablica daje odgovarajuće terminale FBF/B8-BAF/externes Bedienfeld/B3-MMI-FAT i alternativne boje vodiča. Te
+terminalne oznake FCPI/FCPO/FCPGND/FCP+12V treba spojiti točno prema originalu. Napomena izvornika: FCPI4
+je kod vanjskih Bedienfelda na X8, a kod B3-MMI-FAT na X7.
+
+===== STRANICA 202 =====
+HRVATSKI PRIJEVOD - stranica 202
+Vatrogasna periferija
+10.3 Feuerwehr-Bedienfeld B5-MMI-FPD
+Funkcija
+B5-MMI-FPD prema DIN 14661 služi početnoj informaciji vatrogascima, prikazuje radna stanja BMA i omogućuje
+upravljanje. Ima pet tipki i sedam LED pokazivača.
+Priključni sklop je na stražnjoj strani prednje ploče. Sustav i napajanje idu preko MMI-BUS-a. Brava je
+pripremljena za profilni polucilindar DIN 18252. Na B5-MMI-FPD mogu se dodatno spojiti do tri EPI-BUS uređaja.
+Sučelja: X1 MMI-BUS; X2 napajanje; X4/X6 terminacija MMI-BUS-a; X5 EPI-BUS; X8 interni premosnik - NIKADA NE
+POSTAVLJATI; S1 MMI adresa; A1 tipke/LED; A2 priključak narukvice za osobno uzemljenje.
+MMI-BUS X1: RS-485, maks. 1.200 m, asinkrono serijski 96 kbit/s, bidirekcionalno half-duplex; 12-polna stezaljka
+RM3,81; presjek maks. 1 mm²; moment 0,22-0,25 Nm.
+
+===== STRANICA 203 =====
+HRVATSKI PRIJEVOD - stranica 203
+Vatrogasna periferija
+B5-MMI-FPD - priključci
+Napajanje X2: MMIGND-B/A i MMI+24V-B/A prema originalnoj tablici. 8-polna stezaljka RM5,08; presjek maks. 2,5
+mm²; moment 0,5-0,6 Nm.
+Terminacija MMI-BUS-a: otvoren premosnik = BUS nije terminiran; postavljen = terminiran.
+PAŽNJA
+Na prvom i zadnjem MMI-BUS sudioniku terminacijske premosnike postaviti. Ako su priključeni sudionici do
+verzije -E, prema izvorniku premosnici se ne smiju postaviti.
+EPI-BUS X5: GNDP, +3V3, VP, EXTBUS+/-, GND prema tablici. RS-485; domet maks. 1 m; 9.600 bit/s;
+bidirekcionalno half-duplex; 8-polni RJ45.
+MMI adresa S1: do 15 sudionika; adresa mora odgovarati Integral Software i biti jedinstvena; fizički redoslijed je
+proizvoljan.
+
+===== STRANICA 204 =====
+HRVATSKI PRIJEVOD - stranica 204
+Vatrogasna periferija
+B5-MMI-FPD - montaža i spajanje
+B5-MMI-FPD mora na Erstinformationsstelle biti na visini 1.600 mm (+100/-200 mm), mjereno do sredine
+Bedienfelda.
+Otpustiti šest vijaka i izvaditi prednju ploču s priključnim sklopom. Izbušiti rupe prema crtežu, uvesti kabel i
+pričvrstiti kućište. Kabelski uvodi mogu biti gore, dolje ili straga; kod gornjeg/donjeg uvoda prvo zarezati gumenu
+uvodnicu.
+Ožičiti MMI-BUS, postaviti adresu na rotacijskom prekidaču, vratiti prednju ploču i pričvrstiti.
+Spajanje preko MMI-BUS-a izvodi se na B8-BAF; primjer vidi poglavlje 5.5.
+
+===== STRANICA 205 =====
+HRVATSKI PRIJEVOD - stranica 205
+Vatrogasna periferija
+10.4 Feuerwehr-Informations-/Bediensystem FIBS
+Funkcija
+FIBS je odvojeno vatrogasno informacijsko/upravljačko mjesto za nadžbuknu ili podžbuknu montažu. Lijevo ima
+mjesto za B5-EPI-FAT i B5-EPI-FPD te nosač za Übertragungseinrichtung.
+Desno su pretinci za Feuerwehr-Laufkarten: kod FIBS-A4 dva pretinca po najviše 75 A4 kartica, kod FIBS-A3
+jedan pretinac do 100 A3 kartica.
+Dvokrilno kućište centralno se otvara lijevom vatrogasnom bravom; priprema za profilni polucilindar DIN 18252.
+Desna strana se zasebno otvara CL1 bravom i označena je „FEUERWEHR-LAUFKARTEN”.
+Montaža: vrijednosti u zagradama na crtežu odnose se na FIBS-A3. Izbušiti rupe, uvesti kabel, pričvrstiti kućište.
+Kabelski uvodi su gore, dolje i straga. Ugraditi posebnu montažnu ploču za EPI uređaje, ožičiti EPI-BUS, postaviti
+adresu i uzemljiti uređaje na predviđenim točkama kućišta.
+
+===== STRANICA 206 =====
+HRVATSKI PRIJEVOD - stranica 206
+Vatrogasna periferija
+FIBS - montaža Übertragungseinrichtung
+Četiri utisnuta/distancna vijka za ÜE već su tvornički montirana. Potreban je zaseban montažni set s
+redukcijskom maskom i priborom.
+Kao montažna ploča koristi se ÜE pokrov vrata FIBS-a: prednja slijepa ploča + stražnja montažna ploča. Nakon
+otpuštanja četiri vanjske matice izvaditi pokrov, zatim nakon dvije unutarnje matice odvojiti slijepu ploču.
+Montažnu ploču pričvrstiti nazubljenim podloškama 4,3 AZ i vijcima M4x8 na odstojnike. Na ploči postoje rupe za
+više tipova ÜE.
+ÜE pričvrstiti vijcima M4x16, podloškama 4,3 i maticama M4. Redukcijsku masku ponovno pričvrstiti na vrata
+četirima maticama.
+Spajanje preko MMI-BUS-a izvodi se na B8-BAF; primjer vidi poglavlje 5.5.
+
+===== STRANICA 207 =====
+HRVATSKI PRIJEVOD - stranica 207
+Vatrogasna periferija
+10.5 Schlüsseldepot FSD basic
+Funkcija
+FSD basic prema VdS 2105 omogućuje vatrogascima brz i nenasilan pristup objektu u požaru. Ima vanjska i
+unutarnja vrata; iza njih se objektni ključ postavlja na cilindar i nadzire.
+Postoji standardna izvedba i izvedba s Rundum-Sabotageschutz koja nadzire cijelo kućište od oštećenja/bušenja i
+pri proboju daje sabotaznu dojavu. Zaključavanje prema zahtjevu vatrogasaca može biti Kruse Umstellschloss ili
+profilni polucilindar.
+Sučelja: X1 Objektschlüsselüberwachung OSÜ; X2 LED osvjetljenje; X3 otvarač vrata s povratnim kontaktom; X4
+status LED ključa - zeleno = ključ osiguran; X5 mikroprekidač vanjskih vrata; X6 unutarnja vrata; X7 VdS
+brava/cilindar; X8 zabravljivanje vanjskih vrata; X9 zaštita od bušenja s grijanjem; X10 vijci okvira; X11
+montažna prirubnica.
+Montaža: isporuka s 10 m kabela, do 50 m na upit. Dulja produženja izvesti korozijski zaštićenim spojem, npr.
+lemljeno-termoskupljajućom spojnicom.
+FSD mora biti oko 5 m od vatrogasnog ulaza, po mogućnosti zaštićen od vremenskih utjecaja. Može se koristiti
+opcionalna zaštita od kiše. Ugradnja samo u odgovarajuće zidove od opeke, vapneno-pješčanog kamena ili
+armiranog betona najmanje B25; zid najmanje 80 mm deblji od dubine ugradnje. Ako nema odgovarajuće
+fasade, dopuštena je samostojeća kolona na lokaciji dogovorenoj s vatrogascima.
+
+===== STRANICA 208 =====
+HRVATSKI PRIJEVOD - stranica 208
+Vatrogasna periferija
+FSD basic - ugradnja
+Vanjska vrata moraju završavati u ravnini s vanjskom površinom zida. Donji rub FSD-a mora biti najmanje 0,8 m,
+preporučeno 1,20 m iznad tla. FSD se mora zazidati mortom prema DIN 1053 ili uliti u beton te uvijek ostati
+slobodno pristupačan.
+Crtež: 1 zidano; 2 beton, područje oko vijaka okvira ostaviti slobodno; 3 Schlüsseldepot / montažna prirubnica; 4
+ukrasni okvir. Dimenzije i položaje zadržati prema originalnom crtežu.
+Montaža i polaganje vodova u zidu ili stupu moraju se izvesti prema uputama proizvođača; izvornik upućuje na
+servisni portal proizvođača.
+
+===== STRANICA 209 =====
+HRVATSKI PRIJEVOD - stranica 209
+Vatrogasna periferija
+FSD basic - spajanje
+FSD basic spaja se preko adaptera AD 900-1; dodatne specijalne varijante vidi podatkovni list 7002464.
+Na stezaljku 9 AD 900-1, kod tinjanja ÜE alarm LED-a, npr. Siemens TF2-FHM, treba spojiti diodu 1N4005 s luster
+stezaljkom. Stezaljke 11 i 16 za sabotazni nadzor mogu se povezati i s ulazom drugog modula IM8/EIO, Ring
+modulom ili izravno EMA.
+Prema VdS 2105 vanjska vrata smiju se otključati samo uz požarni alarm i pripadajuću povratnu dojavu ÜE.
+Budući da tipka „ÜE prüfen” može aktivirati ÜE bez alarma, relejni kontakt „Sammelalarm” mora biti serijski
+između ÜE povratne dojave i ulaza adaptera, stezaljka 9. Tako se vrata otključaju samo kad BMZ ima alarm i ÜE
+povratna dojava je aktivna.
+Kod ručnog aktiviranja ÜE FSD se ne aktivira.
+Tablica boja FSD kabela i funkcija priključaka te shematske maksimalne duljine kabela (5 m, 240/250/80/245/700
+m prema prikazu) zadržati točno prema originalu.
+
+===== STRANICA 210 =====
+HRVATSKI PRIJEVOD - stranica 210
+Vatrogasna periferija
+FSD basic / AD 900-1 - detaljna shema
+Shema prikazuje vezu između B8-BAF, PSU, adaptera AD 900-1, FSD basic, Übertragungseinrichtung, napajanja
+grijanja MCS-B, Blitzleuchte i releja Sammelalarm.
+Funkcije na AD 900-1 uključuju Primärleitungsüberwachung, Ansteuerung Entriegelungseinrichtung,
+Rückmeldekontakt SD-Türöffner, Betriebsspannung ±, Meldungsaugänge, Deckelkontakt, Schirmaufschaltung,
+Signalweiterleitung, Objektschlüsselüberwachung, grijanje i izlaze „Objektschl. entn.”, „SD-Alarm” i „Anst.
+Entriegel.”.
+Prikazani otpornik 182 Ω, relejne stezaljke A1+/A2-, BL24 S1/S2, boje vodiča i svi terminali moraju se spojiti
+prema originalnom nacrtu. MCS-B: ulaz 230 V AC, izlaz 24 V DC.
+
+===== STRANICA 211 =====
+HRVATSKI PRIJEVOD - stranica 211
+Vatrogasna periferija
+10.6 Freischaltelement FSE
+Funkcija
+FSE prema VdS 2105 omogućuje vatrogascima izvana aktivirati požarni alarm, npr. kod vidljivog požara ili štete
+od vode. Aktiviranjem alarma otvara se Schlüsseldepot, nakon čega vatrogasci mogu otključati dodatnu klapu i
+uzeti objektni ključ.
+Zaključavanje može biti Abloy specijalni cilindar FSE SZ ili profilni polucilindar FSE PZ, ovisno o zahtjevu
+vatrogasaca.
+Montaža mora biti podžbukna, u ravnini zida i neposredno uz Schlüsseldepot, po mogućnosti izvan dosega ruke,
+do 3 m iznad slobodno dostupnog tla.
+FSE sa specijalnim cilindrom: ugraditi stabilno i u ravnini fasade, s nagibom oko 3-5° prema dolje; poštovati
+oznaku „Oben”. Kod stupova punjenih betonom obavezno koristiti priloženu zaštitnu cijev koja se spaja na PG7.
+Ako se FSE uključuje u uzemljenje, PE vodič se može pričvrstiti na stražnji M5 navoj kabelskom stopicom. Za
+priloženu rozetu sa zaštitom od prašine preporučuje se montažno ljepilo ili silikon.
+
+===== STRANICA 212 =====
+HRVATSKI PRIJEVOD - stranica 212
+Vatrogasna periferija
+FSE s profilnim polucilindrom
+Ugradnja stabilna i u ravnini fasade; poštovati oznaku „Oben” i ostaviti otvor za kondenzat slobodan kod
+podžbukne montaže.
+Skinuti dvije sigurnosne vijke s dvije rupice, prednju ploču i gumenu brtvu. Odvrnuti dva vijka poklopca i skinuti
+poklopac. Jezičak profilnog polucilindra postaviti 90° ulijevo, provući kroz otvor zaključne ploče između
+pogonskih zatika. Cilindar umetnuti iznutra i pričvrstiti priloženim M5 vijcima. Vratiti poklopac, brtvu i prednju
+ploču.
+Kod FSE u stupu prije ugradnje cilindra izvući FSE prema naprijed kako ne bi pao u unutrašnjost stupa.
+Spajanje FSE moguće je preko BX-AIM, s ugrađenim ili vanjskim otpornicima, BX-IM4 ili B8-BAF.
+Primjer preko BX-AIM s ugrađenim otpornicima: FSE PZ-AIM / FSE SZ-AIM, maksimalno 700 m. Boje braun =
+smeđa, weiß = bijela; sve L/P/C/GND/SHLD terminale spojiti prema originalu.
+
+===== STRANICA 213 =====
+HRVATSKI PRIJEVOD - stranica 213
+Vatrogasna periferija
+FSE - dodatne varijante spajanja
+Preko BX-AIM s vanjskim otpornicima:
+FSE PZ koristi prema shemi 19,1 kΩ i 680 Ω, maksimalno 700 m; boje gelb = žuta, grün = zelena, braun =
+smeđa, weiß = bijela.
+FSE SZ koristi 19,1 kΩ i 680 Ω, maksimalno 700 m; boje grau = siva, schwarz = crna, blau = plava.
+Preko BX-IM4 s vanjskim otpornicima:
+FSE PZ i FSE SZ - prema shemi otpornici 182 Ω, maksimalna duljina 30 m. Ulaze IN1...IN4 i Ring terminale
+L1/L2/GND/SHLD spojiti prema originalu.
+
+===== STRANICA 214 =====
+HRVATSKI PRIJEVOD - stranica 214
+Vatrogasna periferija
+FSE preko B8-BAF s vanjskim otpornicima
+Za FSE PZ i FSE SZ prikazani su otpornici 220 Ω i maksimalna duljina voda 700 m.
+B8-BAF X3 koristi terminale IM1-/IM1+, OM2-/OM2+, OM1-/OM1+ prema originalnoj shemi. Boje vodiča FSE PZ:
+žuta, zelena, smeđa, bijela; FSE SZ: siva, crna, plava. Sve otpornike i priključke izvesti prema izvorniku.
