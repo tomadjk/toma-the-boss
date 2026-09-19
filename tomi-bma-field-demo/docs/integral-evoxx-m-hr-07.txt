@@ -1,0 +1,110 @@
+===== STRANICA 121 =====
+HRVATSKI PRIJEVOD - stranica 121
+Moduli
+Shema prikazuje primjere nadzora ulaza na BX-MDI8.
+Primarni ulaz (Primäreingang): linija se nadzire otpornicima 3 kΩ / 1,5 kΩ, maksimalna duljina voda 1.000 m.
+Priključci LINE i COM ostaju označeni kao na originalnoj shemi.
+Standardno sučelje za gašenje (Standardschnittstelle Löschen): ulazi za gašenje prema VDE 0833-2 i VdS 2496.
+Prikazani su otpornici 3,3 kΩ i 680 Ω te signali EST, Störung Löschanlage = smetnja sustava gašenja,
+Löschanlage ausgelöst = sustav gašenja aktiviran i SST.
+Nadzor ventila (Ventilüberwachung): a = predaktivno (Voraktiv), b = aktivno (Aktiv). Prikazane vrijednosti
+otpornika 3 kΩ, 1,5 kΩ i 750 Ω. Sve priključke spojiti prema originalnoj shemi.
+
+===== STRANICA 122 =====
+HRVATSKI PRIJEVOD - stranica 122
+Moduli
+7.7 Ulazni modul BX-AIM
+Funkcija
+BX-AIM se može priključiti isključivo na tehnologiju prstenaste linije. Ima jedan nadzirani ulaz za očitavanje
+beznaponskih kontakata odnosno za priključivanje graničnih javljača (Grenzwertmelder) te izlaz za vanjski
+pojedinačni indikator javljača.
+Adresiranje BX-AIM-a i dodjela parametara obavljaju se preko Integral Software. Modul sadrži dva izolatora
+kratkog spoja koji u slučaju kratkog spoja ili prekida osiguravaju ponovno uspostavljanje funkcije preostalih
+uređaja prema EN 54-2.
+Sučelja:
+X1 - nadzirani ulaz / granični javljači / izlaz MEA.
+X2 - priključne stezaljke prstenaste linije.
+X1: P- = GND (-) izlaz MEA; P+ = 24 V (+) izlaz MEA; L = 24 V (+) Stichleitung bez Ex barijere; C = GND (-); L Ex
+= 24 V (+) Stichleitung s Ex barijerom.
+Tehnički podaci nadziranog ulaza: napon linije 20-30 V DC u opcijskom načinu odnosno 10-30 V DC u I/O načinu;
+završni otpornik 19,1 kΩ; alarm 560-780 Ω; prekid/kratki spoj < 50 Ω prema izvornim pragovima; duljina voda
+maks. 700 m; alarmna struja 8,5 mA; struja kratkog spoja 8,5 mA približno 400 ms.
+Izlaz MEA 720X: 10-29 V DC, maks. 10 mA; struja kratkog spoja 190 mA, bez ograničenja struje i nije otporan na
+trajni kratki spoj.
+Mehanički: 6-polna vijčana stezaljka; kruti vodič 0,14-1,5 mm², fleksibilni 0,14-1,0 mm²; moment pritezanja
+0,22-0,25 Nm.
+
+===== STRANICA 123 =====
+HRVATSKI PRIJEVOD - stranica 123
+Moduli
+BX-AIM - priključak prstenaste linije X2
+L1 = Data (+) ulaz/izlaz; GND = GND (-); L2 = Data (+) ulaz/izlaz; SHLD = oklop. Mehanički 6-polna vijčana
+stezaljka RM 3,81; kruti vodič 0,14-1,5 mm², fleksibilni 0,14-1,0 mm²; moment pritezanja 0,22-0,25 Nm.
+Montaža
+BX-AIM se ugrađuje u plastično kućište IP 66. Kabelski uvod izvodi se zasebno dostupnim stupnjevitim
+uvodnicama ili kabelskim uvodnicama s kontramaticom. Modul se može pričvrstiti izravno u kućište ili preko
+montažne ploče na DIN šinu. Prema EN 54, priloženu tipsku pločicu treba postaviti izvana na poklopac kućišta u
+razini pristupa 1.
+Alternativno je moguća montaža na montažnu ploču za vodoravno ili okomito pričvršćenje na DIN šinu. Odstojnici
+i vijci su u opsegu isporuke.
+Spajanje se izvodi preko X-LINE B8-DXI2; primjer prstena vidi poglavlje 5.3.
+BX-AIM ima serijski broj i odvojivu naljepnicu. Broj naljepnice može se kasnije usporediti sa serijskim brojem koji
+modul šalje radi provjere topologije.
+U isporuci je jedan otpornik 19,1 kΩ.
+
+===== STRANICA 124 =====
+HRVATSKI PRIJEVOD - stranica 124
+Moduli
+Napomena
+Ako se nakon puštanja BX-AIM-a u rad promijeni vrijednost otpornika, prstenastu liniju treba ponovno pokrenuti.
+Primjer priključivanja graničnih javljača: vanjski indikator MEA 720X i linija do maksimalno 700 m; prikazani su
+otpornici 680 Ω i završni otpornik 19,1 kΩ. Priključke P-, P+, L i C spojiti točno prema originalnoj shemi.
+Ex područje: Ex-i javljači priključuju se preko EXBAR02 (Z787); završni otpornik 19,1 kΩ mora biti izveden kako je
+prikazano, sa zaštitom termoskupljajućom cijevi. Maksimalna duljina voda 700 m. Otpornik alarma 680 Ω.
+Standardno sučelje za gašenje prema VDE 0833-2 i VdS 2496: prikazani su signali EST, Störung Löschanlage =
+smetnja sustava gašenja, Löschanlage ausgelöst = sustav gašenja aktiviran i SST. Vrijednosti otpornika 680 Ω i
+3,3 kΩ te maksimalna duljina 700 m ostaju prema originalnoj shemi.
+
+===== STRANICA 125 =====
+HRVATSKI PRIJEVOD - stranica 125
+Moduli
+7.8 Modul odvojka Stichleitung BX-SCU
+Funkcija
+BX-SCU se može priključiti isključivo na prstenastu tehnologiju. Omogućuje priključivanje jedne Stichleitung s
+uređajima Integral prstenaste tehnologije. Na tu Stichleitung može se priključiti do 32 adresabilna sudionika.
+Adresiranje BX-SCU i dodjela parametara obavljaju se preko Integral Software. Modul sadrži dva izolatora kratkog
+spoja koji u slučaju kratkog spoja ili prekida osiguravaju funkciju preostalih uređaja prema EN 54-2.
+Sučelja:
+X1 - priključne stezaljke Stichleitung.
+X2 - priključne stezaljke prstenaste linije.
+X1: ST = Data (+), GND = GND (-), SHLD = oklop. Maksimalna duljina 1.500 m. Mehanički 3-polna stezaljka;
+presjek 0,14-1,0 mm²; moment pritezanja 0,22-0,25 Nm.
+X2: L1 = Data (+), GND = GND (-), L2 = Data (+), SHLD = oklop. Mehanički 6-polna stezaljka RM 3,81; presjek
+0,14-1,0 mm²; moment pritezanja 0,22-0,25 Nm.
+
+===== STRANICA 126 =====
+HRVATSKI PRIJEVOD - stranica 126
+Moduli
+Montaža BX-SCU
+BX-SCU se ugrađuje u plastično kućište. Kod stupnjevite uvodnice postiže se IP 55, a kod odgovarajuće kabelske
+uvodnice s kontramaticom IP 66. Modul se može montirati izravno u kućište ili preko montažne ploče na DIN
+šinu. Prema EN 54, tipsku pločicu treba postaviti izvana na poklopac kućišta u razini pristupa 1.
+Alternativno je moguća vodoravna ili okomita montaža na DIN šinu. Odstojnici i vijci su uključeni.
+Spajanje je moguće preko X-LINE B8-DXI2; primjer prstena vidi poglavlje 5.3.
+Napomena o izvorniku: u njemačkom tekstu na ovoj stranici u jednoj rečenici stoji oznaka „BX-AIM”; prikaz i
+poglavlje odnose se na BX-SCU. Oznaku izvornika ne mijenjamo bez napomene.
+BX-SCU ima serijski broj i odvojivu naljepnicu za provjeru topologije. U isporuci je jedan otpornik 1 kΩ.
+Primjer automatskih javljača: USB 502; završetak 1 kΩ; do 32 uređaja i do 1.500 m prema shemi.
+
+===== STRANICA 127 =====
+HRVATSKI PRIJEVOD - stranica 127
+Moduli
+Primjeri priključivanja na BX-SCU:
+Handfeuermelder MCP 535X = ručni javljači požara: završetak 1 kΩ; do 10 komada; maksimalno 1.500 m.
+Linienförmige Wärmemelder / Ansaugrauchmelder = linijski toplinski javljači / usisni detektori dima: preko XLM
+35 na ASD 53x ili ADW 535; maksimalno 1 uređaj; maksimalno 1.500 m; završetak 1 kΩ.
+Funktionsgruppe Steuern = funkcijska grupa upravljanje: primjer BX-OI3; do 10 komada; maksimalno 1.500 m;
+završetak 1 kΩ.
+Funktionsgruppe Alarmieren = funkcijska grupa alarmiranje: primjer BX-SOL(-CT); do 10 komada; maksimalno
+1.500 m; završetak 1 kΩ.
+Sve oznake L1/L2, GND, SHLD, ST i priključne brojeve zadržati prema originalnoj shemi.
