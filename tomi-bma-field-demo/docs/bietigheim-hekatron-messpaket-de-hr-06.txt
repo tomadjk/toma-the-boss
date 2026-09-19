@@ -1,0 +1,1000 @@
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Druckknopfmelder 202/1 Druckknopfmelder L02 2. OG 2.07 Flur DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 62/1 Handmelder L02 2. OG 2.09 Flur DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Druckknopfmelder 201/2 Druckknopfmelder L03 1. OG 1.21 Aufenthaltsb. GT DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 51/1 Handmelder L03 1. OG 1.21 Aufenthaltsb. GT DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Druckknopfmelder 201/1 Druckknopfmelder L04 1. OG 1.07.1 Flur DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 51/2 Handmelder L04 1. OG 1.07 Flur DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Druckknopfmelder 200/1 Druckknopfmelder L05 EG 0.01.1 Flur DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 33/1 Handmelder L05 EG 0.26 off. Arbeitsber. DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+K 102 Koppler L05 EG 0.22 Lehrmittel DE: X-LINE-Koppler für projektspezifische
+Ein-/Ausgangsfunktion.
+HR: X-LINE modul za tehničku ili Brandfallsteuerung
+funkciju. Važno je potvrditi stvarni model i I/O raspored.
+DE: Zugeordnete Ein-/Ausgangsfunktion kontrolliert auslösen;
+Ansteuerung, Rückmeldung und Störung prüfen; Hardwaretyp
+dokumentieren.
+HR: Kontrolirano aktiviraj pripadajući ulaz/izlaz, provjeri
+Ansteuerung/Rückmeldung/Störung te zapiši stvarni tip modula.
+DE: Bei Schnittstellen-Inbetriebnahme;
+nach Änderungen.
+HR: Kod puštanja sučelja i nakon promjena.
+OFFEN
+Druckknopfmelder 200/2 Druckknopfmelder L06 EG 0.11 Aufenhaltsbereich GT DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Druckknopfmelder 200/3 Druckknopfmelder L06 EG 0.41 Mensa DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 13/1 Handmelder L06 EG 0.11 Aufenhaltsbereich GT DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Handmelder 13/2 Handmelder L06 EG 0.11.1 Foyer DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Handmelder 13/3 Handmelder L06 EG 0.40 Musik/Bühne DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Druckknopfmelder 200/4 Druckknopfmelder L07 EG 0.27 Sporthalle DE: Manueller Taster laut Projekt; genauer Gerätetyp
+offen.
+HR: Ručni tipkalo/javljač prema planu; hardverski model
+još nije potvrđen.
+DE: Gerätetyp bestätigen; Taster auslösen; BMZ-/Steuerfunktion
+prüfen; zurückstellen.
+HR: Prvo potvrdi model, zatim ga aktiviraj i provjeri točnu funkciju na
+BMZ/Steuerung.
+DE: Inbetriebnahme; nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene ili
+zamjene.
+OFFEN
+Handmelder 13/4 Handmelder L07 EG 0.39 Flur DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+<PARSED TEXT FOR PAGE: 33 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 33
+Element Nr. Typ Loop Etage Ort Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+Handmelder 29/1 Handmelder L07 EG 0.27 Sporthalle DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+K 103 Koppler L07 EG 0.33 Regie/1.Hilfe DE: X-LINE-Koppler für projektspezifische
+Ein-/Ausgangsfunktion.
+HR: X-LINE modul za tehničku ili Brandfallsteuerung
+funkciju. Važno je potvrditi stvarni model i I/O raspored.
+DE: Zugeordnete Ein-/Ausgangsfunktion kontrolliert auslösen;
+Ansteuerung, Rückmeldung und Störung prüfen; Hardwaretyp
+dokumentieren.
+HR: Kontrolirano aktiviraj pripadajući ulaz/izlaz, provjeri
+Ansteuerung/Rückmeldung/Störung te zapiši stvarni tip modula.
+DE: Bei Schnittstellen-Inbetriebnahme;
+nach Änderungen.
+HR: Kod puštanja sučelja i nakon promjena.
+OFFEN
+Signalgeber 0.3 Signalgeber, optisch +
+akustisch
+L07 EG 0.31 WC Da. DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Signalgeber 0.4 Signalgeber, optisch +
+akustisch
+L07 EG 0.30 WC He. DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Handmelder 4/1 Handmelder L08 UG -1.05 TRH DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Kontakt — Kontakt für Aufzug L08 UG — Aufzug DE: Schnittstellenkontakt zum Aufzug.
+HR: Kontakt prema liftu; treba potvrditi stvarnu funkciju i
+vezu s K101.
+DE: Nach freigegebenem Schnittstellenplan Zustandswechsel
+auslösen/simulieren und BMZ-/Kopplerreaktion prüfen.
+HR: Prema odobrenoj shemi simuliraj promjenu stanja i provjeri
+odgovarajuću reakciju BMZ/Koppler-a.
+DE: Bei Inbetriebnahme der
+Aufzugsschnittstelle; nach Änderungen.
+HR: Kod puštanja veze prema liftu i nakon
+promjene.
+OFFEN
+K 100 Koppler L08 UG -1.11 Lager DE: X-LINE-Koppler für projektspezifische
+Ein-/Ausgangsfunktion.
+HR: X-LINE modul za tehničku ili Brandfallsteuerung
+funkciju. Važno je potvrditi stvarni model i I/O raspored.
+DE: Zugeordnete Ein-/Ausgangsfunktion kontrolliert auslösen;
+Ansteuerung, Rückmeldung und Störung prüfen; Hardwaretyp
+dokumentieren.
+HR: Kontrolirano aktiviraj pripadajući ulaz/izlaz, provjeri
+Ansteuerung/Rückmeldung/Störung te zapiši stvarni tip modula.
+DE: Bei Schnittstellen-Inbetriebnahme;
+nach Änderungen.
+HR: Kod puštanja sučelja i nakon promjena.
+OFFEN
+K 101 Koppler L08 UG — Aufzug DE: X-LINE-Koppler für projektspezifische
+Ein-/Ausgangsfunktion.
+HR: X-LINE modul za tehničku ili Brandfallsteuerung
+funkciju. Važno je potvrditi stvarni model i I/O raspored.
+DE: Zugeordnete Ein-/Ausgangsfunktion kontrolliert auslösen;
+Ansteuerung, Rückmeldung und Störung prüfen; Hardwaretyp
+dokumentieren.
+HR: Kontrolirano aktiviraj pripadajući ulaz/izlaz, provjeri
+Ansteuerung/Rückmeldung/Störung te zapiši stvarni tip modula.
+DE: Bei Schnittstellen-Inbetriebnahme;
+nach Änderungen.
+HR: Kod puštanja sučelja i nakon promjena.
+OFFEN
+Signalgeber -1.1 Signalgeber, akustisch L08 UG -1.10 WC Mensa DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Handmelder 4/3 Handmelder L09 2. OG — Sanitärbereich / Treppenhaus
+(Raum-Nr. im Schema nicht
+angegeben)
+DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+K 104 Koppler L09 2. OG — Treppenhaus / RWA DE: X-LINE-Koppler für projektspezifische
+Ein-/Ausgangsfunktion.
+HR: X-LINE modul za tehničku ili Brandfallsteuerung
+funkciju. Važno je potvrditi stvarni model i I/O raspored.
+DE: Zugeordnete Ein-/Ausgangsfunktion kontrolliert auslösen;
+Ansteuerung, Rückmeldung und Störung prüfen; Hardwaretyp
+dokumentieren.
+HR: Kontrolirano aktiviraj pripadajući ulaz/izlaz, provjeri
+Ansteuerung/Rückmeldung/Störung te zapiši stvarni tip modula.
+DE: Bei Schnittstellen-Inbetriebnahme;
+nach Änderungen.
+HR: Kod puštanja sučelja i nakon promjena.
+OFFEN
+Signalgeber 2.1 Signalgeber, akustisch L09 2. OG 2.14 WC J DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Signalgeber 2.2 Signalgeber, akustisch L09 2. OG 2.13 WC M DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Handmelder 4/3 Handmelder L09 1. OG — Sanitärbereich / Treppenhaus
+(Raum-Nr. im Schema nicht
+angegeben)
+DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Signalgeber 1.1 Signalgeber, akustisch L09 1. OG 1.14 WC J DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Signalgeber 1.2 Signalgeber, akustisch L09 1. OG 1.13 WC M DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Handmelder 4/2 Handmelder L09 EG — Sanitärbereich / Treppenhaus
+(Raum-Nr. im Schema nicht
+angegeben)
+DE: Manueller Brandmelder.
+HR: Ručni javljač požara. Testira se mehanika tipke,
+adresa, MG, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, na centrali provjeri MG/adresu/lokaciju, zatim vrati
+javljač u normalno stanje.
+DE: Inbetriebnahme/Funktionsprüfung;
+nach Tausch.
+HR: Kod puštanja, funkcijskog testa i nakon
+zamjene.
+OFFEN
+Signalgeber 0.1 Signalgeber, akustisch L09 EG 0.16 WC M DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+<PARSED TEXT FOR PAGE: 34 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 34
+Element Nr. Typ Loop Etage Ort Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+Signalgeber 0.2 Signalgeber, akustisch L09 EG 0.17 WC J DE: Separater akustischer bzw. optisch-akustischer
+Alarmgeber.
+HR: Zasebni alarmni uređaj izvan SCT meldera.
+Provjerava se prava zona, zvuk, optika i eventualni
+nadzor smetnje.
+DE: Über zugehörigen ALB/Steuerung ansteuern; richtige Etage/Zone,
+Akustik/Optik prüfen; ggf. STB MAN verwenden.
+HR: Aktiviraj preko pripadajućeg ALB-a/Steuerung-a i provjeri da se
+oglasi/prikaže samo prava zona. Ring signalgeber po potrebi provjeri
+STB MAN-om.
+DE: Inbetriebnahme Alarmierung; vor
+Abnahme; nach Tausch/Änderung.
+HR: Kod puštanja alarmiranja, prije
+primopredaje i nakon izmjene.
+OFFEN
+Amok-Bedientablea
+u
+— Amok-Bedientableau — EG 0.07 Sekretariat DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+Anzeigetableau — Anzeigetableau — EG 0.07 Sekretariat DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+APL — APL — UG — BMZ-Bereich DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+BMZ — Brandmeldezentrale — UG — Technik / BMZ-Bereich DE: Zentrale bzw. Feuerwehr-/Übertragungselement laut
+Projekt.
+HR: Centrala ili vatrogasna/prijenosna periferija prema
+planu objekta.
+DE: Im jeweiligen Spezialblatt nach Projekt-/Herstellerfreigabe prüfen.
+HR: Provjeri prema odgovarajućem specijalnom listu i odobrenom
+projektnom postupku.
+DE: Vor Abnahme und nach relevanten
+Änderungen.
+HR: Prije primopredaje i nakon relevantne
+izmjene.
+OFFEN
+ENS — ENS-Zentrale — UG — Technik / BMZ-Bereich DE: ENS-Zentrale für Sprach-/elektroakustische
+Alarmierung.
+HR: Centrala govornog alarmiranja. Točan tip, zone i
+kontakti još nisu potvrđeni.
+DE: Siehe Blatt 10_ENS_Sprachalarm; Prüfung nach
+Hersteller-/Projektunterlagen.
+HR: Koristi list 10_ENS_Sprachalarm i stvarnu ENS dokumentaciju; ne
+pretpostavljati kontaktlogiku.
+DE: Vor Abnahme nach
+Schnittstellenklärung.
+HR: Prije primopredaje nakon razjašnjenja
+sučelja.
+OFFEN
+— — Potentialausgleich — UG — BMZ-Bereich DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+ÜE — ÜE ENS — UG — BMZ-Bereich DE: Zentrale bzw. Feuerwehr-/Übertragungselement laut
+Projekt.
+HR: Centrala ili vatrogasna/prijenosna periferija prema
+planu objekta.
+DE: Im jeweiligen Spezialblatt nach Projekt-/Herstellerfreigabe prüfen.
+HR: Provjeri prema odgovarajućem specijalnom listu i odobrenom
+projektnom postupku.
+DE: Vor Abnahme und nach relevanten
+Änderungen.
+HR: Prije primopredaje i nakon relevantne
+izmjene.
+OFFEN
+ÜSE — Überspannungsableiter
+ÜSE
+— UG — BMZ-Bereich DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+FIBS — FW Informations-Bedienfel
+dsystem
+— Außen — Stele außen DE: Zentrale bzw. Feuerwehr-/Übertragungselement laut
+Projekt.
+HR: Centrala ili vatrogasna/prijenosna periferija prema
+planu objekta.
+DE: Im jeweiligen Spezialblatt nach Projekt-/Herstellerfreigabe prüfen.
+HR: Provjeri prema odgovarajućem specijalnom listu i odobrenom
+projektnom postupku.
+DE: Vor Abnahme und nach relevanten
+Änderungen.
+HR: Prije primopredaje i nakon relevantne
+izmjene.
+OFFEN
+FSD — Feuerwehrschlüsseldepot — Außen — Stele außen DE: Zentrale bzw. Feuerwehr-/Übertragungselement laut
+Projekt.
+HR: Centrala ili vatrogasna/prijenosna periferija prema
+planu objekta.
+DE: Im jeweiligen Spezialblatt nach Projekt-/Herstellerfreigabe prüfen.
+HR: Provjeri prema odgovarajućem specijalnom listu i odobrenom
+projektnom postupku.
+DE: Vor Abnahme und nach relevanten
+Änderungen.
+HR: Prije primopredaje i nakon relevantne
+izmjene.
+OFFEN
+FSE 1/1 Freischaltelement — Außen — Stele außen DE: Zentrale bzw. Feuerwehr-/Übertragungselement laut
+Projekt.
+HR: Centrala ili vatrogasna/prijenosna periferija prema
+planu objekta.
+DE: Im jeweiligen Spezialblatt nach Projekt-/Herstellerfreigabe prüfen.
+HR: Provjeri prema odgovarajućem specijalnom listu i odobrenom
+projektnom postupku.
+DE: Vor Abnahme und nach relevanten
+Änderungen.
+HR: Prije primopredaje i nakon relevantne
+izmjene.
+OFFEN
+V — ÜSS-Verteiler — Außen — Außen / Stele DE: Sonstiges Projektelement.
+HR: Ostali element iz projekta; stvarnu funkciju treba
+potvrditi prema izvedenom stanju.
+DE: Sicht-/Funktionsprüfung nach Projekt und Herstellerunterlagen;
+Ist-Aufbau dokumentieren.
+HR: Vizualno i funkcionalno provjeri prema planu i dokumentaciji te
+zapiši izvedeno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+<PARSED TEXT FOR PAGE: 35 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 35
+7. Energieversorgung / Batterie
+Prüfpunkt Soll Ist Einheit Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+Zentralentyp bestätigen Hekatron Integral DE: Tatsächlich eingebauten Zentralentyp und Baugruppen
+identifizieren.
+HR: Prvo utvrdi koja je centrala i koje su kartice stvarno
+ugrađene; tek tada primijeni odgovarajući Hekatron postupak.
+DE: Typenschild und Baugruppenbestückung dokumentieren.
+HR: Fotografiraj/zapiši Typenschild i raspored kartica u centrali.
+DE: Zu Beginn der Inbetriebnahme.
+HR: Na početku puštanja u rad.
+OFFEN
+Netzspannung B8-PSU X1 110 (-15%) bis 230 (+10%) V AC DE: Netzspannung der BMZ auf der Versorgungsseite prüfen.
+HR: Provjera stvarnog mrežnog napona kojim se napaja BMZ.
+DE: Nur durch Elektrofachkraft an freigegebener Messstelle messen.
+HR: Samo kvalificirano mjeri mrežni napon na dopuštenoj mjernoj točki.
+DE: Bei Inbetriebnahme / Netzstörung.
+HR: Kod puštanja ili mrežne smetnje.
+OFFEN
+Netzfrequenz 47 bis 63 Hz DE: Netzfrequenz prüfen.
+HR: Provjera frekvencije mreže ako je potrebna za
+dijagnostiku/puštanje.
+DE: Mit geeignetem Messgerät prüfen, falls erforderlich.
+HR: Koristi odgovarajući mjerni instrument i zapiši Hz.
+DE: Bei Inbetriebnahme bzw. auffälliger
+Netzversorgung.
+HR: Kod puštanja ili ako je mrežno napajanje
+sumnjivo.
+OFFEN
+B8-PSU Ausgang intern/extern 27 V / 7 A nominal V DC DE: Ausgangsspannung der B8-PSU prüfen.
+HR: Provjera napona koji B8-PSU daje centrali ili vanjskim
+potrošačima.
+DE: An freigegebener Messstelle V DC messen; Lastzustand dokumentieren.
+HR: Multimetrom u V DC izmjeri na dopuštenom izlazu i zapiši stanje opterećenja.
+DE: Bei Inbetriebnahme / Versorgungsstörung.
+HR: Kod puštanja ili smetnje napajanja.
+OFFEN
+Akku Anzahl / Typ vor Ort aufnehmen DE: Tatsächlichen Akku-Ausbau aufnehmen.
+HR: Zapiši broj, tip, Ah, proizvođača i stanje svih ugrađenih
+akumulatora.
+DE: Anzahl, Hersteller, Typ, Spannung, Ah und Datum aufnehmen.
+HR: Zapiši sve podatke s akumulatora i datum ugradnje ako je poznat.
+DE: Zu Beginn / bei Akkutausch.
+HR: Na početku i kod zamjene akumulatora.
+OFFEN
+Akku Kapazität parametriert muss Ist-Akku entsprechen Ah DE: Parametrierte Akku-Kapazität mit dem Ist-Akku
+vergleichen.
+HR: Vrijednost Ah u softveru mora odgovarati stvarnim
+akumulatorima, inače Batteriestrommessung nema dobru
+osnovu.
+DE: Element Batterie öffnen und Softwarewert mit Istwert vergleichen.
+HR: Otvori logički element Akku i usporedi upisani Ah sa stvarno ugrađenim.
+DE: Vor Batteriestrommessung / nach Akkutausch.
+HR: Prije Batteriestrommessung i nakon zamjene
+akumulatora.
+OFFEN
+Geforderte Überbrückungszeit projektspezifisch / normativ h DE: Geforderte Überbrückungszeit gemäß Projekt/Norm prüfen.
+HR: U softver mora biti uneseno projektirano/normativno
+vrijeme rada na bateriji.
+DE: Wert aus Projekt/Brandschutzkonzept übernehmen und Parametrierung
+prüfen.
+HR: Preuzmi zahtjev iz projekta/Brandschutzkonzepta i usporedi sa softverskom
+postavkom.
+DE: Vor Batteriestrommessung / bei
+Inbetriebnahme.
+HR: Prije mjerenja baterijske struje i kod puštanja.
+OFFEN
+Batteriestrommessung durchführen A DE: Akkustrom über die B8-PSU-Funktion messen.
+HR: Centrala sama mjeri baterijsku struju i pritom se
+automatski odvaja od mreže.
+DE: Bedienfeld -> Menü -> Batteriestrommessung -> logische Akku-Nr.; Ergebnis
+protokollieren.
+HR: Na Bedienfeldu pokreni Batteriestrommessung i zapiši prikazani rezultat.
+DE: Bei Inbetriebnahme und nach relevanter
+Last-/Akkuänderung.
+HR: Kod puštanja i nakon veće promjene
+opterećenja/akumulatora.
+OFFEN
+Automatischer Batterietest aktiv; Standardintervall 15 min DE: Automatischen Batterietest in der Konfiguration prüfen.
+HR: Automatski test treba ostati uključen kako bi centrala
+prepoznala problem s akumulatorom.
+DE: Element Batterie -> Automatische Prüfung aktiv; Intervall prüfen.
+HR: Provjeri da Automatische Prüfung nije ausgeschaltet i da je Intervall ispravan.
+DE: Bei Parametrierung; danach automatisch.
+HR: Kod programiranja, poslije radi automatski.
+OFFEN
+Netzausfall-Test keine unerwartete Störung außer Netz DE: Verhalten bei Netzausfall/Batteriebetrieb prüfen.
+HR: Provjeri ponaša li se centrala pravilno kada nema mreže i
+ostaje na akumulatorima.
+DE: Batteriestrommessung erzeugt automatische Netztrennung; zusätzliche
+Prüfung nur nach Freigabe.
+HR: Prati reakciju centrale tijekom automatske mrežne separacije; dodatne
+testove radi samo odobreno.
+DE: Bei Inbetriebnahme Energieversorgung.
+HR: Kod puštanja napajanja.
+OFFEN
+Akku-Klemmen / Polung / Zustand typengleich, korrekt gepolt, geschützt DE: Polung, Gleichheit und Zustand der Akkus kontrollieren.
+HR: Vizualno provjeri polaritet, jednake tipove akumulatora,
+kontakte i mehaničko stanje.
+DE: Sichtprüfung von Klemmen, Polung, Polkappen, Befestigung und Zustand.
+HR: Provjeri +/-, stezaljke, oštećenja, curenje, labave spojeve i mehaničko
+učvršćenje.
+DE: Bei Inbetriebnahme und Akkutausch.
+HR: Kod puštanja i svake zamjene akumulatora.
+OFFEN
+<PARSED TEXT FOR PAGE: 36 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 36
+8. ASD 535 - MG 8/1 - UG -1.11 Lager - L08
+Prüfung Hekatron Soll Ist I Ist II Beschreibung DE/HR Wie genau? DE/HR Wann DE/HR Status
+Wartezeit vor Ur-Reset mindestens 5 min nach Einschalten DE: Stabilisierungszeit vor dem Ur-Reset.
+HR: ASD se nakon uključenja mora stabilizirati prije nego se
+spremi referentno stanje.
+DE: Nach Einschalten mindestens 5 min warten; Anlage in Normalbedingungen
+bringen.
+HR: Nakon uključenja čekaj najmanje 5 minuta i osiguraj normalan rad
+ventilacije/klime prije nastavka.
+DE: Vor jedem Ur-Reset.
+HR: Svaki put prije Ur-Reseta.
+OFFEN
+Ur-Reset unter Normalbedingungen; nach
+Rohr-/Lüfteränderung erneut
+DE: Basisabgleich von Ansaugleitung, Lüfter und
+Luftstromüberwachung.
+HR: Ur-Reset uči ASD što je normalna cijevna mreža i normalni
+protok zraka; nakon toga je referenca 100 %.
+DE: AMB35: UP bis U -> OK U01 -> OK -> U-- -> bis Watchdog-Punkt warten.
+HR: Na AMB 35 idi tipkom UP do U, potvrdi U01 i pokreni reset; čekaj dok se ne
+vrati Watchdog prikaz.
+DE: Inbetriebnahme; nach Rohr-Umbau/Reparatur
+und Lüfterdrehzahländerung.
+HR: Kod puštanja te nakon promjene/popravka
+cijevi i brzine ventilatora.
+OFFEN
+Versorgungsspannung Kl. 1/2 21,6 bis 27,6 V DC bei 24-V-Betrieb DE: Versorgungsspannung direkt am ASD prüfen.
+HR: Mjeri se stvarni napon na ASD-u kako bi se vidio
+eventualni pad napona na dovodnom kabelu.
+DE: DC-Multimeter an Kl. 1/2, bei Redundanz 3/4; nicht im Notstrombetrieb.
+HR: Multimetrom u V DC izmjeri 1/2, a kod redundancije i 3/4; ne mjeri u
+Notstrombetrieb.
+DE: Nach Inbetriebnahme / bei
+Versorgungsstörung.
+HR: Kod puštanja ili problema napajanja.
+OFFEN
+Luftstrom nach Ur-Reset Referenz = 100 % DE: Aktuellen Luftstrom relativ zum Ur-Reset prüfen.
+HR: Provjerava se koliko trenutni protok odstupa od
+referentnog normalnog stanja.
+DE: UP bis V -> OK V01; bei Zweikanal V02 für Rohr II; Wert ablesen.
+HR: Na AMB-u otvori V01 za Rohr I, odnosno V02 za Rohr II, i zapiši postotak.
+DE: Inbetriebnahme/Instandhaltung/nach
+Ereignissen.
+HR: Kod puštanja, održavanja i nakon
+promjena/događaja.
+OFFEN
+Luftstrom Störgrenze <80 % Verstopfung / >120 % Rohrbruch;
+A11-C32 nach 300 s
+DE: Grenzen der Luftstromüberwachung bewerten.
+HR: Tumači se ide li sustav prema začepljenju ili prema
+puknuću/curenju cijevi.
+DE: Wert <100 % Richtung Verstopfung, >100 % Richtung Rohrbruch;
+Parametrierung beachten.
+HR: Ako je ispod 100 %, traži začepljenje; ako je iznad, traži puknuće/curenje.
+Točne Störgrenzen ovise o parametriranju.
+DE: Bei Inbetriebnahme und Bewertung der
+Luftstromwerte.
+HR: Kod puštanja i kod procjene je li protok
+normalan.
+OFFEN
+Fault Test Luftstrom Änderung > +/-20 % erzeugen; Störung an
+Integral IP
+DE: Luftstrom-Störungsüberwachung gezielt prüfen.
+HR: Namjerno se stvara dovoljno velika promjena protoka
+kako bi se dokazalo da ASD i Integral pravilno javljaju Störung.
+DE: Ansaugöffnungen abkleben oder 3-Wege-Hahn; > +/-20 % Änderung; Fault
+und Störung an Integral prüfen.
+HR: Kontrolirano zatvori dio usisa ili koristi 3-Wege-Hahn dok promjena ne
+prijeđe +/-20 %, zatim prati Fault i Störung na Integral-u.
+DE: Inbetriebnahme; beide Rohre bei ASD
+535-2/-4.
+HR: Kod puštanja; kod 2-kanalnog ASD-a svaki
+kanal.
+OFFEN
+Alarm Test Rauch über Revisions-/Ansaugöffnung; Alarm an
+Integral IP
+DE: Raucherkennung und BMZ-Zuordnung prüfen.
+HR: Dimom se provjerava cijeli put od usisnog otvora do
+pravilnog alarma na BMZ.
+DE: Bei Inbetriebnahme/Änderung Rauch an letzter Ansaugöffnung je Rohrast;
+MG/Bereich an BMZ prüfen.
+HR: Kod prvog puštanja ili promjene uvedi dim na zadnjem otvoru svakog kraka
+i provjeri da BMZ pokaže točnu MG/Bereich.
+DE: Inbetriebnahme; nach
+Rohrreparatur/-änderung; Wartung über
+Revisionsöffnung.
+HR: Kod puštanja, nakon radova na cijevima i pri
+održavanju.
+OFFEN
+Konfiguration A11-C32 / W01-W48 / X01-X03 dokumentieren DE: Parametrierte ASD-Schalterstellung dokumentieren.
+HR: Zapisuje se stvarna ASD konfiguracija kako bi sljedeći
+servis znao točnu referencu.
+DE: Schalterstellung A11-C32/W01-W48/X01-X03 am ASD auslesen und
+protokollieren.
+HR: Zapiši stvarnu postavku A/W/X grupe kako bi kasnije mogao usporediti
+servisne promjene.
+DE: Bei Inbetriebnahme und nach
+Parametrierungsänderung.
+HR: Kod puštanja i nakon promjene
+parametriranja.
+OFFEN
+Transportzeit entfernteste
+Ansaugstelle
+Sollwert aus ASD PipeFlow / Projekt ergänzen DE: Transportzeit der entferntesten Ansaugstelle prüfen.
+HR: Mjeri se koliko dugo dim s najudaljenijeg usisa putuje do
+detekcije i uspoređuje s PipeFlow projektom.
+DE: PipeFlow-Sollwert beschaffen; Rauch an entferntester Ansaugstelle; Zeit
+erfassen und dokumentieren.
+HR: Uzmi Sollwert iz PipeFlow-a, uvedi dim na najudaljenijem otvoru i mjeri
+vrijeme prema dogovorenom postupku.
+DE: Inbetriebnahme und nach Rohränderung.
+HR: Kod puštanja i nakon izmjene cijevi.
+OFFEN
+Originalzustand Ansaugleitung nach Test alle Öffnungen wiederherstellen DE: Testzustand vollständig in Originalzustand zurücksetzen.
+HR: Nakon svakog testa svi otvori, blokade i reseti moraju biti
+vraćeni u normalno radno stanje.
+DE: Abgeklebte Öffnungen öffnen, Revisionsöffnung schließen, ASD/BMZ
+zurücksetzen.
+HR: Ukloni sve trake/čepove, zatvori Revisionsöffnung i resetiraj ASD i BMZ.
+DE: Nach jedem ASD-Test.
+HR: Nakon svakog ASD testa.
+OFFEN
+Vor ASD Fault-/Alarmtest Fernalarmierung und Brandfallsteuerungen gemäß freigegebenem Testablauf blockieren. / Prije ASD Fault/Alarm testa blokiraj neželjene vanjske funkcije prema odobrenom
+testnom postupku.
+<PARSED TEXT FOR PAGE: 37 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 37
+9. Alarmierungsbereiche
+ALB Bereich SCT ext. SG Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+1 Gesamt 0 0 DE: Hauptalarmierungsbereich als zentrale Schnittstelle für die
+Akustikbedienung.
+HR: Glavno alarmno područje preko kojeg se centralno upravlja
+akustikom i na koje se logički oslanjaju podređeni etažni ALB-ovi.
+DE: FBF 'Akustische Signale ab' und Zentralen-Rücksetzen prüfen; untergeordnete ALB müssen
+korrekt folgen.
+HR: Aktiviraj alarmiranje, zatim preko FBF-a isključi akustiku i napravi Rücksetzen; provjeri da
+svi podređeni ALB-ovi pravilno reagiraju.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderungen an MG/ALB/Signalgebern.
+HR: Nakon programiranja, prije primopredaje i nakon
+promjene MG/ALB ili signalgebera.
+OFFEN
+10 UG 16 1 DE: Alarmierungsbereich UG; gemeinsame Alarmierung der
+zugeordneten SCT und separaten Signalgeber.
+HR: Alarmno područje za UG. Svi pripadajući SCT melderi i zasebni
+signalgeberi trebaju se aktivirati zajedno, ali samo prema
+odobrenoj zonskoj logici.
+DE: Zugeordnetes Alarmkriterium auslösen; SCT und externe Signalgeber prüfen;
+FBF-Abschaltung, Rücksetzen und Neuansteuerung mitprüfen.
+HR: Izazovi alarm u pripadajućoj MG/logici, provjeri sve SCT i zasebne signalgebere, zatim FBF
+isključenje, reset i ponovnu aktivaciju.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderungen an MG/ALB/Signalgebern.
+HR: Nakon programiranja, prije primopredaje i nakon
+promjene MG/ALB ili signalgebera.
+OFFEN
+20 EG 61 4 DE: Alarmierungsbereich EG; gemeinsame Alarmierung der
+zugeordneten SCT und separaten Signalgeber.
+HR: Alarmno područje za EG. Svi pripadajući SCT melderi i zasebni
+signalgeberi trebaju se aktivirati zajedno, ali samo prema
+odobrenoj zonskoj logici.
+DE: Zugeordnetes Alarmkriterium auslösen; SCT und externe Signalgeber prüfen;
+FBF-Abschaltung, Rücksetzen und Neuansteuerung mitprüfen.
+HR: Izazovi alarm u pripadajućoj MG/logici, provjeri sve SCT i zasebne signalgebere, zatim FBF
+isključenje, reset i ponovnu aktivaciju.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderungen an MG/ALB/Signalgebern.
+HR: Nakon programiranja, prije primopredaje i nakon
+promjene MG/ALB ili signalgebera.
+OFFEN
+30 1. OG 20 2 DE: Alarmierungsbereich 1. OG; gemeinsame Alarmierung der
+zugeordneten SCT und separaten Signalgeber.
+HR: Alarmno područje za 1. OG. Svi pripadajući SCT melderi i
+zasebni signalgeberi trebaju se aktivirati zajedno, ali samo prema
+odobrenoj zonskoj logici.
+DE: Zugeordnetes Alarmkriterium auslösen; SCT und externe Signalgeber prüfen;
+FBF-Abschaltung, Rücksetzen und Neuansteuerung mitprüfen.
+HR: Izazovi alarm u pripadajućoj MG/logici, provjeri sve SCT i zasebne signalgebere, zatim FBF
+isključenje, reset i ponovnu aktivaciju.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderungen an MG/ALB/Signalgebern.
+HR: Nakon programiranja, prije primopredaje i nakon
+promjene MG/ALB ili signalgebera.
+OFFEN
+40 2. OG 21 2 DE: Alarmierungsbereich 2. OG; gemeinsame Alarmierung der
+zugeordneten SCT und separaten Signalgeber.
+HR: Alarmno područje za 2. OG. Svi pripadajući SCT melderi i
+zasebni signalgeberi trebaju se aktivirati zajedno, ali samo prema
+odobrenoj zonskoj logici.
+DE: Zugeordnetes Alarmkriterium auslösen; SCT und externe Signalgeber prüfen;
+FBF-Abschaltung, Rücksetzen und Neuansteuerung mitprüfen.
+HR: Izazovi alarm u pripadajućoj MG/logici, provjeri sve SCT i zasebne signalgebere, zatim FBF
+isključenje, reset i ponovnu aktivaciju.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderungen an MG/ALB/Signalgebern.
+HR: Nakon programiranja, prije primopredaje i nakon
+promjene MG/ALB ili signalgebera.
+OFFEN
+Achtung: MG 2/3/4 sind geschossübergreifend. / Pažnja: MG 2/3/4 prelaze više etaža, zato konačnu etažnu ALB logiku prvo treba potvrditi.
+<PARSED TEXT FOR PAGE: 38 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 38
+10. ENS / Sprachalarmierung
+Zone/Prüfung ALB ENS Eingang Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+Gesamtalarm 1 OFFEN DE: Vorgesehene BMA-ENS-Alarmierungszone 'Gesamtalarm'; exakte
+Zonen-/Kontaktlogik noch nicht bestätigt.
+HR: Predložena BMA -> ENS zona 'Gesamtalarm'. Točna podjela zona,
+ulazi, NO/NC logika i povratni kontakti još moraju biti potvrđeni iz ENS
+dokumentacije.
+DE: Freigegebenen Testalarm auslösen; richtigen ENS-Eingang, Sprachalarm, Zone, Rückmeldung
+und Störung prüfen. Leitungsüberwachung nur nach Herstellerunterlagen testen.
+HR: Izazovi odobreni testni alarm i provjeri točan ENS ulaz, govornu poruku i zonu. Zatim provjeri
+povratni signal i Störung; nadzor voda testiraj samo prema stvarnoj ENS uputi.
+DE: Nach Verdrahtung/Programmierung; vor
+Abnahme; nach Schnittstellenänderung.
+HR: Nakon spajanja i programiranja, prije primopredaje
+i nakon promjene sučelja.
+OFFEN
+UG 10 OFFEN DE: Vorgesehene BMA-ENS-Alarmierungszone 'UG'; exakte
+Zonen-/Kontaktlogik noch nicht bestätigt.
+HR: Predložena BMA -> ENS zona 'UG'. Točna podjela zona, ulazi,
+NO/NC logika i povratni kontakti još moraju biti potvrđeni iz ENS
+dokumentacije.
+DE: Freigegebenen Testalarm auslösen; richtigen ENS-Eingang, Sprachalarm, Zone, Rückmeldung
+und Störung prüfen. Leitungsüberwachung nur nach Herstellerunterlagen testen.
+HR: Izazovi odobreni testni alarm i provjeri točan ENS ulaz, govornu poruku i zonu. Zatim provjeri
+povratni signal i Störung; nadzor voda testiraj samo prema stvarnoj ENS uputi.
+DE: Nach Verdrahtung/Programmierung; vor
+Abnahme; nach Schnittstellenänderung.
+HR: Nakon spajanja i programiranja, prije primopredaje
+i nakon promjene sučelja.
+OFFEN
+EG 20 OFFEN DE: Vorgesehene BMA-ENS-Alarmierungszone 'EG'; exakte
+Zonen-/Kontaktlogik noch nicht bestätigt.
+HR: Predložena BMA -> ENS zona 'EG'. Točna podjela zona, ulazi,
+NO/NC logika i povratni kontakti još moraju biti potvrđeni iz ENS
+dokumentacije.
+DE: Freigegebenen Testalarm auslösen; richtigen ENS-Eingang, Sprachalarm, Zone, Rückmeldung
+und Störung prüfen. Leitungsüberwachung nur nach Herstellerunterlagen testen.
+HR: Izazovi odobreni testni alarm i provjeri točan ENS ulaz, govornu poruku i zonu. Zatim provjeri
+povratni signal i Störung; nadzor voda testiraj samo prema stvarnoj ENS uputi.
+DE: Nach Verdrahtung/Programmierung; vor
+Abnahme; nach Schnittstellenänderung.
+HR: Nakon spajanja i programiranja, prije primopredaje
+i nakon promjene sučelja.
+OFFEN
+1. OG 30 OFFEN DE: Vorgesehene BMA-ENS-Alarmierungszone '1. OG'; exakte
+Zonen-/Kontaktlogik noch nicht bestätigt.
+HR: Predložena BMA -> ENS zona '1. OG'. Točna podjela zona, ulazi,
+NO/NC logika i povratni kontakti još moraju biti potvrđeni iz ENS
+dokumentacije.
+DE: Freigegebenen Testalarm auslösen; richtigen ENS-Eingang, Sprachalarm, Zone, Rückmeldung
+und Störung prüfen. Leitungsüberwachung nur nach Herstellerunterlagen testen.
+HR: Izazovi odobreni testni alarm i provjeri točan ENS ulaz, govornu poruku i zonu. Zatim provjeri
+povratni signal i Störung; nadzor voda testiraj samo prema stvarnoj ENS uputi.
+DE: Nach Verdrahtung/Programmierung; vor
+Abnahme; nach Schnittstellenänderung.
+HR: Nakon spajanja i programiranja, prije primopredaje
+i nakon promjene sučelja.
+OFFEN
+2. OG 40 OFFEN DE: Vorgesehene BMA-ENS-Alarmierungszone '2. OG'; exakte
+Zonen-/Kontaktlogik noch nicht bestätigt.
+HR: Predložena BMA -> ENS zona '2. OG'. Točna podjela zona, ulazi,
+NO/NC logika i povratni kontakti još moraju biti potvrđeni iz ENS
+dokumentacije.
+DE: Freigegebenen Testalarm auslösen; richtigen ENS-Eingang, Sprachalarm, Zone, Rückmeldung
+und Störung prüfen. Leitungsüberwachung nur nach Herstellerunterlagen testen.
+HR: Izazovi odobreni testni alarm i provjeri točan ENS ulaz, govornu poruku i zonu. Zatim provjeri
+povratni signal i Störung; nadzor voda testiraj samo prema stvarnoj ENS uputi.
+DE: Nach Verdrahtung/Programmierung; vor
+Abnahme; nach Schnittstellenänderung.
