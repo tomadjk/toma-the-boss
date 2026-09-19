@@ -1,0 +1,140 @@
+===== STRANICA 181 =====
+HRVATSKI PRIJEVOD - stranica 181
+Javljači požara
+DF 1101-Ex - montaža i spajanje
+Izbušiti rupe prema crtežu, uvesti kabel i pričvrstiti podnožje. Za nadzor prostora koristiti nosač MV 1 za pravilan
+nagib; za nadzor objekta zglob MWV 1. Za deklarirani IP koristiti odgovarajuće kabelske uvodnice. Postaviti DIP
+prekidače, spojiti kabele, umetnuti javljač u podnožje i pričvrstiti ga s četiri vijka.
+DF 1101-Ex se uz sigurnosnu barijeru EXBAR 02 (Z787) može spojiti preko B8-IM8 ili BX-AIM; linija se završava
+završnim otpornikom.
+DF 1101-Ex na B8-IM8: preko jedne sigurnosne barijere mogu se spojiti najviše 3 Ex-i javljača. Između B8-IM8 i
+barijere mora biti serijski otpornik 180 Ω / 1 W / 5 %. Linija se završava s 2,7 kΩ / 1 W / 1 %.
+Pojedinačna identifikacija javljača i Zweimelderabhängigkeit nisu mogući, Zweigruppenabhängigkeit jest. Vanjski
+pojedinačni indikatori nisu mogući. Ožičenje je dvožilno + oklop; oklop se u BMZ spaja na PE i provodi kroz
+javljače. Izjednačenje potencijala sigurnosne barijere može se izvesti zasebnom PE stezaljkom 4-10 mm². Vidi i
+podatkovni list 7002474 za EXBAR 02.
+
+===== STRANICA 182 =====
+HRVATSKI PRIJEVOD - stranica 182
+Javljači požara
+DF 1101-Ex na BX-AIM
+Linija se završava otpornikom 19,1 kΩ / 0,6 W / 1 % sa termoskupljajućom izolacijom. Ožičenje je preko dvije žile
+i oklopa; oklop se u BMZ spaja na PE i u javljaču provodi preko pomoćnih stezaljki. Izjednačenje potencijala
+sigurnosne barijere može se izvesti zasebnom PE stezaljkom 4-10 mm².
+Priključke BX-AIM X1/X2, C, P-, L, L Ex, P+, L1/L2, GND i SHLD te EXBAR 02 spojiti točno prema originalnoj shemi.
+PAŽNJA
+Kod primjene preko BX-AIM individualni alarmni indikator na DF 1101-Ex ne pokazuje alarm. Zato se neposredno
+uz javljač, ali izvan Ex područja, mora ugraditi pojedinačni indikator, npr. MEA 450, koji pokazuje da je javljač
+javio alarm. U ovoj primjeni javljač više ne odgovara EN 54-10 jer nema vlastiti individualni alarmni prikaz.
+
+===== STRANICA 183 =====
+HRVATSKI PRIJEVOD - stranica 183
+Javljači požara
+9.10 Usisni detektor dima ASD 53X preko XLM 35
+Napomena
+Ovdje je opisano samo osnovno spajanje preko XLM 35; detalji su u tehničkoj dokumentaciji ASD 53X, br.
+7002570.
+Funkcija
+ASD 53X se preko XLM 35 priključuje isključivo na Ring. XLM 35 omogućuje prikaz i očitavanje statusnih poruka
+ASD-a na BMZ.
+XLM 35 se ugrađuje izravno u ASD 53X, a adresiranje i parametri postavljaju se u Integral Software. Modul ima
+dva izolatora kratkog spoja koja kod kratkog spoja ili prekida održavaju funkciju preostalih uređaja prema EN
+54-2.
+Sučelja: X1 konektor prema ASD 53X; X2 Ring; X3 LED 1; X4 LED 2.
+X1: priključak na AMB 3X, 16-polni konektor.
+X2: L1 = Data(+); C1 = GND(-); G1 = oklop; drugi kraj Ring-a prema tablici L/C/G. Mehanički 6-polna utična
+vijčana stezaljka RM 5,0; presjek maks. 2,5 mm²; moment maks. 0,5 Nm.
+
+===== STRANICA 184 =====
+HRVATSKI PRIJEVOD - stranica 184
+Javljači požara
+ASD 53X / XLM 35 - LED pokazivanja
+LED 1 X3, žuta, stanje XLM 35 <> Ring; aktivna je samo ako je napajanje s osnovne ploče ispravno. Treperi =
+normalno, Ring napon i komunikacija XLM 35 <> X-LINE ispravni. Ne svijetli = Ring napon postoji, ali nema
+komunikacije. Stalno svijetli = nema Ring napona.
+LED 2 X4, zelena, stanje ASD 53X <> XLM 35. Treperi = napajanje s AMB ploče i komunikacija ispravni. Ne
+svijetli = nema napajanja s AMB ploče.
+Montaža: ASD 531 ima dva, ASD 532/535 četiri mjesta za dodatne module. XLM 35 ugraditi s priloženim
+nosačem i vijkom te ga priloženim plosnatim kabelom spojiti s osnovnom pločom ASD-a. Na prikazu je primjer
+ASD 535.
+Spajanje XLM 35 preko B8-DXI2; primjer Ring veze vidi poglavlje 5.3. ASD 53X treba vanjsko napajanje +24 V DC
+prema shemi. XLM 35 se preko X1 spaja na AMB 3X / Option 1. Sve L/C/G i polaritete spojiti prema originalu.
+
+===== STRANICA 185 =====
+HRVATSKI PRIJEVOD - stranica 185
+Javljači požara
+9.11 Linijski dimni javljač ILIA-OZ / ER(R)HS0712(-PRO)
+Napomena: ovdje je samo osnovno spajanje; detalji u tehničkoj dokumentaciji 7002717.
+Funkcija
+ILIA služi za detekciju požara u područjima gdje se ne mogu koristiti točkasti javljači. Sustav se sastoji od
+odašiljača, prijamnika ili kombinirane odašiljač/prijamnik jedinice s reflektorom te odvojene kontrolne jedinice.
+Podešavanje, testiranje i održavanje obavljaju se na pristupačnoj kontrolnoj jedinici, po mogućnosti uz BMZ.
+Sučelja: X2 konektor javljača prema podnožju; X3/X4 napajanje i serijska linija A-B; X5 kabelski uvodi; X6 DIP
+adresiranje, osim reflektora i ILIA-OZ.
+X3/X4: + = 24 V(+), A/B = serijska linija, - = GND(-). Mehanički prema originalu; presjek maks. 2,5 mm²,
+moment 0,4 Nm.
+DIP adresiranje: kombinacije DIP1-3 daju Melderpaar 1-8 prema tablici. DIP4 je završni otpornik Stichleitung: kod
+Stich instalacije do 2 javljača DIP4 na zadnjem/udaljenom javljaču mora biti ON, čak i kod samo jednog javljača;
+kod Ring instalacije do 8 javljača DIP4 na svim javljačima mora biti OFF.
+
+===== STRANICA 186 =====
+HRVATSKI PRIJEVOD - stranica 186
+Javljači požara
+ILIA - montaža
+Kontrolna jedinica CLI / -PRO: otvoriti brze zatvarače lijevo/desno i skinuti poklopac. Kabel ulazi straga ili odozdo.
+Pažljivo otvoriti predviđene prolaze i pričvrstiti podnožje. Ako postoji relejna ploča za proširenje do 8 parova,
+utaknuti je i pričvrstiti s četiri vijka. Uvesti i spojiti kabel, zatim zatvoriti poklopac do čujnog zabravljivanja. DIN
+šina 270 mm nije u isporuci gdje je tako označeno.
+CSRLS-2 / -PRO: isti princip; po potrebi ugraditi prošireni modul.
+Javljač: otvoriti brze zatvarače gore/dolje, skinuti s podnožja; kabel može ulaziti straga ili odozgo. Površina mora
+biti potpuno stabilna, bez vibracija i deformacija. Kod valovitih vanjskih zidova koristiti stabilne nosače s osnovne
+konstrukcije ili ploču najmanje 5 mm debljine i najmanje 1x1 m koja se ne pomiče zbog topline/sunca. Odašiljač i
+prijamnik postaviti na istu DIP adresu. Spojiti kabel, RJ45 spojiti s podnožjem, vratiti javljač i zatvoriti do klika.
+Kod montaže koja nije na zidu preporučuje se poprečno ukrućenje; za zidni nosač SACA-G ono nije potrebno.
+
+===== STRANICA 187 =====
+HRVATSKI PRIJEVOD - stranica 187
+Javljači požara
+ILIA - kontrolna jedinica CLI / -PRO s Ring ožičenjem
+Primjer prikazuje Ring povezivanje javljača, vanjsko napajanje i XLM 35. U ovoj izvedbi moguće je do 8 parova
+javljača.
+VAŽNA NAPOMENA IZ IZVORNIKA
+Na datum izdavanja ove dokumentacije proizvođačko odobrenje za povezivanje ovog kontrolera preko XLM 35
+još nije bilo izdano; povezivanje je bilo u ispitivanju kod VdS-a.
+Prikazani su XLM 35, relejna ploča, vanjsko napajanje +19,2 do +28,8 V DC (npr. BE-PSE03), priključci Ring-a
+L/C/G i parovi javljača 1-8 Sender/Empfänger. DIP „END LINE” prema shemi ostaje u položajima prikazanim na
+originalu. POWER ON, PRE ALARM, ALARM, FAULT, MAINTENANCE i RESET ostaju korisničke oznake na kontroleru.
+
+===== STRANICA 188 =====
+HRVATSKI PRIJEVOD - stranica 188
+Javljači požara
+ILIA - CLI / -PRO sa Stich ožičenjem
+Primjer prikazuje Stich povezivanje, vanjsko napajanje i XLM 35. Maksimalno su 2 para javljača.
+VAŽNA NAPOMENA IZ IZVORNIKA
+Na datum dokumenta proizvođačko odobrenje za ovu vezu preko XLM 35 još nije bilo dano; veza je bila na VdS
+ispitivanju.
+Kod Stich rada DIP „Endline” na zadnjem javljaču mora biti ON. Prikazan je primjer s dva javljača.
+Napomena: redoslijed ožičenja ne mora biti rastući. Primjer: Melder 1 TX -> Melder 2 TX -> Melder 2 RX ->
+Melder 1 RX. Vanjsko napajanje +19,2 do +28,8 V DC i Ring priključke XLM 35 spojiti prema originalnoj shemi.
+
+===== STRANICA 189 =====
+HRVATSKI PRIJEVOD - stranica 189
+Javljači požara
+ILIA CLI / -PRO - relejno povezivanje preko CM-IB i BX-OI3
+Primjer prikazuje spajanje izlaza relejne ploče CM-IB za dva javljača, uključujući vanjski Reset ulaz.
+CM-IB daje OUT FAULT, OUT ALARM, PRE ALARM za LINE 1/2 te zajedničke izlaze. Ovi se signali vode na ulaze
+BX-OI3 prema originalnoj shemi. Vanjsko napajanje kontrolera je +19,2 do +28,8 V DC, npr. BE-PSE03.
+VAŽNO
+U Integral IP Software obavezno koristiti Parametersatz „ILIA”. Terminalne oznake BX-OI3 i relejne ploče ostaju
+neprevedene i spajaju se točno prema originalu.
+
+===== STRANICA 190 =====
+HRVATSKI PRIJEVOD - stranica 190
+Javljači požara
+ILIA-OZ - povezivanje
+Preporučuje se vezu prema BMZ izvesti finim višežilnim vodičem, uz lemljeni spoj s otpornicima. Shema
+prikazuje ILIA-OZ spojen na Integral BMZ.
+Kontrolna jedinica CSRLS-OZ koristi vanjsko napajanje, serijsku liniju A/B te izlaze Zone 1/2: Alarm +/-, Störung
++/- i Reset Input. Signali se vode na BX-OI3 i napajanje centrale prema originalnoj shemi.
+U Integral IP Software obavezno koristiti Parametersatz „ILIA”. Oznake Power Supply, Detector Line,
+Output/Ausgang, Reset Input, Alarm/Störung i terminalne oznake ostaju prema izvorniku.
