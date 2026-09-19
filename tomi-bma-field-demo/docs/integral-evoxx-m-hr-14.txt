@@ -1,0 +1,139 @@
+===== STRANICA 261 =====
+HRVATSKI PRIJEVOD - stranica 261
+Dokumentacija / shema B8-DXI2 - Ring 1 i Ring 2
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+Ring 1 koristi L1/C1/G1 i L2/C2/G2; Ring 2 koristi L3/C3/G3 i L4/C4/G4. Data = podatkovni vod, Ground =
+masa/GND, Schirm = oklop. Sve terminale X2 i njihove pozicije koristiti prema originalnom crtežu.
+
+===== STRANICA 262 =====
+HRVATSKI PRIJEVOD - stranica 262
+Dokumentacija / shema B8-DXI2 - četiri Stich/linije
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+Linie 1-4 koriste parove L1/C1/G1 do L4/C4/G4. Data = podatkovni vod; Ground = GND; Schirm = oklop. Obrazac
+omogućuje upis Gruppe/Eingang/Steuerung za svaku liniju. Terminale X2 zadržati prema originalu.
+
+===== STRANICA 263 =====
+HRVATSKI PRIJEVOD - stranica 263
+Dokumentacija / shema B8-SXI8 - linije 1-4
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 sadrži linije 1-4: L1/C1/G1 do L4/C4/G4. Data = podatkovni vod, Ground = GND, Schirm = oklop. X3 za linije
+5-8 prikazan je kao nastavak sklopa. Sve terminale i raspored koristiti prema originalu.
+
+===== STRANICA 264 =====
+HRVATSKI PRIJEVOD - stranica 264
+Dokumentacija / shema B8-SXI8 - linije 5-8
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X3 sadrži linije 5-8: L5/C5/G5 do L8/C8/G8. Data = podatkovni vod, Ground = GND, Schirm = oklop. X2/X3
+raspored i mjesta priključaka zadržati točno prema originalnom nacrtu.
+
+===== STRANICA 265 =====
+HRVATSKI PRIJEVOD - stranica 265
+Dokumentacija / shema B8-BAF
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X3: nadzirani ulazi IM1-IM3 i nadzirani izlazi OM1/OM2. X4: FBF signali FCPI/FCPO, 24 V i GND. X5: relejni kontakti
+R1-R3. X6: MMI-BUS GND A/B i MMI BUS A/B ±. X7/X8 i Steckbrücken prema originalnoj shemi. Sve funkcijske
+oznake ostaju neprevedene radi izravnog podudaranja s modulom.
+
+===== STRANICA 266 =====
+HRVATSKI PRIJEVOD - stranica 266
+Dokumentacija / shema B8-IM8
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2: ulazi 1-8 preko L1/C1 do L8/C8. Tablica „Steckbrücken Stellung” razlikuje: Meldergruppe za serije 130A/130
+Ex-i/52x; Primäreingang, VdS-Löscheingang, Ventilüberwachung; te Überwachter Eingang. Premosnici X3-X10
+odgovaraju ulazima 1-8. Točne položaje postaviti prema originalnoj shemi.
+
+===== STRANICA 267 =====
+HRVATSKI PRIJEVOD - stranica 267
+Dokumentacija / shema B8-OM8
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 sadrži osam nadziranih izlaza OM1± do OM8±. Obrazac služi za dokumentiranje logičkog broja, kabela,
+priključenog uređaja i mjesta svakog izlaza. Polaritet zadržati točno prema originalu.
+
+===== STRANICA 268 =====
+HRVATSKI PRIJEVOD - stranica 268
+Dokumentacija / shema B8-USI4 - Line/Loop 0A i 0B
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 i X3 prikazuju sučelja RS485/422 ili RS232 s oznakama CTS, RxD-, RTS, TxD, GNDIS, LY± i LX±. X6-X10 su
+konfiguracijski priključci/premosnici prema originalnom modulu. Kod servisiranja terminalne oznake ne prevoditi i
+spojiti prema izvornom crtežu.
+
+===== STRANICA 269 =====
+HRVATSKI PRIJEVOD - stranica 269
+Dokumentacija / shema B8-USI4 - Line/Loop 1A i 1B
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X4/X5 koriste GNDIS, LY± i LX± za RS485/422 ili RS232 prema konfiguraciji. Oznake X6-X10 ostaju prema
+originalu. Tablica služi za dokumentiranje kabela i ciljnog uređaja.
+
+===== STRANICA 270 =====
+HRVATSKI PRIJEVOD - stranica 270
+Dokumentacija / shema B8-NET4-485
+Polja: Port, Stecker = konektor, Kabel, Zentrale/Zielport = centrala/ciljni port, Ort = mjesto, te standardna
+projektna polja.
+X2: 0A/0B 10/100 Ethernet. X4/X8: RS485 portovi 5A/5B i 6A/6B, uz označene galvanski odvojene veze X/Y
+prema originalu. Točne portove i smjerove dokumentirati na obrascu.
+
+===== STRANICA 271 =====
+HRVATSKI PRIJEVOD - stranica 271
+Dokumentacija / shema B8-NET2-485
+X2: 0A/0B 10/100 Ethernet. X4/X8: RS485 5A/5B, pri čemu je 5B označen galvanski odvojen prema originalu.
+Polja Port/Stecker/Kabel/Zentrale-Zielport/Ort služe za mrežnu dokumentaciju.
+
+===== STRANICA 272 =====
+HRVATSKI PRIJEVOD - stranica 272
+Dokumentacija / shema B8-NET2-FX4
+X2: 5A/5B 10/100 Ethernet. X3/X5/X6/X7: optički FX-LC portovi 0A/0B/1A/1B s TX/RX. X4/X8: RS485 8A/8B, uz
+označenu galvansku izolaciju prema shemi. Polja dokumentiraju kabel, ciljnu centralu/port i lokaciju. Ne
+zamijeniti TX i RX.
+
+===== STRANICA 273 =====
+HRVATSKI PRIJEVOD - stranica 273
+Dokumentacija / shema B8-NET-FX8
+X2: 5A/5B 10/100 Ethernet. Optički FX-LC portovi 0A/0B, 1A/1B, 6A/6B i 7A/7B s odvojenim TX/RX priključcima
+prema originalnom crtežu. Polja obrasca služe za kabel, ciljnu centralu/port i lokaciju. Kod optike obavezno
+poštovati TX/RX parove.
+
+===== STRANICA 274 =====
+HRVATSKI PRIJEVOD - stranica 274
+Dokumentacija / shema B8-MRI16
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X3 sadrži releje R1-R8, X4 releje R9-R16. Svaki relej ima dva priključka prema izvornom modulu. Obrazac služi za
+upis logičkog broja, kabela, uređaja i mjesta.
+
+===== STRANICA 275 =====
+HRVATSKI PRIJEVOD - stranica 275
+Dokumentacija / shema B3-REL16
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Gruppe = grupa; Eingang = ulaz;
+Steuerung = upravljanje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od;
+Gez./Gepr. = nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X3: releji R1-R8; X2: R9-R16. Sve parove kontakata dokumentirati prema originalnom rasporedu.
