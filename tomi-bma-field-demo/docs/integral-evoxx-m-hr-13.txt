@@ -1,0 +1,271 @@
+===== STRANICA 241 =====
+HRVATSKI PRIJEVOD - stranica 241
+Signalizatori
+Sonos-SB - spajanje
+Moguće preko BX-IOM ili B8-OM8; oklop povezati preko pomoćne stezaljke.
+Preko BX-IOM koristi se vanjsko napajanje; prvi i svi srednji Sonos-SB prema shemi, završni s 680 Ω.
+Preko B8-OM8 ili B6-EIO: OM-/OM+ prema liniji, završni 680 Ω. Terminale (1)-(5), polaritet i oklop spojiti prema
+originalnoj shemi.
+
+===== STRANICA 242 =====
+HRVATSKI PRIJEVOD - stranica 242
+Ostalo
+12. Ostalo
+12.1 Protupožarno kućište BSG FWE 30-H
+Funkcija
+BSG FWE 30-H služi za ugradnju centrala Integral EvoxX M, C i CA radi ispunjavanja zahtjeva MLAR za očuvanje
+funkcije. Za kućište postoji opće odobrenje tipa konstrukcije. Može se ugraditi i vanjsko napajanje BE-PSE03-C;
+funkcionalni integritet zajedno je tipski ispitan u državnom institutu MPA.
+Kućište je zidni razdjelnik od negorivih protupožarnih ploča s prirodnim ventilacijskim sustavom u vratima i
+gornjoj strani, otvor Ø80 mm. Posebne filtarske prostirke smanjuju ulaz/izlaz dima, a u požaru se pri oko 70 °C
+sustav sam zatvara pjenjenjem. Jednokrilna vrata su tvornički lijevo ovješena, desno na upit, s dvotočkastim
+zaključavanjem i priloženim dvobradičnim ključem; otvaranje do 180°.
+
+===== STRANICA 243 =====
+HRVATSKI PRIJEVOD - stranica 243
+Ostalo
+BSG FWE 30-H - montaža
+Kućište se s četiri priložena sidra 10x135 mm pričvršćuje na masivni vatrootporni zid d >= 100 mm s najmanje
+30 min otpornosti, npr. beton, porobeton, puna/šuplja opeka ili vapneno-pješčani blok.
+Postupak: transportirati odgovarajućom dizalicom i postaviti na visinu; poravnati i karbidnim svrdlom Ø10 mm
+bušiti kroz četiri predviđene rupe najmanje 70 mm u zid.
+VAŽNO: ne bušiti dodatne rupe u kućište - opasnost loma i gubitak odobrenja. Koristiti samo označene rupe i
+promjere.
+Usisati prašinu, umetnuti tiple/vijke prolaznom montažom i zategnuti bez pretjerivanja/upuštanja glave.
+Neravnine zida sa zazorom <=4 mm popuniti protupožarnim kitom Crystal-CEL.
+Gornji i donji metalni pokrovi za kabel imaju pripremljene izreze. Intumescentni materijal probiti odvijačem ili
+svrdlom oko 2 mm manjim od promjera kabela. Uvesti, spojiti i rasteretiti kabel. U pravilu jedan kabel po otvoru;
+u Ø40 mm do tri kabela ako nisu u snopu i imaju najmanje 4 mm međusobnog razmaka.
+Poštovati maksimalni ukupni presjek vodiča iz općeg odobrenja.
+
+===== STRANICA 244 =====
+HRVATSKI PRIJEVOD - stranica 244
+Ostalo
+BSG FWE 30-H - ugradnja centrale
+Na unutarnjoj stražnjoj stijenci nalazi se 14 navojnih montažnih rupa, od kojih je osam opremljeno M6 imbus
+vijcima. Ovisno o opremi odvrnuti odgovarajuće vijke, postaviti montažnu ploču ili DIN šinu prema crtežu i
+pričvrstiti, zatim postaviti kućište Integral EvoxX M.
+Za zamjenu brave profilnim polucilindrom otvoriti zakretnu ručku, otpustiti vijak ispod nje (može biti jače fiksiran
+osiguračem navoja), izvaditi staru bravu, umetnuti cilindar i vratiti vijak.
+Izvođač mora kućište označiti pločicom s predmetom regulacije, brojem odobrenja, nazivom izvođača i
+mjesecom/godinom izvedbe te predati izjavu o sukladnosti prema predlošku odobrenja.
+PAŽNJA
+Tijekom normalne uporabe vrata moraju uvijek biti zatvorena; otvarati samo kratko za instalaciju/održavanje.
+Ventilacijski sustav na vratima i vrhu mora uvijek ostati slobodan i ne smije se prekrivati.
+
+===== STRANICA 245 =====
+HRVATSKI PRIJEVOD - stranica 245
+Ostalo
+12.2 Protupožarno kućište BSG FSE 30-H
+Funkcija
+BSG FSE 30-H osigurava očuvanje funkcije prema MLAR. U njega se mogu ugraditi Integral EvoxX M, C i CA te
+BE-PSE03-C; postoji zajedničko MPA tipsko ispitivanje funkcionalnog integriteta.
+Kućište je samostojeći razdjelnik od negorivih ploča s prirodnom ventilacijom u vratima i vrhu Ø80 mm. Filteri
+ograničavaju dim, a pri oko 70 °C sustav se zatvara pjenjenjem. Jednokrilna vrata lijevo, desno na upit,
+dvotočkasto zaključavanje, otvaranje do 180°.
+Montaža: može se sidriti s dva 10x135 mm sidra u masivni zid d >=100 mm, otpornost najmanje 30 min, te
+alternativno/dodatno s četiri 10x160 mm sidra u odgovarajući masivni pod.
+Poravnati, bušiti samo kroz predviđene zidne rupe Ø10 mm i najmanje 70 mm duboko. Ne bušiti dodatne rupe
+jer se gubi odobrenje. Poštovati maksimalni ukupni presjek vodiča iz odobrenja.
+
+===== STRANICA 246 =====
+HRVATSKI PRIJEVOD - stranica 246
+Ostalo
+BSG FSE 30-H - nastavak montaže
+Alternativno/dodatno bušiti kroz četiri predviđene rupe u dnu kućišta Ø10 mm najmanje 70 mm u pod. Ni ovdje
+se ne smiju bušiti dodatne rupe.
+Usisati prašinu, umetnuti i zategnuti sidra bez pretjeranog zatezanja; neravnine zida sa zazorom <=4 mm
+popuniti Crystal-CEL kitom.
+Gornje metalne kabelske pokrove probiti kroz vidljivi intumescentni materijal odvijačem ili svrdlom oko 2 mm
+manjim od kabela. U pravilu jedan kabel po otvoru; Ø40 mm može prihvatiti do tri razmaknuta kabela s najmanje
+4 mm međusobno.
+PAŽNJA
+Kod montaže na nemasivne zidove, npr. lagane pregrade, između zida i stražnje strane kućišta mora se izvesti
+dio masivnog vatrootpornog zida d >=100 mm, otpornosti najmanje 30 min.
+PAŽNJA
+Vrata tijekom uporabe moraju biti zatvorena; ventilacija mora ostati slobodna i ne smije se prekrivati.
+
+===== STRANICA 247 =====
+HRVATSKI PRIJEVOD - stranica 247
+Ostalo
+BSG FSE 30-H - ugradnja centrale
+Na unutarnjoj stražnjoj stijenci nalazi se 28 navojnih montažnih rupa, s 16 M6 imbus vijaka. Ovisno o ugrađenoj
+opremi odvrnuti potrebne vijke, postaviti montažnu ploču ili DIN šinu na označeno mjesto, pričvrstiti i zatim
+montirati kućište Integral EvoxX M.
+Za zamjenu brave profilnim polucilindrom otvoriti zakretnu ručku, otpustiti vijak ispod nje, izvaditi staru bravu,
+umetnuti profilni polucilindar i vratiti vijak. Vijak može biti osiguran sredstvom za fiksiranje pa je moguća veća
+sila.
+
+===== STRANICA 248 =====
+HRVATSKI PRIJEVOD - stranica 248
+Ostalo
+12.3 Tester Ring linije STB 01X
+Funkcija
+STB 01X je prijenosni uređaj za jednostavno ispitivanje Integral Ring-a, Standard ili X-LINE, bez centrale na
+lokaciji. Ima SD karticu za pohranu podataka i USB za firmware. Napaja se iz mreže priloženim napajanjem.
+Sučelja: X1 LCD; X2 tipke/LED; X3 napajanje; X4 SD; X5 USB; X6 Ring.
+LCD: Loop/Stich pokazuje Ring ili Stich; Address adresa sudionika; Slavetype tip uređaja; UTA/UTB napon Ring-a
+na terminalu A/B; I/mA struja; MODE Standard=SL ili X-LINE=XL.
+Tipke: AUTO automatski provjerava sve sudionike; MAN traži potvrdu za svaki; NN ubrzava AUTO; UM prebacuje
+12/24 V, za Integral test izbor nije bitan; RES resetira STB; REV prvo provjeri cijeli Ring pa aktivira revizijski
+način.
+
+===== STRANICA 249 =====
+HRVATSKI PRIJEVOD - stranica 249
+Ostalo
+STB 01X - LED i priključci
+LED Terminal A/B zelene pokazuju koji terminal se ispituje; VCC1/VCC2 zelene = napajanje ispravno; 12V/24V
+žute = odabrani napon.
+X3 napajanje: crveno 24 V(+), žuto GND(-).
+X4 SD: sprema testirane Ring-ove kao .stb datoteke. U isporuci SDHC 4 GB; podržane SD/SDHC do 4 GB.
+Posebnim konverterom .stb se pretvara u .xml koji Integral Software od 8.1 može učitati.
+X5 USB: firmware update ili snimanje bitstreama Ring-a preko terminalskog programa; kabel 1,20 m, B na STB, A
+na PC.
+X6 Ring: Terminal A i B s GND/Data vodovima prema originalnoj tablici; ograničenja +12/24 V DC odnosno +30 V
+DC kako je navedeno.
+Ring spojiti na dvije gornje utične IDC/rezne stezaljke STB-a; stezaljke se mogu izvući radi spajanja.
+
+===== STRANICA 250 =====
+HRVATSKI PRIJEVOD - stranica 250
+Ostalo
+STB 01X - rukovanje
+Za otvaranje stezaljke umetnuti odvijač u gornji pravokutni otvor i pritisnuti prema naprijed, kabel umetnuti u
+donji okrugli otvor, zatim stezaljku vratiti dok ne klikne.
+Nakon Ring veze spojiti napajanje ili akumulator na donji konektor.
+Na stražnjoj strani STB ima nosač s magnetom za viseću montažu ili metalnu podlogu. Nakon uključivanja zaslon
+je prazan.
+Za test pritisnuti RES: prikazuju se naziv i firmware, VCC1/VCC2 i 12V ili 24V LED svijetle. Za automatski start
+pritisnuti AUTO; na SD se stvara .stb s rastućim brojem. Terminal A treperi i svaki sudionik se prikazuje.
+Ako se tijekom testa drži NN, test se ubrzava s oko 5-6 s na oko 3-4 s po sudioniku. Nakon zadnjeg uređaja
+svijetle Terminal A i B i prikazuje se broj elemenata. Podaci se spremaju; za novi Ring ponovno RES.
+
+===== STRANICA 251 =====
+HRVATSKI PRIJEVOD - stranica 251
+Ostalo
+STB 01X - napomene, revizija i greške
+Integral Stichleitung može se spojiti samo na Terminal A. Test završi porukom „Timeout RING”, ali se podaci
+nakon RES ipak spremaju.
+MAN radi kao AUTO, ali se svaki sljedeći sudionik testira tek nakon ponovnog MAN; pritom se aktiviraju LED
+javljača i akustika/optika signalizatora.
+REV prvo provodi puni automatski test, zatim reviziju: indikator pojedinog javljača se aktivira i javljač se može
+pokrenuti vrlo malom količinom testnog plina ili tipkom. Tako se provjeravaju funkcija i lokacija. Nakon
+alarma/resetiranja prelazi na sljedeći. REV nije moguć na Stichleitung jer test završava nakon automatskog
+starta.
+Moguće greške:
+SD Card Error = neispravna memorijska kartica.
+SD not available = SD nije umetnuta.
+Timeout RING = prekid voda ili neispravan sudionik; pogrešno spojen kabel.
+Melder parallel = javljač nije dobro u podnožju; kabel pogrešno spojen.
+Kurzschluss LINE = kratki spoj na vodu ili električna veza na priključcima.
+
+===== STRANICA 252 =====
+HRVATSKI PRIJEVOD - stranica 252
+Ostalo
+12.4 Protokolni pisač
+Dijelovi: vrata BMZ Integral, pločica za fiksiranje role, papirna rola, ulaz papira, kaseta s vrpcom, izlaz s rubom za
+trganje, papir i poklopac pisača.
+Zamjena papira:
+1 odvrnuti donji vijak poklopca; 2 pritisnuti poklopac dolje i skinuti prema naprijed; 3 otkinuti papir; 4 tipka
+„Weitere Elemente”; 5 odabrati „Drucker” i Enter; 6 unijeti broj pisača i Enter; 7 „Weitere Befehle” ->
+„Druckvorschub” -> Enter; 8 čekati izlaz ostatka; 9 izvaditi staru tuljavu; 10 umetnuti novu rolu i papir u vodilicu;
+11 čekati papir sprijeda; 12 ponoviti 4-6 i izabrati „Druckvorschub Ende”; 13 vratiti poklopac i vijak.
+Zamjena vrpce: skinuti poklopac, izvući papir 3-5 cm, izvaditi staru kasetu, provući papir između nove kasete i
+vrpce, pažljivo učvrstiti kasetu, zategnuti vrpcu kotačićem u smjeru strelice, papir provući kroz otvor poklopca i
+vratiti poklopac.
+
+===== STRANICA 253 =====
+HRVATSKI PRIJEVOD - stranica 253
+Dokumenti i sheme spajanja
+13. Dokumenti i sheme spajanja
+Ove upute sadrže montažne i instalacijske informacije za najvažnije komponente Integral EvoxX M. Za više
+detalja koristiti navedene dokumente.
+Integral EvoxX M BMZ: 7003156 podatkovni list B8-SCU; 7002206 ove upute; 7002704 Bedienungsanleitung;
+7002720 Kurzbedienungsanleitung; 7003157 B8-MCU; 7002989 B8-PSU; 7002721 CAB-2/CBE-2/CTR-2; 7002436
+Integral M Standschrank; 7002628 uređaj za Feststellanlagen.
+Löschzentralen: 7002435 MXF/MXE; 7002437 GDML 2011; 7002899 GDME 3011; 7002669 BX-ESL.
+Baugruppen: 7003113 B8-DXI2; 7002990 B8-SXI8; 7002991 B8-BAF; 7003116 B8-OM8; 7003117 B8-IM8;
+7003114 B8-LEE23; 7003115 B8-LEE24; 7003119 B8-USI4; 7002992 B8-NET4-485; 7002993 B8-NET2-485;
+7002994 B8-NET2-FX4; 7002995 B8-NET-FX8; 7002783 Integral REMOTE; 7003116 B8-MRI16; 7002388
+B3-REL16; 7002389 B3-REL16E; 7002387 B3-REL10.
+Integral MAP Bedienfelder: dokumenti 7003003, 7002677, 7002749, 7002876, 7002596, 7002704, 7002720 i
+7002741 prema nazivima na originalnoj stranici.
+
+===== STRANICA 254 =====
+HRVATSKI PRIJEVOD - stranica 254
+Ostalo
+Popis dodatne dokumentacije
+X-LINE moduli: 7002678 BX-OI3; 7002830 BX-O2I4; 7002679 BX-IOM; 7002809 SDI 82X-1; 7002680 BX-IM4;
+7002875 BX-MDI8; 7003004 BX-SCU; 7002587 BX-AIM; 7002681 BX-REL4.
+Pribor centrale: 7002958 BSG FWE 30-H; 7002959 BSG FSE 30-H; 7003120 ADP-NET; 7002790 EIB-GW INT;
+7002667 SAA; 7002569 DL-485; 7002760 STB 01X.
+Napajanje: 7002719 BE-PSE01; 7003057 BE-PSE02; 7002653 BE-PSE03; 7002654 BE-PSE12.
+Prenaponska zaštita: 7002965 FLT-SEC-T1+T2-1S-350/25-FM; 7002966 PLT-T3-IT-230-FM; 7002967
+PT-IQ-4x1+F-24DC-PT; 7002968 PT-IQ-2x1+F-24DC-PT; 7002969 PT-IQ-5-HF+F-5DC-PT; 7002970 PT-IQ-PTB-PT.
+
+===== STRANICA 255 =====
+HRVATSKI PRIJEVOD - stranica 255
+Ostalo
+Popis dokumentacije javljača
+Automatski javljači i pribor: podatkovni listovi za MTD 533X i izvedbe, CMD 533X, MMD 140/150/130 Ex-i, MSD
+523, UTD 523, WMX5000, SK10, LKM 593X/140/150, USB 502/502-20, FDT 533, UDR 533, MEA 720X i EXBAR02 s
+brojevima dokumenata kako su navedeni na originalu.
+Bežični sustav: 7003015 FDOOT271-O; 7003016 FDM273-O; 7003017 BX-WGW; 7003018 tehnička
+dokumentacija Funk-Meldersystem Integral.
+Ručni javljači: 7002656 MCP535X; 7002814 MCP525; 7002599 MCP140; 7002558 MCP150; 7002792 NAM ADGX;
+7002793 C31X; 7002691 C31; 7002621 dC31.
+Plameni javljači: 7002888 FDF241-9; 7002440 DF1101-Ex.
+
+===== STRANICA 256 =====
+HRVATSKI PRIJEVOD - stranica 256
+Ostalo
+Popis dokumentacije posebnih javljača
+ASD: dokumenti/podatkovni listovi za ASD531/532/535, puštanje u rad, pribor i materijal usisnih cijevi, ventilator,
+XLM35, RIM35/36, MCM35, umrežavanje, DFU911, FBS25PC, MFS25, DTB25, WRB25/LK35, MV25, ADB1000/2000,
+SDG532/535, SGH535, DFA25 i ASD535 LT. Brojevi dokumenata zadržati prema originalu.
+Linijski dimni javljači: 7002717 tehnička dokumentacija ILIA OZ / ERHS0712 / ERHS0712-PRO; 7002718 protokol
+puštanja u rad.
+Linijski toplinski javljači: 7002880 tehnička dokumentacija ADW535HDx ATEX; 7002898 protokol puštanja u rad
+ADW535; 7002981 upute ADW535HDx ATEX; 7002979 podatkovni list ADW535; 7050574 pregled materijala
+cijevi.
+
+===== STRANICA 257 =====
+HRVATSKI PRIJEVOD - stranica 257
+Ostalo
+Popis dokumentacije vatrogasne periferije i signalizatora
+Vatrogasna periferija: B3-MMI-FAT, B5-EPI-FAT, FBF2001 PAR, B5-MMI-FPD, B5-EPI-FPD, FIBS, System4000, FSD
+basic, FSE, AD900-1, comXline - brojevi prema originalnoj stranici.
+Akustični signalizatori: BX-SBL, Squashni G3, BX-SOLCT, BSE128, Sonos-S, Symphoni HO W, DB3, BExS120D,
+Asserta.
+Optički: BX-FLES, Sonos-B, Pyra X-S/M/L, BX-FOL, Solex, XB9.
+Kombinirani: Sonos-SB, Patrol, Symphoni Voice+, LWA-90.
+Napomena
+Na sljedećim stranicama nalaze se sheme najčešće korištenih proizvoda. Izvornik navodi da su ove i dodatne
+sheme dostupne kao uređivi dokumenti u Integral Software paketu i na portalu proizvođača.
+
+===== STRANICA 258 =====
+HRVATSKI PRIJEVOD - stranica 258
+Dokumentacija
+Naslovni list shema Integral EvoxX M.
+Polja: Zentralen-Nr. = broj centrale; Kunde = kupac; Projekt = projekt; Errichter = izvođač; Gez. = nacrtao; Gepr.
+= provjerio; Ausgabe 01.04.2021 = izdanje; Blatt/von = list/od; Norm = norma; Änderg.-Nr = broj izmjene;
+Datum = datum; Name = ime.
+Izvorni tehnički obrazac ostaje na lijevoj strani za upis.
+
+===== STRANICA 259 =====
+HRVATSKI PRIJEVOD - stranica 259
+Sadržaj shema / opremanje centrale
+Stranica je obrazac sadržaja za Zentralen Bestückung, B8-MCU i B8-PSU.
+Polja na obrascu: Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez. = nacrtao;
+Gepr. = provjerio; Norm = norma; Änderg.-Nr = broj izmjene; Datum/Name = datum/ime.
+Oznake MCU, PSU i C ostaju tehničke oznake sheme.
+
+===== STRANICA 260 =====
+HRVATSKI PRIJEVOD - stranica 260
+Dokumentacija / shema B8-PSU
+Tablica: Klemme = stezaljka; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort = mjesto.
+B8-PSU X5 sadrži VEXT1-GNDEXT1 do VEXT5-GNDEXT5 prema originalnoj shemi.
+Polja: Teilzentralen-Nr. = broj podcentrale; Steckplatz-Nr. = broj utora; Kunde = kupac; Projekt = projekt; Proj.Nr.
+= broj projekta; Blatt/von = list/od; Gez./Gepr. = nacrtao/provjerio; Norm, Änderg.-Nr, Datum, Name.
+Legenda: 1 Netzstecker = mrežni konektor; 2 Akkuanschluss = priključak akumulatora; Ein/Aus =
+uključeno/isključeno; VBAT/GNDBAT = priključci akumulatora; NET OK i +5V/3,3V = LED/statusne oznake. Sve
+terminale zadržati prema originalu.
