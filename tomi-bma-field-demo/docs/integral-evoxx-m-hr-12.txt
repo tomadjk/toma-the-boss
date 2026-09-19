@@ -1,0 +1,199 @@
+===== STRANICA 221 =====
+HRVATSKI PRIJEVOD - stranica 221
+Signalizatori
+BX-SOL-CT - spajanje
+BX-SOL-CT priključuje se preko B8-DXI2; primjer Ring veze vidi poglavlje 5.3.
+Signalizator ima serijski broj i odvojivu naljepnicu koja se kasnije može usporediti sa serijskim brojem koji uređaj
+šalje radi provjere topologije.
+X1: L1/L2 = Data(+), GND = GND(-), SHLD = oklop. Spojiti točno prema originalnoj shemi.
+
+===== STRANICA 222 =====
+HRVATSKI PRIJEVOD - stranica 222
+Signalizatori
+11.4 Akustični signalizator Sonos-S
+Funkcija
+Konvencionalni Sonos-S prema EN 54-3 služi za zvučni požarni alarm u zgradama (tip A) te u zgradama i na
+otvorenom (tip B).
+Sučelja: X1 potenciometar glasnoće; X2 DIP za ton; X3 kontakt prema podnožju; X4 24 V Stich terminali; X5
+oklop.
+Potenciometrom se glasnoća može smanjiti do 20 dB(A).
+DIP 1-5 odabiru jedan od 32 tona, od kojih je šest priznato za BMA prema EN 54-3. Tablica na ovoj i sljedećoj
+stranici daje točne kombinacije, frekvencije, periode, struju i zvučne razine. Primjeri uključuju kontinuirani 970
+Hz, izmjenični 800/970 Hz, rastući 800-970 Hz, impulsni 970 Hz i padajući DIN 33404-3 1200-500 Hz. DIP
+kombinacije zadržati prema originalnoj tablici.
+
+===== STRANICA 223 =====
+HRVATSKI PRIJEVOD - stranica 223
+Signalizatori
+Sonos-S - nastavak tablice tonova i montaža
+Tablica nastavlja svih 32 tonova s njihovim frekvencijama, periodama, DIP 1-5 kombinacijama, strujom i zvučnim
+razinama. Za servis i programiranje koristiti originalne vrijednosti na lijevoj strani.
+X4/X5: (1) GND(-); (2) -/L- = GND(-); (3) IN+/L+ = 24 V(+); (4) OUT+ = 24 V(+); peti priključak = oklop. Pet
+vijčanih stezaljki, presjek 0,28-2,5 mm², moment 0,4 Nm.
+Montaža: kod podnožja tip B otvoriti predviđene rupe za pričvršćenje i kabel, pričvrstiti podnožje i spojiti kabele.
+Postaviti DIP. Signalizator umetnuti tako da se duge oznake poklope, zatim zakrenuti prema maloj oznaci.
+Sigurnosni vijak zategnuti imbusom 1,5 mm; za skidanje ga otpustiti.
+
+===== STRANICA 224 =====
+HRVATSKI PRIJEVOD - stranica 224
+Signalizatori
+Sonos-S - spajanje
+Spajanje je moguće preko BX-IOM ili B8-OM8; oklop spojiti preko pomoćne stezaljke.
+Preko BX-IOM koristi se vanjsko napajanje. Prvi i svi srednji Sonos-S spajaju se serijski prema shemi, a zadnji se
+završava otpornikom 680 Ω.
+Preko B8-OM8 ili B6-EIO vrijedi isti princip; OM-/OM+ vode liniju, završni signalizator ima 680 Ω. Polaritet i
+terminale (1)-(5) spojiti prema originalu.
+
+===== STRANICA 225 =====
+HRVATSKI PRIJEVOD - stranica 225
+Signalizatori
+Sonos-S - upravljanje drugim tonom
+Shema prikazuje zasebno upravljanje drugim tonom preko dodatnog izlaza.
+Drugi ton uvijek ovisi o postavci prvog tona prema tablici na prethodne dvije stranice. Samo je prvi ton nadziran;
+nadzor drugog tona iz tehničkih razloga nije moguć.
+Na završnom signalizatoru ostaje otpornik 680 Ω. Priključke i polaritet spojiti prema originalnoj shemi.
+
+===== STRANICA 226 =====
+HRVATSKI PRIJEVOD - stranica 226
+Signalizatori
+11.5 Akustični signalizator Symphoni HO
+Funkcija
+Konvencionalni Symphoni HO prema EN 54-3 služi za zvučni požarni alarm u zgradama (tip A) te u zgradama i na
+otvorenom (tip B).
+X1 Stich: dva + = 24 V(+); dva - za 1. ton; dva - za 2. ton. 6-polna stezaljka RM5,0; presjek maks. 2,5 mm²;
+moment 0,4 Nm.
+S1 DIP: DIP 1-5 odabir tona. DIP6/7: oba ON puna glasnoća; 6 ON/7 OFF -5 dB(A); 6 OFF/7 ON -10 dB(A); oba OFF
+-15 dB(A). Preostali DIP bez funkcije.
+Od 32 tona dokument navodi priznate za BMA. Tablica daje točne frekvencije, periode, DIP kombinacije, struju i
+razine. Kombinacije zadržati prema izvorniku.
+
+===== STRANICA 227 =====
+HRVATSKI PRIJEVOD - stranica 227
+Signalizatori
+Symphoni HO - nastavak tablice tonova, montaža i spajanje
+Tablica nastavlja priznate tonove s DIP 1-5 kombinacijama, frekvencijama, periodama i razinama. Za točnu
+postavku koristiti izvornu tablicu.
+Montaža tip A: priloženim alatom pritisnuti otvor i odvojiti signalizator od podnožja. Tip B: odvrnuti četiri vijka
+priloženim imbusom. Otvoriti predviđene rupe za kabel i pričvršćenje, montirati podnožje, postaviti DIP, spojiti
+kabel i vratiti signalizator.
+Spajanje je moguće preko BX-IOM ili B8-OM8; oklop preko pomoćne stezaljke.
+
+===== STRANICA 228 =====
+HRVATSKI PRIJEVOD - stranica 228
+Signalizatori
+Symphoni HO - osnovno spajanje
+Preko BX-IOM: vanjsko napajanje, prvi i svi srednji signalizatori prema shemi, završni signalizator s 680 Ω. Koristi
+se 1. Ton.
+Preko B8-OM8 ili B6-EIO: OM-/OM+, ista linijska veza, završni 680 Ω. Polaritet i sve terminale spojiti prema
+originalu.
+
+===== STRANICA 229 =====
+HRVATSKI PRIJEVOD - stranica 229
+Signalizatori
+Symphoni HO - upravljanje drugim tonom
+Drugi ton uključuje se preko pomoćnog kontakta, npr. REL16/REL4, prema shemi. Završni signalizator ima 680 Ω.
+Drugi ton uvijek ovisi o postavci prvog tona prema prethodnim tablicama. Samo prvi ton je nadziran; tehnički
+nije moguć nadzor drugog tona.
+
+===== STRANICA 230 =====
+HRVATSKI PRIJEVOD - stranica 230
+Signalizatori
+11.6 Optički Ring signalizator BX-FLES
+Funkcija
+BX-FLES prema EN 54-23 priključuje se samo na Ring i služi za optički požarni alarm u zgradama. Može se
+montirati na zid ili strop; kućište crveno ili bijelo, svjetlo crveno ili bijelo. Moguće su dvije razine svjetline: Normal
+i Hell.
+Napajanje je vanjsko, adresiranje i parametri preko Integral Software. Dva izolatora kratkog spoja osiguravaju
+obnovu funkcije Ring-a prema EN 54-2.
+X1 vanjsko napajanje: - GND, +24 V, +24 V, -GND; 4 utične vijčane stezaljke, 0,08-1,5 mm², moment 0,15 Nm.
+X2 Ring: X-LINE GND, L1, L2, GND; 4 utične stezaljke, 0,08-1,5 mm², 0,15 Nm. X3 = vijak oklopa.
+
+===== STRANICA 231 =====
+HRVATSKI PRIJEVOD - stranica 231
+Signalizatori
+BX-FLES - montaža
+Za podnožje IP33C moguće su stražnji ili bočni kabelski ulaz uz priloženu brtvenu podlogu. Za IP65 koristiti
+odgovarajuće IP65 kabelske uvodnice; moguće su stražnje ili bočne izvedbe prema crtežu.
+Otvoriti četiri rupe za pričvršćenje i potrebne kabelske ulaze. Kod IP33C promjer bočnog ulaza prilagoditi kabelu.
+Izbušiti montažne rupe pazeći da se ne oštete susjedni vodovi.
+Kod IP33C obavezno umetnuti priloženu brtvu između podnožja i površine. Kod IP65 koristiti kabelske uvodnice
+odgovarajućeg promjera, nisu u isporuci.
+Provesti kabel, pričvrstiti podnožje, izvući utični terminalni blok, spojiti kabel, vratiti blok i uvrnuti signalizator u
+smjeru kazaljke. Zategnuti sigurnosni križni vijak. Za skidanje otpustiti vijak i odvrnuti signalizator suprotno od
+kazaljke.
+
+===== STRANICA 232 =====
+HRVATSKI PRIJEVOD - stranica 232
+Signalizatori
+BX-FLES - spajanje
+Spaja se preko B8-DXI2. Za cjelokupno spajanje unutar jednog područja napajanja do maks. 1.600 m² vidi
+poglavlje 8.1.
+Na prijelazu između dva područja napajanja veza preko drugog para vodiča mora se prekinuti. Shema prikazuje
+Versorgungsbereich 1 i 2, WAGO stezaljke te X1/X2/X3 BX-FLES.
+Na signalizatoru je odvojiva naljepnica sa serijskim brojem za kasniju provjeru topologije.
+
+===== STRANICA 233 =====
+HRVATSKI PRIJEVOD - stranica 233
+Signalizatori
+11.7 Optički signalizator Sonos-B
+Funkcija
+Konvencionalni Sonos-B prema EN 54-23 služi za optički požarni alarm u zgradama, a s IP65 podnožjem i na
+otvorenom. Može biti zidni kategorije W ili stropni kategorije C; crveno kućište/crveno svjetlo ili bijelo/bijelo.
+X1 kontakt prema podnožju; X2 DIP frekvencije bljeskanja; X3 24 V Stich terminali; X4 oklop.
+DIP: jedan položaj bez funkcije; frekvencija 1 Hz kad je odgovarajući DIP ON, 0,5 Hz kad je OFF prema tablici.
+X3/X4: (1) GND; (2) -/L- GND; (3) IN+/L+ 24 V; (4) OUT+ 24 V; 5 odnosno S = oklop. Pet vijčanih stezaljki, presjek
+maks. 2,5 mm², moment 0,4 Nm.
+Montaža: kod IP65 podnožja otvoriti predviđene rupe. Kod zidne montaže oznaka na podnožju mora biti sredinom
+prema dolje. Spojiti kabel, postaviti DIP, umetnuti i zakrenuti signalizator prema oznakama te zategnuti
+sigurnosni vijak imbusom 1,5 mm.
+
+===== STRANICA 234 =====
+HRVATSKI PRIJEVOD - stranica 234
+Signalizatori
+Sonos-B - spajanje
+Moguće preko BX-IOM ili B8-OM8; oklop preko pomoćne stezaljke.
+Preko BX-IOM koristi se vanjsko napajanje; prvi i svi srednji signalizatori spajaju se prema shemi, završni ima 680
+Ω.
+Preko B8-OM8 ili B6-EIO princip je isti, OM-/OM+ prema liniji i 680 Ω na zadnjem. Terminale (1)-(5) i polaritet
+spojiti prema originalu.
+
+===== STRANICA 235 =====
+HRVATSKI PRIJEVOD - stranica 235
+Signalizatori
+11.8 Optički Ring pokazni uređaj BX-FOL
+PAŽNJA
+BX-FOL je optički pokazni uređaj. Ako cilj alarmiranja uključuje zaštitu osoba i samospašavanje, moraju se
+koristiti signalizatori prema EN 54-23.
+Funkcija
+BX-FOL se spaja samo na Ring i služi za optički prikaz u zgradama, npr. na Erstinformationsstelle. Kućište je
+crveno ili bijelo, svjetlo crveno ili narančasto.
+Adresiranje/parametri preko Integral Software; dva izolatora kratkog spoja.
+X1: L1/L2 Data(+), GND, SHLD; 6-polna RM5,0, presjek maks. 2,5 mm², moment 0,4 Nm.
+S1 DIP: od Software 7.1 nema funkciju. Kod starijih verzija prema tablici 0,5 Hz / 1 Hz; ostali položaji bez funkcije.
+
+===== STRANICA 236 =====
+HRVATSKI PRIJEVOD - stranica 236
+Signalizatori
+BX-FOL - montaža i spajanje
+Za skidanje ukloniti sigurnosni vijak i odvrnuti uređaj suprotno od kazaljke. Otvoriti rupe za pričvršćenje, izbušiti,
+uvesti kabel i pričvrstiti podnožje. Spojiti kabel, umetnuti uređaj i vratiti sigurnosni vijak.
+Spajanje preko B8-DXI2; primjer Ring veze vidi poglavlje 5.3.
+Izvornik navodi da uređaj ima serijski broj/odvojivu naljepnicu za provjeru topologije. Na ovoj stranici u
+njemačkom tekstu stoji „BX-SOL” u jednoj rečenici iako je poglavlje BX-FOL; prijevod zadržava smisao poglavlja
+uz ovu napomenu.
+L1/L2, GND i SHLD spojiti prema originalnoj shemi.
+
+===== STRANICA 237 =====
+HRVATSKI PRIJEVOD - stranica 237
+Signalizatori
+11.9 Optički pokazni uređaj Solex 10
+PAŽNJA
+Solex 10 je optički pokazni uređaj. Za zaštitu osoba i samospašavanje moraju se koristiti signalizatori prema EN
+54-23.
+Funkcija
+Konvencionalni Solex 10 služi za optički prikaz u zgradama i, uz IP65 podnožje, na otvorenom. Kućište crveno s
+crvenim svjetlom ili bijelo sa svjetlom jantarne, zelene, plave ili prozirne boje.
+X1 Stich: dva + = 24 V(+), dva - = GND(-). 4-polna RM5,0; presjek maks. 2,5 mm²; moment 0,4 Nm.
+Montaža: skinuti uređaj nakon uklanjanja sigurnosnog vijka. Kod plitkog i dubokog podnožja otvoriti potrebne
+rupe za pričvršćenje/kabel prema crtežu. Pričvrstiti podnožje, spojiti terminalni blok, umetnuti uređaj i vratiti
+sigurnosni vijak.
