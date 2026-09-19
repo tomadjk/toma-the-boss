@@ -1,0 +1,200 @@
+===== STRANICA 101 =====
+HRVATSKI PRIJEVOD - stranica 101
+Moduli
+Montaža BX-OI3
+BX-OI3 se pričvršćuje vijcima u plastično kućište IP 66 prema mjernom crtežu. Kabel se uvodi kroz zasebno
+dostupne stupnjevite uvodnice IP 55 ili kabelske uvodnice s kontramaticom IP 66. Kućište se može montirati
+izravno na podlogu ili na DIN šinu. Prema EN 54, tipsku pločicu priloženu modulu treba postaviti izvana na
+poklopac plastičnog kućišta u razini pristupa 1.
+Alternativno se modul može montirati na montažnu ploču za DIN šinu. Odstojnici i vijci za pričvršćenje u kućištu
+odnosno na ploči uključeni su u isporuku.
+Gehäuse = kućište. Montageplatte = montažna ploča.
+Spajanje
+BX-OI3 se priključuje preko X-LINE B8-DXI2. Primjer spajanja prstena vidi poglavlje 5.3.
+PAŽNJA
+Zaštitni mali napon i mrežni napon moraju biti fizički odvojeni. Čim je relej modula priključen na 230 V AC, na
+nijedan drugi relej ili kontakt istog modula ne smije se priključiti komponenta na 24 V DC zaštitnom malom
+naponu. Kod 230 V priključni kabel nikada ne voditi izravno preko elektronike modula. Postaviti naljepnicu
+upozorenja na 230 V.
+Napomena
+U vlažnim prostorima za pouzdan kontakt koristiti ulazne sklopne elemente sa zlatnim kontaktima.
+
+===== STRANICA 102 =====
+HRVATSKI PRIJEVOD - stranica 102
+Moduli
+BX-OI3 ima serijski broj, također kao odvojivu naljepnicu na modulu. Broj s naljepnice kasnije se može usporediti
+sa serijskim brojem koji modul šalje radi provjere topologije. U isporuci su četiri otpornika 182 Ω.
+Maksimalna duljina: ulazi 30 m, relejni izlaz 100 m, nadzor napona 1.000 m.
+Uporaba kao ulazno/izlazni modul:
+■ nadzirani ulaz za očitavanje beznaponskih kontakata;
+■ nenadzirani ulaz za očitavanje vanjskih napona;
+■ relejni izlaz kao mirovni kontakt, za upravljanje s vanjskim napajanjem ili za signalizatore.
+Na shemi: Aufzugssteuerung = upravljanje dizalom; nicht überwacht = nenadzirano; überwacht = nadzirano.
+Otpornici 182 Ω prema originalu.
+Uporaba za posebne javljače:
+■ nadzirani ulazi za alarmni i kontakt smetnje;
+■ nenadzirani ulaz za nadzor napajanja;
+■ relejni izlaz za Reset.
+Sondermelder = posebni javljač. Externe Energieversorgung = vanjsko napajanje. Störung = smetnja, Alarm =
+alarm. Sve IN/NO/COM/NC i prstenaste priključke spojiti prema originalnoj shemi.
+
+===== STRANICA 103 =====
+HRVATSKI PRIJEVOD - stranica 103
+Moduli
+Uporaba BX-OI3 kao funkcije javljača za protupožarnu zaklopku (Brandschutzklappe)
+Na BX-OI3 može se priključiti protupožarna zaklopka. Mora biti povezana s ulazima 1 i 2; ulaz 3 za tu funkciju nije
+prikladan. Vrijeme između zatvorenog položaja - položaj mirovanja - i otvorenog položaja - aktivni položaj - može
+se postaviti putem Timeout-a. Ako vrijeme istekne, a ispravan krajnji položaj nije dosegnut, generira se smetnja.
+Na shemi su ulazi 1 i 2 nadzirani otpornicima 182 Ω. Vanjsko napajanje i relejni izlaz spojiti prema originalu.
+Externe Energieversorgung = vanjsko napajanje. überwacht = nadzirano. Priključci GND/SHLD/L1/L2, IN1-3 i
+NO/COM/NC ostaju nepromijenjeni.
+
+===== STRANICA 104 =====
+HRVATSKI PRIJEVOD - stranica 104
+Moduli
+7.2 Ulazno/izlazni modul BX-O2I4
+Funkcija
+BX-O2I4 može se spojiti samo na X-LINE prsten i između ostalog služi za povezivanje kućnog javljača dima
+Genius Plus X. Ima četiri nadzirana ulaza za beznaponske kontakte i dva relejna izlaza za vanjske uređaje. Kod
+gubitka komunikacije prstena za relejne izlaze može se programirati Fail-Safe položaj.
+Adresiranje i parametri postavljaju se u Integral Software. Modul ima dva izolatora kratkog spoja koji u slučaju
+kratkog spoja ili prekida osiguravaju nastavak rada preostalih uređaja prema EN 54-2.
+Sučelja: X1 nadzirani ulazi; X2 prsten; X3 relejni izlaz 1; X4 relejni izlaz 2.
+X1: IN1± do IN4± = ulazi 1-4.
+Tehnički podaci ulaza: upitni napon 3-6 V DC; struja 10 mA; završni i alarmni otpornik 182 Ω; maks. otpor voda
+30 Ω; maks. duljina 30 m; upitni impuls 165 µs; ciklus 100 ms; filtar 10 µs; period >8 s; 8-polna stezaljka RM
+3,81; presjek maks. 1,0 mm²; moment 0,22-0,25 Nm. Registriraju se stanja dulja od 500 ms s vremenom
+ponavljanja >8 s.
+
+===== STRANICA 105 =====
+HRVATSKI PRIJEVOD - stranica 105
+Moduli
+BX-O2I4 - prsten X2
+L1/L2 = Data (+) ulaz ili izlaz; GND = GND (-); SHLD = oklop. 6-polna stezaljka RM 3,81; presjek maks. 1,0 mm²;
+moment 0,22-0,25 Nm.
+Relejni izlaz 1 X3 i izlaz 2 X4: NC = mirovni kontakt, COM = zajednički, NO = radni kontakt.
+Tehnički podaci oba releja: bistabilni jednospulni preklopni relej; sklopni napon 100 µV do 230 V; sklopna struja
+100 µA do 2 A; snaga 60 W (=0,25 A pri 230 V ili 2,5 A pri 24 V); frekvencija maks. 3,125 Hz; impuls 360 ms-12 s
+u koracima 100 ms; duljina voda maks. 100 m; 3-polna stezaljka RM 7,62; presjek maks. 1,5 mm²; moment
+0,5-0,6 Nm.
+Kod 230 V izlaz je pogodan do prenaponske kategorije III prema DIN VDE 0110. Jedan relej po prstenu može
+mijenjati stanje svakih 160 ms ako nema druge naredbe. Stvarno trajanje impulsa može odstupati do +8 s zbog
+konfiguracije i polling ciklusa.
+
+===== STRANICA 106 =====
+HRVATSKI PRIJEVOD - stranica 106
+Moduli
+Montaža BX-O2I4
+BX-O2I4 se ugrađuje u plastično kućište IP 66 prema mjernom crtežu. Kabeli se uvode preko zasebno dostupnih
+stupnjevitih uvodnica ili uvodnica s kontramaticom. Prema EN 54, tipska pločica priložena modulu mora biti
+postavljena izvana na poklopcu kućišta u razini pristupa 1.
+Alternativno se modul može montirati na montažnu ploču horizontalno ili vertikalno na DIN šinu. Odstojnici i vijci
+uključeni su u isporuku.
+Gehäuse = kućište. Montageplatte = montažna ploča.
+Spajanje
+BX-O2I4 se priključuje preko X-LINE B8-DXI2; primjer prstena vidi poglavlje 5.3.
+PAŽNJA
+Zaštitni mali napon i 230 V moraju biti fizički odvojeni. Ako je jedan relej modula na 230 V AC, na drugi relej ili
+kontakt modula ne smije se priključivati 24 V DC zaštitni mali napon. Kabel 230 V ne voditi preko elektronike
+modula i postaviti naljepnicu upozorenja.
+Napomena: u vlažnom okruženju koristiti ulazne sklopne elemente sa zlatnim kontaktima.
+
+===== STRANICA 107 =====
+HRVATSKI PRIJEVOD - stranica 107
+Moduli
+BX-O2I4 ima serijski broj i odvojivu naljepnicu za provjeru topologije. U isporuci je osam otpornika 182 Ω. Maks.
+duljina ulaza 30 m, relejnih izlaza 100 m.
+Uporaba kao ulazno/izlazni modul:
+■ nadzirani ulazi za beznaponske kontakte;
+■ relejni izlazi za upravljanje mirovnim kontaktom, vanjskim napajanjem ili signalizatorima.
+Na shemi: Aufzugssteuerung = upravljanje dizalom; Externe Energieversorgung = vanjsko napajanje; nicht
+überwacht = nenadzirano; überwacht = nadzirano.
+Uporaba kao upravljanje s povratnom dojavom (Steuerung mit Rückmeldung): relejni izlaz upravlja vanjskim
+uređajem, a nadzirani beznaponski kontakt vraća stanje na ulaz.
+potenzialfrei = beznaponski. Otpornici 182 Ω i sve IN/NO/COM/NC priključke spojiti prema originalu.
+
+===== STRANICA 108 =====
+HRVATSKI PRIJEVOD - stranica 108
+Moduli
+Povezivanje Genius Plus X preko BX-O2I4
+Spajanje se izvodi preko bežične ručne tipke/bežičnog sučelja FH.Genius. Osnova je dodjela serije Genius Plus X
+Alarmierungsbereich 2 te reset akustike javljača pri sljedećim događajima:
+■ pritisak „Anlage/Alarm rücksetzen” na upravljačkom polju;
+■ reset dodijeljenog područja alarmiranja;
+■ isključenje dodijeljenog područja alarmiranja.
+Napomena: u vlažnim prostorima koristiti ulazne elemente sa zlatnim kontaktima. Postavke po potrebi prilagoditi
+projektu.
+FH.Genius: vanjsko napajanje 10-30 V DC, >50 mA. Quittierungstaster = tipka potvrde. Alarmtaster = alarmna
+tipka. Alarm-/Stör(Status)meldung = dojava alarma/smetnje/statusa. Maks. opterećenje kontakta 30 V DC / 1 A.
+Gerät eingeschaltet = uređaj uključen. Statusrelaisstellung im Ruhezustand = položaj statusnog releja u
+mirovanju. Alarmrelaisstellung im Ruhezustand = položaj alarmnog releja u mirovanju.
+PAŽNJA
+Kod rada na centrali za dojavu požara DIP prekidač 2 na FH.Genius postaviti na ON, a zatim za prihvat postavke
+napraviti reset držeći tipku Reset 12 sekundi.
+
+===== STRANICA 109 =====
+HRVATSKI PRIJEVOD - stranica 109
+Moduli
+7.3 Ulazno/izlazni modul BX-IOM
+Funkcija
+BX-IOM može se priključiti samo na X-LINE prsten. Ima jedan nadzirani ulaz za beznaponske kontakte, jedan
+nadzirani izlaz za vanjske uređaje i priključak vanjskog napajanja. Kod gubitka komunikacije prstena za izlaz se
+može programirati Fail-Safe položaj.
+Adresiranje i parametri postavljaju se u Integral Software. Dva izolatora kratkog spoja osiguravaju nastavak rada
+preostalih uređaja kod kratkog spoja ili prekida prema EN 54-2.
+X1 = nadzirani ulaz, nadzirani izlaz i napajanje. X2 = prsten.
+X1: VEXT/GNDEXT = 24 V (+)/GND (-) napajanje; IM1+/IM1- = ulaz; OM1+/OM1- = izlaz.
+Ulaz: napon nadzora 20-30 V DC; struja tip. 3,1 mA; kratki spoj maks. 3,63 mA; završni otpornik 220 Ω; otpornik
+aktiviranja 220 Ω; maks. otpor voda 50 Ω; maks. duljina 30 m.
+Izlaz: sklopni napon 20-30 V DC; struja mirovanja 1/3/15 mA; izlazna struja 1,3 A; kratki spoj 1,45-2,76 A;
+frekvencija maks. 0,5 Hz; impulsi 200 ms-25 s u koracima 100 ms, 1-30 s u koracima 1 s ili 10-300 s u koracima
+10 s.
+Područje 1: teret 160-1.000 Ω, maks. vod 50 Ω. Područje 2: 57-375 Ω / 20 Ω. Područje 3: 20-75 Ω / 5 Ω. Duljina
+izlaznog voda ovisi o potrošačima. Kod >820 Ω automatsko usklađenje ne postavljati na „unempfindlich”.
+
+===== STRANICA 110 =====
+HRVATSKI PRIJEVOD - stranica 110
+Moduli
+BX-IOM - napajanje i prsten
+Vanjsko napajanje: 20-30 V DC; duljina voda maks. 1.000 m. X1 je 6-polna stezaljka RM 3,81; presjek maks. 1,0
+mm²; moment 0,22-0,25 Nm.
+Prsten X2: L1/L2 = Data (+), GND = minus, SHLD = oklop; 6-polna stezaljka RM 3,81; presjek maks. 1,0 mm²;
+moment 0,22-0,25 Nm.
+Montaža
+BX-IOM se ugrađuje u plastično kućište IP 66. Kabeli se uvode preko stupnjevitih uvodnica ili uvodnica s
+kontramaticom. Kućište se može montirati na podlogu ili DIN šinu. Tipsku pločicu prema EN 54 postaviti izvana u
+razini pristupa 1.
+Alternativno je moguća montaža na montažnu ploču za DIN šinu. Odstojnici i vijci uključeni su u isporuku.
+Gehäuse = kućište. Montageplatte = montažna ploča.
+
+===== STRANICA 111 =====
+HRVATSKI PRIJEVOD - stranica 111
+Moduli
+Spajanje BX-IOM
+BX-IOM se priključuje preko X-LINE B8-DXI2; primjer prstena vidi poglavlje 5.3.
+PAŽNJA
+Za rad BX-IOM obavezno je vanjsko napajanje na VEXT i GNDEXT jer se modul ne napaja preko prstena. I ulaz se
+može koristiti samo uz vanjsko napajanje.
+Modul ima serijski broj i odvojivu naljepnicu za provjeru topologije. Maks. duljina: ulaz 30 m, napajanje 1.000 m,
+izlaz ovisi o broju i tipu signalizatora.
+Uporaba kao ulazno/izlazni modul: prikazana su vanjsko napajanje, ulaz s otpornicima 220 Ω te izlaz s
+otpornikom 680 Ω prema primjeru.
+Uporaba kao povratna dojava izlaza: Eingang als Rückmeldung des Ausgangs = ulaz kao povratna dojava izlaza;
+Ausgang = izlaz.
+Sve IM1/OM1/VEXT/GNDEXT priključke povezati prema originalnoj shemi.
+
+===== STRANICA 112 =====
+HRVATSKI PRIJEVOD - stranica 112
+Moduli
+7.4 Ulazno/izlazni modul SDI 82X-1
+Funkcija
+SDI 82X-1 može se priključiti samo na X-LINE prsten. Ima tri ulaza za očitavanje beznaponskih kontakata i jedan
+Open-Collector izlaz.
+Adresiranje i parametri postavljaju se u Integral Software. Modul ima dva izolatora kratkog spoja koji kod kratkog
+spoja ili prekida osiguravaju nastavak rada ostalih uređaja prema EN 54-2.
+X1 = ulazi/izlaz; X2 = prsten.
+X1 je 10-žilni plosnati kabel s feritom, duljine 130 mm, presjek svake žile 0,13 mm². Tablica žila: crna/sive žile
+nose GND in/out za ulaze 1-3, GND out za izlaz, GND i jednu žilu bez funkcije prema originalnoj tablici.
+Tehnički: low ulaz 0-0,6 V DC; high 2,4-3 V DC; kašnjenje 200 ms; impulsna ulazna struja 0,11 mA / 10 ms; izlaz
+do 30 V DC; ograničenje izlazne struje 8,5 mA.
+Prsten X2: L1/L2 = Data (+), GND = minus; 4-polna stezaljka RM 5,0; presjek maks. 1,5 mm².
