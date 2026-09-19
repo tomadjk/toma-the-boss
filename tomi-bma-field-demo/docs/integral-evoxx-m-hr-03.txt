@@ -1,0 +1,210 @@
+===== STRANICA 41 =====
+HRVATSKI PRIJEVOD - stranica 41
+Sklopovi
+5.9 Sklop za seriju javljača 150 B8-LEE24
+Funkcija
+B8-LEE24 služi za priključivanje četiri prstenasta voda s pripadajućim javljačima i modulima serije 150.
+Omogućuje zamjenu postojeće centrale sa serijom 150 centralom Integral IP MX uz zadržavanje postojeće
+periferije.
+Na svaki prsten može se priključiti do 127 sudionika. System-BUS priključak je straga, a na prednjoj strani je
+stezaljka za četiri prstena.
+X1 = System-BUS; X2 = priključne stezaljke prstenova.
+System-BUS: B5-BUS, B8-BUS; 96-polni konektor.
+Za svaki prsten postoje A i B priključci: L1A±/L1B± do L4A±/L4B±. Minus = GND (-), plus = 24 V (+).
+Tehnički podaci: izlazni napon 22-27 V DC; struja kratkog spoja 300 mA; maks. otpor voda 200 Ω; maks. duljina
+1.000 m; otpor GND vodiča od početka do kraja maks. 37,5 Ω; 16-polna vijčana stezaljka; presjek 0,2-2,5 mm²;
+moment 0,5-0,6 Nm.
+
+===== STRANICA 42 =====
+HRVATSKI PRIJEVOD - stranica 42
+Sklopovi
+Montaža
+B8-LEE24 je utični modul s prednjom pločom od pocinčanog čeličnog lima i ugrađuje se u Steckplatz 2-9 dok
+konektor ne sjedne u B8-BUS.
+Spajanje / funkcijska provjera nakon zamjene
+Kod zamjene postojeće Hekatron centrale nakon zamjene moraju se provjeriti svi javljači. U Revisionsmodus-u
+obavezno izazvati alarm na svakom javljaču. Postupak:
+• Meldergruppe prebaciti na Revision.
+• Aktivirati javljač.
+• Pričekati da se LED javljača ugasi.
+• Provjeriti sljedeći javljač.
+Otpor voda mjeri se odgovarajućim mjernim uređajem na GND vodu; granične vrijednosti su u tehničkim
+podacima X2.
+Shema prikazuje prstenove 1-4, maksimalnu duljinu prstena 1.000 m te uređaje DFM 155, SBS 157, ADX 156,
+UAS 159, RKM 150 i Sockel 158.
+Stich am Ring, max. 28 Teilnehmer = odvojak na prstenu, maksimalno 28 sudionika.
+Erdungsklemme auf Hutschiene = stezaljka uzemljenja na DIN šini.
+Priključke LxA/LxB spojiti točno prema originalnom crtežu.
+
+===== STRANICA 43 =====
+HRVATSKI PRIJEVOD - stranica 43
+Sklopovi
+5.10 Univerzalni komunikacijski sklop B8-USI4
+Funkcija
+B8-USI4 služi za priključivanje vanjskih uređaja, npr. management sustava, pisača, pagera, telefonske centrale
+itd., ili za umrežavanje centrala*, preko četiri RS-485/422 sučelja, od kojih se dva mogu koristiti i kao RS-232.
+System-BUS priključak nalazi se straga. Na prednjoj strani su dvije 6-polne i dvije 10-polne stezaljke za vanjske
+uređaje i umrežavanje.
+* B8-USI4 nije prikladan za Integral WAN.
+Sučelja:
+X1 - System-BUS.
+X2 - Linie/Ring 0A, RS-485/422/232.
+X3 - Linie/Ring 1A, RS-485/422.
+X4 - Linie/Ring 0B, RS-485/422/232.
+X5 - Linie/Ring 1B, RS-485/422.
+X6-X10 - premosnici za izbor načina rada.
+System-BUS X1: B5-BUS, B8-BUS; 96-polni konektor.
+Za priključke X2 i X4 tablica prikazuje raspored pinova za RS-485, RS-422 i RS-232. Oznake L0AX±, L0AY±,
+L0BX±, L0BY±, TxD, RxD, RTS, CTS i GND ostaju nepromijenjene i spajaju se prema originalnoj tablici.
+
+===== STRANICA 44 =====
+HRVATSKI PRIJEVOD - stranica 44
+Sklopovi
+Tehnički podaci B8-USI4, X2 i X4:
+Način rada: linija ili prsten, prema položaju premosnika.
+Električno: RS-485, RS-422 ili RS-232.
+Domet: RS-485/RS-422 maks. 1.200 m; RS-232 maks. 15 m.
+Prijenos: asinkroni serijski; brzina maks. 57,6 kbit/s.
+Smjer: dvosmjerno full-duplex u načinu linije; dvosmjerno half-duplex u načinu prstena.
+Mehanički: 10-polna utična vijčana stezaljka.
+X3 - Linie/Ring 1A i X5 - Linie/Ring 1B podržavaju RS-485 ili RS-422. Raspored pinova L1AX±/L1AY± odnosno
+L1BX±/L1BY±, TxD/RxD i GND ostaje prema originalnoj tablici.
+Tehnički podaci X3/X5: način rada linija ili prsten; RS-485/RS-422; domet maks. 1.200 m; asinkroni serijski
+prijenos do 57,6 kbit/s; full-duplex za liniju, half-duplex za prsten; 6-polna utična vijčana stezaljka.
+
+===== STRANICA 45 =====
+HRVATSKI PRIJEVOD - stranica 45
+Sklopovi
+Premosnici X6-X10
+Priključci 0A/0B i 1A/1B moraju se, ovisno o programiranoj funkciji, konfigurirati kao Linie ili Ring.
+Način Linie koristi se isključivo za neredundantno priključivanje nadređenih i podređenih perifernih sustava, npr.
+management sustava ili pisača.
+Način Ring koristi se za umrežavanje centrala, SecoNET i redundantne periferne sustave, npr. redundantni
+management sustav.
+Funkcije iz tablice:
+- ZZK-Protokoll nicht redundant = ZZK protokol, neredundantno: Linie.
+- Integral Standardprotokoll nicht redundant = Integral standardni protokol, neredundantno: Linie.
+- SSI-Protokoll, ESPA, Modbus-RTU, Drucker = odgovarajući protokoli/pisač; RS-485/422 ili RS-232 prema tablici.
+- SPP-Treiber = SPP upravljački program.
+- ZZK-Protokoll redundant = ZZK protokol, redundantno: Ring.
+- Integral Standardprotokoll redundant = Integral standardni protokol, redundantno: Ring.
+- SecoNET Ankopplung = povezivanje na SecoNET.
+- SecoNET Repeater = SecoNET repetitor.
+Položaje premosnika X6-X10 postaviti točno prema originalnoj tablici.
+Montaža
+B8-USI4 je utični modul s prednjom pločom od pocinčanog čeličnog lima i ugrađuje se u Steckplatz 2-9 dok
+konektor ne sjedne u B8-BUS.
+Donja shema prikazuje RS-485 redundantno, RS-422 neredundantno, RS-485 neredundantno i RS-232
+neredundantno. GND, + i - spojiti prema originalu.
+
+===== STRANICA 46 =====
+HRVATSKI PRIJEVOD - stranica 46
+Sklopovi
+Spajanje / umrežavanje B8-USI4
+U nastavku su prikazane sve moguće kombinacije konektora. Kod neredundantne RS-485 veze izostavljaju se tri
+donja voda (Y+, Y-, GND). Plus i minus RS-485 podatkovnih vodova, npr. AX+ i AX-, obavezno moraju biti vođeni
+kao upleteni par.
+RS-485: tablica prikazuje dopuštene kombinacije između B8-USI4, B3-LPI i B4-USI te pripadajuće priključke
+0A/0B/1A/1B. Oznake L0AX±, L0BX±, L1AX±, L1BX±, L0AY±, L0BY±, L1AY±, L1BY± i GND moraju se spojiti
+točno prema originalnoj tablici.
+RS-422: TxD jednog uređaja spaja se na RxD drugog uređaja i obrnuto, uz pripadajući GND, prema prikazanim
+kombinacijama B8-USI4/B4-USI.
+RS-232: prikazana je veza između B8-USI4 Stecker 0A i Stecker 0B: TxD0A- na RxD0B-, RxD0A- na TxD0B- te
+GND0A na GND0B.
+Stecker = konektor/priključak. Za sve varijante slijediti izvorni raspored pinova lijevo.
+
+===== STRANICA 47 =====
+HRVATSKI PRIJEVOD - stranica 47
+Sklopovi
+Management sustav preko RS-232
+Pri priključivanju management sustava u softveru postaviti sučelje na „Integral Standardprotokoll” s RS-232, a
+premosnike na B8-USI4 konfigurirati na „Integral Standardprotokoll nicht redundant”. Maksimalna udaljenost
+između B8-USI4 i management sustava je 15 m. Za ovu vezu dostupan je kabel RS232/USI.
+Na shemi: COM/GND, TxD i RxD spojiti prema originalu; pogled konektora prikazan je sa strane lemljenja (Ansicht
+Lötseite).
+ESPA preko RS-232
+Pri priključivanju računala za ESPA simulaciju ili ESPA protustrane, u softveru postaviti „ESPA” s RS-232, a
+premosnike B8-USI4 na „ESPA”. Udaljenost do računala/protustrane maks. 15 m. Dostupan je kabel RS232/USI.
+Brücken = mostovi/premosnici. PC/Server = računalo/server.
+Modbus-RTU preko RS-232
+Pri priključivanju računala za Modbus simulaciju ili Modbus protustrane, u softveru postaviti Modbus-RTU s
+RS-232, a premosnike B8-USI4 na Modbus-RTU. Maksimalna udaljenost 15 m. Dostupan je kabel RS232/USI.
+Oznake X6, X7, X9 i pinove GND0A, RXD0A-, TxD0A- spojiti točno prema originalnoj shemi.
+
+===== STRANICA 48 =====
+HRVATSKI PRIJEVOD - stranica 48
+Sklopovi
+Vanjski RS-232 pisač
+Pri priključivanju vanjskog pisača u softveru postaviti sučelje na „Drucker” s RS-232, a premosnike B8-USI4
+konfigurirati na „Drucker”. Maksimalna udaljenost između B8-USI4 i pisača je 15 m.
+Na shemi su prikazani GND0A, CTS0A+, TxD0A-, COM, GND, DTR i RxD; spojiti prema originalu.
+Za rad pisača LQ-350 s B8-USI4 sljedeće postavke su fiksno zadane, a ostale se mogu slobodno odabrati:
+- Seitenperforation überspringen = preskakanje perforacije stranice: isključeno.
+- Abtrennautomatik = automatsko odvajanje: isključeno.
+- Autom. Z.-Vorschub = automatski pomak retka: isključeno.
+- Druckrichtung = smjer ispisa: dvosmjerno.
+- Betriebssystem = ESC/P2.
+- Null-Darstellung = prikaz nule: Ø.
+- I/F-Modus = serijsko sučelje.
+- Baudrate = 9600.
+- Parität = bez pariteta (None).
+- Wortlänge = 8 bit.
+- Paralleler I/F bidirektionaler Modus = dvosmjerni paralelni način: isključeno.
+- Paketmodus = paketni način: isključeno.
+- Zeichentabelle = tablica znakova PC 850.
+
+===== STRANICA 49 =====
+HRVATSKI PRIJEVOD - stranica 49
+Sklopovi
+Spajanje RS-422
+Management sustav, ESPA, Modbus i pisač mogu se priključiti i preko RS-422 sučelja uz RS-422/RS-232
+pretvarač. Maksimalna udaljenost između B8-USI4 i pretvarača je 1.200 m, a između pretvarača i krajnjeg
+uređaja maks. 15 m. DIP prekidače pretvarača postaviti prema tablici.
+DIP SW1/SW2:
+- Management sustav, ESPA, Modbus: DIP 2 = ON (11 podatkovnih bitova), DIP 10 = ON (RS-422).
+- Pisač: DIP 2 = ON (11 podatkovnih bitova), DIP 6 i DIP 10 = ON (RS-422).
+Shema prikazuje B8-USI4, pretvarač ADAM 4520, B8-PSU i priključke DATA+/DATA-, TX+/TX-, RX+/RX-, +Vs i
+GND.
+Drucker = pisač. Leitsystem = nadređeni/management sustav. PC/Server = računalo/server.
+VEXT (+) i GNDExt (-) dolaze s B8-PSU. Sve TxD/RxD i GND vodove spojiti točno prema originalu.
+
+===== STRANICA 50 =====
+HRVATSKI PRIJEVOD - stranica 50
+Sklopovi
+5.11 Mrežni sklop B8-NET4-485
+Funkcija
+B8-NET4-485 služi za umrežavanje centrala preko četiri RS-485 i dva 100 Base TX Ethernet sučelja. Ethernet
+sučelja mogu se koristiti i za povezivanje IP aplikacija, npr. daljinski pristup BMA preko Hekatron Remote, ili za
+integraciju u standardnu Ethernet mrežu.
+System-BUS priključak nalazi se straga. Na prednjoj strani nalazi se deset RJ-45 priključaka za umrežavanje i
+Ethernet.
+Sučelja:
+X1 - System-BUS.
+X2 - Ethernet 0B/0A.
+X3 - Ring 5BY/5BX, RS-485.
+X4 - Ring 6BY/6BX, RS-485.
+X5 - Ring 5AY/5AX, RS-485.
+X6 - Ring 6AY/6AX, RS-485.
+System-BUS X1: B5-BUS, B8-BUS; 96-polni konektor.
+Ethernet X2: Port 0 Switch B i Port 0 Switch A. Pinovi Tx+, Tx-, Rx+, Rx- prema originalnoj tablici.
+Tehnički podaci Ethernet: 10/100 Base TX; domet maks. 100 m; TCP/IP; brzina maks. 100 Mbit/s; dvosmjerno
+full-duplex; RJ-45, 8-polni.
+
+===== STRANICA 51 =====
+HRVATSKI PRIJEVOD - stranica 51
+Sklopovi
+Priključci prstena B8-NET4-485
+X3 = Ring 5BY/5BX, X4 = Ring 6BY/6BX, X5 = Ring 5AY/5AX, X6 = Ring 6AY/6AX.
+Na prikazanim portovima koriste se GND, Tx/Rx+ i Tx/Rx-. Pojedini portovi označeni su kao galvanski odvojeni;
+dodatni priključak služi za redundantnost voda.
+Tehnički podaci X5/X6: RS-485; domet maks. 1.200 m; diferencijalni signal; brzina prijenosa maks. 2,5 Mbit/s;
+dvosmjerno half-duplex; RJ-45, 8-polni.
+Montaža
+B8-NET4-485 je utični modul s prednjom pločom od pocinčanog čeličnog lima. Ugrađuje se isključivo u Steckplatz
+2 nosača centrale dok konektor ne sjedne u B8-BUS. Kod uporabe Cat7 kabela priključne jedinice učvrstiti na DIN
+šinu u centrali.
+Spajanje
+Svaka veza dodjeljuje se određenom portu mrežnog sklopa. Opcionalno može biti redundantna po vodu ili po
+portu. Shema prikazuje B8-NET4-485, RS-485 portove, 10/100 Ethernet, Cat7 do Anschlusseinheit (priključne
+jedinice) i Cat5 prema BMZ.
+Anschlusseinheit = priključna jedinica.
