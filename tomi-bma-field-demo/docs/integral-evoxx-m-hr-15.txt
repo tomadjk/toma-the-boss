@@ -1,0 +1,133 @@
+===== STRANICA 281 =====
+HRVATSKI PRIJEVOD - stranica 281
+Dokumentacija / shema BX-IOM
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 Ring: L1, GND, GND, L2, SHLD, SHLD. X1: VEXT, GNDEXT, IN1± i OM1±. Steuerung = upravljanje; Eingang =
+ulaz. Sve polaritete i terminale koristiti prema originalnoj shemi.
+
+===== STRANICA 282 =====
+HRVATSKI PRIJEVOD - stranica 282
+Dokumentacija / shema SDI 82X-1
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+Ring priključci: 1-L1, 2-GND, 3-L2, 4-GND. „Flachband” = plosnati kabel. Ulazi: Eingang 1-3 GND In/GND Out.
+Izlaz 1: GND Out/GND. Terminalni raspored zadržati točno prema originalu.
+
+===== STRANICA 283 =====
+HRVATSKI PRIJEVOD - stranica 283
+Dokumentacija / shema BX-IM4
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 Ring: L1, GND, GND, L2, SHLD, SHLD. X1: IN1± do IN4±. Input 1-4 = ulazi 1-4. Polaritet i raspored priključaka
+zadržati prema originalu.
+
+===== STRANICA 284 =====
+HRVATSKI PRIJEVOD - stranica 284
+Dokumentacija / shema BX-MDI8
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 Ring: L1, GND1/GND2, L2, SHLD. X3 vanjsko napajanje: VEXT_A/GND EXT_A i VEXT_B/GND EXT_B. X1:
+LINE1/COM1 do LINE8/COM8. Sve terminale i podjelu A/B napajanja dokumentirati prema originalnoj shemi.
+
+===== STRANICA 285 =====
+HRVATSKI PRIJEVOD - stranica 285
+Dokumentacija / shema BX-AIM
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 Ring: L1, GND, GND, L2, SHLD, SHLD. X1: P-, jedan nezauzet priključak, P+, L, C i LEx. Gruppe = grupa;
+Eingang = ulaz. Točne funkcije L/LEx i polaritet koristiti prema tehničkom poglavlju i originalnoj shemi.
+
+===== STRANICA 286 =====
+HRVATSKI PRIJEVOD - stranica 286
+Dokumentacija / shema BX-REL4
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X5 Ring: L1, GND, GND, L2, SHLD, SHLD. X1-X4 su releji 1-4: NC PIN1, COM PIN2, NO PIN3. Relais 1-4 = releji 1-4.
+Terminale i PIN raspored zadržati točno prema originalu.
+
+===== STRANICA 287 =====
+HRVATSKI PRIJEVOD - stranica 287
+Dokumentacija / shema B3-MMI-UIO
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X1 MMI-BUS: BUSGNDA/B i MMIBUSA/B ±. X2 napajanje: MMIGNDA/B i MMI+24VA/B. X5 izlazi SYNOUT-, GND,
++5V, OUT0-OUT7/TMZ. X6 ulazi SYNIN-, GND, +5V, IN0-IN7/TMS. X3/X4 su LED0-LED63 MUX izlazi i dodatni
++5V/OUT/IN/GND signali. X7/X8 terminacija, X10 Akustik Reset, S1 MMI adresa.
+Polja: „von TN/zu TN” = od sudionika/prema sudioniku; Funktion = funkcija; Indik. = indikator; Bezei. = oznaka;
+Pin = pin; MMI-BUS-Nr. = broj MMI-BUS-a; MMI-BUS-Teilnehmer-Nr. = broj sudionika. Zbog velikog broja
+priključaka sve LED i terminalne oznake koristiti iz originalne tablice.
+
+===== STRANICA 288 =====
+HRVATSKI PRIJEVOD - stranica 288
+Dokumentacija / shema BX-WGW
+Polja: Klemme = stezaljka; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort = mjesto; Meldertyp = tip
+javljača; Gruppe/Melder = grupa/javljač; Position/Ort = pozicija/mjesto; standardna projektna polja kao na
+ostalim obrascima.
+X1 Ring: L1, GND, GND, L2, SHLD, SHLD. Prikazan je Batteriepack BAT3.6-10 te Batt., S1 i S2. Sve podatke
+bežičnih javljača upisivati u predviđene retke prema originalu.
+
+===== STRANICA 289 =====
+HRVATSKI PRIJEVOD - stranica 289
+Dokumentacija / shema XLM 35 za ASD
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X1 Ring: L1/C1/G1 i L2/C2/G2. Za Sensor 1 i Sensor 2 obrazac ima Alarm 1, Alarm 2 i Vorsignal 1-3 s poljima %/m
+i Wertigkeit = ponder/vrijednost. Alarm 1 je prikazan s 100 % vrijednosti prema obrascu. XLM35 je spojen na
+AMB. Sve pragove i ponderiranja upisivati prema konkretnom projektu i Integral Software.
+
+===== STRANICA 290 =====
+HRVATSKI PRIJEVOD - stranica 290
+Dokumentacija / shema BX-SCU
+Polja obrasca: Klemme = stezaljka; Log.-Nr. = logički broj; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort
+= mjesto; Teilzentralen-Nr. = broj podcentrale; Ring-Nr./Ringposition = broj Ring-a/položaj; Einbauort = mjesto
+ugradnje; Kunde = kupac; Projekt = projekt; Proj.Nr. = broj projekta; Blatt/von = list/od; Gez./Gepr. =
+nacrtao/provjerio; Änderg.-Nr. = broj izmjene; Datum/Name = datum/ime.
+X2 Ring: L1, GND, GND, L2, SHLD, SHLD. X1 Stich: ST, GND, SHLD. Terminale i polaritet spojiti prema originalnoj
+shemi.
+
+===== STRANICA 291 =====
+HRVATSKI PRIJEVOD - stranica 291
+Dokumentacija / shema B3-MMI-FAT
+Polja: Klemme = stezaljka; Gerät/Klemme = uređaj/stezaljka; Ort = mjesto; Kabel = kabel; Teilzentralen-Nr. =
+broj podcentrale; MMI-BUS-Nr. = broj MMI-BUS-a; MMI-BUS-Teilnehmer-Nr. = broj sudionika te standardna
+projektna polja.
+X1 MMI-BUS: BUSGNDA/B i MMIBUSA/B ±. X2 napajanje: MMIGNDA/B i MMI+24VA/B. X6/X7 FBF sučelje: FCPI0-4,
+FCPO0-6, FCP+12V i GNDFCP prema originalnoj tablici. S1 adresa, X10 akustika, R134 kontrast, X5 tipkovnica.
+Sve terminale zadržati neprevedene.
+
+===== STRANICA 292 =====
+HRVATSKI PRIJEVOD - stranica 292
+Dokumentacija / obrazac FBF 2001 PAR
+Polja: Klemme = stezaljka; Kabel = kabel; Gerät/Klemme = uređaj/stezaljka; Ort = mjesto; Teilzentralen-Nr. =
+broj podcentrale; Steckplatz-Nr. = broj utora; Log.-Nr. = logički broj te standardna projektna polja.
+„Steckbrücken” = premosnici. Obrazac bilježi položaje J21/J22, J31/J32, J41/J42, J53/J54, J61/J62, J71/J72 i JT
+između -/+. Tvorničke postavke i funkcije tih premosnika vidi poglavlje 10.2; položaje dokumentirati točno.
+
+===== STRANICA 293 =====
+HRVATSKI PRIJEVOD - stranica 293
+Dokumentacija / shema B5-MMI-FPD
+Polja: Klemme = stezaljka; Gerät/Klemme = uređaj/stezaljka; Ort = mjesto; Teilzentralen-Nr. = broj podcentrale;
+MMI-BUS-Nr. = broj BUS-a; MMI-BUS-Teilnehmer-Nr. = broj sudionika te standardna projektna polja.
+X1 MMI-BUS: BUSGNDA/B i MMIBUSA/B ±. X2 napajanje: MMIGND-A/B i MMI+24V-A/B. X5 = EPI-BUS priključci.
+X4/X6 terminacija MMI-BUS-a, X8 interni premosnik, S1 adresa. Sve terminale koristiti prema originalnom crtežu.
+
+===== STRANICA 294 =====
+HRVATSKI PRIJEVOD - stranica 294
+Prazna završna stranica izvornog dokumenta.
