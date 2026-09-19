@@ -1,0 +1,281 @@
+Bietigheim – ASD 535 / BE-PSE02 Messprotokoll
+DE/HR · Prüf- und Messprotokoll
+
+============================================================
+
+<PARSED TEXT FOR PAGE: 1 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 1
+BIETIGHEIM - ASD / RAS 535 + BE-PSE02 MESSPROTOKOLL v5
+Deutsch bleibt die technische Arbeitssprache. Kroatische Erklärungen stehen direkt daneben. BE-PSE02 ist für Bietigheim in den vorhandenen Projektunterlagen noch nicht eindeutig bestätigt und muss vor
+Ort identifiziert werden.
+ASD / RAS ASD 535 - MG 8/1 - UG -1.11 Lager - Loop L08 - XLM 35
+Netzteil BE-PSE02 / BE-PSE02-IOM - vor Ort bestätigen
+ASD-Dokument Hekatron 7002570 Technische Dokumentation ASD 535
+PSE02-Dokument B-DB-0234DE-EN V3.1; MIA 7002206 verweist für Details auf TD 7003057
+Sicherheit / sigurnost: 230-V-Messungen nur durch Elektrofachkraft. Widerstandsmessungen nur spannungsfrei. Keine Isolationsmessung über angeschlossene X-LINE-Elektronik.
+<PARSED TEXT FOR PAGE: 2 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 2
+1. ASD / RAS 535 - Messwerte
+Messung Soll / Referenz DE Objašnjenje HR Istwert Einheit Status
+ASD-Typ bestätigen ASD 535-1 / -2 / -3 / -4 vor Ort anhand Typenschild und Ausbau bestätigen. Prvo potvrdi točnu izvedbu ASD-a jer se struja i broj cijevi/senzora razlikuju po varijanti. OFFEN
+Versorgungsspannung ASD 24-V-Betrieb: 21,6 bis 27,6 V DC an Kl. 1/2; bei redundanter Versorgung auch
+3/4.
+Kod 24 V rada na ASD-u mora biti 21,6-27,6 V DC. Kod redundantnog napajanja izmjeri oba
+dovoda.
+V DC OFFEN
+Stromaufnahme
+Ruhe/Störung
+Referenz bei typ. 24 V: ASD535-1 ca. 260 mA; -2 ca. 290 mA; -3 ca. 260 mA;
+-4 ca. 290 mA. XLM35 zusätzlich typ. ca. 5 mA.
+Tipična potrošnja pri 24 V ovisi o izvedbi. Na dobivenu ASD vrijednost kod XLM 35 dodaj
+približno 5 mA kao referencu.
+mA OFFEN
+Stromaufnahme Alarm Referenz typ. 24 V: ASD535-1 Alarm I ca. 295 mA; -2 Alarm I+II ca. 350 mA; -3
+Alarm I ca. 310 mA; -4 Alarm I+II ca. 385 mA. XLM35 zusätzlich typ. ca. 5 mA.
+Tipična struja u alarmu također ovisi o ASD izvedbi. Kod -2/-4 tablica daje stanje Alarm I+II. mA OFFEN
+Luftstrom Rohr I V01 Ur-Reset = 100 %. A11-C32: <80 % Richtung Verstopfung / >120 % Richtung
+Rohrbruch, Störung nach 300 s.
+Nakon Ur-Reseta normalno je 100 %. Kod standardne A11-C32 konfiguracije manje od 80
+% ide u začepljenje, više od 120 % u puknuće.
+% OFFEN
+Luftstrom Rohr II V02 Nur bei ASD 535-2/-4. Ur-Reset = 100 %; Bewertung analog Rohr I. Samo za ASD 535-2/-4. Referenca je 100 %, isto tumačenje kao za Rohr I. % OFFEN
+Fault-Test Luftstrom Volumenstromänderung > +/-20 % erzeugen; bei A11-C32 nach 300 s Störung
+an Integral IP.
+Namjerno promijeni protok više od +/-20 %. Kod standardne postavke nakon 300 s mora
+stići Störung na Integral.
+OFFEN
+Alarmtest letzte
+Ansaugöffnung
+Bei Inbetriebnahme und nach Rohränderungen von der letzten Ansaugöffnung
+je Rohrast testen.
+Kod prvog puštanja i nakon radova na cijevima dim se uvodi na zadnjem otvoru svakog
+kraka kako bi se dokazala prohodnost cijele cijevi.
+OFFEN
+Transportzeit Sollwert aus ASD PipeFlow / Projekt. Keine allgemeine Feldtoleranz erfinden. Uspoređuje se s točnim PipeFlow projektnim vremenom. Bez PipeFlow-a nemoj sam
+određivati dopuštenu granicu.
+s OFFEN
+Stromaufnahme bei typ. 24 V laut ASD-TD: Ruhe/Störung -1 ca. 260 mA, -2 ca. 290 mA, -3 ca. 260 mA, -4 ca. 290 mA; Alarm -1 ca. 295 mA, -2 ca. 350 mA, -3 ca. 310 mA, -4 ca. 385 mA. XLM 35 zusätzlich typ. ca. 5 mA.
+<PARSED TEXT FOR PAGE: 3 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 3
+2. ASD / RAS 535 - Wie messen und wann
+Messung Wie messen / prüfen? DE Kako mjeriti / provjeriti HR Wann? DE / Kada? HR
+ASD-Typ bestätigen Typenschild / ASD Config / Ausbau dokumentieren. Zapiši točan tip s Typenschilda i provjeri broj Rauchsensor/Ansaugleitungen. DE: Vor Strombewertung und vor Abschluss des Protokolls.
+HR: Prije ocjene struje i završnog protokola.
+Versorgungsspannung ASD DC-Voltmeter direkt an den ASD-Klemmen; nicht im Notstrombetrieb. Multimetrom mjeri izravno na stezaljkama ASD-a; ne u Notstrombetrieb. DE: Nach Inbetriebnahme und bei Versorgungsstörung.
+HR: Kod puštanja i problema napajanja.
+Stromaufnahme Ruhe/Störung Strom nur mit geeignetem DC-Messverfahren erfassen; Messaufbau durch
+Elektrofachkraft.
+Struju mjeri samo prikladnim DC postupkom i bez improviziranog kratkog prekidanja napajanja.
+Zapiši u kojem je Lüfterstufe uređaj radio.
+DE: Bei Inbetriebnahme / Lastprüfung / Fehlersuche.
+HR: Kod puštanja, provjere opterećenja ili traženja
+problema.
+Stromaufnahme Alarm Alarmzustand kontrolliert erzeugen und Strom mit geeignetem DC-Messverfahren
+erfassen.
+Kontrolirano izazovi alarm prema odobrenom testu i zapiši stvarnu struju; nakon testa resetiraj
+sustav.
+DE: Bei Inbetriebnahme / Lastprüfung.
+HR: Kod puštanja i provjere opterećenja.
+Luftstrom Rohr I V01 AMB35: UP bis V -> OK V01 -> OK; Wert nach ca. 2 s ablesen. Na AMB-u otvori V -> V01 i zapiši postotak. DE: Inbetriebnahme / Instandhaltung / nach Änderungen.
+HR: Kod puštanja, održavanja i nakon promjene.
+Luftstrom Rohr II V02 AMB35: V -> V02 -> OK; Wert ablesen. Na AMB-u odaberi V02 i zapiši vrijednost. DE: Inbetriebnahme / Instandhaltung / nach Änderungen.
+HR: Kod puštanja, održavanja i nakon promjene.
+Fault-Test Luftstrom Ansaugöffnungen kontrolliert abkleben oder 3-Wege-Hahn verwenden; danach
+Originalzustand herstellen.
+Kontrolirano zatvori usise ili koristi 3-Wege-Hahn. Nakon testa sve vrati u prvobitno stanje. DE: Inbetriebnahme; je Rohr separat bei -2/-4.
+HR: Kod puštanja, svaki kanal zasebno kod -2/-4.
+Alarmtest letzte
+Ansaugöffnung
+Rauch/Prüfgas an letzter Ansaugöffnung; richtige Gruppen-/Bereichsauslösung an
+Integral IP prüfen.
+Uvedi dim na najudaljenijem otvoru i provjeri točnu MG/Bereich dojavu na centrali. DE: Inbetriebnahme und nach Reparatur/Änderung der
+Ansaugleitung.
+HR: Kod puštanja i nakon popravka/izmjene cijevi.
+Transportzeit Rauch an entferntester Ansaugstelle; Zeit nach freigegebenem Verfahren erfassen
+und dokumentieren.
+Uvedi dim na najudaljenijem otvoru i izmjeri vrijeme prema dogovorenom postupku. DE: Inbetriebnahme und nach Rohränderungen.
+HR: Kod puštanja i nakon promjene cijevi.
+Bei Inbetriebnahme und nach Änderungen der Ansaugleitung muss der Alarmtest von der letzten Ansaugöffnung je Rohrast erfolgen. Bei ASD 535-2/-4 beide Ansaugleitungen prüfen. Zwischen den Tests
+jeweils Rücksetzen; danach Originalzustand der Ansaugleitung herstellen.
+<PARSED TEXT FOR PAGE: 4 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 4
+3. BE-PSE02 / BE-PSE02-IOM - Messwerte
+Messung Soll / Referenz DE Tumačenje HR Istwert Einheit Status
+Netzspannung 100-240 V AC +/-10 %; VdS-geprüft: 230 V AC +10 % / -15 %. Mrežni ulaz PSE02 mora biti unutar dopuštenog raspona. Za VdS izvedbu referenca je
+230 V +10/-15 %.
+V AC OFFEN
+Netzfrequenz 47-63 Hz. Mrežna frekvencija mora biti u rasponu 47-63 Hz. Hz OFFEN
+Ausgangsspannung 24 V DC nominal; PELV/SELV. Izlaz je nominalno 24 V DC. U dostupnom podatkovnom listu nije naveden poseban
+tolerancijski raspon za terensko mjerenje, zato ne izmišljamo +/- granicu.
+V DC OFFEN
+Ladeschlussspannung Akku 27,4 V DC +/-0,4 % bei 25 °C. Završni napon punjenja para akumulatora je 27,4 V DC uz toleranciju +/-0,4 % na 25 °C. V DC OFFEN
+Akku 1 Spannung Kein separater Einzelakku-Grenzwert im vorliegenden Hekatron-Datenblatt
+angegeben.
+Vrijednost pojedinog 12 V akumulatora je korisna za usporedbu para, ali dostupni PSE02
+datasheet ne daje zasebnu Hekatron granicu za svaki akumulator.
+V DC OFFEN
+Akku 2 Spannung Kein separater Einzelakku-Grenzwert im vorliegenden Hekatron-Datenblatt
+angegeben.
+Isto kao Akku 1 - uspoređuje se par, ali nema posebne granice u dostupnom datasheetu. V DC OFFEN
+Verbraucherstrom gesamt Ausgangsnennstrom max. 1,6 A. Ukupno nominalno dopušteno izlazno opterećenje PSE02 je najviše 1,6 A. A DC OFFEN
+Verbrauchersicherung 2 x 1 A FK2/FKS oder 1 x 2 A FK2/FKS je nach Anschaltung. PSE02 može imati dva izlaza osigurana po 1 A ili jedan izlaz s 2 A, ovisno o spajanju. OFFEN
+Netzsicherung 4 A träge (T), 250 V. Mrežni osigurač prema datasheetu je 4 A spor (T), 250 V. OFFEN
+Akkusicherung 3 A, FK2/FKS. Akumulatorski osigurač je 3 A tip FK2/FKS. OFFEN
+Tiefentladeschutz / Lastabwurf 20,4 V DC ohne BX-IOM; 20,1 V DC mit BX-IOM. Kod dubokog pražnjenja PSE02 odvaja teret približno na 20,4 V bez BX-IOM, odnosno
+20,1 V s BX-IOM.
+V DC N.A.
+Meldekontakt / Fault Belastung Meldekontakt max. 30 V DC / 10 mA. Bei BE-PSE02-IOM ist der
+Meldekontakt mit dem Ringleitungsmodul vorverdrahtet.
+Fault kontakt je nadzor napajanja prema sustavu. Kod IOM verzije već je tvornički
+povezan s ring modulom.
+OFFEN
+Netzausfall -> Akkubetrieb Funktion nach EN 54-4; genaue Prüfsequenz/Zeiten sind in der hier
+vorliegenden Kurz-Dokumentation nicht vollständig angegeben.
+PSE02 mora pri nestanku mreže prijeći na akumulatore. Točne Hekatron vremenske
+kriterije nismo pronašli u dostupnoj kratkoj dokumentaciji pa ih ne izmišljamo.
+OFFEN
+Potenzialausgleich /
+Kennzeichnung
+Vorschriftsmäßigen Potenzialausgleich mit BMZ sicherstellen; externe
+Energieversorgung eindeutig kennzeichnen.
+Provjeri zaštitno povezivanje/izjednačenje potencijala i da je PSE02 jasno označen kao
+vanjsko napajanje BMA.
+OFFEN
+Kernwerte PSE02: 24 V DC nominal; Ausgangsnennstrom max. 1,6 A; Ladeschlussspannung 27,4 V DC +/-0,4 % bei 25 °C; Netzsicherung 4 A T/250 V; Akkusicherung 3 A; Verbraucher 2 x 1 A oder 1 x 2 A; Lastabwurf 20,4 V
+ohne BX-IOM / 20,1 V mit BX-IOM.
+<PARSED TEXT FOR PAGE: 5 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 5
+4. BE-PSE02 / BE-PSE02-IOM - Wie messen und bewerten
+Messung / Messpunkt Prüfung DE / HR Wann DE / HR Bewertung DE / HR
+Netzspannung Netzeingang L/N DE: Nur durch Elektrofachkraft an der vorgesehenen Messstelle messen. Hekatron: fünf
+Sicherheitsregeln beachten.
+HR: Mjeri samo kao Elektrofachkraft na predviđenoj mjernoj točki. Primijeni 5 sigurnosnih
+pravila.
+DE: Inbetriebnahme / bei Netzstörung.
+HR: Kod puštanja i kod Netzstörung.
+DE: VdS-Bereich: 195,5 bis 253 V AC.
+HR: Za VdS referencu 230 V dopušteni raspon je približno 195,5-253 V AC.
+Netzfrequenz Netzeingang DE: Mit geeignetem Messgerät prüfen, falls für Inbetriebnahme/Fehlersuche erforderlich.
+HR: Po potrebi izmjeri odgovarajućim instrumentom.
+DE: Inbetriebnahme / auffällige Netzversorgung.
+HR: Kod puštanja ili sumnjivog mrežnog napajanja.
+DE: 47-63 Hz.
+HR: Izvan raspona traži problem u mrežnom napajanju.
+Ausgangsspannung Verbraucherausgang
+UA/UB
+DE: DC-Voltmeter am tatsächlichen Verbraucherausgang messen; Messpunkt und
+Lastzustand dokumentieren.
+HR: Multimetrom u V DC izmjeri stvarni izlaz prema potrošaču i zapiši je li mjereno bez
+opterećenja ili pod opterećenjem.
+DE: Inbetriebnahme / Versorgungsstörung / nach
+Laständerung.
+HR: Kod puštanja, problema napajanja ili promjene
+opterećenja.
+DE: Nominal 24 V DC; zusätzlich am Verbraucher (z. B. ASD) dessen
+zulässigen Spannungsbereich prüfen.
+HR: PSE02 izlaz treba biti blizu nominalnih 24 V, ali konačna prihvatljivost za
+ASD provjerava se na samom ASD-u: 21,6-27,6 V DC.
+Ladeschlussspannung Akku Akkuklemmen /
+Akkupaar
+DE: Mit DC-Voltmeter an den Akkuklemmen bei stabilen Bedingungen messen; Temperatur
+beachten.
+HR: Multimetrom izmjeri napon preko cijelog Akku para u stabilnim uvjetima i zapiši približnu
+temperaturu.
+DE: Inbetriebnahme / Wartung / Akkutausch.
+HR: Kod puštanja, održavanja i nakon zamjene akumulatora.
+DE: 27,29 bis 27,51 V DC bei 25 °C.
+HR: Na 25 °C izračunati raspon iz datasheeta je približno 27,29-27,51 V DC.
+Akku 1 Spannung Akku 1 DE: DC-Spannung einzeln messen und mit Akku 2 vergleichen; Bewertung nach
+Akku-Hersteller/Prüfverfahren.
+HR: Izmjeri svaki akumulator posebno i usporedi ih. Konačnu procjenu radi prema
+proizvođaču akumulatora i odobrenom testu.
+DE: Wartung / Akkutausch / Verdacht auf Akku-Problem.
+HR: Kod održavanja, zamjene ili sumnje na loš akumulator.
+DE: Dokumentieren, nicht mit erfundener Hekatron-Grenze bewerten.
+HR: Zapiši vrijednost, ali ne izmišljaj Hekatron pass/fail granicu.
+Akku 2 Spannung Akku 2 DE: Wie Akku 1.
+HR: Isto kao Akku 1.
+DE: Wartung / Akkutausch / Verdacht auf Akku-Problem.
+HR: Kod održavanja, zamjene ili sumnje.
+DE: Mit Akku 1 vergleichen.
+HR: Velika razlika između dva akumulatora je razlog za dodatnu provjeru.
+Verbraucherstrom gesamt
+Verbraucherausgang
+DE: Nur mit geeignetem Strommessverfahren durch Elektrofachkraft erfassen; Messmethode
+dokumentieren.
+HR: Struju mjeri odgovarajućim sigurnim postupkom; ne prekidaj nasumično napajanje.
+Zapiši metodu mjerenja.
+DE: Inbetriebnahme / nach Laständerung / Fehlersuche.
+HR: Kod puštanja, nakon dodavanja potrošača ili traženja
+preopterećenja.
+DE: Iststrom <= 1,6 A Nennstrom; zusätzlich Sicherungsvariante beachten.
+HR: Ukupna struja ne smije prijeći 1,6 A, a mora odgovarati i ugrađenoj
+konfiguraciji osigurača.
+<PARSED TEXT FOR PAGE: 6 / 6>
+Bietigheim - ASD 535 / BE-PSE02 Messprotokoll v5 Seite 6
+4. BE-PSE02 / BE-PSE02-IOM - Wie messen und bewerten (Fortsetzung)
+Messung / Messpunkt Prüfung DE / HR Wann DE / HR Bewertung DE / HR
+Verbrauchersicherung Sicherungsplätze
+UA/UB
+DE: Sicherungsbestückung stromlos visuell prüfen; mit Anschaltung und Verbrauchern
+abgleichen.
+HR: Bez napona provjeri koje su Sicherung stvarno ugrađene i jesu li u skladu s načinom
+spajanja.
+DE: Inbetriebnahme / Wartung / nach Umbau.
+HR: Kod puštanja, servisa i nakon prepravke.
+DE: Bestückung muss zur Anschaltung passen.
+HR: Ne smije biti proizvoljno stavljena jača Sicherung.
+Netzsicherung Netzsicherung DE: Nur spannungsfrei visuell/typseitig prüfen.
+HR: Provjeri oznaku osigurača samo u beznaponskom stanju.
+DE: Inbetriebnahme / Wartung / nach Ausfall.
+HR: Kod puštanja, servisa ili nakon kvara.
+DE: 4 A T / 250 V.
+HR: Krivi tip osigurača treba ispraviti prema dokumentaciji.
+Akkusicherung Akkusicherung DE: Spannungsfrei visuell prüfen.
+HR: Provjeri bez napona.
+DE: Inbetriebnahme / Wartung / nach Ausfall.
+HR: Kod puštanja, servisa ili nakon kvara.
+DE: 3 A FK2/FKS.
+HR: Mora odgovarati Hekatron podatku.
+Tiefentladeschutz / Lastabwurf System /
+Akku
+DE: Keinen Tiefentladetest ohne freigegebenen Hersteller-/Projektablauf erzwingen; Wert als
+Referenz dokumentieren.
+HR: Ne prazni akumulatore namjerno do ove granice bez odobrenog postupka. Vrijednost
+služi kao referenca za dijagnostiku.
+DE: Fehlersuche / Herstellerprüfung, nicht als routinemäßiger
+Feldtest.
+HR: Za dijagnostiku ili proizvođački test, ne kao rutinski
+servisni test.
+DE: 20,4 V ohne BX-IOM / 20,1 V mit BX-IOM.
+HR: Ako sustav otpada mnogo ranije ili kasnije, potrebna je dodatna
+dijagnostika.
+Meldekontakt / Fault Fault / BX-IOM DE: Netz-/Versorgungsstörung gemäß freigegebenem Testablauf erzeugen und korrekte
+Störungsmeldung an Integral prüfen.
+HR: Prema odobrenom testu izazovi dozvoljenu smetnju napajanja i provjeri da Integral primi
+točnu Störung.
+DE: Inbetriebnahme / Wartung / nach Verdrahtungsänderung.
+HR: Kod puštanja, održavanja i nakon izmjene ožičenja.
+DE: Richtige Störung/Orttext; Kontakt nicht über 30 V DC/10 mA belasten.
+HR: Na BMZ mora doći prava Störung s jasnim tekstom; kontakt se ne smije
+električki preopteretiti.
+Netzausfall -> Akkubetrieb System DE: Nur nach freigegebenem Ablauf Netzversorgung trennen; Verbraucherbetrieb und
+Störungsmeldung beobachten.
+HR: Prema odobrenom postupku isključi mrežu, provjeri ostaju li potrošači napajani s
+akumulatora i javlja li sustav Störung.
+DE: Inbetriebnahme / Wartung.
+HR: Kod puštanja i održavanja.
+DE: Versorgung muss übernommen werden; genaue Zeitkriterien aus TD
+7003057 ergänzen, sobald verfügbar.
+HR: Potrošači moraju ostati napajani; detaljne vremenske kriterije dopuniti iz
+TD 7003057 kad bude dostupna.
+Potenzialausgleich / Kennzeichnung
+Gehäuse / PE
+DE: Sicht- und Anschlusskontrolle nach MIA / Projekt.
+HR: Vizualno i priključno provjeri PE/potentialausgleich i oznake.
+DE: Inbetriebnahme / Wartung.
+HR: Kod puštanja i servisa.
+DE: Projekt- und MIA-konform.
+HR: Mora biti izvedeno prema projektu i Hekatron uputi.
+Die vollständige technische Dokumentation TD 7003057 ist für Detailprüfungen der BE-PSE02 maßgebend. Die vorhandene MIA 7002206 nennt die Grundanschaltung und verweist ausdrücklich auf diese TD.
+Wo die TD nicht vorliegt, wurden keine Reaktionszeiten oder zusätzlichen Grenzwerte erfunden.
