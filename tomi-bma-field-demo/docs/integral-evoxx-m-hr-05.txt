@@ -1,0 +1,277 @@
+===== STRANICA 81 =====
+HRVATSKI PRIJEVOD - stranica 81
+Sklopovi
+5.18 Relejni sklop B3-REL10
+Funkcija
+B3-REL10 služi za priključivanje upravljanja u slučaju požara preko deset relejnih kontakata 230 V/3 A. U slučaju
+nestanka napajanja za releje se može programirati Fail-Safe položaj.
+Sistemski priključak nalazi se straga preko konektora na Relais-BUS, a sprijeda su dvije stezaljke za
+Brandfallsteuerungen.
+X1 - Relais-BUS. X2 i X3 - relejne stezaljke.
+Relais-BUS X1: B3-BSR5; 32-polni konektor.
+X2 sadrži releje R6-R10, X3 releje R1-R5.
+Tehnički podaci: bistabilni releji; kontaktni otpor maks. 30 mΩ; sklopni napon maks. 230 V AC / 125 V DC;
+sklopna struja maks. 3 A; sklopna snaga maks. 300 W / 2.500 VA; 2 x 10-polna vijčana stezaljka RM 7,62; presjek
+maks. 2,5 mm²; moment pritezanja 0,5-0,6 Nm.
+
+===== STRANICA 82 =====
+HRVATSKI PRIJEVOD - stranica 82
+Sklopovi
+Montaža
+B3-REL10 je utični modul s prednjom pločom od pocinčanog čeličnog lima i ugrađuje se u Steckplatz 11-13 dok
+konektor ne sjedne u B3-BSR5.
+Spajanje
+Vanjsku izolaciju priključenog kabela skinuti samo koliko je nužno. Pojedinačne vodiče učvrstiti kabelskim
+vezicama kako bi se osiguralo rasterećenje stezaljki od potezanja. Presjek priključnog voda mora biti
+dimenzioniran prema snazi priključenih potrošača.
+PAŽNJA
+Zaštitni mali napon i mrežni napon moraju biti fizički odvojeni. Za oba relejna sučelja vrijedi: čim je jedan relej
+određenog sučelja priključen na mrežni napon 230 V AC, na nijedan drugi relej istog sučelja ne smiju se
+priključivati komponente s 24 V DC SELV/zaštitnim malim naponom.
+Arbeits-/Ruhekontakt = radni/mirovni kontakt, ovisno o projektiranju.
+Verbraucher max. 230 V~/3 A = potrošač maks. 230 V AC / 3 A.
+L/N i R1-R5 spojiti prema originalnoj shemi.
+
+===== STRANICA 83 =====
+HRVATSKI PRIJEVOD - stranica 83
+Upravljačka i prikazna polja
+6. Upravljačka i prikazna polja
+6.1 Ugradbeno upravljačko polje B8-CII
+Funkcija
+Interno upravljačko polje B8-CII standardno je ugrađeno u odgovarajuće osnovne izvedbe i služi kao prvo
+informacijsko mjesto za prikaz i upravljanje Integral centralama za dojavu požara, upravljačkim uređajima
+sustava gašenja i cijelom BMA mrežom.
+Ima zaslon sa šest redaka (40 znakova po retku, 240 x 64 piksela), tipke i LED indikatore preko kojih se mogu
+zadavati sve naredbe sustavu i prikazivati sva stanja sustava. Sistemski priključak i napajanje dolaze preko
+odgovarajuće glavne procesorske jedinice, a akustična signalizacija preko ugrađenog zujala.
+Na B8-CII dodatno se mogu priključiti do tri EPI-BUS uređaja; dostupne su dvije slobodno programabilne tipke i
+LED.
+Sučelja: X1 - glavna procesorska jedinica; X3 - LC zaslon; X5 - pisač protokola; X6 - EPI-BUS; X7 - premosnik
+akustične signalizacije; X31 - osvjetljenje zaslona.
+X1: B5-MCU, B5-MCUA ili B8-MCU; 50-polni plosnati kabel.
+X5: B5-PIF; 16-polni plosnati kabel.
+
+===== STRANICA 84 =====
+HRVATSKI PRIJEVOD - stranica 84
+Upravljačka i prikazna polja
+EPI-BUS priključak B8-CII (X6)
+Oznake: GNDP, VP, EXTBUS+, EXTBUS-, +3V3, GND prema originalnoj tablici.
+Tehnički podaci: RS-485; domet maks. 1 m; asinkroni serijski prijenos 9.600 bit/s; dvosmjerno half-duplex; RJ-45,
+8-polni.
+Premosnik akustične signalizacije X7
+Služi za trajno isključivanje akustične signalizacije B8-CII i dopušten je samo za potrebe održavanja.
+Premosnik otvoren - tvorničko stanje: akustika aktivna.
+Premosnik postavljen: akustika deaktivirana.
+Spajanje
+B8-CII se spaja preko glavne procesorske jedinice B8-MCU. Za spajanje EPI-BUS sudionika vidi poglavlja 6.4 i
+10.4.
+
+===== STRANICA 85 =====
+HRVATSKI PRIJEVOD - stranica 85
+Upravljačka i prikazna polja
+6.2 Vanjsko upravljačko polje B8-MMI-CIP
+Funkcija
+B8-MMI-CIP služi kao prvo informacijsko mjesto za prikaz i upravljanje Integral centralama, upravljačkim
+uređajima sustava gašenja i kompletnom BMA mrežom. Ima zaslon sa šest redaka (40 znakova po retku, 240 x
+64 piksela), tipke i LED indikatore za sve naredbe i stanja sustava.
+Sistemski priključak i napajanje dolaze preko MMI-BUS-a, a akustična signalizacija preko ugrađenog zujala. Na
+upravljačko polje mogu se spojiti do tri EPI-BUS uređaja i vanjski pisač protokola B8-PRT. Dostupne su dvije
+slobodno programabilne tipke i dvije slobodno programabilne trobojne LED.
+Sučelja: X1 MMI-BUS; X2 napajanje; X3 LC zaslon; X4/X8 premosnici terminacije MMI-BUS-a; X5 vanjski pisač; X6
+EPI-BUS; X7 akustika; X9 premosnik Reset; X10 premosnik bez funkcije; X31 osvjetljenje zaslona; S1 rotacijski
+prekidač MMI-BUS adrese.
+Napajanje X2: MMIGND-A/B i MMI+24V-A/B; 8-polna utična vijčana stezaljka; presjek 0,2-2,5 mm²; moment
+0,5-0,6 Nm.
+
+===== STRANICA 86 =====
+HRVATSKI PRIJEVOD - stranica 86
+Upravljačka i prikazna polja
+MMI-BUS stezaljke B8-MMI-CIP (X1)
+Oznake GNDA/GNDB, DA-/DA+, DB-/DB+ prema originalnoj tablici.
+Tehnički podaci: RS-485; domet maks. 1.200 m; asinkroni serijski prijenos 96 kbit/s; dvosmjerno half-duplex;
+12-polna utična vijčana stezaljka; presjek 0,14-1,5 mm²; moment 0,22-0,25 Nm.
+Terminacija MMI-BUS-a X4/X8
+Otvoren premosnik - tvorničko stanje: MMI-BUS nije terminiran. Postavljen premosnik: MMI-BUS terminiran.
+PAŽNJA
+Na prvom i posljednjem MMI-BUS sudioniku premosnike uvijek postaviti. Ako su spojeni sudionici do verzije -E,
+premosnici se ne smiju postaviti.
+EPI-BUS X6: GNDP, VP, EXTBUS±, +3V3, GND; RS-485; maks. 1 m; 9.600 bit/s; half-duplex; RJ-45 8-polni.
+Akustična signalizacija X7: trajno isključenje samo za održavanje. Otvoren premosnik = akustika aktivna;
+postavljen = deaktivirana.
+
+===== STRANICA 87 =====
+HRVATSKI PRIJEVOD - stranica 87
+Upravljačka i prikazna polja
+Rotacijski prekidač MMI-BUS adrese S1
+Na jedan MMI-BUS smije se priključiti najviše 15 sudionika. Svakom sudioniku rotacijskim prekidačem treba
+dodijeliti istu adresu koja mu je dodijeljena u Integral Software, npr. 1=1, 2=2, 3=3 itd. Fizički redoslijed uređaja
+nije bitan, ali ista adresa smije biti dodijeljena samo jednom uređaju.
+Priključak pisača protokola X5
+Spaja se na X1 pisača protokola B8-PRT. Domet: kućište uz kućište. Mehanički: 16-polna konektorska letvica.
+Montaža upravljačkog polja
+Za odvajanje gornjeg dijela kućišta od montažne ploče, pritisnuti montažnu ploču na desnoj ili lijevoj strani
+prema unutra i povući kućište prema gore. Rupe za potrebne kabelske uvode izbušiti na jednoj od četiri strane ili
+straga na predviđenim utisnutim mjestima.
+Izbušiti montažne rupe prema crtežu, uvesti kabele i pričvrstiti montažnu ploču na podlogu tako da natpis TOP
+bude gore. Četiri prihvata za kabelske vezice omogućuju rasterećenje kabela.
+Ožičiti MMI-BUS prema shemi i postaviti adresu na S1. Ponovno postaviti kućište na montažnu ploču i pritisnuti
+dok ne sjedne.
+
+===== STRANICA 88 =====
+HRVATSKI PRIJEVOD - stranica 88
+Upravljačka i prikazna polja
+Montaža pisača
+Za skidanje gornjeg dijela kućišta pisača pritisnuti montažnu ploču na desnoj ili lijevoj strani prema unutra i
+povući kućište prema gore. Skinuti i kućište upravljačkog polja. Izlomiti predviđeni kabelski otvor na lijevoj strani
+kućišta pisača i desnoj strani kućišta upravljačkog polja.
+Izbušiti montažne rupe prema crtežu i pričvrstiti montažnu ploču tako da TOP bude gore. Plosnati kabel pisača
+provesti u upravljačko polje i utaknuti u sučelje. Oba kućišta ponovno postaviti i pritisnuti dok ne sjednu.
+Napomena
+Zbog duljine spojnog kabela pisač se smije montirati samo desno od upravljačkog polja. Kućišta moraju biti
+neposredno jedno uz drugo.
+Spajanje
+B8-MMI-CIP se preko MMI-BUS-a priključuje na upravljački sklop B8-BAF. Primjer MMI-BUS spajanja vidi poglavlje
+5.5.
+PAŽNJA
+Pisač B8-PRT smije raditi samo na B8-MMI-CIP; priključivanje na druge komponente nije dopušteno.
+
+===== STRANICA 89 =====
+HRVATSKI PRIJEVOD - stranica 89
+Upravljačka i prikazna polja
+6.3 Vanjsko prikazno polje B5-MMI-PIP
+Funkcija
+B5-MMI-PIP služi za prikaz stanja Integral centrala i pojednostavljeno je prikazno/upravljačko mjesto s bitnim
+funkcijama za određeno područje, npr. kao etažni terminal u bolnicama ili domovima za starije i njegu.
+Ima zaslon sa šest redaka (40 znakova po retku, 240 x 64 piksela), tipke i LED indikatore za prikaz stanja Alarm,
+Störung i Abschaltung. Priključni modul nalazi se u odvojivom kućištu. Sistemski priključak i napajanje dolaze
+preko MMI-BUS-a, a akustika preko ugrađenog zujala.
+Na B5-MMI-PIP mogu se priključiti do tri EPI-BUS uređaja, a dostupne su dvije slobodno programabilne tipke i
+LED.
+Sučelja: X1 MMI-BUS; X2 napajanje; X3 LC zaslon; X4/X6 terminacija MMI-BUS-a; X5 EPI-BUS; X7 akustična
+signalizacija; X8 interni premosnik - NIKADA NE POSTAVLJATI; X31 osvjetljenje zaslona; S1 rotacijski prekidač
+MMI-BUS adrese.
+
+===== STRANICA 90 =====
+HRVATSKI PRIJEVOD - stranica 90
+Upravljačka i prikazna polja
+MMI-BUS B5-MMI-PIP X1
+BUSGNDA/B i MMIBUSA/B ± prema originalnoj tablici. RS-485; domet maks. 1.200 m; asinkroni serijski prijenos
+96 kbit/s; half-duplex; 12-polna vijčana stezaljka RM 3,81; presjek maks. 1 mm²; moment 0,22-0,25 Nm.
+Napajanje X2: MMIGNDA/B i MMI+24VA/B; 8-polna vijčana stezaljka RM 5,08; presjek maks. 2,5 mm²; moment
+0,5-0,6 Nm.
+Terminacija MMI-BUS-a X4/X6
+Otvoren premosnik = nije terminiran; postavljen = terminiran.
+PAŽNJA
+Prvi i posljednji MMI-BUS sudionik treba terminirati. Kod sudionika do verzije -E premosnici se ne smiju postaviti.
+Akustika X7: trajno isključivanje samo za održavanje. Otvoren premosnik = aktivna; postavljen = deaktivirana.
+
+===== STRANICA 91 =====
+HRVATSKI PRIJEVOD - stranica 91
+Upravljačka i prikazna polja
+EPI-BUS B5-MMI-PIP X5
+GNDP, VP, EXTBUS±, +3V3 i GND prema originalu. RS-485; maks. 1 m; 9.600 bit/s; half-duplex; RJ-45, 8-polni.
+MMI-BUS adresa S1
+Na MMI-BUS smije se priključiti najviše 15 uređaja. S1 adresu postaviti jednako adresi u Integral Software; fizički
+redoslijed je proizvoljan, ali se ista adresa ne smije ponoviti.
+Montaža
+Za skidanje kućišta pritisnuti montažnu ploču na desnoj ili lijevoj strani prema unutra i povući kućište prema
+gore. Konusnim svrdlom izbušiti potrebne kabelske uvode gore, dolje ili straga i umetnuti priložene kabelske
+uvodnice. Izbušiti montažne rupe prema crtežu, uvesti kabel i pričvrstiti ploču. Dva prihvata za vezice omogućuju
+rasterećenje.
+Ožičiti MMI-BUS i postaviti adresu, zatim vratiti kućište dok ne sjedne.
+Spajanje
+B5-MMI-PIP se preko MMI-BUS-a spaja na B8-BAF. Primjer vidi poglavlje 5.5. Za EPI-BUS vidi poglavlja 6.4 i 10.4.
+
+===== STRANICA 92 =====
+HRVATSKI PRIJEVOD - stranica 92
+Upravljačka i prikazna polja
+6.4 Vanjsko prikazno i upravljačko polje B5-EPI-PIC
+Funkcija
+B5-EPI-PIC služi za prikaz i upravljanje funkcijama Integral centrala unutar određenog područja, npr. kao etažni
+terminal u bolnicama ili domovima za starije i njegu.
+Ima 32 dvobojna LED pokazivača (crveno/žuto) i 16 tipki. Priključni modul nalazi se u odvojivom kućištu.
+Sistemski priključak i napajanje dolaze preko EPI-BUS-a, a akustična signalizacija preko ugrađenog zujala. Može
+se priključiti i vanjski ključni prekidač.
+Sučelja: X2 premosnik akustične signalizacije; X3 EPI-BUS; X4 vanjski ključni prekidač; S1 rotacijski prekidač
+EPI-BUS adrese.
+X2: trajno isključenje akustike samo za održavanje. Otvoren premosnik = akustika aktivna; postavljen =
+deaktivirana.
+
+===== STRANICA 93 =====
+HRVATSKI PRIJEVOD - stranica 93
+Upravljačka i prikazna polja
+EPI-BUS B5-EPI-PIC X3
+EPI A i EPI B koriste GNDP, VP, EXTBUS±, +3V3 i GND prema originalnoj tablici.
+Tehnički: RS-485; domet maks. 1 m; 9.600 bit/s; dvosmjerno half-duplex; RJ-45, 8-polni.
+Vanjski ključni prekidač X4: KEY+ = 24 V (+), KEY- = GND (-).
+EPI-BUS adresa S1
+Na EPI-BUS smiju se priključiti najviše tri sudionika. Svakom rotacijskim prekidačem dodijeliti istu adresu kao u
+Integral Software. Fizički redoslijed nije bitan, ista adresa smije postojati samo jednom.
+Montaža
+Skinuti kućište pritiskom montažne ploče sa strane i povlačenjem kućišta prema gore. Konusnim svrdlom izbušiti
+kabelske uvode gore, dolje ili straga te umetnuti priložene uvodnice. Izbušiti montažne rupe, uvesti kabel i
+pričvrstiti ploču. Dva mjesta za kabelske vezice omogućuju rasterećenje.
+EPI-BUS spojiti priloženim patch kabelom duljine 1 m, postaviti adresu i vratiti kućište dok ne sjedne.
+
+===== STRANICA 94 =====
+HRVATSKI PRIJEVOD - stranica 94
+Upravljačka i prikazna polja
+Spajanje B5-EPI-PIC
+B5-EPI-PIC se preko EPI-BUS-a može priključiti na sljedeće proizvode koji imaju EPI-BUS sučelje:
+- ugradbeno upravljačko polje B8-CII/B9-CII, X6;
+- glavna procesorska jedinica B10-CPU-X1, X6;
+- vanjsko upravljačko polje B8-MMI-CIP, X6;
+- vanjsko upravljačko polje B5-MMI-CIP, X5 na B5-MMI-CII-T;
+- vanjsko prikazno polje B5-MMI-PIP, X5;
+- vatrogasno upravljačko polje B5-MMI-FPD, X5.
+weitere EPI-BUS Geräte = dodatni EPI-BUS uređaji.
+EPI-BUS: maksimalno 3 sudionika, maksimalna duljina 1 m.
+EPI A / EPI B priključke spojiti prema originalnoj shemi.
+
+===== STRANICA 95 =====
+HRVATSKI PRIJEVOD - stranica 95
+Upravljačka i prikazna polja
+6.5 Vanjsko prikazno polje B3-MMI-IPEL / B3-MMI-EAT64
+Funkcija
+B3-MMI-IPEL i B3-MMI-EAT64 služe za prikaz stanja Integral centrala i upravljačkih uređaja sustava gašenja.
+B3-MMI-IPEL za osam područja gašenja ima 12 LED po području, zbirni prikaz s devet LED i ključni prekidač za
+Revision. B3-MMI-EAT64 za 64 Meldergruppen ima po dvije LED po grupi za prikaz stanja Alarm, Störung i
+Abschaltung.
+Dva priključna modula B3-MMI-UIO nalaze se u preklopnom kućištu. Sistemski priključak i napajanje dolaze preko
+MMI-BUS-a.
+B3-MMI-UIO 1: X1 MMI-BUS dolazno s UIO2 i odlazno prema MMI-BUS-u; X2 napajanje dolazno s UIO2 i odlazno
+prema MMI-BUS-u; X3/X4 MUX izlazi za LED; X5 tranzistorski izlazi; X6 optokaplerski ulazi; X7/X8 terminacija
+MMI-BUS-a; X10 akustika Reset; S1 adresa.
+B3-MMI-UIO 2: X1 MMI-BUS dolazno s MMI-BUS-a i odlazno prema UIO1; X2 napajanje dolazno s MMI-BUS-a i
+odlazno prema UIO1; ostala sučelja analogno.
+MUX izlazi povezani su s prikaznim poljem plosnatim kabelom.
+
+===== STRANICA 96 =====
+HRVATSKI PRIJEVOD - stranica 96
+Upravljačka i prikazna polja
+MMI-BUS B3-MMI-UIO X1
+BUSGNDA/B i MMIBUSA/B ± prema originalu. RS-485; maks. 1.200 m; 38,4 kbit/s; half-duplex; 12-polna vijčana
+stezaljka RM 3,81; presjek maks. 1 mm²; moment 0,22-0,25 Nm.
+Napajanje X2: MMIGNDA/B i MMI+24VA/B; 8-polna vijčana stezaljka RM 5,08; presjek maks. 2,5 mm²; moment
+0,5-0,6 Nm.
+Tranzistorski izlazi X5
+SYNOUT-, GND, +5 V, OUT0-...OUT7- te posebne oznake TMZ/TM/FLAC/ALAC prema originalu.
+Namjena: signalizatori, lampe, releji ili upravljanje matricom. Izlazni napon maks. 30 V; opterećenje maks. 100
+mA po izlazu; Open Collector; domet maks. 100 m; paralelni prijenos; 12-polna stezaljka RM 3,81; presjek maks.
+1,5 mm²; moment 0,22-0,25 Nm.
+
+===== STRANICA 97 =====
+HRVATSKI PRIJEVOD - stranica 97
+Upravljačka i prikazna polja
+Optokaplerski ulazi B3-MMI-UIO X6
+SYNIN-, GND, +5 V, IN0-...IN7- i dodatne oznake TMS/ACOFF/LAMP TEST prema originalnoj tablici.
+Namjena: paralelni kontaktni ulazi / matrica 8 x 8. Ulazni napon 5 V; ulazna struja 3,3 mA; ulazni otpor 1,5 kΩ;
+domet maks. 100 m; paralelni prijenos; 12-polna stezaljka RM 3,81; presjek maks. 1,5 mm²; moment 0,22-0,25
+Nm.
+Terminacija MMI-BUS-a X7/X8: otvoreno = nije terminiran; postavljeno = terminiran.
+PAŽNJA: prvi i posljednji MMI-BUS sudionik terminirati, osim kod sudionika do verzije -E, gdje se premosnici ne
+smiju postaviti.
+Akustika Reset X10: služi za reset opcionalno programiranih alarmnih i smetnja-akustičnih izlaza OUT6+7 /
+LED56+57 preko ulaza IN0. Otvoren premosnik = reset deaktiviran; postavljen = aktivan.
+MMI-BUS adresa S1: najviše 15 sudionika; adresa mora odgovarati Integral Software. Fizički redoslijed je
+slobodan, adresa jedinstvena. Za B3-MMI-UIO 1 unaprijed je postavljena adresa 1, za UIO 2 adresa 2.
