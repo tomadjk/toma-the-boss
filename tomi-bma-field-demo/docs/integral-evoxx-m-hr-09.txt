@@ -1,0 +1,250 @@
+===== STRANICA 161 =====
+HRVATSKI PRIJEVOD - stranica 161
+Javljači požara
+USB 502 - montaža (mjere u mm)
+A = elastični umetak za pričvršćenje podnožja.
+B = elastični umetak za podžbukni ulaz kabela.
+C = predviđena mjesta loma za nadžbukni ulaz kabela.
+D = elastični umetak za nadžbukni ulaz kabela.
+E = mjesto za pomoćnu stezaljku.
+F = oznaka za usmjerenje LED-a i pravilan položaj zabravljivanja javljača.
+Podnožje trajno osigurati od pritiska, povlačenja i zakretanja s dva vijka kroz umetke A. Ovisno o vrsti ulaza
+kabela probušiti odgovarajuće umetke ili otvoriti predviđene lomne točke. Kabel uvesti tako da prašina i vlaga ne
+mogu ući; podnožje montirati na glatku i čistu površinu. Ne montirati izravno iznad kabelskih kanala, vodovodnih
+cijevi i slično. Od svjetiljki, zidova, greda i sl. držati bočni razmak najmanje 0,5 m.
+Unterputzinstallation = podžbukna instalacija; Aufputzinstallation = nadžbukna instalacija.
+Alarmni LED je vidljiv 360°, pa orijentacija podnožja funkcionalno nije važna. U većim prostorima preporučuje se
+sva LED pokazivanja usmjeriti prema ulazu u prostor/zonu.
+Na kraju javljač uvrnuti u podnožje bajunetnim spojem. Tijekom gradnje može se koristiti priložena zaštitna kapa
+protiv prašine. Za zaštitu od neovlaštenog skidanja moguće je u predviđeni urez podnožja uvrnuti vijak.
+
+===== STRANICA 162 =====
+HRVATSKI PRIJEVOD - stranica 162
+Javljači požara
+USB 502 - spajanje
+USB 502 priključuje se preko X-LINE B8-DXI2; primjer Ring veze vidi poglavlje 5.3.
+Kod Stich javljača MSD 523 i UTD 523 spajanje se izvodi preko B8-IM8 ili BX-MDI8, sa završnim otpornikom 3 kΩ
+između stezaljki 1 i 2 javljača.
+Kod modernizacijskih javljača MMD 140 odnosno MMD 150 koristi se B8-LEE23 odnosno B8-LEE24.
+Za MTD 533X, -SCT, -SPCT, CMD 533X i LKM 593X: L1/L2 = Data(+), GND = GND(-), SHLD = oklop. Vanjski
+pojedinačni indikator MEA 720X priključuje se na alarmni izlaz prema shemi.
+Za MTD 533X-SES/-SPES dodatno se koristi galvanski odvojeno vanjsko napajanje: GND Extern i +24 V DC
+Extern, točno prema originalnom nacrtu.
+
+===== STRANICA 163 =====
+HRVATSKI PRIJEVOD - stranica 163
+Javljači požara
+9.2 Podnožje USB 502-7 Ex-i
+Funkcija
+USB 502-7 Ex-i služi za priključivanje i prihvat Stich javljača MMD 130 Ex-i. Stichleitung se spaja na 6-polni crni
+terminalni blok; dodatno mjesto može služiti za pomoćnu stezaljku.
+Sučelja: X1 = Stichleitung; X2 = mjesto za pomoćnu stezaljku.
+X1: GND, 24 V, 24 V, GND te dvije pomoćne stezaljke prema originalnoj tablici.
+Tehnički: 6-polna stezaljka RM 3,81; presjek maks. 1,0 mm²; moment 0,22-0,25 Nm.
+Montaža (mjere u mm): A = elastični umetak za pričvršćenje podnožja; B = elastični umetak za podžbukni
+kabelski ulaz.
+MMD 130 Ex-i s USB 502-7 Ex-i ugrađuje se u eksplozivno ugroženom području, dok se sigurnosna barijera
+ugrađuje u sigurnom području.
+
+===== STRANICA 164 =====
+HRVATSKI PRIJEVOD - stranica 164
+Javljači požara
+Montaža MMD 130 Ex-i u USB 502-7 Ex-i
+Otpustiti dva vijka i iz nadžbukne kutije izvaditi prethodno montirano osnovno podnožje bez prstenastog
+kontakta. Izbušiti rupe prema crtežu i pričvrstiti kutiju. Kod betonskog stropa površina mora biti ravna kako se
+podnožje ne bi deformiralo.
+Vodove provesti kroz M16 kabelske uvodnice i osnovno podnožje te priključiti prema shemi. Za intrinzično
+sigurne svijetloplave Ex-i vodove moraju se koristiti zasebni kabelski kanali; nije dopušteno vođenje u istom
+kanalu s vodovima koji nisu intrinzično sigurni. Nakon spajanja čvrsto zategnuti uvodnice radi rasterećenja
+potezanja i ponovno pričvrstiti osnovno podnožje.
+Postavljanje DIP prekidača
+MMD 130 Ex-i može raditi kao dimni javljač EN 54-7 ili toplinski javljač EN 54-5. Od DIP 1-7 samo jedan smije biti
+ON. Ako je više njih ON ili su svi OFF, prikazuje se smetnja.
+Prema tablici biraju se: Rauchmelder, klase toplinskog javljača A1, A1S, A2, A2S, B ili BS; DIP 8 je bez funkcije;
+DIP 9 bira GTW 01/02 (ON) ili EXBAR 02 Z787 (OFF); DIP 10 bira brzi dimni filtar za posebnu primjenu (ON) ili
+standardni tvornički filtar (OFF).
+
+===== STRANICA 165 =====
+HRVATSKI PRIJEVOD - stranica 165
+Javljači požara
+Usmjerenje alarmnog LED-a
+Svaki javljač ima vlastiti crveni alarmni pokazivač vidljiv 360°. Kod većeg broja javljača preporučuje se sve
+pokazivače usmjeriti prema ulazu u prostor/zonu. Zaštitna kapa iz isporuke može se koristiti tijekom gradnje ili
+rekonstrukcije.
+Označavanje načina rada
+Za način rada „temperatura” u isporuci je sivi označni prsten. Kada se MMD 130 Ex-i koristi kao toplinski javljač,
+prsten se mora zalijepiti na javljač prema prikazu.
+Napomena
+Bez jasne oznake načina rada pri održavanju na licu mjesta nije vidljivo treba li ispitivati dim ili toplinu.
+Sigurnosna barijera
+Za montažu je predviđeno kućište s nosačem i DIN šinom 35 mm za sigurnosnu barijeru i PE stezaljku. Zbog
+ograničenog pristupa stezaljkama prvo ožičiti barijeru i PE stezaljku, zatim ih ugraditi. Barijera se može zakvačiti
+na DIN šinu samo s rasterećenom držač-stezaljkom. PE stezaljku nakon montaže dobro zategnuti radi pouzdanog
+kontakta.
+Napomena: za ovu montažu sustav izjednačenja potencijala mora odgovarati važećim propisima.
+
+===== STRANICA 166 =====
+HRVATSKI PRIJEVOD - stranica 166
+Javljači požara
+Ex-i uzemljenje i spajanje
+Svako Ex područje mora imati vlastiti sustav uzemljenja. Od PE stezaljke sigurnosne barijere prema njemu vodi
+se izjednačenje potencijala 1,5 mm². Ostale barijere u istom Ex području također se povezuju vodičem 1,5 mm².
+Da bi se spriječio prijenos potencijala, između uzemljenja sigurnosne barijere i uzemljenja BMZ mora se položiti
+izjednačenje potencijala 10 mm².
+Oklop instalacije u pravilu nije potreban; koristi se kada postoje ili se periodično pojavljuju EMC smetnje. Ex-i
+razvodne kutije moraju imati najmanje IP42 i puznu stazu između stezaljki najmanje 3 mm. Ex-i krug označava se
+plavim kabelskim uvodnicama.
+Spajanje USB 502-7 Ex-i moguće je preko BX-AIM. Preko jedne EXBAR 02 (Z787) na BX-AIM mogu se priključiti
+najviše 3 MMD 130 Ex-i. Linija se završava otpornikom 19,1 kΩ sa termoskupljajućom izolacijom.
+Prema shemi: do 3 javljača u Ex području; maksimalno 500 m na Ex strani i maksimalno 700 m prema prikazanoj
+liniji. Polaritet i priključke C, P-, L, L Ex, P+, L1/L2, GND i SHLD spojiti točno prema originalu.
+
+===== STRANICA 167 =====
+HRVATSKI PRIJEVOD - stranica 167
+Javljači požara
+9.3 Ručni javljač MCP 535X
+Funkcija
+MCP 535X je neautomatski tipkasti javljač i može se priključiti isključivo na prstenastu tehnologiju. Ring se spaja
+preko dva 4-polna terminalna bloka.
+X1: pomoćna stezaljka, L1 = Data(+) in/out, GND = GND(-) in/out, SHLD = oklop.
+X2: pomoćna stezaljka, L2 = Data(+) in/out, GND = GND(-) in/out, SHLD = oklop.
+Priključci 1/5, 3/7 i 4/8 međusobno su povezani.
+Tehnički: vijčana stezaljka RM 5,0; presjek maks. 1,5 mm²; moment 0,5-0,6 Nm.
+Mjerni crtež prikazuje potrebni prostor za otvaranje javljača.
+
+===== STRANICA 168 =====
+HRVATSKI PRIJEVOD - stranica 168
+Javljači požara
+MCP 535X - montaža i spajanje
+Poklopac pomaknuti udesno, umetnuti ključ i okrenuti udesno. Unutarnji dio osloboditi iz sidrišta i izvaditi.
+Izbušiti rupe prema crtežu, provesti kabel nadžbukno ili podžbukno i montirati javljač. Umetnuti natpisni list na
+unutarnji dio i vratiti ga.
+Pritiskom tipke provesti funkcijski test, zatim javljač resetirati/otključati prema prikazu i zatvoriti.
+PAŽNJA
+Ako je ručni javljač izvan pogona, mora biti označen priloženim upozoravajućim natpisom koji se umeće iza
+stakla na stražnjoj strani vrata.
+Spajanje je preko X-LINE B8-DXI2; primjer Ring veze vidi poglavlje 5.3. L1/L2, GND i SHLD spojiti prema
+originalnoj shemi.
+
+===== STRANICA 169 =====
+HRVATSKI PRIJEVOD - stranica 169
+Javljači požara
+9.4 Ručni javljač MCP 525
+Funkcija
+Konvencionalni MCP 525 je neautomatski tipkasti javljač s dodatnim relejnim izlazom. Stichleitung i relej spajaju
+se na 10-polni terminalni blok.
+Priključci: GND ulaz, +24 V ulaz, GND izlaz, +24 V izlaz, SHLD, dva slobodna priključka, NC = mirovni kontakt,
+COM = zajednički, NO = radni kontakt.
+Montaža je kao kod MCP 535X.
+Spajanje je moguće preko B8-IM8 ili BX-MDI8.
+U svakom javljaču osim završnog javljača mora se ukloniti otpornik R2.
+Prema shemi: najviše 10 komada, maksimalno 1.000 m. R2 (RE) entfernen = ukloniti R2 završni otpornik na svim
+javljačima osim zadnjeg. Oznake VdS/HX i LINE/COM ostaju prema originalu.
+
+===== STRANICA 170 =====
+HRVATSKI PRIJEVOD - stranica 170
+Javljači požara
+9.5 Ručni javljač NAM ADGX
+Funkcija
+NAM ADGX je neautomatski tipkasti javljač u kućištu od tlačno lijevanog aluminija i priključuje se isključivo na
+prstenastu tehnologiju. Ring se spaja na 4-polni terminalni blok.
+Priključci: L1 = Data(+) in/out; GND = GND(-) in/out; L2 = Data(+) in/out; GND = GND(-) in/out; 24 V = 24 V(+)
+za upravljanje LED-om.
+Tehnički: 4-polna vijčana stezaljka RM 5,0; presjek maks. 1,5 mm².
+Mjerni crtež prikazuje potreban prostor za otvaranje.
+PAŽNJA
+Ako je javljač izvan pogona, mora biti označen priloženim upozoravajućim natpisom iza stakla.
+
+===== STRANICA 171 =====
+HRVATSKI PRIJEVOD - stranica 171
+Javljači požara
+NAM ADGX - montaža i spajanje
+Poklopac pomaknuti prema gore, umetnuti ključ i okrenuti udesno za otvaranje. Izbušiti montažne rupe prema
+crtežu.
+Za podžbukni kabel izvaditi pločicu nakon otpuštanja gornjeg vijka. Na dnu kućišta postoje dvije predviđene
+lomne točke za podžbukni ulaz; otvoriti ih ravnim dlijetom na označenom udubljenju. Nakon provlačenja voda
+pričvrstiti javljač na podžbuknu kutiju. Kod nadžbuknog kabela montirati nakon provlačenja voda.
+Provesti funkcijski test pritiskom tipke, resetirati/otključati i zatvoriti.
+NAM ADGX se priključuje preko X-LINE B8-DXI2. Stezaljka 7 upravlja LED-om u javljaču. Postojeći kabelski oklop
+povezati preko pomoćne stezaljke. L1/L2, GND i SHLD spojiti prema originalnom crtežu.
+
+===== STRANICA 172 =====
+HRVATSKI PRIJEVOD - stranica 172
+Javljači požara
+9.6 Ručni javljač C31X
+Funkcija
+C31X je neautomatski tipkasti javljač u IP66 izvedbi i priključuje se isključivo na Ring. Ring se spaja na 4-polni
+terminalni blok.
+Priključci: L2 = Data(+) in/out; GND = GND(-) in/out; L1 = Data(+) in/out; GND = GND(-) in/out.
+Tehnički: 4-polna vijčana stezaljka RM 5,0; presjek maks. 1,5 mm².
+Mjerni crtež prikazuje potreban prostor za otvaranje.
+PAŽNJA
+Ako je ručni javljač izvan pogona, mora biti označen priloženim upozoravajućim natpisom iza stakla.
+
+===== STRANICA 173 =====
+HRVATSKI PRIJEVOD - stranica 173
+Javljači požara
+C31X - montaža i spajanje
+Poklopac pomaknuti udesno, umetnuti ključ i okrenuti udesno. Nakon toga otpustiti četiri imbus vijka 3 mm i
+izvaditi unutarnji dio. Izbušiti rupe prema crtežu, provesti kabel i montirati kućište.
+Funkcijski test izvesti pritiskom tipke. Za reset ključ vrata staviti na zatik i okretati udesno dok tipka ne skoči u
+početni položaj, zatim zatvoriti javljač.
+C31X se spaja preko X-LINE B8-DXI2. Postojeći oklop kabela povezati preko pomoćne stezaljke. Priključci prema
+shemi: 4 = GND(-), 1 = L2(+), 3 = L1(+), 2 = GND(-).
+
+===== STRANICA 174 =====
+HRVATSKI PRIJEVOD - stranica 174
+Javljači požara
+9.7 Bežični javljači FDOOT271-O i FDM273-O preko BX-WGW
+Napomena
+Ovdje je prikazano samo osnovno spajanje; detalji su u tehničkoj dokumentaciji 7003018.
+Funkcija
+Bežični javljači povezuju se preko prijemne jedinice BX-WGW koja se priključuje isključivo na Ring. Jedinica sadrži
+kućište, integrirani Ring modul, radio modul i bateriju te služi kao komunikacijsko sučelje između centrale i
+bežičnih javljača navedenih u dokumentu.
+Adresiranje i parametri izvode se preko Integral Software. BX-WGW sadrži dva izolatora kratkog spoja radi
+održavanja funkcije preostalih uređaja prema EN 54-2.
+X2 - Ring: L1 = Data(+) in/out; dva GND priključka za GND(-)/alarmni izlaz prema tablici; L2 = Data(+); SHLD
+priključci za oklop.
+Mehanički: 6-polna stezaljka RM 3,81; presjek maks. 1,0 mm²; moment 0,22-0,25 Nm.
+
+===== STRANICA 175 =====
+HRVATSKI PRIJEVOD - stranica 175
+Javljači požara
+BX-WGW - montaža (mjere u mm)
+Prijemna jedinica isporučuje se kao komplet: kućište, radio modul i baterija.
+PAŽNJA
+Između pojedinih radio komponenti uvijek održavati najmanje 1 m razmaka jer inače može doći do smetnji radio
+veze.
+Napomena
+Za aktiviranje Reed kontakta magnet se vodi izvana uz bočnu stranu kućišta, stoga BX-WGW mora ostati
+pristupačan i ne smije se postaviti u međustrop ili na previsoko mjesto.
+Oznake: 1 poklopac; 2 vijak; 3 zasun; 4 pričvršćenje rasterećenja kabela; 5 kabelski uvodi.
+Postupak: odabrati mjesto prema projektiranju uz dobru radio propagaciju i pristup; ostaviti dovoljno prostora za
+otvaranje, položaj kućišta je proizvoljan. Otpustiti vijak 2, pritisnuti zasun 3 odvijačem i skinuti poklopac 1.
+Odvojiti naljepnicu sa serijskim brojem i njome označiti mjesto na planu. Otvoriti odgovarajući kabelski ulaz 5 za
+podžbukni ili nadžbukni kabel i uvesti kabele.
+
+===== STRANICA 176 =====
+HRVATSKI PRIJEVOD - stranica 176
+Javljači požara
+Montaža bežičnih javljača
+Stranica prikazuje mjerne crteže za FDOOT271 i FDM273-O; sve dimenzije ostaju prema originalu.
+Spajanje
+BX-WGW se priključuje preko Ring modula B8-DXI2. Primjer Ring veze vidi poglavlje 5.3.
+
+===== STRANICA 177 =====
+HRVATSKI PRIJEVOD - stranica 177
+Javljači požara
+9.8 Plameni javljač FDF 241-9
+Funkcija
+FDF 241-9 detektira bezdimne požare tekućina i plinova te otvorene požare s dimom kod materijala koji sadrže
+ugljik, npr. drvo, plastika, plinovi i naftni proizvodi. Stichleitung se priključuje preko 6-polnog bloka u podnožju
+FDFB 291.
+Sučelja: X1 konektor javljača prema podnožju; X2 DIP postavke; X3 Stichleitung.
+DIP 4-6 bez funkcije. Osjetljivost/način rada bira se kombinacijama prema tablici: Robust, Universal, Universal
+fast, Sensitive, Sensitive fast, Rapid i Motorenteststand.
+PAŽNJA
+Tvornički su svi DIP prekidači OFF. Obavezno je odabrati postavku jer inače nije moguća ispravna detekcija.
+X3: L+ ulaz 24 V(+), L- ulaz GND(-), zatim izlazni priključci prema originalnoj tablici; preostala dva priključka nisu
+zauzeta.
