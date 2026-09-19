@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b3158">
+<title>Tomi BMA Field – Dokumente</title>
+<style>
+:root{--navy:#0b3158;--navy2:#173e67;--ink:#17324d;--muted:#6a7a88;--line:#d7e0e7;--soft:#f3f6f9;--green:#16834f;--yellow:#fff7e8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--soft);color:var(--ink)}
+button,input,textarea{font:inherit}
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:white;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 14px #0002}
+header h1{font-size:20px;margin:0;flex:1}
+header small{display:block;font-size:11px;opacity:.78;font-weight:400;margin-top:2px}
+.iconbtn{min-width:44px;height:44px;border:1px solid #ffffff38;border-radius:12px;background:#ffffff10;color:white;font-weight:900}
+.wrap{max-width:1050px;margin:auto;padding:12px}
+.toolbar{position:sticky;top:68px;z-index:15;background:var(--soft);padding:0 0 10px}
+.search{display:flex;gap:8px}
+.search input{flex:1;min-height:46px;border:1px solid var(--line);border-radius:12px;background:white;padding:0 12px}
+.count{font-size:12px;color:var(--muted);padding:7px 2px 0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:left;min-height:150px;display:flex;flex-direction:column;gap:8px;box-shadow:0 5px 18px #0b31580a}
+.card:active{transform:translateY(1px)}
+.tag{display:inline-flex;align-self:flex-start;background:#e9f2f9;color:var(--navy);font-size:11px;font-weight:900;padding:4px 8px;border-radius:999px}
+.card h2{font-size:18px;line-height:1.2;margin:0}
+.card p{font-size:13px;color:var(--muted);line-height:1.45;margin:0;flex:1}
+.open{font-weight:900;color:var(--green);font-size:13px}
+.empty{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;color:var(--muted);display:none}
+.reader{display:none;position:fixed;inset:0;background:var(--soft);z-index:50}
+.reader.show{display:block}
+.rhead{height:64px;background:var(--navy);color:white;display:flex;align-items:center;gap:8px;padding:10px 12px;position:sticky;top:0;z-index:2}
+.rtitle{min-width:0;flex:1}
+.rtitle b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtitle small{font-size:11px;opacity:.76}
+.rtools{display:flex;gap:6px}
+.rtools button{height:42px;min-width:42px;border:1px solid #ffffff38;border-radius:10px;background:#ffffff10;color:white;font-weight:900}
+.rbody{height:calc(100vh - 64px);overflow:auto;padding:10px;scroll-behavior:smooth}
+.readbar{background:white;border:1px solid var(--line);border-radius:14px;padding:9px;display:grid;grid-template-columns:1fr auto;gap:7px;position:sticky;top:0;z-index:1;box-shadow:0 4px 14px #0b315812}
+.readbar input{min-height:42px;border:1px solid var(--line);border-radius:10px;padding:0 10px}
+.readbar button{min-height:42px;border:0;border-radius:10px;background:var(--navy);color:white;font-weight:900;padding:0 13px}
+.hitinfo{grid-column:1/-1;font-size:11px;color:var(--muted)}
+.note{margin-top:9px;background:var(--yellow);border:1px solid #e6c771;border-radius:14px;padding:10px}
+.note label{display:block;font-size:12px;font-weight:900;color:#7a5200;margin-bottom:6px}
+.note textarea{width:100%;min-height:72px;border:1px solid #e3c983;border-radius:10px;padding:9px;background:#fffdf8;resize:vertical}
+.note .saved{font-size:11px;color:#7a6200;margin-top:4px}
+.paper{margin-top:9px;background:white;border:1px solid var(--line);border-radius:14px;padding:16px;min-height:55vh}
+pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:Arial,sans-serif;font-size:15px;line-height:1.55;color:#102d46}
+mark{background:#ffe08a;color:#102d46;border-radius:2px}
+.loading{padding:28px;text-align:center;color:var(--muted);font-weight:800}
+.err{padding:14px;border:1px solid #efb4ae;background:#fff2f1;color:#9b241d;border-radius:12px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}.wrap{padding:9px}.toolbar{top:68px}.paper{padding:12px}pre{font-size:14px}.rtitle small{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <button id="homeBtn" class="iconbtn" aria-label="Zurück">‹</button>
+  <h1>Dokumente<small>Übersetzte BMA-Unterlagen zum Nachlesen</small></h1>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <div class="search"><input id="libSearch" type="search" placeholder="Dokumente durchsuchen…"></div>
+    <div id="count" class="count"></div>
+  </div>
+  <div id="cards" class="cards"></div>
+  <div id="empty" class="empty">Keine passenden Dokumente gefunden.</div>
+</main>
+
+<section id="reader" class="reader" aria-hidden="true">
+  <div class="rhead">
+    <button id="readerBack" class="iconbtn" aria-label="Zurück">‹</button>
+    <div class="rtitle"><b id="readerTitle">Dokument</b><small id="readerMeta"></small></div>
+    <div class="rtools"><button id="fontMinus" title="Schrift kleiner">A−</button><button id="fontPlus" title="Schrift größer">A+</button></div>
+  </div>
+  <div id="rbody" class="rbody">
+    <div class="readbar">
+      <input id="docSearch" type="search" placeholder="Im geöffneten Dokument suchen…">
+      <button id="findNext">Suchen</button>
+      <div id="hitInfo" class="hitinfo"></div>
+    </div>
+    <div class="note">
+      <label for="docNote">Notiz / Erinnerung</label>
+      <textarea id="docNote" placeholder="Eigene Notiz zu diesem Dokument eingeben…"></textarea>
+      <div id="noteSaved" class="saved">Wird automatisch auf diesem Gerät gespeichert.</div>
+    </div>
+    <div id="paper" class="paper"><div class="loading">Dokument wird geladen…</div></div>
+  </div>
+</section>
+
+<script>
+const DOCS=[
+ {id:'integral-ip',tag:'HEKATRON',title:'Programmierung von Integral IP-Zentralen',meta:'119 Seiten · HR',desc:'Kompletter kroatischer Arbeitstext. Deutsche Programmbefehle, Menüs und Feldnamen bleiben im Original.',parts:['docs/integral-ip-programmierung-hr.txt']},
+ {id:'evoxx-m',tag:'HEKATRON',title:'Integral EvoxX M – Montage- und Installationsanleitung',meta:'294 Seiten · HR',desc:'Kroatische Übersetzung der Montage- und Installationsanleitung mit beibehaltenen deutschen Fachbegriffen.',parts:Array.from({length:15},(_,i)=>'docs/integral-evoxx-m-hr-'+String(i+1).padStart(2,'0')+'.txt')},
+ {id:'messpaket',tag:'BIETIGHEIM',title:'Hekatron Mess- und Inbetriebnahmepaket',meta:'DE / HR',desc:'Ausführliche Mess-, Prüf- und Inbetriebnahmeunterlage mit deutscher Fachsprache und kroatischen Erklärungen.',parts:Array.from({length:7},(_,i)=>'docs/bietigheim-hekatron-messpaket-de-hr-'+String(i+1).padStart(2,'0')+'.txt')},
+ {id:'asd535',tag:'BIETIGHEIM',title:'ASD 535 / BE-PSE02 Messprotokoll',meta:'DE / HR',desc:'Mess- und Prüfprotokoll für ASD 535 und BE-PSE02.',parts:['docs/bietigheim-asd535-pse02-de-hr.txt']},
+ {id:'ens-amok',tag:'BIETIGHEIM',title:'ENS / AMOK Inbetriebnahme-Prüfpaket',meta:'DE / HR',desc:'Unterlagen für Inbetriebnahme und Prüfung von ENS / AMOK.',parts:['docs/bietigheim-ens-amok-de-hr.txt']},
+ {id:'aps9000',tag:'BIETIGHEIM',title:'BMZ ↔ APS9000 Anschlussplan',meta:'DE / HR',desc:'Anschluss- und Funktionsübersicht für die Schnittstelle BMZ / APS9000.',parts:['docs/bietigheim-bmz-aps9000-de-hr.txt']}
+];
+const $=s=>document.querySelector(s);
+let current=null,currentText='',fontSize=15,lastQuery='',hitIndex=0;
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderCards(){
+ const q=$('#libSearch').value.trim().toLowerCase();
+ const a=DOCS.filter(d=>[d.tag,d.title,d.meta,d.desc].join(' ').toLowerCase().includes(q));
+ $('#cards').innerHTML=a.map(d=>`<button class="card" data-doc="${d.id}"><span class="tag">${esc(d.tag)}</span><h2>${esc(d.title)}</h2><p>${esc(d.desc)}</p><div class="open">Öffnen → <span style="color:#6a7a88;font-weight:700">${esc(d.meta)}</span></div></button>`).join('');
+ $('#count').textContent=`${a.length} von ${DOCS.length} Dokumenten`;
+ $('#empty').style.display=a.length?'none':'block';
+ document.querySelectorAll('[data-doc]').forEach(b=>b.onclick=()=>openDoc(b.dataset.doc));
+}
+async function openDoc(id){
+ current=DOCS.find(d=>d.id===id); if(!current)return;
+ $('#readerTitle').textContent=current.title; $('#readerMeta').textContent=current.meta;
+ $('#reader').classList.add('show'); $('#reader').setAttribute('aria-hidden','false');
+ $('#paper').innerHTML='<div class="loading">Dokument wird geladen…</div>';
+ $('#docSearch').value=''; $('#hitInfo').textContent=''; currentText=''; lastQuery=''; hitIndex=0;
+ $('#docNote').value=localStorage.getItem('tbma-doc-note-'+id)||'';
+ try{
+   const chunks=[];
+   for(let i=0;i<current.parts.length;i++){
+     const r=await fetch(current.parts[i],{cache:'no-store'});
+     if(!r.ok)throw new Error(current.parts[i]+' · HTTP '+r.status);
+     chunks.push(await r.text());
+   }
+   currentText=chunks.join('\n\n');
+   renderDocument();
+   setTimeout(()=>{const y=Number(localStorage.getItem('tbma-doc-scroll-'+id)||0);$('#rbody').scrollTop=y},80);
+ }catch(e){$('#paper').innerHTML='<div class="err"><b>Dokument konnte nicht geladen werden.</b><br>'+esc(e.message||e)+'</div>'}
+}
+function renderDocument(query=''){
+ const pre=document.createElement('pre'); pre.id='docText'; pre.style.fontSize=fontSize+'px';
+ if(!query){pre.textContent=currentText;$('#paper').replaceChildren(pre);return 0}
+ const low=currentText.toLocaleLowerCase(),needle=query.toLocaleLowerCase();let pos=0,n=0,html='';
+ while(true){const i=low.indexOf(needle,pos);if(i<0)break;html+=esc(currentText.slice(pos,i))+'<mark data-hit="'+n+'">'+esc(currentText.slice(i,i+query.length))+'</mark>';pos=i+query.length;n++;if(n>2000)break}
+ html+=esc(currentText.slice(pos));pre.innerHTML=html;$('#paper').replaceChildren(pre);return n;
+}
+function findNext(){
+ const q=$('#docSearch').value.trim();if(!q)return;
+ if(q!==lastQuery){lastQuery=q;hitIndex=0}
+ const n=renderDocument(q); if(!n){$('#hitInfo').textContent='Kein Treffer';return}
+ if(hitIndex>=n)hitIndex=0;
+ const el=document.querySelector('[data-hit="'+hitIndex+'"]'); if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+ $('#hitInfo').textContent='Treffer '+(hitIndex+1)+' von '+n;hitIndex++;
+}
+function closeReader(){
+ if(current){localStorage.setItem('tbma-doc-scroll-'+current.id,String($('#rbody').scrollTop))}
+ $('#reader').classList.remove('show');$('#reader').setAttribute('aria-hidden','true');current=null;
+}
+$('#libSearch').oninput=renderCards;
+$('#readerBack').onclick=closeReader;
+$('#homeBtn').onclick=()=>{if(history.length>1)history.back();else location.href='./r12.html'};
+$('#findNext').onclick=findNext;
+$('#docSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();findNext()}});
+$('#fontMinus').onclick=()=>{fontSize=Math.max(11,fontSize-1);renderDocument(lastQuery);localStorage.setItem('tbma-doc-font',fontSize)};
+$('#fontPlus').onclick=()=>{fontSize=Math.min(24,fontSize+1);renderDocument(lastQuery);localStorage.setItem('tbma-doc-font',fontSize)};
+$('#docNote').oninput=()=>{if(!current)return;localStorage.setItem('tbma-doc-note-'+current.id,$('#docNote').value);$('#noteSaved').textContent='Gespeichert auf diesem Gerät.'};
+$('#rbody').addEventListener('scroll',()=>{if(current)localStorage.setItem('tbma-doc-scroll-'+current.id,String($('#rbody').scrollTop))},{passive:true});
+fontSize=Number(localStorage.getItem('tbma-doc-font')||15);
+renderCards();
+</script>
+</body>
+</html>
