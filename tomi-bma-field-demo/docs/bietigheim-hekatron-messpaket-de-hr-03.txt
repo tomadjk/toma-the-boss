@@ -1,0 +1,1000 @@
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 46/1 46/1 1. OG 1.05 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 45/2 45/2 1. OG 1.06 Ganztagesbetr. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 46/2 46/2 1. OG 1.06 Ganztagesbetr. MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 43/2 43/2 1. OG 1.07 Flur MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 44/2 44/2 1. OG 1.07 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 43/3 43/3 1. OG 1.07 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 45/3 45/3 1. OG 1.12 Klasse MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 46/4 46/4 1. OG 1.11 Ganztagesbetr. MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 45/4 45/4 1. OG 1.11 Ganztagesbetr. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 46/5 46/5 1. OG 1.10 Arbeitsst.GT-P. MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+<PARSED TEXT FOR PAGE: 19 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 19
+Loop Adr. MG/M Etage Raum Modell Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+L04 45/5 45/5 1. OG 1.10 Arbeitsst.GT-P. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L04 44/4 44/4 1. OG 1.09 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 43/4 43/4 1. OG 1.09 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 44/5 44/5 1. OG 1.07 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 44/3 44/3 1. OG 1.07 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L04 46/3 46/3 1. OG 1.12 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 36/5 36/5 EG 0.05 Besprechung groß MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/5 35/5 EG 0.05 Besprechung groß MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/4 36/4 EG 0.06 Schulleitung MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/4 35/4 EG 0.06 Schulleitung MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/3 36/3 EG 0.07 Sekretariat MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/3 35/3 EG 0.07 Sekretariat MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/2 36/2 EG 0.08 Schulsozialarbeit MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/2 35/2 EG 0.08 Schulsozialarbeit MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/1 36/1 EG 0.09 Eltern/Arzt MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/1 35/1 EG 0.09 Eltern/Arzt MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+<PARSED TEXT FOR PAGE: 20 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 20
+Loop Adr. MG/M Etage Raum Modell Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+L05 32/1 32/1 EG 0.26.1 Flurbereich MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 31/1 31/1 EG 0.26.1 Flurbereich MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 35/6 35/6 EG 0.04 Stv. Schulleitung MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/6 36/6 EG 0.04 Stv. Schulleitung MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/7 35/7 EG 0.03 Leitung GT-Partner MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/7 36/7 EG 0.03 Leitung GT-P MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 37/1 37/1 EG 0.02 Kiosk MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 38/1 38/1 EG 0.02 Kiosk MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 35/8 35/8 EG 0.01 Bespr. GT-Partner MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 36/8 36/8 EG 0.01 Bespr. GT-P MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 31/3 31/3 EG 0.01.1 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 32/3 32/3 EG 0.01.1 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+<PARSED TEXT FOR PAGE: 21 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 21
+Loop Adr. MG/M Etage Raum Modell Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+L05 31/2 31/2 EG 0.26 offener Arbeitsber. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 32/2 32/2 EG 0.26 off. Arbeitsber. MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 34/1 34/1 EG 0.20 WC GT-Partner MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 34/2 34/2 EG 0.21 WC GT-Partner MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 40/5 40/5 EG 0.22 Lehrmittel MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 39/5 39/5 EG 0.22 Lehrmittel MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 40/4 40/4 EG 0.23 Ruheraum-päd.Pers.GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 39/4 39/4 EG 0.23 Ruheraum-päd.Pers.GT MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 40/3 40/3 EG 0.23 Ruheraum-päd.Pers.GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 39/3 39/3 EG 0.23 Ruheraum-päd.Pers.GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 40/2 40/2 EG 0.24 Kommunikation-päd.Pers.GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 39/2 39/2 EG 0.24 Kommunikation-päd.Pers.GT MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L05 40/1 40/1 EG 0.25 Stillarbeit MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L05 39/1 39/1 EG 0.25 Stillarbeit Lehrerkoll. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 14/1 14/1 EG 0.11 Aufenhaltsbereich GT MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+<PARSED TEXT FOR PAGE: 22 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 22
+Loop Adr. MG/M Etage Raum Modell Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+L06 15/1 15/1 EG 0.11 Aufenhaltsbereich GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 14/2 14/2 EG 0.11 Aufenhaltsbereich GT MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 15/2 15/2 EG 0.11 Aufenhaltsbereich GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 14/4 14/4 EG 0.11 Aufenhaltsbereich GT MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 15/4 15/4 EG 0.11 Aufenhaltsbereich GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 14/3 14/3 EG 0.11 Aufenhaltsbereich GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 15/3 15/3 EG 0.11 Aufenhaltsbereich GT MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 14/5 14/5 EG 0.15 Bibliothek MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 15/5 15/5 EG 0.15 Bibliothek MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L06 14/8 14/8 EG 0.13 Werken MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 14/6 14/6 EG 0.13 Werken MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L06 15/6 15/6 EG 0.13 Werken MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
