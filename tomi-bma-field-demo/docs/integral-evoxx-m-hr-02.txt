@@ -1,0 +1,186 @@
+===== STRANICA 21 =====
+HRVATSKI PRIJEVOD - stranica 21
+Sklopovi - primjer povezivanja X-LINE sudionika na B8-DXI2.
+Tehničke oznake konektora i pinova ostaju nepromijenjene. Prijevod funkcijskih oznaka:
+Eingang 1/2/3/4 = ulaz 1/2/3/4.
+Ausgang 1 = izlaz 1.
+Relais = relej.
+Funkmodul = bežični/radio modul.
+Ring 1 / Ring 2 = prsten 1 / prsten 2.
+SHLD = oklop. GND (-) = masa/minus. L1/L2/L3/L4 (+) = podatkovni/pozitivni vod prema prikazu.
+Prikazani su: BX-IM4, BX-AIM, BX-OI3, BX-IOM, BX-REL4, XLM 35, BX-ESL, BX-WGW, MCP 535X, NAM ADGX, C31X,
+USB 502, B8-DXI2, BX-SOL(-CT), BX-SBL 501/502, BX-O2I4, BX-FOL, SDI 82X-1, BX-MDI8 i BX-SCU.
+COM/NC/NO = zajednički / normalno zatvoren / normalno otvoren relejni kontakt.
+VEXT/GNDEXT = vanjsko napajanje i masa.
+LINE = linija; LOOP = petlja/prsten.
+Brojevi pinova i kratice X1-X5, IN, OM, IM, COM, NC, NO, GND, SHLD, L1/L2 i ostale električne oznake preuzimaju
+se 1:1 prema originalnoj shemi lijevo.
+
+===== STRANICA 22 =====
+HRVATSKI PRIJEVOD - stranica 22
+Sklopovi
+5.4 X-LINE sklop za odvojne vodove B8-SXI8
+Funkcija
+B8-SXI8 služi za priključivanje osam odvojnih vodova (Stichleitungen) s pripadajućim javljačima i modulima
+Integral X-LINE tehnologije. Na svaki odvojni vod može se priključiti do 32 adresabilna sudionika, npr. javljača,
+modula ili signalizatora.
+Sistemski priključak nalazi se straga preko višepolnog konektora na System-BUS. Na prednjoj strani nalaze se
+dvije stezaljke za osam odvojnih vodova.
+Sučelja:
+X1 - System-BUS.
+X2 - priključne stezaljke odvojnih vodova 1-4.
+X3 - priključne stezaljke odvojnih vodova 5-8.
+System-BUS X1: B5-BUS, B8-BUS; mehanički 64-polni višepolni konektor.
+X2: za vodove 1-4 vrijedi Gx = oklop, Cx = GND (-), Lx = 30 V (+).
+X3: za vodove 5-8 vrijedi Gx = oklop, Cx = GND (-), Lx = 30 V (+).
+
+===== STRANICA 23 =====
+HRVATSKI PRIJEVOD - stranica 23
+Sklopovi
+Priključne stezaljke odvojnih vodova X2 i X3
+Tehnički podaci za svaki odvojni vod: izlazni napon 30,6 V DC ± 3 %; nazivna struja 50 mA; struja kratkog spoja
+106 mA; maksimalni otpor voda 75 Ω; maksimalna duljina voda 1.500 m; 2 x 12-polna utična vijčana stezaljka;
+nazivni presjek 0,2-2,5 mm²; moment pritezanja 0,5-0,6 Nm.
+Montaža
+B8-SXI8 je utični sklop s prednjom pločom od pocinčanog čeličnog lima. Umeće se u Steckplatz 2-9 dok konektor
+ne sjedne u B8-BUS te se učvršćuje s dva vijka, gore i dolje.
+Spajanje
+Priključak oklopa Gx za oklop odvojnog voda funkcionalno je odvojen od potencijala zemlje i zato se ne smije
+dodatno uzemljiti ni na centrali ni duž odvojnog voda, npr. u razvodnoj kutiji ili na čeličnom nosaču. Za učinkovito
+oklapanje oklop mora biti neprekinuto proveden.
+Ako se drugi par vodiča koristi za paralelno vođenje drugog odvojnog voda, raspored vodiča mora biti kao na
+tablici kako bi se spriječio međusobni utjecaj. Oklop se može dodijeliti jednom od ta dva voda.
+Boje: rt = crveno, sw = crno, ws = bijelo, ge = žuto, S = oklop.
+Stich 1: C1 crno, L1 crveno. Stich 2: C2 žuto, L2 bijelo.
+Napomena: sljedeća stranica prikazuje primjer spajanja mogućih sudionika odvojnog voda; njihova funkcija i
+spajanje detaljno su opisani u sljedećim poglavljima.
+
+===== STRANICA 24 =====
+HRVATSKI PRIJEVOD - stranica 24
+Sklopovi - primjeri spajanja na B8-SXI8.
+Električne kratice i brojevi pinova ostaju 1:1 prema originalnoj shemi.
+USB 502: SHLD = oklop, GND (-) = masa, L1/L2 (+) = vodovi, 24 V (+) = vanjsko napajanje prema shemi.
+MCP 535X = ručni javljač požara.
+XLM 35 = integracijski modul za ASD/ADW.
+ASD 53x / ADW 535 = aspiracijski javljač dima / linijski javljač topline.
+Ograničenja prikazana na shemi:
+- automatski javljači: maks. 32 komada, maks. 1.500 m;
+- ručni javljači: maks. 10 komada, maks. 1.500 m;
+- ASD 53x/ADW 535 preko XLM 35: maks. 1 uređaj, maks. 1.500 m.
+Automatische Brandmelder = automatski javljači požara.
+Handfeuermelder = ručni javljači požara.
+Linienförmige Wärmemelder/Ansaugrauchmelder = linijski javljači topline / aspiracijski javljači dima.
+Otpornik 1 kΩ postavlja se na mjestima prikazanim u originalnoj shemi.
+
+===== STRANICA 25 =====
+HRVATSKI PRIJEVOD - stranica 25
+Sklopovi - dodatni primjeri spajanja B8-SXI8.
+Prikazani su BX-OI3 i BX-SOL(-CT) na odvojnim vodovima. Oznake IN, COM, NC, NO, VEXT, GND, SHLD, L1/L2 i
+brojevi pinova ostaju nepromijenjeni prema originalu.
+Eingang 1/2/3 = ulaz 1/2/3.
+Relais = relej.
+Maksimalno 10 komada, maksimalna duljina voda 1.500 m, prema prikazanoj konfiguraciji.
+Otpornik 1 kΩ postavlja se prema originalnoj shemi.
+Funktionsgruppe Steuern = funkcijska grupa upravljanja.
+Funktionsgruppe Alarmieren = funkcijska grupa alarmiranja.
+
+===== STRANICA 26 =====
+HRVATSKI PRIJEVOD - stranica 26
+Sklopovi
+5.5 Upravljački sklop B8-BAF
+Funkcija
+B8-BAF služi za priključivanje uređaja za prijenos dojave i alarmiranje, upravljanje paralelnim vatrogasnim
+upravljačkim poljem prema DIN 14661, MMI-BUS-om (vanjski BUS uređaja) i Relais-BUS-om za upravljanje
+sklopovima B3-REL10, B3-REL16 i B3-REL16E.
+Sistemski priključak straga izveden je preko dva višepolna konektora za System-BUS i Relais-BUS. Na prednjoj
+strani nalaze se stezaljke ulaza/izlaza, vatrogasnog upravljačkog polja, relejnih izlaza i MMI-BUS-a.
+Sučelja:
+X1 - System-BUS.
+X2 - Relais-BUS.
+X3 - nadzirani ulazi/izlazi.
+X4 - vatrogasno upravljačko polje.
+X5 - relejne stezaljke.
+X6 - MMI-BUS.
+X7/X8 - premosnici za završetak MMI-BUS-a.
+System-BUS X1: B5-BUS, B8-BUS; 64-polni konektor.
+Relais-BUS X2: priključak B3-BSR5; 32-polni konektor.
+Nadzirani ulazi/izlazi X3
+Služe za uređaj za prijenos dojave i alarmiranje odnosno za terete od 20 do 1.000 Ω te za očitavanje galvanski
+odvojenih kontakata adaptera depoa ključa i FSE-a. Sadrži dva upravljačka izlaza 1,3 A nadzirana na kratki spoj i
+prekid voda te tri nadzirana ulaza.
+Stezaljke: IM3-/IM3+, IM2-/IM2+, IM1-/IM1+ = nadzirani ulazi; OM2-/OM2+ i OM1-/OM1+ = nadzirani izlazi; minus
+je GND (-), plus 24 V (+). IM2 = povratni ulaz 2, IM1 = povratni ulaz 1.
+
+===== STRANICA 27 =====
+HRVATSKI PRIJEVOD - stranica 27
+Sklopovi
+Tehnički podaci izlaza B8-BAF:
+Područje opterećenja 1: 160-1.000 Ω, maks. otpor voda 50 Ω.
+Područje opterećenja 2: 57-375 Ω, maks. otpor voda 20 Ω.
+Područje opterećenja 3: OM1 20-80 Ω, OM2 20-75 Ω, maks. otpor voda 5 Ω.
+TUS, samo OM1: maks. otpor voda 20 Ω.
+Izlazni napon 22-28 V. Izlazna struja maks. 1,3 A za područja 1-3; 100 mA za TUS.
+Struja kratkog spoja 1,45-2,76 A za područja 1-3; 105-161 mA za TUS.
+Struja nadzora: 1 mA (područje 1), 3 mA (područje 2), 13 mA (područje 3), 16 mA (TUS).
+Tehnički podaci ulaza: napon nadzora tip. 24 V; struja nadzora tip. 3,1 mA; struja kratkog spoja maks. 3,63 mA;
+završni otpornik 220 Ω; otpornik aktiviranja 220 Ω; maks. otpor voda 50 Ω; maks. duljina 700 m. Mehanički:
+10-polna utična vijčana stezaljka, presjek 0,25-2,5 mm², moment 0,5-0,6 Nm.
+Priključak vatrogasnog upravljačkog polja X4:
+FCPI2 - tipka „ÜE ab” (isključenje prijenosnog uređaja).
+FCPI3 / 24 V (+) - napajanje +.
+FCPO2 - prikaz „ÜE ausgelöst” (prijenosni uređaj aktiviran).
+FCPO0 - prikaz „Löschanlage ausgelöst” (sustav gašenja aktiviran).
+FCPO3 - prikaz „Akustische Signale ab” (akustični signali isključeni).
+FCPO1 - prikaz „Alarm erkannt” / prema izvornom rasporedu funkcija na shemi.
+FCPO4 - prikaz „ÜE ab” / tipka „Akustische Signale ab” prema originalnom rasporedu priključaka.
+FCPI1 - prikaz/tipka za isključenje akustičnih signala prema izvornom rasporedu.
+FCPO5 - prikaz „Brandfall-Steuerungen ab” (upravljanja u slučaju požara isključena).
+GND (-) - napajanje minus.
+FCPI0 - tipka „BMZ zurückstellen” (reset centrale).
+FCPI4 - prekidač „BFS ab” (isključenje Brandfallsteuerungen).
+Tehnički: izlazni napon 22-29 V; struja kratkog spoja 200-340 mA; ulazi sa Schmitt-trigger karakteristikom; izlazi
+Open-Collector; domet maks. 3 m; paralelni dvosmjerni prijenos; 13-polna utična vijčana stezaljka; presjek
+0,25-1,5 mm²; moment 0,22-0,25 Nm.
+Napomena: za točan raspored FCPI/FCPO funkcija uvijek se ravnati prema originalnoj tablici lijevo.
+
+===== STRANICA 28 =====
+HRVATSKI PRIJEVOD - stranica 28
+Sklopovi
+Priključne stezaljke releja / Relais-BUS (X5 prema prikazu sklopa)
+Slobodno programabilne za priključivanje Brandfallsteuerungen, odnosno upravljanja u slučaju požara.
+R1, R2, R3 = releji 1, 2 i 3.
+Tehnički podaci: bistabilni releji; kontaktni otpor maks. 30 mΩ; sklopni napon maks. 60 V DC; sklopna struja
+maks. 3 A; sklopna snaga maks. 300 W / 2.500 VA; 6-polna utična vijčana stezaljka; presjek 0,25-1,5 mm²;
+moment 0,22-0,25 Nm.
+Priključne stezaljke MMI-BUS (X6)
+GND = minus. MMIB- / MMIB+ = vod B- / B+. MMIA- / MMIA+ = vod A- / A+.
+Tehnički podaci: izlazni napon 4,75-5,25 V; izlazna struja 62-83 mA; prijenos RS-485; domet maks. 1.200 m;
+asinkroni serijski Start-Stop prijenos 38,4 kbit/s i 96 kbit/s; half-duplex, dvosmjerno; 6-polna utična vijčana
+stezaljka; presjek 0,25-1,5 mm²; moment 0,22-0,25 Nm.
+Premosnici za završetak MMI-BUS-a (X7/X8)
+Za premosnike vrijedi: otvoren premosnik = MMI-BUS nije terminiran; postavljen premosnik = MMI-BUS
+terminiran.
+PAŽNJA
+Premosnike na prvom i posljednjem MMI-BUS sudioniku uvijek postaviti. Ako su na MMI-BUS priključeni sudionici
+do verzije -E, premosnici se NE smiju postaviti.
+
+===== STRANICA 29 =====
+HRVATSKI PRIJEVOD - stranica 29
+Sklopovi
+Montaža
+B8-BAF je utični sklop s prednjom pločom od pocinčanog čeličnog lima. Umeće se u Steckplatz 2-9 nosača
+sklopova dok konektori ne sjednu u B8-BUS i B3-BSR5 te se učvršćuje s dva vijka, gore i dolje.
+Spajanje
+Način spajanja vatrogasnog upravljačkog polja nalazi se u dokumentaciji odgovarajućeg tipa vatrogasnog
+upravljačkog polja; vidi i poglavlje 10.
+Primjeri na shemi:
+Ausgang für Übertragungseinrichtung (ÜE) = izlaz za uređaj za prijenos dojave.
+Übertragungseinrichtung = uređaj za prijenos dojave.
+RM = povratna dojava prema prikazanoj shemi.
+Maksimalna udaljenost između ÜE i B8-BAF: 200 m.
+Ausgang für Alarmierungseinrichtung = izlaz za uređaj za alarmiranje.
+Eingang = ulaz.
+Na shemi su prikazani završni/aktivacijski otpornici 680 Ω i 220 Ω te maksimalna duljina ulaznog voda 700 m.
+Relais = relej. Sirene = sirena. Haltemagnet = pridržni elektromagnet.
+VExt/GndExt = vanjsko napajanje i masa.
+Brojevi priključaka X3/X5 te OM/IM/R oznake ostaju 1:1 prema originalnoj shemi.
