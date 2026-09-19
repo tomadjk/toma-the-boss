@@ -1,0 +1,130 @@
+===== STRANICA 61 =====
+HRVATSKI PRIJEVOD - stranica 61
+Sklopovi
+B8-NET2-FX4 - priključci prstena
+X3 = Ring 8BY/8BX, X5 = Ring 8AY/8AX. Port 8 Switch B je galvanski odvojen, dodatni priključak služi za
+redundanciju voda. Oznake GND, Tx/Rx+ i Tx/Rx- ostaju prema originalu.
+Tehnički podaci X3/X5: način rada Ring; RS-485; domet maks. 1.200 m; diferencijalni signal; brzina maks. 2,5
+Mbit/s; dvosmjerno half-duplex; RJ-45, 8-polni.
+Optički priključci X4 = FX-0B/1B i X6 = FX-0A/1A. Receive Data = prijem podataka; Transmit Data = slanje
+podataka. Dodatni priključak služi za redundanciju voda.
+Tehnički podaci X4/X6: način rada Ring; 10/100 Base FX Ethernet. Domet: multimode maks. 2.000 m,
+singlemode maks. 10.000 m. TCP/IP, maks. 100 Mbit/s, dvosmjerno full-duplex. Tip vlakna: multimode 62,5/125
+μm ili 50/125 μm; singlemode 9/125 μm. Mehanički: LC utičnica, 2-polna.
+Montaža
+B8-NET2-FX4 ugrađuje se isključivo u Steckplatz 2 dok konektor ne sjedne u B8-BUS. Kod Cat7 ožičenja
+priključne jedinice montirati na DIN šinu centrale.
+
+===== STRANICA 62 =====
+HRVATSKI PRIJEVOD - stranica 62
+Sklopovi
+Spajanje B8-NET2-FX4
+Svaka mrežna veza dodjeljuje se određenom portu mrežnog sklopa; opcionalno može biti redundantna po vodu
+ili po portu.
+Shema prikazuje princip spajanja preko priključne jedinice kod Cat7 ožičenja: Cat7 od mrežnog sklopa do
+Anschlusseinheit (priključne jedinice), a Cat5 dalje prema BMZ/odgovarajućem uređaju.
+Na prikazu su portovi RS-485 i 10/100 Ethernet. Iako je na crtežu označen B8-NET4-485, princip priključne
+jedinice i Cat7/Cat5 prijelaza prikazan je kao primjer. Za B8-NET2-FX4 koristiti konkretne portove s prethodnih
+stranica.
+
+===== STRANICA 63 =====
+HRVATSKI PRIJEVOD - stranica 63
+Sklopovi
+Prstenasto i odvojno umrežavanje preko RS-485 - B8-NET2-FX4
+Za dodatnu sigurnost veze između portova mogu se izvesti dvostruko, kao redundancija voda.
+PAŽNJA
+Uvijek povezati „Y s Y” - galvanski odvojeni port s galvanski neodvojenim portom. Kod redundantne veze voda
+mora se povezati „Y s Y” i „X s X”. X i Y ne smiju se križno zamijeniti.
+U primjeru su centrale 1-3 povezane u prsten s redundancijom voda, a centrale 4 i 5 povezane su odvojno
+također redundantno.
+Zentrale 1-5 = centrale 1-5. RS-485 portovi 8A/8B, Ethernet 0A/0B i optički FX-A/FX-B prikazani su na shemi; za
+konkretne veze slijediti originalni crtež.
+
+===== STRANICA 64 =====
+HRVATSKI PRIJEVOD - stranica 64
+Sklopovi
+Prstenasto i odvojno umrežavanje preko optičkog vlakna LWL FX
+U primjeru su centrale 1-3 povezane optičkim prstenom, a centrale 4 i 5 spojene su odvojnim optičkim vezama.
+Einschubmodul = utični optički modul.
+TX = optički predajnik; RX = optički prijamnik.
+Pravilo spajanja: TX jednog kraja mora ići na RX drugog kraja i obrnuto, točno prema shemi.
+FX-A / FX-B označavaju pripadajuće optičke portove na B8-NET2-FX4.
+Zentrale = centrala. Sve LC veze i položaje optičkih modula izvesti 1:1 prema originalnom crtežu.
+
+===== STRANICA 65 =====
+HRVATSKI PRIJEVOD - stranica 65
+Sklopovi
+Prstenasto umrežavanje preko 10/100 TX - B8-NET2-FX4
+Gornja shema prikazuje tri centrale povezane Ethernet prstenom preko 0A/0B.
+Odvojno umrežavanje preko 10/100 TX
+Ova neredundantna varijanta u skladu je s normom samo pri ukupnoj površini najviše 12.000 m² odnosno s
+najviše 512 javljača po jedinici obrade signala.
+Za dodatnu sigurnost od ispada veza može biti redundantna po portu.
+Donja shema prikazuje centralu 1 i centralu 2. Portove i oznake 5A/5B, 0A/0B, FX-A/FX-B i X/Y koristiti prema
+originalu.
+
+===== STRANICA 66 =====
+HRVATSKI PRIJEVOD - stranica 66
+Sklopovi
+Umrežavanje preko LAN-a
+Ova neredundantna varijanta povezuje centrale preko switcha u standardnu Ethernet mrežu.
+weitere Zentrale = dodatna centrala.
+lokales Netzwerk = lokalna mreža.
+Switch = mrežni preklopnik.
+Zentrale 1/2 = centrala 1/2.
+Shema prikazuje LAN povezivanje centrala preko Ethernet portova; konkretne priključke koristiti prema mrežnom
+sklopu i originalnom crtežu.
+
+===== STRANICA 67 =====
+HRVATSKI PRIJEVOD - stranica 67
+Sklopovi
+Povezivanje IP aplikacija
+Management sustavi mogu se povezati neredundantno ili redundantno. Hekatron Remote i slanje e-pošte mogući
+su preko intraneta i interneta.
+Na shemi: PC mit Integral IP Software = računalo s Integral IP softverom; Managementsystem = management
+sustav; Integral Cloud (S2Service); Internet; alternativ = alternativno; Router; DSL-Modem; Hekatron Remote;
+E-Mailversand = slanje e-pošte.
+Modernizacija starih mrežnih veza
+Spojnicom se postojeće ožičenje B3-USI4/B3-LPI može pretvoriti s D-Sub na RJ-45.
+Adapter-kabelom sa spojnicom postojeće ožičenje mreže s B3-HFI ili vanjskim pretvaračima može se pretvoriti sa
+ST priključka na MTRJ/odgovarajući optički priključak prema prikazu.
+Vorhandene Verkabelung mit D-Sub = postojeće D-Sub ožičenje. Kupplung = spojnica. LC-Stecker = LC konektor.
+ST-Stecker = ST konektor. ST-Kupplung = ST spojnica.
+
+===== STRANICA 68 =====
+HRVATSKI PRIJEVOD - stranica 68
+Sklopovi
+5.14 Mrežni sklop B8-NET-FX8
+Funkcija
+B8-NET-FX8 služi za umrežavanje centrala preko četiri optička LWL sučelja i dva 10/100 Base TX Ethernet
+sučelja. Ethernet se može koristiti i za IP aplikacije, npr. Hekatron Remote, ili za integraciju u standardni
+Ethernet.
+System-BUS priključak je straga. Na prednjoj strani nalaze se četiri optičke utičnice za umetanje modula za
+umrežavanje i dvije RJ-45 utičnice za Ethernet.
+Sučelja:
+X1 - System-BUS.
+X2 - Ethernet 5B/5A.
+X3 - Ring FX-6B/7B, LWL.
+X4 - Ring FX-0B/1B, LWL.
+X5 - Ring FX-6A/7A, LWL.
+X6/X8 prema oznaci na originalu - Ring FX-0A/1A, LWL.
+System-BUS: B5-BUS, B8-BUS; 96-polni konektor.
+Ethernet X2: Port 5 Switch B i Port 5 Switch A, pinovi Tx+, Tx-, Rx+, Rx-. Tehnički: 10/100 Base TX; maks. 100 m;
+TCP/IP; maks. 100 Mbit/s; full-duplex; RJ-45 8-polni.
+Optički X3/X4: Receive Data = prijem, Transmit Data = slanje; dodatni konektor služi redundanciji voda.
+
+===== STRANICA 69 =====
+HRVATSKI PRIJEVOD - stranica 69
+Sklopovi
+B8-NET-FX8 - optički priključci X5/X6 i tehnički podaci
+X5 = Ring FX-6A/7A, X6 = FX-0A/1A. Portovi imaju Receive Data i Transmit Data, a dodatni priključak služi za
+redundanciju voda.
+Tehnički podaci optičkih portova: način Ring; 10/100 Base FX Ethernet; domet multimode maks. 2.000 m,
+singlemode maks. 10.000 m; TCP/IP; brzina maks. 100 Mbit/s; full-duplex. Vlakna: multimode 62,5/125 μm ili
+50/125 μm; singlemode 9/125 μm. LC utičnica, 2-polna.
+Montaža
+B8-NET-FX8 ugrađuje se isključivo u Steckplatz 2 dok konektor ne sjedne u B8-BUS. Kod Cat7 kabela priključne
+jedinice montirati na DIN šinu centrale.
+Spajanje
+Svaka veza dodjeljuje se portu mrežnog sklopa i može biti redundantna po vodu ili po portu. Shema prikazuje
+10/100 Ethernet 5A/5B, optičke portove FX-A/FX-B, Cat7 do priključne jedinice te Cat5 prema BMZ.
