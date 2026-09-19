@@ -1,0 +1,1000 @@
+<PARSED TEXT FOR PAGE: 1 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 1
+BIETIGHEIM - HEKATRON MESS- UND INBETRIEBNAHMEPAKET v4
+Alle fachlichen Hekatron-Bezeichnungen bleiben auf Deutsch. Jede Erklärung, Prüfanweisung und Zeitangabe ist zusätzlich ausführlich auf Kroatisch erklärt.
+Projekt Grundschule mit Sporthalle
+Adresse Schulstraße 9, 76467 Bietigheim
+Plan 05_5325009_BMA_000_S_8_00_B - Index B, 13.05.2026
+Ringe L01-L09
+Automatische Melder 262 = 143 x MTD 533X + 118 x MTD 533X-SCT + 1 x ASD 535
+ASD MG 8/1 - UG -1.11 Lager - Loop L08 - ASD 535 / XLM 35
+ENS ENS-Zentrale + ÜE ENS im UG; exakter Typ/Zonen/Klemmen noch offen
+Techniker Tomislav Poljarevic
+Sicherheit / sigurnost: Widerstandsmessungen nur spannungsfrei und bei getrenntem Ring. Keine Isolations-/Megger-Messung über angeschlossene X-LINE-Teilnehmer oder Elektronik.
+<PARSED TEXT FOR PAGE: 2 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 2
+1. Abkürzungslegende / Legenda kratica
+Kürzel Deutsche Bezeichnung Erklärung DE / HR Verwendung DE / HR
+BMA Brandmeldeanlage DE: Gesamtes System zur automatischen und manuellen Branddetektion, Anzeige, Alarmierung und Ansteuerung.
+HR: Cijeli vatrodojavni sustav: detektori, ručni javljači, centrala, alarmiranje i upravljačke funkcije.
+DE: Gesamtanlage.
+HR: Cijeli objekt/sustav.
+BMZ Brandmeldezentrale DE: Zentrale Verarbeitungseinheit der Brandmeldeanlage.
+HR: Glavna vatrodojavna centrala koja prima dojave, prikazuje stanje i pokreće programirane funkcije.
+DE: Zentrale / Bedienung / Auswertung.
+HR: Centralno upravljanje i dijagnostika.
+MG Meldegruppe DE: Logische Gruppe von Meldern oder Ereignissen in der BMZ.
+HR: Dojavna grupa koja logički grupira jedan ili više meldera; alarm i tekst često se vode po MG.
+DE: z. B. MG 8, Melder 1 = 8/1.
+HR: npr. MG 8/1 znači grupa 8, melder 1.
+ALB Alarmierungsbereich DE: Bereich, der gleichzeitig akustisch bzw. optisch-akustisch alarmiert wird.
+HR: Alarmno područje u kojem se svi pripadajući alarmni uređaji aktiviraju zajedno.
+DE: ALB 1 Hauptbereich; weitere ALB z. B. je Etage.
+HR: ALB 1 glavni, zatim etažni ALB-ovi.
+STEU Steuerung DE: Logisches Steuerelement der Integral-Konfiguration zur Ansteuerung einer Funktion oder eines Ausgangs.
+HR: Logička upravljačka funkcija centrale koja pokreće izlaz, signalgeber, vrata, ENS ili drugu funkciju.
+DE: Sirenen, Brandfallsteuerungen, Schnittstellen.
+HR: Sirene, tehničke funkcije, ENS i druga sučelja.
+BD Boolesche Definition DE: Logische Verknüpfung von Eingangskriterien mit AND/OR/NOT usw. zu einem Ergebnis.
+HR: Logička definicija koja povezuje događaje i daje jedan rezultat za upravljanje ALB-om ili Steuerung-om.
+DE: Ansteuerkriterien für ALB/STEU.
+HR: Uvjeti za alarmiranje i upravljanje.
+X-LINE Integral Ringleitungstechnik X-LINE DE: Adressierbare Integral-Ringleitung für Melder, Module und Signalgeber.
+HR: Hekatron adresabilna prstenasta linija na kojoj su melderi, moduli i signalgeberi.
+DE: L01-L09.
+HR: Bietigheim ringovi L01-L09.
+B8-DXI2 Ringleitungsbaugruppe X-LINE B8-DXI2 DE: Ringkarte für zwei X-LINE-Ringleitungen bzw. alternative Stichkonfigurationen.
+HR: Kartica centrale za X-LINE ringove; na njoj se spajaju i napajaju ring uređaji.
+DE: Ringkarte; realen Typ vor Ort bestätigen.
+HR: Na objektu potvrditi da je stvarno B8-DXI2.
+STB 01X Ringleitungstester STB 01X DE: Portabler Tester für Integral-Ringe ohne Brandmeldezentrale.
+HR: Prijenosni tester za provjeru ringa bez centrale: čita uređaje, mjeri UTA/UTB/I i sprema .stb.
+DE: AUTO / MAN / REV.
+HR: Automatska, pojedinačna i revizijska provjera.
+UTA Ringspannung Terminal A DE: Vom STB angezeigte Ringspannung an Terminal A.
+HR: Napon ringa na strani Terminal A STB testera.
+DE: STB 01X.
+HR: Usporedba s UTB i stanjem ringa.
+UTB Ringspannung Terminal B DE: Vom STB angezeigte Ringspannung an Terminal B.
+HR: Napon ringa na povratnoj strani Terminal B.
+DE: STB 01X.
+HR: Usporedba s UTA.
+I/mA Ringstromanzeige DE: Vom STB angezeigter Strom der Ringleitung in Milliampere.
+HR: Stvarna struja ringa koju prikazuje STB.
+DE: STB 01X.
+HR: Usporedba s proračunom i brojem uređaja.
+Rcc Leitungswiderstand C-Ader / GND DE: Gemessener Innenwiderstand der durchgängigen C-/GND-Ader.
+HR: Izmjereni otpor cijelog GND/C vodiča ringa; mjeri se samo na odspojenom ringu.
+DE: Ringlängenberechnung.
+HR: Kontrola prema RccMax.
+RccMax Maximal zulässiger Innenwiderstand DE: Maximaler von der Ringlängenberechnung erlaubter Innenwiderstand.
+HR: Najveći dopušteni otpor prema aktualnom softverskom proračunu.
+DE: Rcc muss kleiner/gleich RccMax sein.
+HR: Izmjereni Rcc ne smije prijeći RccMax.
+ISum Gesamtstrom der Teilnehmer DE: Summe des in der Ringlängenberechnung berücksichtigten Teilnehmerstroms.
+HR: Ukupna proračunata struja svih uređaja na ring-u.
+DE: Ringlängenberechnung.
+HR: Kontrola ukupnog opterećenja ringa.
+Lmax Maximal zulässige Leitungslänge DE: Aus der Ringlängenberechnung resultierende maximal zulässige Leitungslänge.
+HR: Najveća dopuštena duljina voda koju daje Hekatron proračun.
+DE: Ringlängenberechnung.
+HR: Stvarna trasa mora ostati unutar dopuštenja.
+<PARSED TEXT FOR PAGE: 3 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 3
+Kürzel Deutsche Bezeichnung Erklärung DE / HR Verwendung DE / HR
+Meq Melderäquivalenz DE: Bewertete logische Melderanzahl, die höheren Strombedarf von Modulen berücksichtigt.
+HR: Ekvivalentni broj meldera kojim softver uračunava da moduli troše više od običnog meldera.
+DE: Ringlängenberechnung.
+HR: Dodatna granica za broj/vrstu modula.
+MTD 533X Mehrfachsensormelder MTD 533X DE: Adressierbarer automatischer Melder der Integral X-LINE.
+HR: Adresabilni automatski detektor; u Bietigheim planu vodi se kao Rauchmelder.
+DE: 143 Stück laut Bietigheim-Import.
+HR: 143 komada u projektu.
+SCT MTD 533X-SCT DE: Variante des MTD 533X mit integrierter akustischer Alarmierung.
+HR: Varijanta MTD 533X s ugrađenom akustikom za lokalno alarmiranje.
+DE: 118 Stück; Akustik über ALB/Parametrierung.
+HR: 118 komada; akustiku testirati odvojeno.
+MCP Manual Call Point / Handfeuermelder DE: Manueller Brandmelder, z. B. MCP 535X.
+HR: Ručni javljač požara koji se aktivira pritiskom na tipku.
+DE: Handmelder.
+HR: Ručna dojava požara.
+ASD Ansaugrauchmelder DE: Rauchdetektionssystem mit aktiver Luftansaugung über ein Rohrnetz.
+HR: Aspiracijski detektor dima koji stalno usisava uzorak zraka kroz cijevi.
+DE: ASD 535.
+HR: Sondermelder MG 8/1.
+ASD 535 Ansaugrauchmelder ASD 535 DE: Konkretes ASD-System mit Luftstromüberwachung und ein/zwei Ansaugleitungen je Variante.
+HR: Aspiracijski detektor s nadzorom protoka zraka i jednom ili dvije cijevne grane ovisno o izvedbi.
+DE: UG -1.11 Lager.
+HR: Bietigheim MG 8/1.
+XLM 35 X-LINE Modul XLM 35 DE: Schnittstellenmodul zur Einbindung von ASD/ADW in Integral X-LINE.
+HR: Modul koji povezuje ASD/ADW s Integral X-LINE ringom.
+DE: ASD 535 Integration.
+HR: Komunikacija ASD-a s centralom.
+SSD 535 Rauchsensor SSD 535 DE: Rauchsensormodul im ASD 535; Varianten unterscheiden sich u. a. in Empfindlichkeit.
+HR: Senzor dima unutar ASD-a; različite SSD varijante imaju različitu osjetljivost.
+DE: ASD 535; Typ vor Ort aufnehmen.
+HR: Točan tip u Bietigheimu još upisati.
+AMB 35 Anzeige- und Bedienmodul AMB 35 DE: Bedien-/Anzeigebaugruppe des ASD 535 für Einstellungen, Werte und Ur-Reset.
+HR: Upravljački i prikazni modul ASD-a preko kojeg se rade Ur-Reset i očitanja V/U grupa.
+DE: ASD 535.
+HR: Rad na licu mjesta.
+Ur-Reset Ur-Reset DE: Grundabgleich des ASD auf die normale Ansaugleitung und den normalen Luftstrom.
+HR: Referentno podešavanje ASD-a; normalni protok nakon toga postaje 100 %.
+DE: ASD Inbetriebnahme / nach Änderungen.
+HR: Obavezno nakon promjene cijevi ili ventilatora.
+LS-Ü Luftstrom-Überwachung DE: Überwachung des Volumenstroms zur Erkennung von Verstopfung oder Rohrbruch.
+HR: Nadzor protoka koji prepoznaje začepljenje ili puknuće cijevi.
+DE: ASD Fault-Test.
+HR: Provjera Störung funkcije ASD-a.
+FBF Feuerwehr-Bedienfeld DE: Standardisiertes Feuerwehr-Bedienfeld für definierte BMZ-Funktionen.
+HR: Vatrogasno upravljačko polje za osnovne naredbe prema centrali.
+DE: Akustische Signale ab, Rücksetzen, ÜE-Prüfung.
+HR: Vatrogasne upravljačke funkcije.
+FAT Feuerwehr-Anzeigetableau DE: Feuerwehr-Anzeige für Meldungen, Gruppen und Ortsinformationen.
+HR: Vatrogasni prikazni panel za alarm, smetnju, MG i tekst lokacije.
+DE: Anzeige / Textprüfung.
+HR: Provjera tekstova i dojava.
+FIBS Feuerwehr-Informations- und Bediensystem DE: Kombinierte Feuerwehr-Informations-/Bedieneinheit.
+HR: Kombinirani vatrogasni informacijski i upravljački sustav.
+DE: Stele außen.
+HR: Vanjska vatrogasna periferija.
+FSD Feuerwehr-Schlüsseldepot DE: Gesichertes Depot für den Objektschlüssel der Feuerwehr.
+HR: Vatrogasni depo u kojem je osiguran ključ objekta.
+DE: Stele außen.
+HR: Pristup vatrogasaca objektu.
+FSE Freischaltelement DE: Feuerwehr-Element zur manuellen Auslösung einer definierten Funktion.
+HR: Vanjski vatrogasni element kojim se ručno pokreće projektirana funkcija.
+DE: FSE 1/1.
+HR: Provjera prema projektu/Feuerwehrablauf.
+<PARSED TEXT FOR PAGE: 4 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 4
+Kürzel Deutsche Bezeichnung Erklärung DE / HR Verwendung DE / HR
+ÜE Übertragungseinrichtung DE: Einrichtung zur Übertragung eines Alarm-/Statussignals an ein externes Ziel.
+HR: Uređaj ili sučelje za prijenos alarma/statusa prema vanjskom sustavu.
+DE: Feuerwehr / ENS.
+HR: Prijenos alarma ili ENS veza.
+ENS Elektroakustisches Notfallwarn-/Alarmierungssystem DE: System zur Sprach- bzw. elektroakustischen Alarmierung.
+HR: Sustav govornog/elektroakustičkog alarmiranja koji prima signal iz BMA i aktivira odgovarajuće zone.
+DE: ENS-Zentrale + ÜE ENS.
+HR: Govorno alarmiranje objekta.
+RWA Rauch- und Wärmeabzugsanlage DE: Anlage zur Rauch- und Wärmeableitung im Brandfall.
+HR: Sustav za odimljavanje i odvođenje topline.
+DE: K104 / Treppenhaus.
+HR: Brandfallsteuerung.
+ZD Zwischendecke DE: Bereich oberhalb einer abgehängten Decke / Hohldecke.
+HR: Međustrop iznad spuštenog stropa; melder se nalazi skriven iznad stropa.
+DE: USB 502-2 Hohldecke.
+HR: Važno za pronalazak i test lokacije.
+PI Parallelindikatorausgang DE: Ausgang am Melder/Sockel für Parallelindikator bzw. bestimmte Ansteuerungsarten.
+HR: Izlaz za paralelni indikator; o konfiguraciji PI ovisi može li se SCT akustika direktno testirati preko RevisionsAssistanta.
+DE: MTD 533X-SCT.
+HR: Relevantno za Akustik einschalten.
+DCU DCU / Konfigurationsebene in Integral DE: Bezeichnung innerhalb der Integral-Konfiguration; ausgeschriebene Langform ist in den hier verwendeten Quellen nicht eindeutig
+angegeben.
+HR: Oznaka/razina u Integral konfiguraciji. Ne navodimo izmišljeno puno značenje jer ga dostupni dokumenti ovdje ne daju jasno.
+DE: Programmieren / Konfiguration.
+HR: Koristi se kod prijenosa konfiguracije.
+GND Ground / Masse DE: Elektrisches Bezugspotential / Minusleitung.
+HR: Masa/minus sustava; na X-LINE-u C/GND vodič je važan i za Rcc mjerenje.
+DE: Ring / Versorgung.
+HR: Masa i mjerni referentni vodič.
+SHLD Shield / Schirm DE: Kabelschirm zur elektromagnetischen Abschirmung.
+HR: Ekran kabela koji se spaja prema Hekatron shemi.
+DE: Ringleitung / Schnittstellen.
+HR: Zaštita od smetnji.
+PE Protective Earth / Schutzleiter DE: Schutzleiter der elektrischen Anlage.
+HR: Zaštitni vodič uzemljenja.
+DE: Netz / Potentialausgleich.
+HR: Električna sigurnost.
+VExt Externe Versorgungsspannung DE: Von der Zentrale bereitgestellte externe Versorgung für Verbraucher.
+HR: Vanjski naponski izlaz centrale za dodatne potrošače.
+DE: B8-PSU VExt-Ausgänge.
+HR: Napajanje vanjskih uređaja.
+B8-PSU Netzgerät Integral EvoxX M DE: Stromversorgungsbaugruppe der Integral EvoxX M.
+HR: Napajanje centrale Integral EvoxX M; preko njega se rade i Batteriestrommessung funkcije.
+DE: Energieversorgung.
+HR: Na Bietigheimu tip centrale još potvrditi.
+B8-MCU Hauptrechnereinheit Integral EvoxX M DE: Zentrale Rechner-/Steuereinheit der EvoxX M.
+HR: Glavna procesorska jedinica EvoxX M centrale.
+DE: Zentralenhardware.
+HR: Samo ako je EvoxX M stvarno ugrađen.
+UG Untergeschoss DE: Gebäudegeschoss unter Erdgeschoss.
+HR: Podrumska etaža.
+DE: Bietigheim.
+HR: UG.
+EG Erdgeschoss DE: Gebäudegeschoss auf Geländeniveau.
+HR: Prizemlje.
+DE: Bietigheim.
+HR: EG.
+OG Obergeschoss DE: Gebäudegeschoss oberhalb des Erdgeschosses.
+HR: Kat iznad prizemlja.
+DE: 1. OG / 2. OG.
+HR: Prvi i drugi kat.
+MLAR Muster-Leitungsanlagen-Richtlinie DE: Richtlinie mit brandschutztechnischen Anforderungen an Leitungsanlagen.
+HR: Njemačka smjernica za protupožarnu izvedbu instalacijskih vodova i očuvanje funkcije.
+DE: Funktionserhalt / Unterbrechungston, soweit projektiert.
+HR: Relevantno za projektne zahtjeve instalacije.
+<PARSED TEXT FOR PAGE: 5 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 5
+Kürzel Deutsche Bezeichnung Erklärung DE / HR Verwendung DE / HR
+EN 54 Europäische Normenreihe für Brandmelde- und
+Alarmierungssysteme
+DE: Normenreihe für Komponenten und Funktionen von Brandmelde-/Alarmierungssystemen.
+HR: Europska serija normi za vatrodojavne i alarmne komponente/funkcije.
+DE: z. B. EN 54-2, -3, -23.
+HR: Normativna osnova uređaja/funkcija.
+<PARSED TEXT FOR PAGE: 6 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 6
+2. Mess- und Prüflegende / Legenda mjerenja i provjera
+Prüfung Beschreibung DE / HR Wie prüfen? DE / HR Wann? DE / HR Soll / tumačenje Sicherheit / napomena
+UTA DE: Ringspannung am Terminal A des STB 01X.
+HR: Napon X-LINE prstena na strani Terminal A STB 01X testera.
+Taj napon pokazuje kako se ring napaja s početne strane testera i
+uspoređuje se s UTB kako bi se lakše uočili pad napona, prekid ili
+problem na prstenu.
+DE: Ring an STB 01X anschließen, STB versorgen, RES -> AUTO. UTA direkt am
+Display ablesen.
+HR: Spoji ring na STB 01X, napajaj tester, pritisni RES pa AUTO. Vrijednost UTA
+očitaj izravno na zaslonu. Ne mjeri se ohmmetrom.
+DE: Bei Vorprüfung, Erstinbetriebnahme oder
+Fehlersuche.
+HR: Kod prve provjere ringa, prije puštanja u rad i
+kada tražiš grešku na ring-u.
+DE: Plausibler und stabiler Wert; zusammen mit UTB, I/mA
+und Teilnehmerzahl bewerten.
+HR: Vrijednost treba biti stabilna i logična. Sama UTA nije
+dovoljna za zaključak; gledaj je zajedno s UTB, strujom i
+brojem uređaja.
+DE: Nur bei korrekt angeschlossenem Ring am STB prüfen.
+HR: Prvo provjeri ispravno spajanje ringa na tester. Ne
+zamjenjuj UTA s mjerenjem otpora.
+UTB DE: Ringspannung am Terminal B des STB 01X.
+HR: Napon ringa na povratnoj strani Terminal B. Usporedba UTA i
+UTB daje ti sliku kako se napon ponaša kroz cijeli ring i pomaže
+kod traženja problema s vodom ili sudionicima.
+DE: Wie UTA; UTB am STB-Display ablesen.
+HR: Isti postupak kao za UTA. Nakon AUTO testa očitaj UTB na zaslonu STB-a.
+DE: Bei Vorprüfung, Erstinbetriebnahme oder
+Fehlersuche.
+HR: Kod prve provjere, puštanja u rad i kod
+traženja greške.
+DE: Plausibler und stabiler Wert; Abweichungen mit
+Topologie und Fehlerbild abgleichen.
+HR: Vrijednost mora biti stabilna. Veća nelogična razlika
+prema UTA traži provjeru topologije, spojeva i uređaja.
+DE: Nur bei korrekt angeschlossenem Ring messen.
+HR: Ring mora biti pravilno spojen na oba terminala testera.
+I/mA DE: Vom STB 01X angezeigte Stromstärke der Ringleitung.
+HR: Stvarna struja koju STB vidi na prstenu tijekom testa. Koristi
+se za usporedbu sa softverskim proračunom i za prepoznavanje
+neuobičajeno velike potrošnje.
+DE: STB 01X im AUTO/MAN-Betrieb; I/mA am Display protokollieren.
+HR: Pokreni AUTO ili MAN test i zapiši I/mA s displaya. Usporedi s konfiguracijom i
+prethodno izračunatim vrijednostima.
+DE: Bei Vorprüfung, nach Änderungen und bei
+Last-/Fehlersuche.
+HR: Prije puštanja u rad, nakon izmjena ringa i kod
+sumnje na preveliku potrošnju.
+DE: Mit Ringlängenberechnung und Ausbau vergleichen.
+HR: Vrijednost mora biti u skladu s brojem i vrstom uređaja.
+Nije zamjena za Ringlängenberechnung.
+DE: Vorberechnete Werte sind keine Messwerte.
+HR: Nemoj upisivati prethodni proračun kao izmjereni
+Istwert.
+Teilnehmerzahl DE: Anzahl der tatsächlich erkannten Ringleitungsteilnehmer.
+HR: Broj svih uređaja koje STB ili Integral asistent stvarno
+prepozna na ring-u. To je najbrža kontrola nedostaje li uređaj,
+postoji li dodatni uređaj ili se dio ringa ne čita.
+DE: STB AUTO vollständig durchlaufen lassen oder Überwachter Hochlauf/Ausbau
+lesen verwenden. Istzahl mit Soll-Liste vergleichen.
+HR: Pusti AUTO test do kraja ili koristi Überwachter Hochlauf/Ausbau lesen.
+Dobiveni broj usporedi s planiranim brojem u tablici.
+DE: Vor Erstinbetriebnahme, nach Umbau/Tausch
+und bei Topologiefehlern.
+HR: Prije prvog puštanja, nakon zamjene/izmjene i
+kod problema s topologijom.
+DE: Soll = Projektbestand; jede Abweichung klären.
+HR: Broj mora odgovarati projektu. Svaki manjak ili višak
+treba objasniti prije programiranja.
+DE: Fehlende oder doppelte Teilnehmer nicht einfach
+überprogrammieren.
+HR: Nemoj ignorirati razliku i samo učitati konfiguraciju preko
+nje.
+Rcc / Leitungswiderstand DE: Innenwiderstand der durchgängigen C-/GND-Ader des Ringes.
+HR: Otpor cijelog neprekinutog GND/C vodiča ringa. Ovaj podatak
+Hekatron koristi za provjeru dopuštene duljine i pada napona. To
+nije izolacijski otpor.
+DE: Ring zuerst von der Zentrale trennen. Ohmmeter z. B. an DXI2 C1-C2
+anschließen. Messwert in die Ringlängenberechnung eintragen.
+HR: Obavezno odspoji ring od centrale. Ohmmetrom izmjeri između odgovarajućih
+C/GND krajeva, npr. C1-C2, i upiši vrijednost u Ringlängenberechnung.
+DE: Zur Kontrolle bei Erstinbetriebnahme und bei
+Erweiterungen/Ringänderungen.
+HR: Kod prve inbetriebnahme te nakon produženja,
+promjene ili prepravke ringa.
+DE: Rcc gemessen <= RccMax der aktuellen
+Ringlängenberechnung.
+HR: Izmjereni Rcc ne smije biti veći od RccMax koji izračuna
+aktualni Hekatron softver.
+DE: Nur spannungsfrei und bei getrenntem Ring messen.
+Keine Isolationsmessung über Elektronik.
+HR: Mjeri samo bez napona i s odspojenim
+uređajem/centralom. Ne koristiti megger preko spojenih
+X-LINE uređaja.
+Ringlängenberechnung DE: Softwareprüfung von Leitungslänge, Strom, Innenwiderstand
+und Melderäquivalenz.
+HR: Hekatronov izračun koji provjerava je li ring električki izvediv
+s konkretnim uređajima i kabelom. Najvažnije vrijednosti su ISum,
+Lmax, RccMax i Meq.
+DE: PeripherieAssistant -> Ring -> Ringlängenberechnung. Reale
+Leitungsdimension, Teilnehmer, Alarmstrom und ggf. Rcc eintragen; neu
+berechnen.
+HR: U PeripherieAssistant-u otvori ring i Ringlängenberechnung. Unesi stvarni
+kabel, uređaje, Alarmstrom i izmjereni Rcc pa ponovno izračunaj.
+DE: Vor jeder Erstinbetriebnahme und nach jeder
+Ringänderung.
+HR: Prije prvog puštanja i nakon svake promjene
+ringa.
+DE: Alle angezeigten Grenzwerte müssen eingehalten
+werden.
+HR: Nijedan izračunati limit ne smije biti prekoračen.
+Posebno provjeri ISum, Lmax, RccMax i Meq.
+DE: Grenzwerte aus der tatsächlich eingesetzten
+Software/Hardware verwenden.
+HR: Ne oslanjaj se na stare brojke iz školskih dokumenata
+ako aktualna verzija softvera prikazuje drugačije granice.
+<PARSED TEXT FOR PAGE: 7 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 7
+Prüfung Beschreibung DE / HR Wie prüfen? DE / HR Wann? DE / HR Soll / tumačenje Sicherheit / napomena
+Überwachter Hochlauf DE: Kontrollierter automatischer Ringstart zur Erstprüfung und
+Fehlerlokalisierung.
+HR: Nadzirani Hochlauf čita ring korak po korak i zaustavlja se kod
+pronađene greške. Posebno je koristan za dvostruku modulaciju,
+loše sjedeći melder ili prekid u topologiji.
+DE: PeripherieAssistant -> Ring -> Überwachter Hochlauf (Automatik). Fehlerliste
+beobachten und Ausgabe speichern.
+HR: Na razini ringa pokreni Überwachter Hochlauf. Prati gdje se zaustavlja i spremi
+rezultat za dokumentaciju.
+DE: Als erster Schritt beim Einlesen; auch zur
+Störungslokalisierung.
+HR: Kao prvi korak prije normalnog Einlesen-a i
+svaki put kada želiš precizno lokalizirati Störung.
+DE: Fehlerfreie Teilnehmer werden mit 'ok' angezeigt.
+HR: Ako je sve ispravno, uređaji se prikazuju bez greške. Ako
+stane, zadnji ispravan uređaj daje trag gdje dalje tražiti.
+DE: Ausgabe speichern; Fehler nicht durch blindes
+Neuprogrammieren überdecken.
+HR: Spremi rezultat. Ne pokušavaj problem sakriti ponovnim
+programiranjem bez dijagnoze.
+STB AUTO DE: Automatisches Prüfen aller Ringteilnehmer mit dem STB 01X.
+HR: Automatski test cijelog ringa. STB sam prolazi sve uređaje,
+prikazuje ih i na kraju sprema .stb datoteku.
+DE: STB anschließen -> RES -> AUTO. Ende abwarten; Teilnehmerzahl und
+.stb-Datei sichern.
+HR: Spoji ring, pritisni RES pa AUTO. Pusti test do kraja, zapiši broj uređaja i sačuvaj
+.stb file.
+DE: Vorprüfung ohne BMZ, Erstinbetriebnahme
+oder Fehlersuche.
+HR: Kad želiš provjeriti ring bez centrale, prije
+puštanja ili kod greške.
+DE: Terminal A/B am Ende aktiv; Teilnehmerzahl wird
+angezeigt; Datei gespeichert.
+HR: Na kraju moraš dobiti broj uređaja i potvrdu spremanja
+datoteke.
+DE: Bei Fehlermeldung Ursache klären.
+HR: Ako dobiješ Timeout RING, Melder parallel ili Kurzschluss
+LINE, prvo otkloni uzrok.
+STB MAN DE: Manuelle Einzelprüfung der Ringteilnehmer.
+HR: Ručni način prolazi uređaj po uređaj. Koristan je kada želiš
+fizički identificirati određeni uređaj ili provjeriti Signalgeber.
+DE: MAN starten; nächster Teilnehmer erst nach erneutem MAN. Anzeigen bzw.
+Akustik/Optik werden angesteuert.
+HR: Pritisni MAN i za svaki sljedeći uređaj ponovo MAN. Prati koji uređaj reagira; kod
+signalgebera provjeri zvuk/optiku.
+DE: Bei gezielter Identifikation oder Einzelprüfung.
+HR: Kad tražiš točan fizički uređaj ili radiš
+pojedinačnu provjeru.
+DE: Jeder Teilnehmer muss eindeutig nachvollziehbar sein.
+HR: Broj/adresa i fizički uređaj moraju se nedvosmisleno
+poklapati.
+DE: Personen vor Akustiktest informieren.
+HR: Prije uključivanja sirena upozori osobe u području.
+STB REV DE: Revisionsmodus zur Funktions- und Standortprüfung.
+HR: REV prvo provjeri ring, zatim omogućava da melder aktiviraš
+testnim plinom ili ručni javljač tipkom. Time istodobno provjeravaš
+funkciju i lokaciju.
+DE: REV starten; automatische Melder mit wenig Prüfgas, nichtautomatische Melder
+per Druckknopf auslösen.
+HR: Pokreni REV. Automatski melder aktiviraj s malo Prüfgasa, ručni javljač tipkom.
+Nakon aktiviranja STB prelazi dalje.
+DE: Für Funktions-/Standortkontrolle nach
+Ringvorprüfung.
+HR: Nakon električne/topološke provjere ringa, za
+funkcionalni test.
+DE: Auslösung muss dem richtigen Teilnehmer/Standort
+entsprechen.
+HR: Alarmirani uređaj mora odgovarati prikazanoj adresi i
+stvarnom mjestu.
+DE: Bei Stichleitung nicht verfügbar; nach Test zurücksetzen.
+HR: REV nije dostupan za Stich. Nakon testa vrati uređaj u
+normalno stanje.
+MTD 533X Alarmtest DE: Funktionsprüfung eines automatischen Rauchmelders.
+HR: Provjera da detektor stvarno reagira na dim i da centrala
+prikazuje točnu MG, adresu i tekst lokacije.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; BMZ-Anzeige prüfen;
+danach rücksetzen.
+HR: Stavi melder u Revision, koristi odgovarajući Prüfgas, provjeri alarm na centrali
+i nakon toga Rücksetzen.
+DE: Bei Inbetriebnahme/Funktionsprüfung und
+nach relevantem Tausch.
+HR: Kod puštanja u rad, funkcionalne provjere i
+nakon zamjene.
+DE: Richtige MG/Adresse/Ort; Rücksetzen möglich.
+HR: Mora se pojaviti točna grupa/adresa/lokacija i uređaj se
+mora normalno resetirati.
+DE: Brandfallsteuerungen/Fernalarmierung gemäß
+Testkonzept sichern.
+HR: Prije testa blokiraj neželjene vanjske posljedice prema
+dogovorenom testnom postupku.
+MTD 533X-SCT Akustik DE: Gezielte Prüfung der integrierten Melderakustik.
+HR: Osim detekcije dima, SCT ima integriranu akustiku. Ovaj test
+provjerava da reagira pravi melder i s pravim Akustikmakro bez
+nepotrebnog aktiviranja cijelog objekta.
+DE: PeripherieAssistant: Ausbau lesen -> Ring -> RevisionsAssistant -> Rechtsklick
+Melder -> 'Akustik einschalten' -> Makro wählen -> deaktivieren. Bei
+Steuerungsansteuerung über die Steuerung testen.
+HR: U PeripherieAssistant-u učitaj Ausbau, otvori RevisionsAssistant i na melderu
+uključi Akustik. Ako je akustika programirana preko Steuerung, testiraj preko te
+Steuerung.
+DE: Bei Inbetriebnahme, Alarmierungsprüfung und
+nach Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i nakon
+promjene programiranja.
+DE: Richtiger Melder, richtige Ton-/Sprachausgabe,
+anschließend wieder aus.
+HR: Mora se oglasiti upravo odabrani melder i nakon testa se
+mora ugasiti.
+DE: RevisionsAssistant-Ansteuerung nur bei entsprechender
+PI-Konfiguration.
+HR: Ako je akustika riješena preko Steuerung, nećeš je moći
+pravilno testirati samo RevisionsAssistant-om.
+<PARSED TEXT FOR PAGE: 8 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 8
+Prüfung Beschreibung DE / HR Wie prüfen? DE / HR Wann? DE / HR Soll / tumačenje Sicherheit / napomena
+MCP / Handmelder DE: Manueller Brandmelder / Handfeuermelder.
+HR: Ručni javljač požara. Testom se provjerava mehanika tipke,
+adresiranje, tekst i alarmna logika.
+DE: Druckknopf betätigen; richtige MG/Adresse/Ort an der BMZ prüfen;
+anschließend zurücksetzen/entriegeln.
+HR: Aktiviraj tipku, provjeri alarm i tekst na centrali, zatim vrati javljač u normalan
+položaj.
+DE: Bei Inbetriebnahme/Funktionsprüfung und
+nach Tausch.
+HR: Kod puštanja, redovne funkcijske provjere i
+nakon zamjene.
+DE: Richtige MG, Adresse, Ort und Alarmwirkung.
+HR: Sve mora odgovarati planu i programiranju.
+DE: Fernalarmierung/Brandfallsteuerungen gemäß
+Testablauf sichern.
+HR: Pazi da test ne aktivira stvarne vanjske funkcije ako nisu
+predviđene.
+Druckknopfmelder DE: Manueller Taster laut Projekt; genauer Hekatron-Gerätetyp
+noch offen.
+HR: Ručni tipkalo/javljač iz Bietigheim plana. Funkcija je poznata
+iz plana, ali hardverski tip još nije potvrđen, pa ga ne treba
+unaprijed tretirati kao MCP 535X.
+DE: Gerätetyp vor Ort bestätigen; Taster auslösen; BMZ-/Steuerfunktion prüfen;
+zurückstellen.
+HR: Prvo potvrdi tip uređaja, zatim ga aktiviraj i provjeri što točno radi na centrali i
+eventualnoj Steuerung.
+DE: Bei Inbetriebnahme und nach
+Änderung/Tausch.
+HR: Kod puštanja i nakon izmjene.
+DE: Sollfunktion gemäß Projekt.
+HR: Mora izvršiti upravo funkciju predviđenu planom.
+DE: Gerätetyp nicht annehmen.
+HR: Ne izmišljati model prije provjere na objektu.
+Separate Signalgeber DE: Separate akustische bzw. optisch-akustische Alarmgeber.
+HR: Zasebne sirene/bljeskalice koje nisu ugrađene u SCT melder.
+Testira se prava zona, zvuk, optika i eventualna Störung
+nadziranog izlaza.
+DE: Über den projektierten ALB / die Steuerung ansteuern; richtige Zone, Akustik
+und ggf. Optik prüfen. Ring-Signalgeber können mit STB MAN lokal geprüft werden.
+HR: Aktiviraj preko pripadajućeg ALB-a ili Steuerung-a, provjeri da reagira samo
+prava etaža/zona. Ako je ring-signalgeber, možeš ga lokalno provjeriti i STB
+MAN-om.
+DE: Bei Inbetriebnahme, nach Programmänderung
+oder Tausch.
+HR: Kod puštanja, nakon promjene logike ili
+zamjene.
+DE: Richtige Zone, Ton/Optik vorhanden, ggf.
+Störungsüberwachung korrekt.
+HR: Mora se aktivirati pravi signalgeber u pravom području;
+nadzirana smetnja mora se pravilno prijaviti.
+DE: Exakten Signalgebertyp vor Ort bestätigen.
+HR: Tip signalgebera na Bietigheimu još nije svugdje
+potvrđen.
+ALB Funktion DE: Alarmierungsbereich für gemeinsame
+akustische/optisch-akustische Alarmierung.
+HR: ALB grupira signalizaciju jednog područja. U Bietigheim
+konceptu to je ukupni ALB i posebni ALB-ovi za etaže. Test mora
+potvrditi da se alarmira upravo predviđeno područje.
+DE: Alarmkriterium auslösen; alle zugeordneten SCT/Signalgeber prüfen; FBF
+'Akustische Signale ab', Rücksetzen und Neuansteuerung mitprüfen.
+HR: Izazovi alarm u grupi koja pripada ALB-u, provjeri sve SCT i zasebne
+signalgebere te zatim FBF isključenje akustike i reset.
+DE: Nach Programmierung, vor Abnahme und nach
+Änderung der Alarmierungslogik.
+HR: Nakon programiranja, prije primopredaje i
+poslije promjene logike.
+DE: ALB 1 als Hauptbereich; Unterbereiche reagieren
+projektiert.
+HR: Glavni i podređeni ALB-ovi moraju se ponašati prema
+planiranoj logici.
+DE: MG 2/3/4 sind in Bietigheim geschossübergreifend.
+HR: MG 2/3/4 prvo razjasniti prije konačne etažne
+alarmizacije.
+ALB Störung DE: Störzustand eines Alarmierungsbereichs durch gestörte
+zugeordnete Steuerungen.
+HR: Ako se nadzirana sirena ili upravljački izlaz pokvari, ALB može
+dobiti status Störung. Time se ne provjerava alarm nego nadzor
+alarmne infrastrukture.
+DE: Eine zugeordnete überwachte Steuerung kontrolliert in Störung bringen und
+prüfen, ob der ALB gestört meldet.
+HR: Prema odobrenom testu namjerno izazovi smetnju na jednom nadziranom
+izlazu i provjeri prikaz ALB Störung.
+DE: Bei Inbetriebnahme der Alarmierung und nach
+Änderungen.
+HR: Kod puštanja alarmiranja i nakon izmjena.
+DE: Störung der zugeordneten Steuerung wird im ALB
+korrekt abgebildet.
+HR: ALB mora jasno pokazati da postoji smetnja u njegovoj
+signalizaciji.
+DE: Nur kontrolliert und mit gesicherter Alarmierung testen.
+HR: Ne raditi nasumični kratki spoj. Koristi odobreni način
+simulacije smetnje.
+Synchronisation 3 s DE: Synchronisierungsintervall für BX-SOL, BX-SBL und MTD
+533X-SCT/SPCT.
+HR: Sinkronizacija usklađuje više signalgebera na istom ringu da
+ne rade vremenski razbacano. Hekatron u dokumentu
+preporučuje 3 s.
+DE: Ring-Eigenschaften prüfen; bei Funktionstest mehrere Signalgeber/SCT
+gemeinsam hören.
+HR: U postavkama ringa provjeri Intervall i pri testu slušaj rade li signalgeberi
+usklađeno.
+DE: Bei Parametrierung und vor Abnahme der
+Alarmierung.
+HR: Kod programiranja i prije primopredaje.
+DE: Hekatron empfiehlt 3 s; 0 s = keine Synchronisation.
+HR: 3 s je Hekatronova preporuka u dokumentu; 0 s znači
+bez sinkronizacije.
+DE: Tonart und Projektvorgaben beachten.
+HR: Ako projekt/ton traži drugo ponašanje, projekt ima
+prednost.
+<PARSED TEXT FOR PAGE: 9 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 9
+Prüfung Beschreibung DE / HR Wie prüfen? DE / HR Wann? DE / HR Soll / tumačenje Sicherheit / napomena
+Batteriestrommessung DE: Messung des Akkustroms bei B8-PSU über das Bedienfeld.
+HR: Ovim testom centrala sama prelazi na akumulatore i mjeri
+struju. Na temelju toga provjerava se može li konfigurirani
+kapacitet/Überbrückungszeit zadovoljiti sustav.
+DE: Akku-Kapazität und Überbrückungszeit korrekt parametrieren. Bedienfeld ->
+Menü -> Batteriestrommessung -> logische Akku-Nr.; Ergebnis ablesen.
+HR: Prvo uskladi podatke u softveru sa stvarnim akumulatorima. Zatim na
+Bedienfeldu pokreni Batteriestrommessung i zapiši rezultat.
+DE: Bei Inbetriebnahme der Energieversorgung
+und nach relevanten Last-/Akkuänderungen.
+HR: Kod puštanja napajanja i nakon promjene
+akumulatora ili većeg opterećenja.
+DE: Zentrale trennt sich während der Messung automatisch
+vom Netz.
+HR: Tijekom mjerenja centrala se sama odvaja od mreže - to
+je normalan dio testa.
+DE: Nur anwenden, wenn B8-PSU/EvoxX M vor Ort bestätigt
+ist.
+HR: Na Bietigheimu prvo potvrditi stvarni tip centrale i PSU.
+Automatischer Batterietest DE: Regelmäßige automatische Prüfung der Akkus.
+HR: Automatska funkcija centrale koja u zadanom intervalu
+provjerava jesu li akumulatori prisutni i ispravni.
+DE: Im Element Batterie prüfen, dass 'Automatische Prüfung' aktiv ist und das
+Intervall korrekt gesetzt ist.
+HR: U konfiguraciji akumulatora provjeri da je automatski test uključen i da interval
+nije isključen.
+DE: Bei Inbetriebnahme/Parametrierung; danach
+automatisch.
+HR: Kod programiranja; nakon toga centrala testira
+automatski.
+DE: Hekatron-Standardintervall im Dokument: 15 min.
+HR: U dostupnoj Hekatron uputi standard je 15 min.
+DE: Bei 'aus' werden fehlende/defekte Akkus nicht
+automatisch als Störung gemeldet.
+HR: Ako je test isključen, sustav može propustiti prijaviti
+problem s akumulatorom.
+ASD Wartezeit DE: Mindestwartezeit nach dem Einschalten vor dem Ur-Reset.
+HR: ASD mora nekoliko minuta raditi da se ventilator i protok
+stabiliziraju. Ako Ur-Reset napraviš prerano, spremit ćeš lošu
+referencu.
+DE: Nach dem Einschalten mindestens 5 min warten; Normalbedingungen
+herstellen.
+HR: Nakon uključenja čekaj najmanje 5 minuta i osiguraj normalan rad
+ventilacije/klime.
+DE: Vor jedem Ur-Reset.
+HR: Svaki put prije Ur-Reseta.
+DE: Mindestens 5 min.
+HR: Najmanje 5 minuta, ne približno.
+DE: Revisionsöffnung geschlossen; Lüftung/Klima im
+Normalbetrieb.
+HR: ASD mora vidjeti normalne stvarne uvjete objekta.
+ASD Ur-Reset DE: Erfassung der Basisdaten und Abgleich der
+Luftstromüberwachung.
+HR: Ur-Reset ASD-u kaže: 'ovo je normalno stanje'. Nakon toga
+protok se vodi kao 100 %. Zato se mora ponoviti nakon svake
+promjene cijevi ili ventilatora.
+DE: AMB 35: UP bis U -> OK -> U01 -> OK -> U-- -> bis Watchdog-Punkt warten.
+HR: Na AMB-u idi do U, potvrdi U01, ponovno OK i čekaj završetak dok se ne pojavi
+Watchdog prikaz.
+DE: Bei Inbetriebnahme; zwingend nach
+Erweiterung/Umbau/Reparatur der Ansaugleitung
+oder Änderung der Lüfterdrehzahl.
+HR: Kod prvog puštanja te obavezno nakon
+produženja, popravka ili promjene cijevi i promjene
+brzine ventilatora.
+DE: Luftstromreferenz danach = 100 %.
+HR: Nakon uspješnog Ur-Reseta normalni protok je
+referentnih 100 %.
+DE: Nicht verwenden, um Verschmutzung zu kaschieren.
+HR: Ur-Reset nije način da se sakrije prljava cijev ili filter.
+ASD Versorgungsspannung DE: Versorgungsspannung direkt an den ASD-Anschlussklemmen.
+HR: Mjeri se stvarni napon koji dolazi do ASD-a, ne samo napon na
+PSU. Tako vidiš pad napona na kabelu.
+DE: DC-Voltmeter an Kl. 1/2; bei redundanter Versorgung auch 3/4. Nicht im
+Notstrombetrieb.
+HR: Multimetrom u V DC izmjeri na 1/2, a kod redundantnog napajanja i 3/4. Mjeri u
+normalnom mrežnom radu.
+DE: Nach Inbetriebnahme und bei
+Versorgungsstörung.
+HR: Kod puštanja i ako se pojavljuje problem
+napajanja.
+DE: 24-V-Betrieb: 21,6-27,6 V DC; 12 V: 12,3-13,8 V DC.
+HR: Kod 24 V sustava vrijednost mora ostati između 21,6 i
+27,6 V DC.
+DE: Polarität beachten; fachgerecht messen.
+HR: Pazi na polaritet i ne kratko spajati stezaljke mjernim
+vrhovima.
+ASD Luftstrom DE: Aktueller Luftstrom relativ zum beim Ur-Reset gespeicherten
+Referenzwert.
+HR: ASD ne prikazuje samo 'radi/ne radi' nego koliko se protok
+promijenio od normalnog stanja. To je ključ za razlikovanje
+začepljenja i puknuća.
+DE: AMB 35: UP bis V -> OK -> V01 für Rohr I; bei Zweikanal V02 für Rohr II; Wert
+ablesen.
+HR: Na AMB-u otvori grupu V, očitaj V01 za cijev I i po potrebi V02 za cijev II.
+DE: Bei Inbetriebnahme, Instandhaltung und nach
+Änderungen/Ereignissen.
+HR: Kod puštanja, servisa i nakon promjene cijevne
+mreže.
+DE: 100 % = Ur-Reset. A11-C32: <80 % Verstopfung, >120
+% Rohrbruch nach Verzögerung.
+HR: 100 % je normalno. Ispod 100 % ide prema začepljenju,
+iznad prema puknuću; standardna 20 % granica vrijedi samo
+za odgovarajuću parametrizaciju.
+DE: Parametrierung W/X kann andere Grenzen bedeuten.
+HR: Uvijek gledaj stvarnu konfiguraciju ASD-a prije zaključka.
+<PARSED TEXT FOR PAGE: 10 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 10
+Prüfung Beschreibung DE / HR Wie prüfen? DE / HR Wann? DE / HR Soll / tumačenje Sicherheit / napomena
+ASD Fault-Test DE: Funktionsprüfung der Luftstrom-Störungsüberwachung.
+HR: Namjerno mijenjaš protok dovoljno da ASD mora prepoznati
+kvar. Time provjeravaš i samu detekciju smetnje i prijenos
+Störung na Integral IP.
+DE: Ansaugöffnungen abkleben oder 3-Wege-Hahn verwenden, bis > +/-20 %
+Änderung. Fault und nach Verzögerung Störung an Integral prüfen.
+HR: Kontrolirano zatvori dio usisa ili koristi 3-Wege-Hahn dok promjena ne prijeđe
+granicu. Prati Fault pa Störung na centrali.
+DE: Bei Inbetriebnahme; bei ASD 535-2/-4 je Rohr
+separat.
+HR: Kod puštanja; kod dvokanalnog ASD-a provjeri
+svaki kanal posebno.
+DE: Bei A11-C32 nach 300 s Störung an Integral IP.
+HR: Kod standardne A11-C32 parametrizacije Störung dolazi
+nakon 300 s.
+DE: Fernalarmierung/Brandfallsteuerungen vorher
+blockieren; Originalzustand wiederherstellen.
+HR: Prije testa blokiraj neželjene vanjske funkcije i nakon
+testa vrati sve otvore u prvobitno stanje.
+ASD Alarmtest DE: Prüfung der Raucherkennung und richtigen Alarmzuordnung
+an der Integral IP.
+HR: Provjerava cijeli lanac od dima u cijevi do pravog alarma u
+centrali. Nije dovoljno da samo ASD lokalno pokaže alarm.
+DE: Bei Inbetriebnahme/Änderung Rauch an letzter Ansaugöffnung je Rohrast; bei
+Instandhaltung Revisions-Ansaugöffnung möglich. MG/Bereich an Integral prüfen.
+HR: Kod puštanja ili promjene uvedi dim na zadnjem usisnom otvoru svakog kraka;
+kod servisa može se koristiti Revisionsöffnung. Provjeri MG i područje na centrali.
+DE: Inbetriebnahme, nach
+Rohränderung/Reparatur; Wartung über
+Revisionsöffnung.
+HR: Kod prvog puštanja, nakon radova na cijevima
+te pri održavanju.
+DE: Alarm an der richtigen Gruppe/Linie/Bereich.
+HR: Alarm mora doći točno na MG 8/1 i očekivano područje.
+DE: Zwischen Tests zurücksetzen; Ansaugleitung danach in
+Originalzustand.
+HR: Između testova resetiraj ASD/BMZ i na kraju vrati cijevnu
+mrežu u normalno stanje.
+ASD Transportzeit DE: Zeit vom Raucheintrag an der entferntesten Ansaugstelle bis
+zur projektierten Erkennung.
+HR: Vrijeme transporta pokazuje koliko dugo dim putuje kroz
+cijev. Mora odgovarati PipeFlow/projektu; bez projektnog
+Sollwert-a ne treba izmišljati granicu.
+DE: Rauch an entferntester Ansaugstelle einbringen; Zeit mit Stoppuhr bzw. ASD
+Config erfassen; mit PipeFlow vergleichen.
+HR: Uvedi dim na najudaljenijem otvoru i mjeri vrijeme do detekcije prema
+definiranom postupku. Usporedi s PipeFlow Sollwert-om.
+DE: Bei Inbetriebnahme und nach Änderungen der
+Ansaugleitung.
+HR: Kod puštanja i nakon promjene cijevne mreže.
+DE: Sollwert aus dem Bietigheim-PipeFlow/Projekt.
+HR: Prihvatljivo je ono što je projektirano u PipeFlow-u;
+trenutno taj Sollwert u Bietigheim dokumentima koje imamo
+nije potvrđen.
+DE: Nicht mit einer programmierten Alarmverzögerung
+verwechseln.
+HR: Transportno vrijeme nije isto što i eventualno
+programsko kašnjenje alarma.
+ENS Ansteuerung DE: Ansteuersignal von der BMA zur Sprachalarmierung/ENS.
+HR: To je signal kojim BMA govori ENS-u koju govornu zonu treba
+aktivirati. U Bietigheimu prvo treba potvrditi je li alarmiranje
+ukupno ili po etažama.
+DE: Freigegebenen Testalarm je Zone/Gesamtalarm auslösen; richtigen
+ENS-Eingang, Sprachalarm und Zone prüfen.
+HR: Izazovi kontrolirani testni alarm i provjeri koji ENS ulaz reagira te pokreće li
+točnu zonu i poruku.
+DE: Nach Verdrahtung/Programmierung, vor
+Abnahme und nach Änderungen.
+HR: Nakon spajanja/programiranja, prije
+primopredaje i poslije izmjene.
+DE: Richtige Zone/Ansage; keine unerwünschten Bereiche.
+HR: Mora se oglasiti upravo predviđeno područje bez
+neželjenog alarmiranja drugih zona.
+DE: Exakter ENS-Typ/Klemmenplan fehlt noch.
+HR: Bez ENS dokumentacije ne zaključavati konačne
+Steuerung/Kontakt brojeve.
+ENS Rückmeldung / Störung DE: Rückmeldung bzw. Störkontakt der ENS zur BMA.
+HR: Povratni kontakt omogućuje BMA centrali da zna je li ENS
+aktivan ili u smetnji. Tekst u centrali mora jasno reći što se
+dogodilo.
+DE: Nach Hersteller-/Projektunterlagen definierten ENS-Zustand erzeugen und am
+BMZ-Eingang/Extern-Element prüfen.
+HR: Prema ENS dokumentaciji izazovi dopuštenu smetnju ili povratni status i
+provjeri odgovarajući Eingang/Extern element u BMZ.
+DE: Bei Schnittstellen-Inbetriebnahme und nach
+Änderungen.
+HR: Kod puštanja sučelja i nakon izmjene.
+DE: Richtiger BMZ-Text und Zustand.
+HR: Na centrali mora biti točan tekst i status, bez zamjene
+Alarm/Störung/Rückmeldung.
+DE: Kontaktlogik nicht ohne ENS-Unterlagen annehmen.
+HR: Ne pretpostavljati NO/NC ili funkciju kontakta bez
+stvarne ENS dokumentacije.
+MLAR Unterbrechungston DE: Ersatzton bei Unterbrechung/Kurzschluss während
+Sprachalarmierung, sofern projektiert.
+HR: Ako projekt koristi ovu funkciju, kod prekida govorne veze
+može se aktivirati zamjenski ton kako alarmiranje ne bi potpuno
+nestalo.
+DE: Konfiguration prüfen; Funktionsprüfung nur gemäß ENS-/Projektfreigabe.
+HR: Provjeri programsku postavku i funkciju testiraj samo po odobrenom scenariju.
+DE: Bei Parametrierung/Abnahme, falls im Projekt
+verwendet.
+HR: Kod programiranja i primopredaje, samo ako je
+funkcija stvarno projektirana.
+DE: Wechsel auf konfigurierte Tonart.
+HR: Kod definiranog kvara sustav treba prijeći na projektirani
+zamjenski ton.
+DE: Keine Leitung für den Test unkontrolliert kurzschließen.
+HR: Ne izazivati kratki spoj bez kontroliranog testnog plana.
+<PARSED TEXT FOR PAGE: 11 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 11
+3. X-LINE Ringmessung
+Loop Auto Sonst. Soll Ruhe Vorb. Alarm Vorb. UTA UTB I mA Rcc Status Hinweis DE/HR
+L01 26 2 28 3.36 54.4 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L02 24 2 26 3.12 47.78 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L03 21 2 23 2.76 53.8 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L04 19 2 21 2.52 47.18 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L05 36 3 39 5.11 113.57 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L06 55 5 60 7.2 141.18 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L07 34 6 40 6.39 130.43 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L08 22 4 26 4.44 111.12 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+L09 25 10 35 8.11 137.79 OFFEN DE: UTA/UTB/I mit STB AUTO; Rcc nur am getrennten Ring mit Ohmmeter C1-C2.
+HR: UTA/UTB/I očitaj STB AUTO testom. Rcc mjeri isključivo na odspojenom, beznaponskom
+ringu između C/GND krajeva.
+<PARSED TEXT FOR PAGE: 12 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 12
+4. Ringlängenberechnung
+Loop Soll Leitung Modus Alarmstrom ISum ISum max Lmax RccMax Rcc Ist Meq Meq max Config Ergebnis Erklärung DE/HR
+L01 28 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L02 26 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L03 23 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L04 21 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L05 39 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L06 60 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L07 40 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L08 26 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+L09 35 DE: Vor Erstinbetriebnahme und nach Ringänderungen.
+Alle Softwaregrenzen einhalten.
+HR: Radi prije prvog puštanja i nakon svake promjene
+ringa. Provjeri da ISum, Lmax, RccMax i Meq nisu
+prekoračeni.
+<PARSED TEXT FOR PAGE: 13 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 13
+5. Melder-Funktionsprüfung - 262 Teilnehmer
+Loop Adr. MG/M Etage Raum Modell Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+L01 58/2 58/2 2. OG 2.21 Flur MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L01 59/2 59/2 2. OG 2.21 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L01 59/3 59/3 2. OG 2.21 Flur MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L01 61/5 61/5 2. OG 2.03 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L01 60/3 60/3 2. OG 2.01 Klasse MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L01 60/2 60/2 2. OG 2.02 Ganztagesbetr. MTD 533X-SCT DE: Automatischer Rauchmelder mit integrierter
+akustischer Alarmierung.
+HR: Automatski detektor dima s ugrađenom akustikom.
+Osim detekcije obavezno provjeri da se pravi SCT
+oglašava u pravom ALB-u i s pravilnim makrom.
+DE: Rauchfunktion mit Prüfgas prüfen. Akustik über RevisionsAssistant ->
+'Akustik einschalten' prüfen, falls PI-Ansteuerung; sonst über zugehörige
+Steuerung/ALB.
+HR: Dimnu funkciju provjeri Prüfgasom. Akustiku testiraj preko
+RevisionsAssistanta ako je PI način, a ako je akustika preko Steuerung-a, test
+radi preko pripadajuće Steuerung/ALB logike.
+DE: Erstinbetriebnahme;
+Alarmierungsprüfung; nach
+Tausch/Parametrierungsänderung.
+HR: Kod puštanja, provjere alarmiranja i
+nakon zamjene ili promjene parametriranja.
+OFFEN
+L01 61/4 61/4 2. OG 2.03 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L01 61/3 61/3 2. OG 2.03 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
+X-LINE.
+HR: Automatski adresabilni detektor dima na X-LINE
+ring-u. Provjerava se detekcija, točna adresa/MG i stvarna
+lokacija.
+DE: Im Revisionsmodus mit geeignetem Prüfgas auslösen; Alarm an richtiger
+MG/Adresse und Standort prüfen; danach rücksetzen.
+HR: U Revision načinu aktiviraj detektor prikladnim Prüfgasom. Na BMZ
+provjeri točnu MG/adresu i tekst lokacije te nakon testa napravi Rücksetzen.
+DE: Erstinbetriebnahme/Funktionsprüfung;
+nach relevantem Tausch oder Änderung.
+HR: Kod prvog puštanja, funkcijske provjere te
+nakon zamjene ili promjene.
+OFFEN
+L01 61/2 61/2 2. OG 2.03 Klasse MTD 533X DE: Automatischer adressierbarer Rauchmelder auf
