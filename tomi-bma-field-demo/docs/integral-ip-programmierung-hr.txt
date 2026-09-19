@@ -1,0 +1,2007 @@
+HEKATRON – Programmierung von Integral IP-Zentralen
+119 Seiten · vollständige kroatische Übersetzung · deutsche Programmbefehle bleiben im Original
+
+============================================================
+
+HEKATRON - Programmierung von Integral IP-Zentralen
+Potpuni hrvatski prijevod; njemačke naredbe i nazivi polja ostavljeni su u izvornom obliku radi rada u njemačkom programu.
+
+===== STRANICA 1 / 119 =====
+Seminarska dokumentacija
+Osnove Integral IP
+Programiranje Integral IP centrala
+
+===== STRANICA 2 / 119 =====
+© Hekatron 2017
+V2.71
+
+===== STRANICA 3 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Sadržaj
+1. Integral Application Center (IAC) ........................................................................ 7
+1.1 Općenito ............................................................................................................... 7
+1.2 Glavni prozor ......................................................................................................... 7
+1.2.1 Projektverwaltung - upravljanje projektima ..................................................... 7
+1.2.2 Anwendungseinstellungen - postavke aplikacije ............................................... 8
+1.2.3 Werkzeuge - alati ............................................................................................... 9
+1.3 IAC informacijski prozor ...................................................................................... 10
+1.3.1 Informacije o verziji / licenciranje .................................................................. 10
+1.4 Projektni prozor .................................................................................................... 11
+1.4.1 Eigenschaften - Basisdaten - svojstva / osnovni podaci ................................. 11
+1.4.2 Eigenschaften - Projekttexte - svojstva / tekstovi projekta ........................... 12
+1.4.3 Eigenschaften - Datenpunktliste - svojstva / popis podatkovnih točaka ....... 13
+1.4.4 Eigenschaften - Projektverlauf - svojstva / tijek projekta .............................. 14
+1.5 Anwendungen - aplikacije .................................................................................... 15
+1.6 Anhänge - prilozi ................................................................................................... 15
+1.7 Verbindung - veza .................................................................................................. 16
+1.7.1 Anwendung - aplikacija ...................................................................................... 16
+1.7.2 IP-Adresszuordnung - dodjela IP adresa .......................................................... 16
+2. Konfiguracija ........................................................................................................... 17
+2.1 Konfiguracijska ili projektna datoteka - 1. korak programiranja ...................... 17
+2.1.1 Otvaranje projektne datoteke ............................................................................ 17
+2.1.2 Izrada konfiguracijske datoteke iz predloška .................................................. 17
+2.2 Pregled Configurator-a .......................................................................................... 18
+2.2.1 Dinamičko upravljanje prozorima ...................................................................... 19
+2.2 Izrada konfiguracije - 2. korak programiranja ..................................................... 21
+2.2.1 Uvoz predloška ................................................................................................... 21
+2.2.2 Naziv/lokacija podcentrale ................................................................................ 22
+2.2.3 Konfiguracija/ugradnja centrale ........................................................................ 23
+2.2.4 Parametriranje sklopova .................................................................................... 25
+
+===== STRANICA 4 / 119 =====
+4 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3 Logička razina - 3. korak programiranja .............................................................. 35
+2.3.1 Statusfenster / Statusmeldungen - statusni prozor / statusne poruke ............ 36
+2.3.2 Spremanje projekta i tijeka projekta ................................................................. 36
+2.3.3 Meldergruppe - grupa javljača ........................................................................... 37
+2.3.4 Eingang - ulaz ..................................................................................................... 38
+2.3.5 Steuerung / rad s Booleovim definicijama ....................................................... 38
+2.3.6 Extern - vanjsko ................................................................................................. 47
+2.3.7 Drucker - pisač .................................................................................................... 47
+2.3.8 Bedienfeld - upravljačka ploča ........................................................................... 48
+2.3.9 Batterie - baterija ............................................................................................... 49
+2.3.10 Netz - mreža/napajanje .................................................................................... 50
+2.3.11 Verzögerungsebene - razina kašnjenja ........................................................... 50
+2.3.12 Feuerwehrbedienfeld - vatrogasna upravljačka ploča ................................... 52
+2.3.13 Ring - petlja ....................................................................................................... 53
+2.3.14 Alarmierungsbereich - područje alarmiranja ................................................... 55
+2.3.15 Register Beschreibung - opis registra ............................................................. 58
+2.4 Speichern - spremanje - 4. korak programiranja .................................................. 60
+2.4.1 Spremanje projektne datoteke ........................................................................... 60
+2.4.2 Spremanje konfiguracijske datoteke ................................................................. 61
+2.5 Einstellungen - postavke u projektu .................................................................... 62
+2.5.1 Opće postavke ..................................................................................................... 62
+3. Tekstovi projekta ...................................................................................................... 64
+3.1 Integral Text Einstellungen - postavke Integral Text - 4. korak programiranja ... 65
+3.2 Izrada tekstova grupa ............................................................................................ 66
+3.3 Izrada tekstova javljača ......................................................................................... 67
+3.4 Vanjska daljnja obrada tekstova grupa javljača ................................................... 68
+3.4.1 Integral Text: Excel - Export .............................................................................. 68
+3.4.2 Integral Text: Excel - Import .............................................................................. 69
+4. Loader ........................................................................................................................ 72
+4.1 Glavni prozor - 5. korak programiranja ................................................................. 73
+4.2 Uspostavljanje veze ............................................................................................... 74
+
+===== STRANICA 5 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+4.3 Gerätedaten - podaci uređaja ................................................................................ 76
+4.4 Programmierung starten - pokretanje programiranja ........................................... 77
+4.5 Poruka o ažuriranju nakon veze s booterom ........................................................ 79
+4.6 Očitavanje centrale/podataka ................................................................................ 80
+5. Peripherie Assistant .................................................................................................. 81
+5.1 Parametriranje petlje - 6. korak programiranja ................................................... 81
+5.2 Glavni prozor .......................................................................................................... 81
+5.2.1 Glavni prozor: prikaz na DCU razini ................................................................. 82
+5.3 Uspostavljanje veze ............................................................................................... 84
+5.4 Učitavanje petlje ..................................................................................................... 85
+5.5 Parametriranje petlje ............................................................................................. 86
+5.5.1 Parametriranje sudionika na petlji .................................................................... 87
+5.6 Spremanje datoteke petlje ..................................................................................... 88
+5.7 Prijenos datoteke petlje u centralu ........................................................................ 89
+5.8 Preuzimanje adresa petlje ...................................................................................... 90
+5.8.1 Ručno preuzimanje adresa petlje ...................................................................... 90
+5.9 Proširenje petlje / naknadna ugradnja sudionika ................................................. 92
+5.10 Naknadna ugradnja sudionika na različitim mjestima u petlji .......................... 94
+5.11 Izvoz i uvoz petlji ................................................................................................. 97
+5.12 Arhiviranje hardverskog prikaza i topologije petlje .......................................... 99
+6. Assistenten - pomoćnici ........................................................................................... 101
+6.1 Pomoćnici za periferiju petlje .............................................................................. 101
+6.1.1 AbgleichAssistant .............................................................................................. 102
+6.1.2 RevisionsAssistant ............................................................................................ 103
+6.1.3 Očitavanje podataka sudionika ......................................................................... 107
+6.1.4 Priordaten - prethodni/prior podaci ................................................................ 108
+6.1.5 Designeditor ....................................................................................................... 109
+6.1.6 Izračun duljine petlje ........................................................................................ 110
+6.1.7 Überwachter Hochlauf (Automatik) - nadzirano pokretanje, automatski ........ 112
+6.1.8 Überwachter Hochlauf (Einzelschritt) - nadzirano pokretanje, korak po korak ...................................................................................................................... 113
+
+===== STRANICA 6 / 119 =====
+6 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.2 ServiceAssistant .................................................................................................... 114
+6.2.1 Isključivanje grupa javljača do određenog vremena ........................................ 116
+6.2.2 Steuerungen sichern - osiguravanje/blokiranje upravljanja .......................... 116
+6.2.3 Očitavanje memorije događaja .......................................................................... 117
+6.2.4 Popisi događaja - popis: isključenja ................................................................. 118
+6.2.5 Postavljanje datuma i vremena ......................................................................... 119
+
+===== STRANICA 7 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+1. Integral Application Center (IAC)
+1.1 Općenito
+Prozori programa Integral Application Center u pravilu su izvedeni tako da se na lijevoj strani nalazi prikaz u obliku stabla za odabir, a na desnoj akcijski prozor (uređivač elemenata, tipke za pokretanje radnje itd.).
+
+1.2 Glavni prozor
+U glavnom prozoru može se birati između dijelova programa Projektverwaltung, Anwendungseinstellungen ili Werkzeuge.
+
+1.2.1 Projektverwaltung
+Moguće su sljedeće postavke/radnje:
+1 Neues Integral-Projekt: odavde se mogu pokrenuti i uređivati novi projekti.
+2 Bestehendes Projekt öffnen: odavde se mogu otvoriti postojeći projekti za daljnju obradu.
+3 Zuletzt geöffnete Projekte: odavde se može izravno otvoriti posljednjih osam otvorenih projekata.
+4 Themenpanel: u panelu se prikazuju poruke o pogreškama i napomene.
+
+===== STRANICA 8 / 119 =====
+8 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+1.2.2 Anwendungseinstellungen
+U dijelu Anwendungseinstellungen mogu se definirati opće postavke i Integral projekti. Te postavke vrijede za cijeli projekt.
+
+1.2.2.1 Allgemein
+U kartici „Allgemein“ mogu se napraviti sljedeće postavke:
+1 Allgemeine Einstellungen: ovdje se određuje ponašanje prozora projekta i alata. Preporuka: oba prozora trebala bi biti označena kao angedockt (usidrena).
+2 Verbindungsserver: ovdje se postavlja mjesto Integral Verbindungsserver-a (lokalno ili Remote). Spremljena postavka se u pravilu ne mijenja.
+
+1.2.2.2 Integral-Projekte
+
+===== STRANICA 9 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+U kartici „Integral-Projekte“ mogu se napraviti sljedeće postavke:
+1 Ovdje su spremljene sve putanje i datoteke potrebne za obradu Integral projekta. Postavke treba ostaviti nepromijenjene. Samo se putanja „Projektverzeichnis“ može, primjerice, promijeniti na D:\Hekatron_BMA\Integral\8.1\ ako se projekti ne žele spremati na C particiju. Preporučuje se najprije kopirati mapu „Hekatron_BMA\“ sa svim podmapama s C particije na D particiju. Zatim se mapa ponovno odabere tipkom s tri točke. Time se izbjegavaju nenamjerne pogreške pri upisu putanje.
+3 Ako je potvrdni okvir aktiviran, program pri svakom uspostavljanju veze uspoređuje vrijeme centrale za dojavu požara i računala. Ako razlika prelazi 5 minuta, pri povezivanju se pojavljuje dijalog u kojem se vrijeme računala može prenijeti u centralu.
+
+1.2.3 Werkzeuge
+1 IntegralDataCenter priprema podatke iz spremljenih projekata i/ili više konfiguracija za različite namjene. Primjerice, mogu se objediniti podaci za izvoz u vanjske sustave kao što su nadzorni sustavi, OPC serveri ili BACnet. Kao primjer naveden je SecoNET, preko kojeg umreženi sustavi mogu raditi s različitim verzijama softvera. IDC omogućuje jednostavno sastavljanje ukupnog skupa podataka za vanjske sustave ili cjelokupnu dokumentaciju. Osim toga, IntegralDataCenter podržava izradu dokumentacije sustava prema DIN 14675.
+
+Napomena:
+Na ovom se mjestu IntegralDataCenter može otvoriti bez otvorenog projekta i koristi se za dokumentaciju centrala kod projekata s verzijom softvera < 7.0.
+
+===== STRANICA 10 / 119 =====
+10 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+1.3 IAC-Infofenster
+1 Versionsnummer: u informacijskom prozoru, koji se automatski prikazuje pri pokretanju ili se otvara preko izbornika „Info / Info über IntegralApplicationCenter“, vidi se trenutačni broj verzije aplikacije.
+2 Info: ovdje se mogu dohvatiti dodatne informacije o podverzijama odnosno trenutačnom stanju licenci.
+3 Schließen: ovom se tipkom prozor ponovno zatvara.
+
+1.3.1 Versionsinfo / Lizenzierung
+1 Versionsinfo: ovdje su prikazane verzije pojedinih aplikacija.
+2 Lizenzierung: ovdje se prikazuje stanje licencnih podataka spremljenih u dongleu. Prikazuje se za koje je proizvode, tipove centrala, sklopove, funkcije, jezike i alate dongle aktiviran. Osim toga, vidljivi su, među ostalim, datum isteka donglea i Dongle-ID.
+
+===== STRANICA 11 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+1.4 Projektfenster
+U sljedećem odjeljku detaljnije su objašnjeni prozori programa Integral Application Center (IAC).
+
+1.4.1 Eigenschaften - Basisdaten
+1 Basisdaten: u ovim se poljima unose „Projektname“, „Projektant“, „Anlagennummern“ i „Projektversion“. Broj verzije projekta automatski se povećava pa ga nije nužno ručno prilagođavati.
+2 Softwarepaketversion: verziju softverskog paketa sustav automatski upisuje i ona odgovara trenutačno instaliranoj verziji.
+3 Passwortschutz: ako je zaštita lozinkom aktivirana, unesena se lozinka sprema u projekt i pri sljedećem prijenosu podataka Loaderom također u centralu. Nakon toga projektna datoteka može se otvoriti samo s unesenom lozinkom. Nakon prijenosa, veza s centralom može se uspostaviti samo nakon unosa lozinke.
+4 Beschreibung: ovdje ima dovoljno prostora za dodatne napomene. Primjerice, može se voditi povijest sustava kako bi svi važni podaci poput dana primopredaje, mogućih proširenja i sl. bili pri ruci. Ti se podaci također spremaju u centralu i mogu se u svakom trenutku očitati.
+5 Projektkennung: otvorenom se projektu dodjeljuje jedinstveni broj projekta. Trenutačno se ta vrsta identifikacije projekta ne koristi i može se zanemariti.
+
+===== STRANICA 12 / 119 =====
+12 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+1.4.2 Eigenschaften - Projekttexte
+1 Kundentext: u ovom se polju prikazuju izrađene datoteke korisničkih tekstova, koje se dvostrukim klikom ili tipkom „Bearbeiten“ mogu detaljno prikazati odnosno uređivati.
+2 Maßnahmentext: u ovom se polju prikazuju izrađene datoteke tekstova mjera/postupaka, koje se dvostrukim klikom ili tipkom „Bearbeiten“ mogu detaljno prikazati odnosno uređivati.
+3 Neu: ovdje se mogu izraditi projektno specifični Kundentexte ili Maßnahmentexte. Pritiskom na tipku otvara se alat IntegralText (detaljan opis u odjeljku 3 „IntegralText“).
+4 Bearbeiten: ovom se tipkom može uređivati označena tekstualna datoteka ili datoteka teksta mjera.
+5 Hinzufügen: ovdje se mogu uvesti projektno specifični Kundentexte ili Maßnahmentexte (*.ftpfile). Datoteka se može i dalje uređivati.
+6 Löschen: ovom se tipkom može izbrisati označena tekstualna datoteka ili datoteka teksta mjera.
+7 Exportieren: ovom se tipkom označena tekstualna datoteka ili datoteka teksta mjera može izvesti u format (*.ftpfile).
+
+Zentralenbedienfeld und FAT - upravljačka ploča centrale i FAT
+High-End-Bedienfeld - high-end upravljačka ploča
+
+===== STRANICA 13 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+1.4.3 Eigenschaften - Datenpunktliste
+U popisu podatkovnih točaka svi elementi izrađeni u Configurator-u unose se s brojem elementa i automatski dobivaju Modbus registar, počevši od 0. Modbus protokol je komunikacijski protokol razvijen za komunikaciju s programabilnim logičkim kontrolerima (PLC/SPS) i koristi se, primjerice, za dinamičko upravljanje evakuacijskim putevima.
+
+1 Modbus-Einstellungen: mogućnost korištenja filtara, tipova elemenata ili grupa prikaza, ovisno o zahtjevima podsustava.
+2 Modbus Datenversion: program automatski povećava verziju datoteke.
+- Schriftfarbe rot: popis podatkovnih točaka je promijenjen i mora se prenijeti u sustav dojave požara.
+- Schriftfarbe grün: popis podatkovnih točaka odgovara onome spremljenom u sustavu dojave požara.
+- nächstes Modbus-Register: prikazuje sljedeći slobodan Modbus registar.
+3 Modbus-Register neu vergeben: ako su u projektu napravljene izmjene, naknadno dodanim elementima dodjeljuju se sljedeći slobodni Modbus registri. Zbog toga popis više nije sortiran po tipovima elemenata. Funkcijom „Modbus-Register neu vergeben“ elementi se ponovno sortiraju po tipu, a Modbus registri ponovno dodjeljuju.
+PAŽNJA!!! Kod ponovne dodjele Modbus registara eventualno već konfigurirani nadzorni i vanjski sustav mora se ponovno konfigurirati.
+
+===== STRANICA 14 / 119 =====
+14 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5 Modbus-Register exportieren ...: Modbus registar može se izvesti kao datoteka odvojena tabulatorima (.tab) ili kao XML datoteka (.xml). Te se datoteke mogu koristiti za konfiguraciju nadzornog i vanjskog sustava.
+6 Datenpunktliste drucken: prikaz popisa može se spremiti kao PDF prilog ili ispisati. Ako se spremi kao PDF prilog, automatski se pohranjuje u projektu pod izbornikom „Anhänge“. Nakon toga projektna datoteka mora se spremiti.
+
+1.4.4 Eigenschaften - Projektverlauf
+1 Projektverlauf: ovdje se bilježe sve promjene projekta s datumom, vremenom, Dongle-ID-om, promjenom verzije, izvorom i radnjom. Taj se popis promjena pri prijenosu projektnih podataka u BMZ također prenosi, a pri ponovnom očitavanju iz BMZ-a ponovno se uvozi u popis projekta.
+
+===== STRANICA 15 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+1.5 Anwendungen
+Iz ovog se prozora mogu pokretati pojedine aplikacije Integral Application Center-a (IAC). Prikaz može varirati ovisno o licenci (dongleu). Nelicencirane aplikacije su skrivene.
+
+1.6 Anhänge
+Bilo koja vrsta datoteke (prilog) spremljena ovdje ne sprema se samo u projektni kontejner, nego se može i izravno otvoriti, primjerice dvostrukim klikom, te odmah uređivati. Važno: prilozi se ne spremaju u BMZ nego uvijek zajedno s projektnom datotekom na računalu/notebooku.
+1 Hinzufügen: projektu se mogu dodati proizvoljne datoteke (Word dokumenti, slike itd.). Datoteke su dostupne unutar projektne datoteke (*.b5proj), ali se ne prenose u BMZ.
+2 Speichern unter: označena datoteka može se spremiti pod novim nazivom ili na drugo mjesto.
+3 Löschen: označena datoteka može se izbrisati.
+4 Öffnen: označena datoteka može se otvoriti.
+5 Öffnen mit: označena datoteka može se otvoriti odabirom određenog programa.
+
+===== STRANICA 16 / 119 =====
+16 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+1.7 Verbindung
+
+1.7.1 Anwendung
+1 Verbindungsstatus: prikazuje broj svih aktivnih veza.
+2 Alle trennen: ovdje se mogu prekinuti sve aktivne veze.
+3 Zuletzt verbundene Zentralen: pregled posljednje povezanih centrala prema stanju zadnjeg spremanja projekta, odnosno - ako trenutno postoji veza sa sustavom dojave požara - pregled trenutačno povezanih centrala.
+4 Verbindungsart: ovdje se određuje zadani tip veze projekta (USB ili TCP/IP), koji zatim svi alati sposobni za povezivanje standardno nude.
+
+1.7.2 IP-Adresszuordnung
+1 IP-Adresszuordnung: ovdje se mogu definirati IP adrese, maske podmreže i gatewayi pojedinih Integral IP centrala. Svakoj centrali može se dodijeliti posebna IP adresa ili se sve centrale mogu parametrirati u bloku.
+2 Uhrzeitserver (NTP): Network Time Protocol (NTP) standard je za sinkronizaciju satova u računalnim sustavima preko paketnih komunikacijskih mreža. Ovdje se može upisati naziv internetskog vremenskog poslužitelja (popis NTP poslužitelja: pool.ntp.org). Ako postoji lokalni vremenski poslužitelj, može se unijeti njegova IP adresa.
+3 DNS: ako se koristi internetski vremenski poslužitelj, ovdje se mora upisati DNS poslužitelj. Preporuka je uvijek unijeti DNS1 (Mainserver) i DNS2 (Backupserver). Ako se koristi naziv web-adrese, primjerice ptbtime1.ptb.de, a ne IP adresa, obavezno je unijeti barem jedan DNS poslužitelj.
+
+===== STRANICA 17 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2. Konfiguracija
+2.1 Konfiguracijska ili projektna datoteka - 1. korak programiranja
+Novo programiranje Integral IP sustava uvijek treba započeti otvaranjem novog projekta. Time je osigurano da se u datoteci predloška nalaze osnovne postavke sustava dojave požara specifične za Njemačku, primjerice makroi grupa javljača, rukovanja i ovlasti. Uključene su i važne funkcije upravljanja, npr. prijenosni uređaj.
+
+Vorlagendatei: sadrži sve njemačke zahtjeve za sustav dojave požara Integral IP. U konfiguracijskoj datoteci nalaze se i predlošci Booleovih definicija koje se po potrebi mogu jednostavno prilagoditi. Konfiguracijska datoteka može se otvoriti samo preko Configurator-a.
+
+Projektdatei: osim sadržaja konfiguracijske datoteke sadrži i druge datoteke, npr. tekstualnu datoteku, datoteku petlje, priloge te spremljene korisničke podatke kao što su memorija događaja, revizije, podaci sudionika itd. Projektna datoteka otvara se preko Projektverwaltung ili izravno dvostrukim klikom u Datei-Explorer-u. Na kraju programiranja u centralu se može prenijeti samo projektna datoteka, zato konfiguracijske datoteke treba smatrati pomoćnim sredstvom.
+
+2.1.1 Projektdatei öffnen
+1 Postojeća projektna datoteka otvara se preko Projektverwaltung -> „Bestehendes Projekt öffnen“.
+
+2.1.2 Konfigurationsdatei aus der Vorlage erstellen
+2 U prvom koraku novi projekt mora se napraviti tipkom „Neues Integral-Projekt“.
+3 U Eigenschaften se unose odgovarajući projektni podaci, kao što je opisano u 1.4.1. Zatim projekt treba spremiti na disk. Vidi i odjeljak 2.3.2.
+4 Preko izbornika „Anwendungen“ u sljedećem se koraku pokreće „Configurator“.
+
+===== STRANICA 18 / 119 =====
+18 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Pri prvom otvaranju Configurator-a pojavljuje se upit za odabir vrste centrale. „Hauptzentrale“ koristi se samo kod SecoNet-a. „Unterzentrale“ koristi se za programiranje podcentrale. Ako se odabere taj put, kasnije se mora provesti korak 4 jer se u pravilu počinje s datotekom predloška.
+3 Odabirom „Von Vorlage“ automatski se dolazi do odabira predloška, vidi odjeljak 2.2.1. Tada sljedeći opisani 4. korak nije potreban.
+4 Preko izbornika „Neu von Vorlage“ predložak se također može uvesti. Otvara se prozor za odabir i treba izabrati datoteku predloška koja odgovara centrali koja se programira. Preporučuje se izravno odabrati predložak kako je opisano u točki 3.
+
+2.2 Übersicht Configurator
+1 Treeview: navigacijska traka u strukturi stabla.
+2 Listview: na hardverskoj razini grafički prikazuje konfiguraciju centrale, a na logičkoj razini u obliku popisa prikazuje odobrene/aktivirane elemente.
+3 Editview: u ovom se prozoru uređuju odabrani elementi.
+4 Status: prikazuje trenutačne pogreške i napomene.
+
+===== STRANICA 19 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.2.1 Dinamičko upravljanje prozorima
+Svi prozori koji imaju pin mogu se klikom na odgovarajući pin postaviti kao stalno „angedockt“ (usidreni) ili automatski „wegklappend“ (sklopivi/dinamični).
+
+Ako se mišem klikne na traku prozora, primjerice Treeview, i drži lijeva tipka miša, otvara se grafički način uređivanja pomoću kojeg se prozor može premjestiti. Uz stalno pritisnutu tipku miša pomaknite pokazivač na željeni simbol položaja i prozor će se odgovarajuće pozicionirati.
+
+Veličina tih prozora također se može mijenjati i prilagoditi potrebama odnosno veličini zaslona. Te se postavke ne spremaju; pri otvaranju Configurator-a prozori se u pravilu otvaraju u zadanoj postavci.
+
+===== STRANICA 20 / 119 =====
+20 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Symbolleiste
+Neu von Vorlage: iz popisa postojećih projekata (*.lst) može se odabrati odgovarajući projektni predložak. U tim su predlošcima već unaprijed definirane sve osnovne postavke. Preporučuje se koristiti takav predložak.
+Als Arbeitskopie ablegen: spremanje projekta kao Windows radne kopije u direktorij projekta. Radna se kopija u pravilu ionako automatski stvara, pa zasebno stvaranje radne kopije tada nije potrebno.
+Exportieren: da bi se projektiranje moglo Loaderom prenijeti u centralu, mora se izvesti. Pri izvozu se stvara strojni kod koji MCU može čitati i sprema se u projekt. Ako u projektiranju još postoje pogreške, izvozna datoteka se ne može stvoriti. Pogreške se tekstualno prikazuju u Statusfenster-u i označavaju crvenom trakom preko preostale širine prozora.
+Rückgängig: poništava posljednju radnju.
+Wiederherstellen: ponovno vraća poništenu radnju.
+Maximierte/Normale Ansicht: prikaz Editview prozora prebacuje se između maksimalnog i normalnog prikaza. Isto se može učiniti funkcijskom tipkom F11.
+Historie: radi brže navigacije ovdje se prikazuje posljednjih 5 pozvanih radnji u obliku TAB-ova.
+
+Treeview
+Hardware(Ebene): ovdje se konfigurira fizička izvedba sustava dojave požara i dodjeljuju potrebni brojevi elemenata (logički brojevi) za grupe javljača, upravljanja, ulaze itd.
+Logisch (log. Ebene): ovdje se elementi aktivirani na hardverskoj razini logički povezuju, odnosno konfiguriraju se logičke funkcije sustava dojave požara. Osim toga dodjeljuju se funkcionalni makroi i podtipovi, npr. makroi grupa javljača, makroi rukovanja i sl.
+Einstellungen: ovdje se rade opće postavke sustava dojave požara. Opis vidi odjeljak 2.5.
+Makrobibliothek: ovdje se mogu upravljati biblioteke makroa. Moguće ih je spremiti izvan projekta kako bi se ponovno koristile u drugim projektima.
+
+===== STRANICA 21 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.2 Erstellen einer Konfiguration - 2. korak programiranja
+Preporučuje se obrađivati sve sklopove slijeva nadesno kako se nijedan ne bi zaboravio.
+Radi izbjegavanja nenamjernih pogrešaka preporučuje se sljedeći postupak:
+1. prolaz: popuniti nosač sklopova prema stvarnom hardverskom stanju, vidi 2.2.2.
+2. prolaz: dodijeliti brojeve elemenata na sklopovima, od odjeljka 2.2.3.1.
+U nastavku su slikovno prikazane i opisane najčešće postavke, prema vježbi 2 osnovnog seminara. Postavke koje se odnose na vježbu 2 označene su zelenim okvirom.
+
+2.2.1 Import einer Vorlage
+Preko izbornika „Neu von Vorlage“, ako to već nije učinjeno u odjeljku 2.1.2, treba uvesti datoteku predloška koja odgovara centrali koja se programira. U primjeru se koristi predložak MX-B5A (BMZ_Integral_MX-B5A.lst), koji treba odabrati kada se radi s aktualnim nosačem sklopova B8.
+U uvezenom predlošku već su sadržane sve osnovne postavke.
+Fizička konfiguracija sustava dojave požara radi se na Hardware-Ebene. Dvostrukim klikom na centralu njezina se konfiguracija grafički prikazuje u Listview prozoru, a dodatno i u Treeview-u kao struktura stabla. Do pojedinih sklopova može se navigirati i preko Treeview-a i preko Listview prikaza.
+Prije početka konfiguriranja centrale podcentrali (SCU) treba dodijeliti naziv, idealno prema lokaciji ili drugoj jednoznačnoj oznaci. U predlošku se TZ u početku zove „Standard Deutschland“. Broj podcentrale također treba odgovarajuće dodijeliti.
+
+===== STRANICA 22 / 119 =====
+22 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.2.2 Name/Standort der Teilzentrale
+Svaka podcentrala (SCU) trebala bi biti označena lokacijom ili drugom jednoznačno prepoznatljivom oznakom. U predlošku se TZ u početku zove „Standard Deutschland“.
+1 Treeview: u Treeview-u kliknite mišem na „ProjectConfig“ (Gesamtübersicht), a zatim u Listview-u na odgovarajuću TZ. Time se dolazi do svojstava odgovarajuće B5-SCU podcentrale.
+2 Editview: nakon klika na B5-SCUA u ovom se prozoru prikazuju njezina svojstva. U polje „Name“ upisuje se odgovarajući naziv podcentrale. Naziv „Standard Deutschland“ iz predloška treba u pravilu promijeniti, primjerice u „Seminarraum“.
+
+===== STRANICA 23 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.2.3 Ausbau der Zentrale
+U predlošku je B5-SCUA centrala već opremljena različitim sklopovima, ali raspored nosača sklopova mora se prilagoditi stvarnoj izvedbi TZ.
+Sklopovi se mogu dodavati preko prozora „Toolboxes“. Dovoljno je pokazivač miša postaviti na tipku „Toolboxes“.
+Preporučuje se i dodjela preko desne tipke miša na odabranom slotu jer se tada nude samo sklopovi koji odgovaraju tom slotu.
+Postojeći sklopovi mogu se povlačenjem mišem premještati unutar nosača sklopova. Već uneseni brojevi elemenata ostaju sačuvani i premještaju se zajedno sa sklopom.
+
+===== STRANICA 24 / 119 =====
+24 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Savjet:
+Ako se pokazivač miša zadrži iznad nekog sklopa, prikazuju se odgovarajuće informacije o tom sklopu.
+
+Da bi se sudionici petlje kasnije mogli parametrirati u PeripherieAssistant-u, primjerice Meldergruppen, Steuerungen ili Eingänge, ti se elementi moraju dodijeliti/aktivirati na B5-DXI2.
+Na Net sklopovima i B8-PSU nisu moguće postavke. Net sklopovi automatski se aktiviraju čim se napravi umrežavanje. Ako se koristi Net sklop, LAN sučelje na B5-MCUA automatski se deaktivira.
+
+Savjet:
+Radi izbjegavanja gubitka podataka preporučuje se redovito spremati projekt. Dodatne napomene i informacije nalaze se u odjeljcima 2.2.6 i 2.4.
+
+===== STRANICA 25 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.2.4 Baugruppen parametrieren
+U vježbi 2 na petlji 101 dodatno treba napraviti ulaze 151-153 i upravljanja 160-163.
+Pozadina ove sistematike:
+> 50 = ulazi i upravljanja na petlji
+< 50 = ulazi i upravljanja unutar podcentrale.
+Broj TZ ponovno se stavlja ispred, npr. 151 za TZ 1. STEU 214 bila bi upravljačka funkcija u drugoj TZ, a STEU 372 upravljanje negdje na petlji treće TZ.
+Dodjela adresa pojedinim elementima načelno je slobodna; za svaki element na raspolaganju je raspon 1-65534. Prikazana sistematika je Hekatron preporuka i može se prilagoditi konkretnom projektu. Cilj je da se iz broja može brzo prepoznati element, primjerice pri traženju kvara.
+Brojevi elemenata su logički brojevi i trebaju se dodjeljivati sustavno i prema jasnoj logici.
+
+Primjeri iz konfiguracijskih predložaka:
+Bedienfeld (BF):
+- upravljačka ploča TZ 1 = Elementnummer 1
+- svaka dodatna izdvojena BF na MMI-Bus-u = Elementnummer 101-1xx
+- Fernbedienfeld (B5-MCUA) = Elementnummer 60101-601xx
+Najviše 16 BF po TZ, uključujući virtualne BF.
+
+Ring:
+- TZ 1, prva petlja = Elementnummer 101
+- TZ 3, druga petlja = Elementnummer 302
+
+FBF / FAT:
+- FBF na TZ 1 = Elementnummer 101
+- FAT na TZ 1 = Elementnummer 102
+
+Übertragungseinrichtung / Alarmierungsbereich:
+- STEU 1 = ÜE na B8-BAF = Elementnummer 1
+- STEU 2 na B8-BAF, upravljana preko ALB 1 = Elementnummer 2
+- STEU 3 na B5-OM8, upravljana preko ALB 2 = Elementnummer 3
+
+Dodatni prijedlozi koji nisu u predlošcima:
+- upravljanja za signalizaciju/vizualizaciju TZ 1 = Elementnummer 1001
+- upravljanja za signalizaciju/vizualizaciju TZ 2 = Elementnummer 2001
+
+===== STRANICA 26 / 119 =====
+26 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.2.3.1 B8-CII - Integral IP MAP Zentralenbedienfeld
+
+Savjet:
+Ispišite kratke upute za rukovanje dostupne u području Proffesionell pod pojmom za pretraživanje „Kurzbedienungsanleitung BLZ/SLZ Integral IP MAP Bedienfeld“, plastificirajte ih i ostavite uz centralu. Tako korisnici mogu pravilno rukovati Integral IP sustavom.
+
+1 Logische Nummer: ovdje se unosi logički broj upravljačke ploče. Za podcentralu 1 upravljačkoj se ploči dodjeljuje logički broj 1.
+2 Integrierter Drucker: integrirani pisač TZ 1 = Elementnummer 1. Može se projektirati je li na ovoj upravljačkoj ploči priključen protokolni pisač i koji logički broj treba imati. Nije dostupno na B7-CII.
+3 Epi-Bus Teilnehmer: ako postoje, primjerice FBF i FAT, ovdje treba upisati odgovarajuće brojeve elemenata odnosno logičke brojeve. Prema prethodno opisanoj sistematici: 101 za FBF i 102 za FAT.
+EPI-Bus sučelje integrirano je u Integral MAP. Na tu sabirnicu mogu se priključiti do 3 dodatna, neredundantna uređaja za prikaz i rukovanje. Pažnja: EPI-Bus ima maksimalnu duljinu kabela 1 m, pa se priključuje neposredno na Integral IP ili na izdvojeno MMI-Bedienfeld. EPI-Bus adresa je fiksna, Adr. 1-3, i odgovara fizičkoj adresi projektiranog uređaja. Ta fizička adresa mora se kasnije pri montaži i puštanju u pogon namjestiti izravno na uređaju pomoću okretnog prekidača.
+
+===== STRANICA 27 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+4 Modul nicht immer vorhanden: ako je ova opcija aktivirana, centrala ne prijavljuje grešku kada je odgovarajuća upravljačka ploča programirana, ali nije spojena, primjerice kod TZ petlje u servisne svrhe kada pojedine TZ nemaju upravljačku ploču. OVO JE SAMO ZA PUŠTANJE U POGON.
+Ako je funkcija na Bx-BAF ili B8-CII aktivirana u Configurator-u, pri inicijalizaciji/pokretanju Integral IP provjerava se postoje li programirani sklopovi B8-CII, pisač i MMI-Bus Teilnehmer. Ako sklop nije prisutan, ne pojavljuje se poruka smetnje. Kasnije priključivanje nije moguće dok se sustav ponovno ne pokrene - nema HotPlugIn funkcije. Ako je sklop prisutan tijekom inicijalizacije, radi i nadzire se normalno.
+Funkcija „Modul nicht immer vorhanden“ uvedena je kako bi se omogućila djelomična puštanja u pogon bez ugrađenih upravljačkih ploča. Prema normi ne smije biti aktivirana za FAT/FBF, odnosno prvo mjesto pristupa vatrogasaca.
+
+2.2.3.2 B5-MCUA - Integral IP Hauptrecheneinheit
+1 SD-Karte: treba postaviti postoji li memorijska kartica. B5-MCUA ili B6-MCU opcionalno se mogu opremiti standardnom memorijskom karticom. Podržani su samo tipovi „SD-Card“ i „MMC-Card“, bez SDHC kartica. Podržani kapacitet je od najmanje 32 MB do najviše 2 GB. Time se memorija događaja B5-MCUA/B6-MCU povećava s 10.000 na 65.000 zapisa. Proširena memorija događaja mora se dodatno aktivirati u području Einstellungen; zadano nije uključena.
+2 Fernbedienfeld: udaljena upravljačka ploča dobiva Elementnummer 60101 i time je prva od najviše osam udaljenih upravljačkih ploča. Ako je potreban pristup preko Fernbedienfeld-a (VirtualMAP), treba postaviti oznaku Fernbedienfeld i upisati logički broj ploče. VirtualMAP je softverska upravljačka ploča centrale prikazana na računalu, pametnom telefonu ili tabletu. Preko sučelja VirtualMAP-a mogu se izvesti sve radnje kao i na fizičkoj upravljačkoj ploči centrale. VirtualMAP je stoga samostalna i potpuno funkcionalna upravljačka ploča.
+
+===== STRANICA 28 / 119 =====
+28 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.2.3.3 B5-DXI2 - Ringkarte
+DXI (Dialog eXtended Line Interface) odnosno DAI (Dialog Analog Interface) sadrži jednu odnosno dvije petlje za priključak adresabilnih javljača i modula s integriranim izolatorima kratkog spoja. Po petlji se može spojiti ukupno najviše 250 elemenata u X-Line modu i najviše 128 elemenata u DAI modu. Elementi mogu biti javljači ili moduli. Na svaki automatski javljač može se dodatno spojiti paralelni indikator. Paralelni indikatori ne moraju se projektirati ni u Configurator-u ni u PeripherieAssistant-u.
+
+1 Alarmierungsbereich: ovdje se mogu dodijeliti područja alarmiranja, odnosno logički brojevi ALB-a, koji će se kasnije u PeripherieAssistant-u koristiti za upravljanje akustikom uređaja MTD 533X-SPCT/-SCT. Jednoj DAI/DXI2 kartici može se dodijeliti do 16 područja alarmiranja.
+2 Blinkfrequenz 1 und 2: mogu se definirati dvije međusobno neovisne frekvencije treptanja s vremenom impulsa i pauze od 1 s do 15 min. Te se frekvencije kasnije mogu koristiti u logičkim svojstvima upravljanja koje aktivira ovaj sklop, u dijalogu „Steuerung Ausgabeverhalten“. Tako se upravljanju može zadati statički rad, što je zadano, ili treptanje.
+
+===== STRANICA 29 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+B5-DXI2: Interface 1 und 2
+1 Schnittstelle 1 und 2: ovdje se aktiviraju logički brojevi za Ring 1 odnosno Linie 1 i Linie 2 te za Ring 2 odnosno Linie 3 i Linie 4, kao i periferija spojena na njih.
+2 Typ: određuje se treba li sučelje biti petlja Ring ili odvojena linija/Stich kao Linie.
+3 Lg. Nr. Ring: definira se logički broj petlje. Ako je odabrana Linie, logički broj odnosi se na broj sticha. U predlošku je već postavljen Lg. Nr. 101, odnosno prva petlja TZ 1.
+4 Meldergruppen: ovdje se aktiviraju potrebne grupe javljača, u vježbi 2 MG 101-108. Za svaku petlju određuje se raspon brojeva elemenata tipa „Meldergruppe“. Adrese se kasnije pri puštanju u pogon dodjeljuju pomoću PeripherieAssistant-a. Korisnik tada može birati samo iz ovdje definiranog raspona. Dopušteno je formirati grupe javljača preko više petlji i više podcentrala; javljači iste grupe mogu se nalaziti na različitim petljama i različitim TZ.
+Kod modula, primjerice BX-AIM, BX-OI3, BX-IM4, BX-MDI8 itd., treba uzeti u obzir hoće li se kasnije ponašati kao javljač odnosno grupa javljača. To se definira u PeripherieAssistant-u pri puštanju u pogon. Ako hoće, to treba uzeti u obzir pri definiranju raspona brojeva.
+Preporučuje se aktivirati samo stvarno potrebne raspona brojeva radi bolje preglednosti na logičkoj razini.
+5 Eingänge: ovdje se aktiviraju potrebni ulazi, u vježbi 2 ulazi 151-153 na BX-IM4. Načelno vrijedi isti postupak kao kod aktiviranja raspona brojeva za MG.
+
+===== STRANICA 30 / 119 =====
+30 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6 Steuerung Typ 2: ovdje se aktiviraju potrebna upravljanja na petlji, u vježbi 2 STEU 160-163 na BX-REL4. Za svaku se petlju određuje raspon brojeva za elemente tipa „Steuerung Typ 2“ - BX-OI2, OI3, REL4, FOL, O2I4, MDH. Adrese na modulima dodjeljuju se kasnije pri puštanju u pogon pomoću PeripherieAssistant-a. U PeripherieAssistant-u dostupni su samo logički brojevi koji su ovdje prethodno aktivirani.
+Moduli OI2 i OI3 prvenstveno se koriste za priključak posebnih javljača. U tom slučaju modul pri puštanju u pogon preko PeripherieAssistant-a dobiva adresu javljača. Zato se adresa mora definirati pod „Meldergruppe“, a ne pod „Steuerung“. Preporučuje se raspon MG brojeva odabrati tako da na petlji ostane dovoljno slobodnih brojeva za moguće kasnije proširenje, bez potrebe za promjenom projektiranja u Integral Configurator-u.
+7 Steuerung Typ 4 oder 5: ovaj tip upravljanja, odnosno ovdje aktivirani raspon, koristi se kada se automatski javljač s tonom ili tonom/govorom MTD533X-SPCT/-SCT ne upravlja preko PI izlaza nego preko Steuerung-a koji se zatim aktivira preko ALB-a. To nije dio vježbe 2.
+Prednost je što tada djeluje i naredba „Steuerungen sichern“, vidi 6.2.2, pa ton i govor neće biti aktivirani čak ni kada postoji kriterij upravljanja. Pojedinačno aktiviranje je uvijek moguće. Akustički test s aktiviranjem odgovarajućih akustičkih makroa, opisan u 6.1.2.2, tada nije moguć.
+Steuerung Typ 3: za BX-IOM module / STEU1001.
+Steuerung Typ 4: za BX(BA) module SOL, SBL i MTD533X-S.
+
+===== STRANICA 31 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.2.3.4 B5-OM8 - Ausgangskarte (Output Monitored, 8)
+1 Log.Nr: ovdje se aktiviraju odgovarajuća upravljanja na strani centrale. U vježbi 2 STEU 3, kojim treba upravljati Alarmierungsbereich 2.
+2 Lastbereich: rasponi opterećenja mogu se elektronički parametrirati.
+- Lastbereich 1: 160 do 1.000 Ohm
+- Lastbereich 2: 57 do 357 Ohm
+- Lastbereich 3: 20 do 75 Ohm
+Rasponom opterećenja određuje se električna karakteristika/potrebna snaga kojom će se izlaz preklapati, odnosno mora odgovarati električnom potrošaču kojim se upravlja.
+3 Abgleich nach Ansteuerung aussetzen: ako je ova oznaka postavljena, nakon završetka aktivnog stanja upravljanje se 20 minuta ponaša kao neusklađeno upravljanje. Nakon isteka vremena ponovno se aktivira izvorna osjetljivost detekcije smetnje. To je potrebno za uređaje koji se pri aktiviranju zagrijavaju i time mijenjaju otpor, primjerice releje.
+4 Blinkfrequenz 1 und 2: mogu se definirati dvije neovisne frekvencije treptanja s impulsom i pauzom od 1 s do 15 min. Kasnije se mogu koristiti u logičkim svojstvima upravljanja u dijalogu „Steuerung Ausgabeverhalten“, pa se upravljanju može zadati statički rad ili treptanje.
+
+===== STRANICA 32 / 119 =====
+32 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.2.3.5 B8-BAF - Basisanschlusskarte (Basic Functions)
+Sklop B8-BAF sadrži sljedeće funkcije centrale za dojavu požara:
+- priključak Feuerwehrbedienfeld-a (FBF) prema DIN 14661
+- priključak Übertragungseinrichtung ÜE, glavnog javljača
+- prihvat Feuerwehrfreischaltelement-a FSE kao nadziranog ulaza
+- priključak drugog nadziranog upravljanja, primjerice bljeskalice
+- logičko upravljanje relejnim sklopovima B3-REL10, B3-REL16 i B3-REL16E ako je B8-BAF ugrađen u slot 9
+- sučelje za MMI-BUS za priključak vanjskih uređaja kao što su upravljačka ploča s pisačem ili bez njega, Feuerwehranzeigetableau i univerzalna upravljanja indikacijskim tablama
+- beznaponska upravljanja za prosljeđivanje zbirnog alarma i/ili zbirne smetnje.
+B8-BAF može se ugraditi u slotove 2 do 9 Integral podcentrale. Ako se koriste relejni sklopovi, jedan od sklopova B8-BAF, B5-MRI16, B3-BAF ili B3-LPI mora biti ugrađen u slot 9. Budući da se u pravilu priključuje Übertragungseinrichtung, za B8-BAF se preporučuje slot 9.
+
+===== STRANICA 33 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Einstellungen der B8-BAF
+1 Steuerung 1: može se projektirati treba li nadzirano upravljanje 1 (OM1) biti dostupno i koji logički broj, od 1 do 65534, treba imati. Predviđeno je za opterećenja 16 Ohm do 1 kOhm i prvenstveno za priključak Übertragungseinrichtung-a (ÜE) prema vatrogascima. U predlošcima je STEU 1 parametriran kao ÜE.
+2 Feuerwehr-Bedienfeld: može se projektirati je li na ovom sklopu priključen paralelni FBF, primjerice FBF2003 ili Wiesmeier FBF0720 v7.0b, i koji logički broj treba imati. U vježbi 2 FBF je na MMI-Bus-u pa ovdje nisu potrebne postavke.
+3 Blinkfrequenz 1 und 2: mogu se definirati dvije neovisne frekvencije treptanja s impulsom i pauzom od 1 s do 15,50 min. Ako je B8-BAF u slotu 9, ove frekvencije vrijede i za upravljanja na slotovima 11-13.
+4 Steuerung 2: može se projektirati treba li nadzirano upravljanje 2 (OM2) biti dostupno i koji logički broj 1-65534 treba imati. Namijenjeno je za opterećenja 16 Ohm do 1 kOhm i prvenstveno za priključak alarmnog uređaja AE. U predlošcima je ovo upravljanje već izrađeno i konfigurirano te ga na logičkoj razini treba aktivirati ALB 2.
+5 Eingang 1, 2 und 3: služe za očitavanje galvanski odvojenih kontakata. Eingang 1 koristi se i kao povratni kontakt Übertragungseinrichtung-a. U tom slučaju ne aktivira se posebno i ostaje postavka „keines“. Ulazi 1, 2 i 3 mogu se projektirati kao Eingang ili kao Melder odnosno Meldergruppe. Ako se koriste kao povratna informacija, treba odabrati „keines“. Dodjela povratne informacije radi se u logičkim svojstvima upravljanja. Eingang 3 koristi se u vježbi 2 za FSE.
+6 Relais 1-3: tri beznaponska releja mogu se koristiti kao upravljanje, primjerice za prosljeđivanje zbirnog alarma, zbirne smetnje ili kontrole uključenja, a povezuju se na logičkoj razini.
+
+===== STRANICA 34 / 119 =====
+34 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Einstellungen der B8-BAF: MMI-Bus
+7 MMI-Bus Button: klikom na ovu tipku dolazi se do postavki/programiranja MMI-Bus-a na B8-BAF.
+Na svaki MMI-Bus može se projektirati do 15 vanjskih uređaja. Broj se na svakom uređaju postavlja preko izbornog polja i odgovara fizičkoj adresi projektiranog uređaja. Fizička adresa mora se pri montaži i puštanju u pogon namjestiti izravno na uređaju okretnim prekidačem. Fizički redoslijed uređaja na MMI-Bus-u može biti proizvoljan i neovisan o projektiranju.
+Svakom uređaju u Eigenschaften treba dodatno dodijeliti logički broj. Tim se brojem uređaj prikazuje i upravlja na zaslonu centrale. Treba poštovati sistemske granice najvećeg broja uređaja; softver ih dodatno provjerava.
+1 Physikalische Adresse: postavljanje fizičke adrese MMI-Bus uređaja, u primjeru i prema predlošku to je FAT.
+2 Eigenschaften: FAT je programiran s logičkim brojem 101. Paralelno je na FAT priključen FBF tipa Ifam 2001/2003, koji je prema opisanoj sistematici programiran s logičkim brojem 102.
+Savjet: dodatne informacije o MMI-Bus-u mogu se otvoriti preko Online-Hilfe pritiskom tipke F1. Pomoć je kontekstualno povezana s trenutačnim položajem u IAC-u odnosno Configurator-u pa se brzo dolazi do potrebnih informacija.
+
+===== STRANICA 35 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3 Logische Ebene - 3. korak programiranja
+Elementtypen parametrieren
+Svim elementima, odnosno elementima izrađenim na Hardware-Ebene, moraju se dodijeliti logičke funkcije. Ograničenja rukovanja koja proizlaze iz propisa, primjerice VDE 0833 ili DIN 14675, dodjeljuju se pomoću Bedienbarkeitsmakros.
+Na logičkoj razini izrađuju se i dodjeljuju kriteriji aktiviranja za Steuerungen ili Alarmierungsbereiche. Kriteriji se temelje na funkcijama u obliku Boolesche Definitionen, koje se također mogu izraditi ili uređivati na Logische Ebene.
+U Treeview-u su aktivno prikazani tipovi elemenata koji su već postojali u predlošku i prethodno su izrađeni na Hardware-Ebene. Tipovi elemenata koji još nisu izrađeni na hardverskoj razini deaktivirani su i prikazani sivo.
+
+Übersicht/Fensteraufteilung:
+1 Treeview: pregled logičkih elemenata, filtara i makroa.
+2 Listview: tablični prikaz aktiviranih elemenata s hardverske razine koji su odabrani lijevo u Treeview-u.
+3 Editview: dodjela svojstava elemenata i mogućnost dodjele Meldergruppenmakros, Ansteuerkriterien, Bedienbarkeitsmakros i sl. Moguć je višestruki odabir.
+4 Naviview: služi za navigaciju i pregled referenci. U gornjem dijelu vidi se gdje se odabrani element fizički nalazi u centrali. Pod makroima se vidi koji su makroi i filtri dodijeljeni elementu. Iz Naviview-a se može izravno otići na Boolesche Definition ili na sklop na Hardware-Ebene. Moguća je i izravna dodjela makroa.
+Kao što je već opisano, prozori se mogu individualno prilagoditi.
+
+===== STRANICA 36 / 119 =====
+36 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.1 Statusfenster / Statusmeldungen
+Na Hardware-Ebene sada je definirana fizička izvedba sustava i napravljene su postavke pojedinih sklopova. Između ostalog, prema vježbi 2 dodijeljeni su logički brojevi, odnosno brojevi elemenata, za Meldergruppen, Eingänge i Steuerungen.
+Nakon dodjele logičkih brojeva grupama javljača promijenile su se statusne poruke u Statusfenster-u pri dnu zaslona. Klikom ili prelaskom miša preko „Status“ otvara se Statusfenster odnosno dinamički se izvlači. Preporučuje se ostaviti ga otkvačenog tako da postane aktivan samo kada se želi pregledati status.
+Crvena traka sada pokazuje da postoje poruke. Nedostaju takozvani Meldergruppenmakros, odnosno spremljene funkcije za grupe javljača 101-108, koje treba dodijeliti.
+
+2.3.2 Projekt und Projektverlauf speichern
+1 Speichern: klikom na simbol diskete spremaju se projekt i sve kontejnerske datoteke u njemu, npr. Configurator, Texte, PeripherieAssistant, Anhänge, Teilnehmerdaten itd. Ako se projekt sprema prvi put, traži se naziv datoteke. Otvara se putanja definirana u Anwendungseinstellungen, primjerice D:\Hekatron_BMA\Integral\8.1\. Ako je projekt već spremljen, postojeća datoteka prepisuje se aktualnim podacima. Istodobno se, ako nije ručno izrađena, stvara takozvana Arbeitskopie i sprema u projektni kontejner.
+2 Speichern unter: projekt se može spremiti pod drugim nazivom ili prvi put.
+3 *Name: kada god su podaci projekta promijenjeni ili su datoteke spremljene u projektni kontejner, oznaka upozorava da projekt treba spremiti.
+Savjet: radi izbjegavanja gubitka podataka projekt redovito spremajte.
+
+===== STRANICA 37 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.3 Meldergruppe
+Kod tipa elementa Meldergruppe svakoj grupi javljača treba dodijeliti odgovarajući Meldergruppenmakro. Prema vježbi 2 grupi 105, primjerice, treba dodijeliti makro „HEKA: 00_HFM Ring“.
+
+2.3.3.1 Meldergruppenmakros
+Predlošci već sadrže sve potrebne Meldergruppenmakros. Označeni su s „HEKA“ i ne mogu se uređivati ni brisati. Ako makro treba prilagoditi, primjerice za Alarmzwischenspeicher, odgovarajući makro, npr. HEKA: 10, najprije treba kopirati. Kopija se zatim može preimenovati i uređivati.
+Meldergruppenmakro određuje osnovna svojstva elementa Meldergruppe.
+- Neues Element - novi element
+- Element kopieren - kopiraj element
+- Element löschen - izbriši element
+- odabrani makro dodijeli odabranom elementu u Naviview-u
+1 Beschreibung: u prozoru Beschreibung prikazuju se tipovi javljača koji odgovaraju tom Meldergruppenmakro-u.
+Zaštićeni element ne može se izbrisati ni uređivati. Ako ga treba prilagoditi, prvo ga treba kopirati.
+
+Za vježbu 2 dodjeljuju se sljedeći makroi:
+MG 99 - HEKA: 90_Sonstiges
+MG 101-104 - HEKA: 10_Autom. Melder Ring
+MG 105 - HEKA: 00_HFM Ring
+MG 106 - HEKA: 40_Sondermelder (ASD5xx)
+MG 107 - HEKA: 10_Autom. Melder Ring
+MG 108 - HEKA: 42_Sprinkler
+
+Filter služi za prikaz određenih MG makroa. Ako se, primjerice, upiše „auto“, prikazuju se samo MG čiji naziv sadrži „auto...“.
+
+===== STRANICA 38 / 119 =====
+38 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.4 Eingang
+Kod elementa Eingang u čistom BMA sustavu u pravilu nema posebnog parametriranja. Ulaz je ili aktivan ili nije aktivan.
+
+Subtyp: ulazu se mogu dodijeliti četiri podtipa:
+- allgemein
+- Löschanlage
+- Auslösung BSE/BFS - zahtjev norme
+- Störung BSE/BFS - zahtjev norme
+
+Bedienbarkeitsmakro: ti se makroi koriste za ograničavanje mogućnosti rukovanja elementima pojedine podcentrale ili mreže centrala na razini naredbi. Primjerice, može se odrediti da se ulazom može upravljati samo u određenoj korisničkoj razini na Bedienfeld-u.
+
+unsichtbar: ako je ova funkcija aktivirana, aktivno stanje ulaza ne prikazuje se ni na Bedienfeld-u ni na protokolnom pisaču centrale. Ulaz je prema van „nevidljiv“. Funkcija se osobito koristi kada je ulaz povezan s elementom „Extern“ i treba generirati „Extern Alarm“ ili „Extern Störung“.
+
+Eingang invertieren: standardno se pretpostavlja aktiviranje ulaza NO kontaktom - Schließer, normally open. Inverzijom se ulaz može aktivirati NC kontaktom - Öffner, normally closed. Kod ulaza priključenih preko modula petlje ta je opcija zaključana; inverzija se tada radi u PeripherieAssistant-u pri konfiguraciji elementa.
+
+2.3.5 Steuerung / Umgang mit Boolesche Definitionen
+Kod tipa elementa Steuerung pojedinim upravljanjima dodjeljuju se Boolesche Definitionen koje služe kao Ansteuerkriterium. Upravljanja BMA sustava u pravilu su Brandfallsteuerungen i tako ih treba definirati u „Subtyp“. Svakom Steuerung-u uvijek treba dodijeliti i pripadajući Bedienbarkeitsmakro.
+Ako je Subtyp „BSE/BFS“, mora se odabrati Bedienbarkeitsmakro „HEKA: Brandfallsteuerung“. Ako je Subtyp „allgemein“, mora se odabrati „Allgemeine Steuerung“. Time se osigurava da se upravljanje može resetirati samo kada to dopušta norma. Primjerice, Brandfallsteuerung aktiviran alarmom jedne Meldergruppe može se resetirati tek kada alarm te grupe više nije aktivan.
+
+===== STRANICA 39 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Ausgabeverhalten: određuje zadano ponašanje izlaza upravljanja, primjerice statički ili treptajuće. Može se zadati da upravljanje u aktivnom stanju standardno treperi. Frekvencija treptanja definira se na odgovarajućem sklopu.
+
+Ansteuerkriterium 1-4: kriterij aktiviranja odgovara Boolesche Definition koja se odabire ili izrađuje; vidi i poglavlje 2.3.4.1.
+
+Auswahl von Bedienbarkeitsmakros
+Pregled upravljanja u Listview-u: STEU 160 i 161 konfigurirani su kao Brandfallsteuerung sa Subtyp-om BSE/BFS. Subtyp i Bedienbarkeitsmakro u pravilu moraju odgovarati jedan drugome. Jedina iznimka su upravljanja za alarmiranje, gdje se postavlja kombinacija Subtyp = allgemein i Bedienbarkeitsmakro = STEU Typ Sirene über ALB.
+
+Subtyp, Bedienbarkeitsmakro, Ausgabeverhalten i Ansteuerkriterium prikazuju se i uređuju u svojstvima upravljanja.
+
+===== STRANICA 40 / 119 =====
+40 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Kritisch: ako se aktivira „kritisch“, u ispisu projektiranja kod odgovarajućeg upravljanja pojavljuje se tekst „Kritisch“. Za korištenje funkcije „Rückfragen für den Befehl Setzen“, dodatne zaštite od slučajnog rukovanja na Bedienfeld-u, u kartici Einstellungen -> Allgemeine Einstellungen mora biti označena opcija „kritische Steuerungen“. Tek tada se na Bedienfeld-u pojavljuje dodatna informacija, i to samo pri ručnom postavljanju preko tipke Setzen/Rücksetzen.
+
+Neuansteuerung möglich: omogućuje automatsku ponovnu aktivaciju upravljanja nakon što je već bilo resetirano preko Bedienfeld-a ili FBF-a.
+
+schlüsselschalterabhängig (Alarm- oder Ansteuerkriterium): upravljanja kojima je ova funkcija dodijeljena automatski se isključuju kada korisnik na Bedienfeld-u prijeđe u korisničku razinu različitu od razine 1, odnosno kada je položaj ključa otključan. Tada se upravljanje više ne može aktivirati niti njime korisnik može rukovati. Automatsko isključenje provodi se samo ako u sustavu nema alarma ili ako kriterij aktiviranja tog upravljanja nije aktivan.
+
+Savjet: dodatne napomene o Steuerungen dostupne su pritiskom tipke F1. Funkcija pomoći izravno je vezana uz trenutačni položaj u IAC-u odnosno Configurator-u i vodi do upravo potrebnih informacija.
+Za vježbu 2 potrebno je prilagoditi samo Ansteuerkriterien, Subtyp i Bedienbarkeitsmakro za STEU 160, 161, 163 i 1001. Potrebne Boolesche Definitionen objašnjene su na sljedećoj stranici.
+Sva ostala upravljanja, primjerice STEU 1 - Hauptmelder, već su potpuno konfigurirana u predlošku.
+Default-Einstellung - zadana postavka.
+
+===== STRANICA 41 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.5.1 Boolesche Definitionen - Booleove definicije
+Booleove definicije koriste se, između ostalog, za provjeru određenih događaja u centrali, primjerice alarma određene Meldergruppe, aktiviranja Einganga, Sammelalarma, Netzstörunga itd., te za pokretanje određenih Steuerungen na temelju tih događaja. Ako se provjerava više događaja, mogu se međusobno povezati logičkim vratima kao što su AND, OR, XOR, NOT itd.
+Booleova definicija opisuje stanje koje je „wahr“ ili „nicht wahr“, odnosno je li neki događaj prisutan ili nije. Ako se, primjerice, Meldergruppe provjerava na stanje Alarm, Booleova definicija postaje „wahr“ kada se upravo ta MG nalazi u stanju Alarm. Time se definira Eingangskriterium. Ausgangskriterium se aktivira kada su ispunjeni uvjeti Eingangskriteriuma. Može postojati više Eingangskriterien, ali uvijek samo jedan Ausgangskriterium. Ausgabekriterium u osnovi predstavlja samo logički prekidač.
+Na slici su prikazane Booleove definicije (BD) sadržane u predlošcima. Označene su s „HEKA“ i ne mogu se uređivati ni brisati. BD s dodatkom „(Beispiel)“ najprije se moraju kopirati, a zatim prilagoditi.
+Naredbe u programu:
+- „Neues Element“ - novi element
+- „Element kopieren“ - kopirati element
+- „Element löschen“ - izbrisati element
+- „Selektierte BD dem ausgewählten Element in der Naviview zuweisen“ - dodijeliti odabranu BD odabranom elementu u Naviview-u.
+Zaštićeni element ne može se izbrisati ni uređivati. Ako ga treba prilagoditi, najprije ga treba kopirati.
+„Filter“ služi za prikaz samo određenih BD. Primjerice, upisom „stör“ prikazuju se samo BD koje u nazivu sadrže „stör...“.
+
+===== STRANICA 42 / 119 =====
+42 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.5.2 Einer Steuerung eine boolesche Definition zuweisen - dodjela Booleove definicije upravljanju
+Odaberite Steuerung 160 i u području „Einstellungen“ aktivirajte karticu „Ansteuerkriterium 1“.
+Primjer: STEU 160 treba biti aktivirana preko MG 108. U HEKA predlošcima nalazi se odgovarajuća Booleova definicija pod nazivom „HEKA: 02_Alarm MG (Beispiel)“. Budući da je riječ o primjeru, najprije se mora kopirati, a zatim prilagoditi.
+Kao prvi korak u Combobox-u odaberite BD „HEKA: 02_Alarm MG (Beispiel)“.
+Kao što je prethodno opisano, tu BD najprije treba kopirati i urediti. Označite „HEKA: 02_Alarm MG (Beispiel)“ i klikom na gumb za kopiranje napravite kopiju.
+U prozoru „Ansteuerkriterium 1“ u Combobox-u se može već odabrati odgovarajuća Booleova definicija „HEKA: 02_Alarm MG (Beispiel)“. Zatim desno od Combobox-a kliknite gumb s tri točke.
+Time se prelazi u područje „Boolesche Definitionen“, ali se, kao što se vidi u Naviview-u, zadržava veza sa Steuerung 160.
+Nakon klika ponovno se pojavljuje Status poruka s crvenom trakom koja upozorava da MG 1 nije u uporabi. Zato je korisno da se kod Meldergruppen ne počinje s MG 1: ova poruka tada služi kao podsjetnik da Eingangskriterium još nije prilagođen.
+
+===== STRANICA 43 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nakon kopiranja promijenite naziv BD prema njezinoj funkciji, u ovom primjeru na „02_Alarm MG 108“. Sam naziv je samo naslov i još ne sadrži funkciju.
+Klikom na odgovarajući gumb prelazi se u „Eigenschaften“. Ondje se u polje „ElementNummern“ obavezno unosi odgovarajuća MG. Sve ostale postavke ostaju nepromijenjene.
+Klikom na kariranu pozadinu vraća se u „Einstellungen“. U polju „Beschreibungen“ može se dodatno spremiti objašnjavajući tekst.
+Ako su potrebne dodatne Booleove definicije iste vrste, kao u vježbi 2, upravo napravljenu BD kopirajte potreban broj puta. U „Einstellungen“ promijenite naziv, a u „Eigenschaften“ dodijelite odgovarajuće Meldergruppen.
+Pažnja: Configurator pri kopiranju ispred naziva BD dodaje oznaku „(Kopie)“, a kod daljnjih kopija po potrebi i broj, npr. „(Kopie 1)“. Po tome se kopije lako prepoznaju. Taj dodatak kasnije treba izbrisati iz naziva.
+Na kraju preko odgovarajućeg gumba upravo izrađenu BD dodijelite Steuerung 160.
+
+===== STRANICA 44 / 119 =====
+44 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Navigieren über Naviview und/oder Historie - navigacija preko Naviview-a i/ili Historie
+U koraku 2 prelazak na „Boolesche Definitionen“ napravljen je preko odgovarajućeg gumba.
+Natrag na Steuerungen i na početni element najjednostavnije se vraća preko „Naviview“ ili trake „Historie“. Klikom na crveno označenu poveznicu u ovom se primjeru ide izravno na Steuerung 160. Preporučuje se u pravilu navigirati preko Naviview-a.
+Ako se u Treeview-u klikne na „Steuerungen“, također se dolazi do popisa upravljanja, ali ne do početnog elementa STEU 160, nego uvijek do prvog elementa. Time se lako izgubi slijed rada.
+U 6. i posljednjem koraku BD izrađene u koraku 4 dodjeljuju se Steuerung 161 i Steuerung 163. Za STEU 163 postavlja se „Subtyp = allgemein“ i „Bed.-Makro = HEKA: Allgemeine Steuerung“.
+
+===== STRANICA 45 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.5.3 Eine neue boolesche Definition erstellen - izrada nove Booleove definicije
+1. Treeview: u prozoru Treeview kliknite „Boolesche Definitionen“.
+2. „NEU“: kliknite gumb „NEU“.
+3. „Eingangskriterium“: kliknite gumb „Eingangskriterium“ i postavite element na željeno mjesto. Desnom tipkom miša odvojite element od pokazivača. Za bolju preglednost preporučuje se maksimizirati Editview prozor.
+4. „Verbindungslinie“: postavite pokazivač na priključnu točku (Pin), primjerice na Eingangskriterium, dok se pokazivač ne pretvori u križić. Zatim držanjem lijeve tipke miša povežite oba elementa.
+5. „Eingangskriterium definieren“: definirajte ulazni kriterij. Primjerice, Meldergruppe 101 treba se provjeravati na stanje „Alarm“. Pazite da je postavljena „Wertigkeit 4“ i da su pod „Elementzustände > Alarm“ označena sva podstanja alarma.
+6. „BD zuweisen“: Booleova definicija sada se može dodijeliti Steuerungu, Meldungu ili Alarmierungsbereichu.
+7. „Name der BD ändern“: nakon izrade BD promijenite joj naziv prema funkciji. Preporučuje se da naziv opisuje što se provjerava, a ne kome je BD dodijeljena.
+
+===== STRANICA 46 / 119 =====
+46 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Preporuka: Booleove definicije trebaju biti što jednostavnije.
+Booleove definicije mogu se provjeriti simulacijom preko tipke „Play“. Nakon pokretanja simulacije pojedini Eingangskriterien desnom tipkom miša postavljaju se u stanje „WAHR“. Tada se više ne prikazuju crveno nego zeleno. Kada su svi Eingangskriterien „WAHR“, cijela BD prikazuje se kao „WAHR“. Simulacija se završava tipkom „Stopp“.
+Logische Gatter - logička vrata:
+Za logičko povezivanje Eingangskriterien na raspolaganju je niz logičkih vrata. Odabiru se u Symbolleiste i postavljaju metodom „Drag & Drop“.
+„Oder-Verknüpfung“ može se generirati i pomoću zareza ili raspona „von - bis“.
+Broj priključaka na pojedinom logičkom vratilu unosi se u „Einstellungen“ tog logičkog elementa.
+
+===== STRANICA 47 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.6 Extern
+Element „Extern“ je virtualni element. Može se postaviti u stanja Alarm, Störung ili Ansteuerung. Mogu se izravno provjeravati Eingänge ili se mogu spremiti logičke veze i/ili zbirni kriteriji.
+Primjer: vanjsko mrežno napajanje treba nadzirati na smetnju. Napajanje daje beznaponski kontakt koji se preklopi pri smetnji. Taj kontakt treba analizirati preko Eingang 151. Kada je Eingang 151 aktivan, odnosno beznaponski kontakt napajanja zatvoren, preko elementa „Extern 151“ generira se Störung. Logički broj Einganga trebao bi biti isti kao logički broj elementa Extern.
+Novoizrađeni Extern element zato u primjeru dobiva logički broj 151, odgovarajući ulazu 151.
+
+2.3.7 Drucker
+Kod elementa „Drucker“ parametriraju se svi pisači Integral sustava. Preko „Subtyp“ može se odrediti radi li se o „interner Drucker“ ili „abgesetzter Drucker“.
+Dodatno se mogu parametrirati „Bereichsfilter“ i/ili „Meldungsfilter“ kako bi se ispisivali samo određeni događaji.
+
+===== STRANICA 48 / 119 =====
+48 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.8 Bedienfeld
+Kod elementa „Bedienfeld“ ovlasti se mogu dodjeljivati preko pripadajućih Bedienfeld korisnika. Mogu se dodijeliti Übertragungseinrichtung i Alarmierungsbereiche kojima se preko tipke „Abschaltung“ na upravljačkoj ploči može upravljati. Prikaz Bedienfelda treba uvijek postaviti na „Deutschland (VdS)“. Time se ispunjava zahtjev da kod Störunga ili Alarma pozadinsko osvjetljenje ostane uključeno.
+Najvažnije funkcije, uz dodatna objašnjenja u Onboard-Hilfe:
+1. „Listview“ - Gesamtübersicht, ukupni pregled.
+2. „Bedienfeld Subtyp“ / registri „Eigenschaften 1“ i „Eigenschaften 2“ - postavke vremena rukovanja, prikaza, isključenja ÜE i ALB te jezika.
+3. „Allgemein“ - postavke/funkcije BRAND-LED-a, Bereichsfiltera, odnosno što treba ili ne treba prikazati, i tipke „Summer Rücksetzen“. Ako je označen flag „andere BF-akustik rücksetzen“, isključuju se i interni zujalice svih ostalih BF.
+4. „Berechtigung“ - odabir izrađenih korisnika i Berechtigungsmakros. Preporuka je koristiti postavku iz predloška.
+5. „Menüs“ - pojedinim stavkama izbornika mogu se dodijeliti odgovarajuće ovlasti. Stavke se mogu premještati povlačenjem mišem i na BF-u će se prikazati tim redoslijedom.
+„Tasten und LED“ - dvjema slobodno programabilnim tipkama mogu se preko ovog registra dodijeliti funkcije. Mogućnosti su „Befehl“, „Elementtyp“, „Menüpunkt“ i „inaktiv“. Na Fernbedienfeldu slobodno programabilne tipke i LED mogu se i tekstualno označiti.
+
+===== STRANICA 49 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.9 Batterie
+„Batterie vorhanden“: mora uvijek biti aktivirano kada se akumulatori koriste za premošćivanje prekida mrežnog napajanja.
+„Log. Nr. immer anzeigen“: preporučuje se uvijek aktivirati kako bi bilo moguće jednoznačno povezivanje s tekstovima i prikazom na Bedienfeldu.
+„Prüfen auf vollständigen Ausfall der Energieversorgung“: ako je flag postavljen, pri nestanku mreže provjerava se kapacitet akumulatora. Ako dosegne kritičnu vrijednost, dodatno se prikazuje Batteriestörung.
+„Geforderte Überbrückungszeit bei Netzausfall (Stunden)“: ovdje se unosi normativno zahtijevano vrijeme premošćivanja pri nestanku mreže. Na Bedienfeldu se ova funkcija odabire u izborniku pod „Batteriestrom messen“.
+„Kapazität der verwendeten Batterien (in Ah)“: unosi se kapacitet ugrađenih baterija. Na Bedienfeldu se također koristi izbornik „Batteriestrom messen“.
+„Batterietest“:
+- „Automatische Prüfung“: treba uvijek biti aktivirana kako bi se baterije automatski provjeravale u zadanom intervalu; standardno 15 min.
+- „aus“: test baterije je isključen, pa neispravan ili nedostajući akumulator neće biti prijavljen kao Störung.
+- „Intervall“: vremenski interval provjere baterije.
+Savjet: postavke za Drucker, Bedienfeld, Batterie te sljedeće postavke za Netz, Verzögerungsebenen, Feuerwehrbedienfeld i Ring pri puštanju u rad mogu ostati nepromijenjene iz predloška.
+
+===== STRANICA 50 / 119 =====
+50 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.10 Netz
+„Störungsmeldung“:
+- „unverzögert“: smetnja nestanka mrežnog napajanja na centrali prikazuje se odmah.
+- „nie“: smetnja nestanka mreže nikada se ne prikazuje na centrali.
+- „verzögert“: smetnja se prikazuje nakon definiranog vremena.
+„Log. Nr. immer anzeigen“: preporučuje se uvijek aktivirati kako bi bilo moguće odgovarajuće povezivanje tekstova i prikaza na Bedienfeldu.
+
+2.3.11 Verzögerungsebene
+Za definiranje vremena automatskog prebacivanja Tag/Nacht određene Verzögerungsebene treba aktivirati dane u kojima se prebacivanje treba izvršavati i unijeti odgovarajuća vremena prebacivanja.
+Centrala podržava i automatsko prebacivanje Nacht/Tag; pritom uvijek treba poštovati propise koji vrijede za pojedinu državu.
+Nova Verzögerungsebene može se izraditi u Listview-u.
+
+===== STRANICA 51 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Savjet:
+„Verzögerungsebene 2“, kako je prikazana iznad, može se koristiti tako da se upozorenje o zaprljanju detektora izdaje samo kada se Brandmeldeanlage nalazi u Tagbetrieb-u. Prema VZ 2 sustav se, primjerice, između 10:00 i 10:01 prebacuje u Tagbetrieb. Za korištenje funkcije „Verschmutzung nur im Tagbetrieb“ ona mora biti aktivirana u „Allgemeine Einstellungen“, vidi i stranicu 62.
+U „logische Ebene / Meldergruppe“ kod odgovarajućih automatskih Meldergruppen također treba postaviti VZ 2.
+„Umschaltzeitpunkt“:
+- „Tag / Nacht (abwesend)“: automatski prijelaz iz dnevnog u noćni rad.
+- „Nacht / Tag (anwesend)“: automatski prijelaz iz noćnog u dnevni rad.
+Pažnja: ako Verzögerungsebene nije postavljena, pri aktivnoj funkciji „Verschmutzung nur im Tagbetrieb“ Meldergruppen više ni u jednom trenutku neće prijavljivati zaprljanje.
+
+===== STRANICA 52 / 119 =====
+52 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.12 Feuerwehrbedienfeld
+Feuerwehranzeigetableaus (FAT) i Feuerwehrbedienfelder (FBF) u Configuratoru dijele isti „Elementtyp Feuerwehrbedienfeld“. Zato se na jednu Teilzentrale može priključiti npr. 8 FAT, 8 FBF, 7 FAT + 1 FBF itd. FAT i FBF zato dijele i logički raspon brojeva 1-65534.
+
+2.3.12.1 Feuerwehr-Anzeigetableau (B3-MMI-FAT / B5-EPI-FAT)
+„Bereichsfilter, Meldungsfilter“: omogućuju da se određene poruke ili adrese ne prikazuju odnosno da se njima ne može upravljati.
+„Kundentext - 1. und 2. Zeile“: ako se npr. odabere „1. Zeile Kundentext“, u prvom retku FAT-a prikazuje se isti tekst koji se prikazuje i u prvom retku Bedienfelda. Odabirom „1. Zeile alternativer Text“ ili „2. Zeile alternativer Text“ FAT može prikazivati vlastite tekstove koji se ne prikazuju na Bedienfeldu centrale. Ti se tekstovi izrađuju u Integral Text Tool-u kao „Alternativer Text“.
+Može se birati između „Kundentext“ i „alternativer Text“.
+
+2.3.12.2 Feuerwehrbedienfeld (FBF2001/2003 / B5-EPI-FPD)
+„Bereichsfilter, Meldungsfilter“: mogućnost da se određene poruke ili adrese ne prikazuju odnosno da se njima ne upravlja.
+„Extern anzeigen und bedienen“: ako se na Integral centrali element „Extern“ koristi za prikaz alarma vanjske periferije preko elementa „Eingang“, a ti se alarmi trebaju prikazivati i resetirati preko FBF-a tipkom „BMZ Rückstellen“, ovaj flag mora biti aktivan.
+„Bedienebene“: kod Feuerwehrbedienfelda uvijek treba aktivirati Ebene 7. Ako Ebene 7 nije dodijeljena, tipka „ÜE-Prüfen“ neće raditi.
+„Übertragungseinrichtung“: unosi se logički broj ÜE koja se treba isključiti kada se na FBF-u pritisne „ÜE-AB“. U HEKA predlošku: STEU 1 = ÜE.
+
+===== STRANICA 53 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.13 Ring
+Za Ring se podešavaju sljedeće logičke postavke:
+„Erdschlußüberwachung aus“: kada je flag postavljen, nadzor zemljospoja za Ring je deaktiviran. To je standardna postavka.
+„AIM Optionsbetrieb (Alarm-LED Melder aktiv)“: ako su Grenzwertmelder priključeni na AIM, opciju treba aktivirati kako bi se upravljalo Alarm-LED-om detektora.
+„Signaturalarm auswerten“: Signaturalarm je posebna metoda za brzo testiranje automatskog detektora ispitnim plinom. Funkcija je dostupna od MTD533 nadalje.
+„Unterspannungserkennung aktiv“: aktivira bit podnapona kada napon petlje padne ispod definirane vrijednosti.
+„Schneller Hochlauf“: optimizira prepoznavanje detektora pri pokretanju, 250 ms umjesto 500 ms. Ako sa starijim generacijama detektora nastaju problemi pri pokretanju, preporučuje se ovu opciju deaktivirati.
+„X-LINE Hochlauf“: ovaj flag postavlja se samo kada su na Ringu isključivo X-LINE sudionici. Svi sudionici moraju podržavati X-Line; inače X-Line pokretanje nije moguće, a najveći broj sudionika pada s 250 na 128.
+„A5 von MTD533X auf 6,8V“: A5 izlaz MTD533X standardno ima 5 V. Aktiviranjem se dobiva 6,8 V, što je primjerice obavezno za MEA720. Aktivacija smanjuje raspoloživi broj sudionika jer minimalni napon MTD533X raste s 12 V na 15 V.
+„Teilnehmer-Störung verzögert“: poruka greške pojavljuje se tek nakon 10 neuspješnih upita sudionika; standardni broj upita je 3.
+„Sirenenloop (MLAR)“: ovaj flag smije se postaviti samo ako se na Ringu, u skladu s MLAR-om, koriste isključivo BX-SOL sirene, najviše 20. Aktivira ubrzano pokretanje s maksimalno 5 s pri 20 sudionika. Preduvjet su aktivni „Schneller Hochlauf“ i „X-Line Hochlauf“.
+„Rückwärtskompatibilität von X-Line Modulen“: svi X-Line moduli rade u povratno kompatibilnom načinu, npr. MTD533X kao MTD533, BX-OI3 kao BA-OI3. Tada vrijedi ograničenje na najviše 128 sudionika, dakle nema punog X-Line Ringa.
+Primjer: ako se MTD533 zamijeni MTD533X bez ove funkcije, centrala ga vidi kao drugi tip i potrebno ga je ponovno konfigurirati u PeripherieAssistant-u. Uz aktivnu funkciju MTD533X radi kao MTD533 te se može zamijeniti bez nove konfiguracije; potrebno je samo preuzeti adrese, što se može napraviti na Bedienfeldu centrale.
+
+===== STRANICA 54 / 119 =====
+54 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+„EN 54-29 für MTD 533X-05 verfügbar“: kada je flag postavljen, što je standardno, u PeripherieAssistant-u je dostupna postavka „Rauch nach EN54-29“.
+- Aktiviert: MTD 533X-05 u PeripherieAssistant-u prikazuje se kao MTD 533X-05 i dostupna je „Rauch nach EN54-29“.
+- Deaktiviert: MTD 533X-05 prikazuje se kao MTD 533X, postavka „Rauch nach EN54-29“ nije dostupna i detektor radi kao MTD 533X.
+To treba uzeti u obzir i kod zamjene detektora. Zamijeni li se MTD 533X s MTD 533X-05, novi tip inače treba parametrirati. Alternativno se može odustati od EN54-29 funkcije; tada je zamjena moguća bez konfiguracije, ali novi algoritmi nisu dostupni.
+„Bedienbarkeitsmakro“: služi za ograničavanje mogućnosti upravljanja elementima Teilzentrale ili Zentralenverbunda na razini naredbi. Svakom Ringu uvijek treba dodijeliti „Bedienbarkeitsmakro Ring“, što je standardna postavka. Time se, primjerice, sprječava korisnika da resetira Ring dok je u Störungu.
+„Verzögern / Verzögerungszeit“: može se programirati odgoda Störungsmeldunga nadziranih Eingänge koji se nalaze na Ringu, npr. ulaza sprinkler sustava.
+„Intervall“: podešava se interval sinkronizacije za BX-SOL, BX-SBL i MTD 533X-SCT/SPCT. BA-SOL se ne može sinkronizirati. Sinkronizacija se izvodi zasebno za svaki Ring. Vrijeme ovisi o trajanju tona; preporuka je 3 sekunde. Ako se unese 0 s, sinkronizacije nema.
+
+===== STRANICA 55 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.3.14 Alarmierungsbereich
+Alarmierungsbereich je element predviđen isključivo za akustično, odnosno po potrebi optičko-akustično alarmiranje.
+Alarmierungsbereich je područje u kojem se alarmiranje provodi zajednički i istodobno, primjerice kat ili dio zgrade, Halle 1, Halle 2 itd. Može se izraditi najviše 256 Alarmierungsbereiche.
+ALB se mogu graditi kaskadno, čime je moguće stupnjevano ili odvojeno alarmiranje.
+Preporuka: ALB 1 je „Hauptalarmierungsbereich“. Ovisno o projektu može biti normalni ALB koji upravlja Steuerungen, npr. Blitzlampe, ili potpuno virtualni ALB bez upravljanja izlazima. ALB 1 u svakom slučaju predstavlja sučelje prema Zentralenbedienfeldu. Preko „Subtyp = Akustik“, koji se postavlja u elementu Alarmierungsbereich, omogućuje se upravljanje ALB 1 preko FBF-a tipkom „Akustische Signale ab“.
+Svi ostali Alarmierungsbereiche izravno ili neizravno prate ALB 1. Time se osigurava djelovanje tipke „Akustische Signale ab“ na FBF-u i tipke „Rücksetzen“ na Zentralenbedienfeldu u smislu isključenja akustike.
+Dijagram prikazuje: ALB n i ALB 2 prate ALB 1; BF i FBF upravljaju ALB 1; kriteriji alarma pojedinih MG upravljaju odgovarajućim ALB-ovima, a ALB-ovi zatim pripadajuće Steuerungen.
+Oznake u dijagramu:
+1 „Ansteuerkriterium für den ALB“ - kriterij aktiviranja ALB-a.
+2 „Ansteuerkriterium: ALB 'x' aktiv“ - kriterij da je određeni ALB aktivan.
+3 „Dem Bedienfeld zugeordnet“ - dodijeljeno Bedienfeldu.
+4 „Zuordnung zum Alarmierungsbereich 1“ - dodjela ALB 1.
+5 „Durch die Einstellung Subtyp Akustik, dem FBF zugeordnet“ - preko Subtyp Akustik povezano s FBF-om.
+„ab / rücksetzen“ označava isključivanje/resetiranje.
+
+===== STRANICA 56 / 119 =====
+56 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Ansteuerung - aktiviranje Alarmierungsbereicha
+Kao što je opisano, Alarmierungsbereiche predstavljaju zgrade, dijelove zgrada, etaže ili druga područja u kojima se nalazi jedna ili više Meldergruppen. Te se Meldergruppen objedine u jednoj Boolesche Definition. Ta BD zatim predstavlja Ansteuerkriterium za odgovarajući ALB.
+U vježbi 2 ALB 2 treba se aktivirati preko Meldergruppe 105. Odgovarajuća BD već je izrađena i korištena kod Steuerungen kao Ansteuerkriterium.
+Primjer: kompleks se sastoji od dvije zgrade, svaka s četiri kata, i portirnice. U svakoj zgradi nalazi se jedna Teilzentrale, a međusobno su povezane u Teilzentralenring. Svaka Teilzentrale ima Bedienfeld.
+U obje zgrade Meldergruppen svakog kata dodjeljuju se zasebnom Alarmierungsbereichu. Sva četiri kata podređena su Alarmierungsbereichu zgrade. Obje zgrade podređene su glavnom Alarmierungsbereichu 1.
+Ako se na Feuerwehrbedienfeldu u portirnici pritisne „Akustische Signale ab“, isključuju se svi Alarmierungsbereiche jer su svi ALB preko „Subtyp Akustik“ povezani s tom funkcijom.
+Ako se na odgovarajućem Bedienfeldu isključi ALB 20, istodobno se isključuju i ALB 21-24 jer je ALB 20 njihov Hauptalarmierungsbereich. Isto vrijedi za zgradu 30.
+Dijagram: ALB 21-24 prate stanje, Abschaltung/Rücksetzung, ALB 20; ALB 20 i ALB 30 prate stanje ALB 1; ALB 31-34 prate stanje ALB 30. Ako se preko Bedienfelda u portirnici isključi ALB 1, isključenje slijede svi podređeni ALB-ovi.
+
+===== STRANICA 57 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Verwendung - uporaba
+Element „Alarmierungsbereich“ može se koristiti na različite načine:
+- povezan s jednom Boolesche Definition i dodijeljen jednoj ili više Steuerungen, ili
+- izravno dodijeljen preko Akustikeinstellungen jednog ili više MTD533X-SPCT/SCT detektora.
+Ako se Alarmierungsbereich treba dodijeliti Ring elementu, mora biti aktiviran na DAI/DXI, vidi 2.2.3.3 „B5-DXI2 - Ringkarte“.
+„Eigenschaften“:
+„Teilzentrale“: izborom „Teilzentrale“ upravljanje ALB-om u Teilzentralenringu može se prenijeti na određenu Teilzentrale, čime se povećava otpornost na ispad. Ako je odabrano „keines“, automatski se koristi Teilzentrale 1.
+„Bedienbarkeits-Makro“: postaviti na „HEKA: Alarmierungsbereich“, standardna postavka.
+„Hauptalarmierungsbereich“: ovdje uneseni ALB je onaj ALB čije se stanje prati, odnosno s kojim se povezuje. Time je moguće kaskadno ili građevinski odvojeno alarmiranje.
+„Subtyp“: svakom ALB-u može se dodijeliti Subtyp. Za ALB treba odabrati „Akustik“ kako bi upravljanje preko FBF-a bilo omogućeno, što je normativni zahtjev.
+„Neuansteuerung möglich“: nakon naredbe „Rücksetzen“ može se definirati smije li novi Ansteuerkriterium, dok postojeći kriterij još postoji, ponovno aktivirati ALB. Funkcija je normativno zahtijevana i standardno treba biti uključena.
+„Unsichtbar“: kada je aktivno, stanje aktiviranja ALB-a ne prikazuje se ni na Displayu ni na Protokolldruckeru; ALB je prema van „nevidljiv“.
+„Ansteuerung bei“: preko rezultata povezivanja, Boolesche Definition, definira se koje Meldergruppen u stanju Alarm trebaju aktivirati odgovarajući ALB. U prikazanom primjeru ALB 20 aktiviraju sve MG iz zgrade 20.
+„Störung bei“: preko BD provjerava se koje su Steuerungen, npr. svi BX-SOL-CT, povezane s ALB-om. Ako je neka od tih Steuerungen u smetnji, ALB se postavlja u stanje gestört. U primjeru se na Störung provjeravaju sve sirene u zgradi 20.
+
+===== STRANICA 58 / 119 =====
+58 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.3.15 Register Beschreibung
+Za svaki element u logičkoj razini postoji registar „Beschreibung“. Na stranici su kao primjeri prikazani Meldergruppen, Eingänge i Steuerungen.
+Ovdje se mogu dodijeliti kategorije koje se kasnije koriste kao filtri. Primjerice, kod većeg objekta u logičkoj razini može se prikazati samo Steuerungen koje pripadaju „HAUS A“ ili samo „HAUS B“. Za to treba izraditi kategorije „HAUS A“ i „HAUS B“.
+Treba strogo paziti na potpuno isti način pisanja jer i najmanja razlika, uključujući velika/mala slova, stvara zasebnu kategoriju. Najjednostavnije je početi upisivati početno slovo i zatim odabrati jednu od ponuđenih kategorija.
+Nakon toga klikom na „hinzufügen“ dodijelite kategoriju elementu. Višestruki odabir, odnosno istodobno uređivanje više elemenata, trenutačno nije moguć.
+Za korištenje kategorije kao filtra u donjem dijelu Treeview-a upišite odgovarajuću kategoriju. Dovoljno je početi upisivati početno slovo i zatim odabrati jednu od ponuđenih kategorija.
+
+===== STRANICA 59 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Sažetak - Logische Ebene
+Svim izrađenim elementima moraju se dodijeliti odgovarajuće logičke funkcije. Ograničenja upravljanja koja proizlaze iz propisa, npr. VDE 0833 ili DIN 14675, dodjeljuju se pomoću Bedienbarkeitsmakros.
+U logičkoj razini također se izrađuju i dodjeljuju Ansteuerkriterien za Steuerungen i Alarmierungsbereiche. Ti kriteriji temelje se na Boolesche Definitionen, koje se u logičkoj razini mogu izrađivati i uređivati.
+Za vježbu 2 osnovnog seminara, uz funkcije i postavke već prisutne u predlošku, napravljene su samo ove promjene:
+1. „Meldergruppe“: dodijeljeni Meldergruppenmakros.
+2. „Steuerung“:
+- prilagođeni Subtyp i Bedienbarkeitsmakro; STEU 160 i 161 = BSE/BFS.
+- prilagođen Ansteuerkriterium i izrađene odgovarajuće Boolesche Definitionen: „HEKA: 02_Alarm“ za MG 105, 106 i 108.
+- Steuerung 163: „Subtyp = allgemein“ i „Bed.-Makro = STEU Typ Allgemein“.
+- Steuerung 1001: „Subtyp = allgemein“, „Bed.-Makro = STEU Typ Allgemein“, Ansteuerkriterium = SAL.
+3. „Alarmierungsbereich“: prilagođen Ansteuerkriterium, BD „HEKA: 02_Alarm der MG 105“.
+Prema vježbi 2 zbog korištenog predloška nisu bile potrebne druge postavke.
+Sljedeći korak je spremanje Configurator datoteke, odnosno spremnika unutar Projektdatei, i priprema za prijenos u centralu.
+Savjet: vrijednosti koje se u Editview-u mogu podešavati, kao Subtyp, Bedienbarkeitsmakro, Filter, Ansteuerkriterien itd., u Listview-u se prikazuju tablično. Prikaz se može prilagoditi: širina stupaca i prikazani stupci mogu se odabrati desnim klikom na red zaglavlja stupaca. Te se korisničke postavke spremaju i koriste u drugim projektima. Mogu se vratiti na početne preko „Ansicht > Benutzereinstellungen zurücksetzen“.
+
+===== STRANICA 60 / 119 =====
+60 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.4 Speichern - 4. korak programiranja
+Pri spremanju treba razlikovati pojedine vrste datoteka.
+„Konfigurationsdatei“: datoteka izrađena u programskom dijelu „Configurator“. Sadrži kompletnu hardversku konfiguraciju i parametriranje sustava. Nakon izrade sprema se u radnu mapu WorkDir preko „Als Arbeitskopie ablegen“ ili „Exportieren und im Projekt ablegen“.
+„Textdatei“: datoteka izrađena u „Projekttexte“. Sadrži sve tekstove elemenata, npr. Gruppentexte, Meldertexte, Eingangstexte itd. Nakon izrade sprema se u Text-Tool-u i automatski odlaže u WorkDir.
+„Ringdatei“: datoteka izrađena u „Peripherie Assistant“. Sadrži kompletnu Ring konfiguraciju sustava. Nakon izrade sprema se unutar programa preko izbornika „Ansicht“ i automatski u WorkDir. Ringdatei se može i izvesti preko PeripherieAssistant-a; vidi odjeljak 5.8.
+„Arbeitsordner (WorkDir)“: privremena radna mapa kojom Integral Application Center pojednostavnjuje programske radne procese. Svi dijelovi programa spremaju svoje podatke u WorkDir. Tek kada korisnik u IAC-u pritisne gumb za spremanje projekta, svi se podaci objedine u Projektdatei (*.b5proj).
+„Projektdatei“: objedinjeni sadržaj radne mape. Nastaje kada korisnik odabere spremanje projekta. Tada se svi relevantni podaci iz WorkDir-a objedinjuju u jednu Containerdatei (*.b5proj), koja se može spremiti u posebnu projektnu mapu.
+
+2.4.1 Projektdatei speichern
+1. „Speichern“: klikom na simbol diskete sprema se projekt i datoteke u njegovom kontejneru: Configurator, Texte, PeripherieAssistant, Anhänge, Teilnehmerdaten itd. Ako Arbeitskopie još nije izrađena, tada se automatski izrađuje. Pri prvom spremanju traži se naziv datoteke i otvara put definiran u Anwendungseinstellungen, npr. „C:\Hekatron_BMA\Integral\8.1\“. Ako je projekt već spremljen, datoteka se prepisuje aktualnim podacima.
+2. „Speichern unter“: projekt se može spremiti pod drugim nazivom ili prvi put. Također se može izraditi Projektordner; preporučuje se zasebna mapa za svaki projekt.
+3. „*Name“: zvjezdica uz naziv označava da su podaci projekta izmijenjeni i podsjeća da projekt treba spremiti.
+Savjet: projekt redovito spremati kako bi se izbjegao gubitak podataka.
+Napomena: do ovog trenutka izrađena je samo Projektdatei; Konfiguration još nije spremljena.
+
+===== STRANICA 61 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+2.4.2 Konfigurationsdatei speichern - spremanje konfiguracijske datoteke
+Da bi se promjena odmah spremila i u Projektdatei, treba odabrati gumb za spremanje projekta. Po oznaci „*“ (Stern) vidi se postoje li izmjene koje još nisu spremljene u Projektdatei. Ako nema zvjezdice, Projektdatei je identična datoteci u Arbeitsordneru (WorkDir).
+1. „Als Arbeitskopie ablegen“: ovom se naredbom u WorkDir sprema samo Konfigurationsdatei. Ovaj korak treba redovito izvoditi radi smanjenja rizika od gubitka podataka. Alternativno se može izravno spremiti cijeli projekt jer se tada Arbeitskopie automatski izrađuje i sprema.
+2. „Exportieren und im Projekt ablegen“: kada su u Configuratoru završeni svi koraci i Konfigurationsdatei je stvarno dovršena, ovom se naredbom datoteka sprema u WorkDir i izvozi. Time se Loaderu automatski stavljaju na raspolaganje podaci koji trebaju biti preneseni u sustav. Ako u projektiranju još postoje greške, izvoz nije moguć.
+3. Kliknite Speicherbutton kako biste promjene spremili u projekt.
+
+===== STRANICA 62 / 119 =====
+62 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+2.5 Einstellungen - im Projekt
+2.5.1 Allgemeine Einstellungen
+„Meldung bei Warmstart“: Warmstart se na Bedienfeldu prikazuje kao Modulstörung sve dok se ručno ne resetira.
+„Verschmutzung nur im Tag-Betrieb“: kada je flag postavljen, zaprljanje detektora prikazuje se na Bedienfeldu tek pri prelasku u Tagbetrieb, a ne u Nachtbetriebu. Preduvjet je programiran Tag-/Nachtbetrieb preko Verzögerungsebene. Ako se ova funkcija koristi, svakoj Meldergruppe s automatskim detektorima obavezno se mora dodijeliti odgovarajuća Verzögerungsebene (VZ), inače se zaprljanje uopće neće prijaviti.
+„Aktivzustand der BSE/BFS-LEDs speichern“: LED ostaje upaljena i kada više nema aktivnog stanja Brandfallsteuerunga.
+„kritische Steuerungen - Rückfrage für Befehl 'Setzen'“: flag „Rückfrage für Befehl Setzen“ mora biti postavljen, inače se na Bedienfeldu ne pojavljuje potvrda za kritične Steuerungen. Funkcija služi kao zaštita od slučajnog aktiviranja kritičnih upravljanja, npr. isključenja napajanja.
+„Zustand Voralarm verwenden“: aktiviranjem se prikaz „Alarmüberprüfung“ i „Alarmbestätigung“ na Displayu mijenja u „Voralarm“ kod 2-Meldergruppen-Abhängigkeit i Alarmzwischenspeichera. U Boolesche Definitionen tada treba provjeravati stanje Voralarm.
+„DAI/DXI Indikatorprüfzeit“: ovdje se podešava vrijeme testa indikatora. Nakon toga u Berechtigungsmakro za Meldergruppe treba omogućiti opciju „Prüfen“ za željene Benutzerebenen.
+Postupak na Bedienfeldu: odabrati Gruppe xxx/yy, pri čemu mora biti odabran pojedinačni Melder grupe; cijela grupa ne radi. Zatim „Enter“ > „Weiter Befehle“ > „Prüfen“ > „Enter“. Indikator se aktivira na zadano vrijeme.
+„Reaktivieren von Sirenen/Alarmierungsbereichen“: automatsko ponovno aktiviranje sirena/Alarmierungsbereiche ako se pojavi novi alarm iz druge Meldergruppe.
+
+===== STRANICA 63 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nastavak „Allgemeine Einstellungen“:
+„Störungen“: ako je flag postavljen, pritiskom tipke „Anlage/Alarm Rücksetzen“ resetiraju se i Störungen.
+„Löschanlagen“: ako je flag postavljen, tipkom „Anlage/Alarm Rücksetzen“ resetira se i element „Löschbereich“. Posljedično pripadajuće Steuerungen završavaju stanje aktiviranja; dokument napominje da to normativno nije dopušteno.
+„Elemente mit führenden Nullen darstellen“: omogućuje promjenu prikaza brojeva elemenata na centrali pomoću vodećih nula.
+„UZ-Nummer“: prikaz UZ broja može biti dvoznamenkast ili troznamenkast. Ako je broj kraći, slobodno mjesto popunjava se nulom.
+„Elementnummer“: broj elementa, npr. Meldergruppe, može se prikazati s 2, 3, 4 ili 5 znamenki; nedostajuće znamenke popunjavaju se nulama.
+„Indikatornummer“: broj indikatora, npr. Melder, može se prikazati s 2 ili 3 znamenke, uz popunjavanje vodećim nulama.
+„UZ-Nummer / Elementnummer“: određuje znak razdvajanja između UZ broja i Elementnummera. Mogući su „-“, „/“, „.“, „:“, npr. UZ 1/1 ili UZ 1.1.
+„Elementnummer / Indikator“: određuje znak razdvajanja između Elementnummera i Indikatora, npr. Gruppe 1/1 ili Gruppe 1.1.
+„LED-Anzeige ungefiltertes Alarmbit (DAI/DXI) - aktiv“: ako je flag aktivan, detekcija veličine koja bi mogla dovesti do alarma prikazuje se na Melderu prije stvarnog alarma. Melder mora biti u normalnom radu, ne u Revisionsmodusu. LED tada treperi kao Voralarmblinken.
+„Funktionsblinken für Melder“: svi podržani detektori svakih 20 s daju funkcijsko treptanje. Podržani su MTD 533X-05, CMD 533X, MTD 533X-SPCT i MTD 533X-SCT.
+„Intervention starten bei“: dokument navodi da funkcija normativno nije dopuštena u Njemačkoj. Ovisno o postavljenom flagu, intervencija se može pokrenuti tipkom „Summer Rücksetzen (interne Akustik)“ ili „Alarmierungseinrichtung Rücksetzen (ext. Ak.)“.
+„Gestaffelte Ansteuerung“: prema dokumentu normativno nije dopuštena u Njemačkoj.
+„Logo“: može se učitati vlastiti logo za B5-CII odnosno B5-MMI-PIP, koji se prikazuje u stanju mirovanja. Veće slike svode se na 240 x 40 piksela. Najbolji rezultat daje crno-bijela slika; slike u boji automatski se pretvaraju u crno-bijele. Klizačem se podešava udio crnog/bijelog. Podržani su uobičajeni formati *.bmp, *.jpg, *.gif, *.png.
+„MLAR Unterbrechnungston“: odabrani ton reproducira se kada nastupi MLAR slučaj, npr. prekid ili kratki spoj tijekom govornog alarmiranja. Tada se zvuk mijenja iz govora na ovdje odabranu vrstu tona.
+
+===== STRANICA 64 / 119 =====
+64 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+3. Projekttexte
+Integral Text Tool koristi se za izradu korisničkih odnosno objektno specifičnih tekstova. Za svaki element može se izraditi višeredni tekst.
+Pri unosu tekstova treba znati da se prva tri retka na standardnom Displayu Integral IP-a odmah prikazuju nakon pritiska tipke „Ortinfo“. Ostali redci prikazuju se tek pomicanjem preko tipkovnice na Displayu. Na pisaču se svi redci ispisuju odmah.
+1. Odaberite „Integral Text Tool (Projekttexte)“ i pokrenite ga preko gumba „Neu“. Otvara se dijaloški prozor.
+2. U tom prozoru preko Combobox-a datoteci se može dodijeliti jezik. Integral sustav može sadržavati više jezika, koji se zatim mogu birati na Bedienfeldu.
+3. Nakon odabira jezika otvara se Integral Text Tool u prikazu „Texte“.
+4. U tom prikazu prikazani su svi Elementtypen i može se vidjeti koliko Datensätze postoji.
+
+===== STRANICA 65 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+3.1 Integral Text Einstellungen - 4. korak programiranja
+„TextName“: unosi se naziv projekta. Preko TextName kasnije se može provjeriti koja se Textdatei trenutačno nalazi u centrali, a koja je spremljena u Projektdatei.
+„Version“: unosi se broj verzije. Pomoću njega se kasnije može utvrditi koja je Textdatei u centrali i koja u Projektdatei. Preporučuje se broj verzije ručno ažurirati.
+„Kundentext“ - tekst se prikazuje na Bedienfeld-Displayu, Druckeru i FAT-u.
+„Zeichen pro Zeile“: različiti uređaji imaju različitu duljinu retka:
+- Displayzeile: 35 znakova po retku
+- Drucker: 34 znaka
+- FAT: 20 znakova; prvi redak 11 znakova, drugi 20 znakova.
+„Rücksetzen“: vraća sve trenutačno napravljene postavke. Ako je prethodno pritisnut „Einstellungen übernehmen“, izmjene se više ne mogu poništiti ovom funkcijom.
+„Einstellungen übernehmen“: preuzima/spremi sve trenutačno napravljene postavke.
+„nach jedem Leerzeichen einen bedingten Umbruch einfügen“: kada je aktivno, riječi se automatski prelamaju kao cjeline na Displayu i Druckeru kada se dosegne najveći dopušteni broj znakova.
+„Keine fixen Zeilenumbrüche“: pažnja, deaktivira upozorenje u Integral Text Tool-u i više ne ograničava broj znakova u retku.
+„Alternativer Text“: tekst se može prikazivati samo na FAT-u.
+„Zeichen pro Zeile“ za Alternativer Text: unosi se najveći broj znakova nakon kojeg Integral Text Tool treba prikazati upozorenje; preporučena vrijednost je 20.
+„Zusatztext bei Unterzentralen (nur bei SecoNET)“: može se odrediti prikazuje li se dodatni tekst Unterzentrale u SecoNET-u prije ili poslije teksta elementa.
+
+===== STRANICA 66 / 119 =====
+66 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Funkcije gumba u Integral Text Tool-u:
+- Odabirom odgovarajućeg gumba Elementtexte se izrađuju kao „NEU“. Bestätigungsbutton tada nosi naziv „neu“.
+- Drugim gumbom mijenja se označeni Datensatz. Bestätigungsbutton glasi „zuweisen (markierter Datensatz)“.
+- Sljedećim gumbom može se unosom Elementnummera mijenjati pripadajući Datensatz iako nije izravno označen. Bestätigungsbutton glasi „zuweisen (Datensatz-Nr)“.
+- Funkcija automatskog prelaska na sljedeći Datensatz aktivira se nakon pritiska Bestätigungsbuttona i dostupna je samo uz „Markierten Datensatz ändern“.
+- Funkcija automatski povećava „Subnummer (Meldernummer)“ pri izradi ili umetanju Meldergruppe.
+- Funkcija automatski povećava samo Meldergruppennummer. Polje „Subnummer (Meldernummer)“ pritom mora biti prazno.
+- Funkcija omogućuje da tipka RETURN napravi novi red u tekstualnom polju; RETURN tada ne aktivira Bestätigungsbutton.
+- Alternativna funkcija pravi novi red kombinacijom STRG+RETURN, dok RETURN ostaje vezan uz Bestätigungsbutton.
+- Poseban gumb prikazuje prijelom retka u tekstualnom polju.
+- „Bestätigungsbutton“ - gumb za potvrdu.
+
+3.2 Gruppentexte erstellen
+Na sljedećoj stranici opisan je postupak izrade tekstova grupa.
+
+===== STRANICA 67 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+3.2 Gruppentexte erstellen
+Kod izrade čistih Gruppentexte preporučuje se prilagoditi funkciju numeriranja u Integral Text Tool-u.
+Postupak:
+1. Odaberite „Elementtyp Gruppe“.
+2. Postavite željeni način rada pri unosu teksta.
+3. U redak „Nr“ unesite odgovarajući Gruppen-/Element-Nummer.
+4. U polje „Kundentext“ unesite Gruppentext.
+5. Odaberite Bestätigungsbutton ili pritisnite Return.
+Gruppentext je izrađen. Kod Gruppentexte pazite da u polju „Subnr“ nema broja.
+Duljina retka: Display 35 znakova po retku, više redaka je moguće; Drucker 34 znaka po retku; FAT 20 znakova, prvi redak 11 znakova, drugi 20, treći redak nije moguć.
+Postupak za tekstove ostalih Elementtypen jednak je ili vrlo sličan.
+
+3.3 Meldertexte erstellen
+1. Odaberite „Elementtyp Gruppe“.
+2. Postavite željeni način rada unosa.
+3. U „Nr“ unesite odgovarajući Gruppennummer; kod početnog grupnog zapisa Subnr ostaje prazna.
+4. U „Subnr“ unesite odgovarajući Meldernummer.
+5. U „Kundentext“ unesite Meldertext.
+6. Pritisnite Bestätigungsbutton.
+Za duljinu teksta vrijede ista ograničenja: Display 35 znakova, Drucker 34, FAT 20, pri čemu je prvi FAT redak 11 znakova, drugi 20, a treći nije moguć.
+
+===== STRANICA 68 / 119 =====
+68 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+3.4 Meldergruppentexte extern weiter bearbeiten
+Ako se tekstualni podaci trebaju dodatno uređivati izvan programa, primjerice od strane korisnika objekta, to se može napraviti u MS Excelu ili Calc-u iz OpenOfficea. Preporučuje se u Text-Tool-u unaprijed unijeti odgovarajuće tekstove za svaki Elementtyp, a kod MG i za pojedinačne Melder, po potrebi uključujući Alternativtexte. Time je Text-Tool optimalno pripremljen za izvoz.
+
+3.4.1 Integral Text: Excel - Export
+„Kopieren nach Excel“: nakon unosa prve MG odnosno tekstualnih redaka kliknite označeni gumb za izvoz u Excel.
+„Daten als Tabelle in die Zwischenablage kopieren“: prema potrebi odaberite odgovarajuće opcije. Preporuka je ostaviti Default-Einstellungen:
+- „Alle Datensätze aller Elemente“
+- „Kundentext“
+- „Alternativer Text“
+Potvrdite s „OK“.
+Otvorite Excel i pritisnite „Strg+V“, odnosno desni klik > „Einfügen“.
+Spremite datoteku i zatim po potrebi dopunite tekstove.
+
+===== STRANICA 69 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Oznake u Excel tablici:
+T = „Kundentext“
+S = „Alternativer Text“
+Spalte E = Text 1. Zeile (T i S)
+Spalte F = Text 2. Zeile (T i S)
+Spalte G = Text 3. Zeile (T)
+Spalte H = Text 4. Zeile (T)
+
+3.4.2 Integral Text: Excel - Import
+Nakon završetka uređivanja tablica je spremna za uvoz u Integral Text Tool. Postupak je relativno jednostavan.
+Nakon otvaranja Excel tablice važno je mišem označiti Zeile 1, odnosno zaglavlje, kao i sve ostale redove i stupce. Time se osigurava da Integral Text Tool tablicu prepozna kao standardnu tablicu.
+Kada je cijela tablica označena, kopirajte je u „Zwischenablage“ kombinacijom „Strg+C“, alternativno desni klik > „Kopieren“.
+
+===== STRANICA 70 / 119 =====
+70 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+„Einfügen von Excel“:
+Nakon što je tablica kopirana u Zwischenablage, otvorite Integral-Texttool i kliknite označeni gumb. Alternativno se pod izbornikom „Bearbeiten“ nalazi stavka „Einfügen von Excel“.
+„Daten in Tabellenform ... einfügen“: Integral-Texttool automatski prepoznaje da je riječ o standardnom „IntegralText“ formatu. Zato se dodjela stupaca i redaka provodi automatski.
+Kliknite „Alle auswählen“; tablica se označi, zatim potvrdite s „OK“.
+Ako već postoje podaci, pojavljuju se sigurnosni upiti trebaju li biti prepisani. Budući da kopirana tablica sadrži sve podatke, uključujući ranije izrađene, u ovom slučaju može se potvrditi s „Ja Alle“. Ako se upit pojavi ponovno, još jednom odaberite „Ja Alle“.
+
+===== STRANICA 71 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+„Schlussdialog“: završni dijalog prikazuje koliko je Datensätze umetnuto. Potvrdite s „OK“ i postupak je završen.
+„Integral Text-Fenster“: uvezeni podaci sada se prikazuju u prozoru i po potrebi se mogu dodatno prilagoditi.
+Na kraju spremite Textdatei, a zatim i Projektdatei.
+
+===== STRANICA 72 / 119 =====
+72 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+4. Loader
+Loader služi za prijenos datoteka iz alata Configurator i Projekttexte u Integral centralu te za njihovo očitavanje iz centrale.
+Za prvo programiranje Integral IP centrale uvijek se koristi „Booterverbindung (lokale Verbindung)“.
+Loader se pokreće preko prozora „Anwendungen“.
+
+===== STRANICA 73 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+4.1 Hauptfenster - 5. korak programiranja
+„Verbindungsbutton“: uspostavlja vezu sa sustavom odnosno prekida vezu. Isti gumb dostupan je i u programskim alatima PeripherieAssistant, ServiceAssistant i VirtualMAP.
+Prikazi i funkcije:
+1. prikaz kada je sustav online i postoji veza s centralom.
+2. zapisuje Projektdaten u Flash sustava.
+3. „Rücksetzen“ sustava i ponovno pokretanje.
+4. očitava Projektierungsdaten iz centrale. Dostupno je samo kod online veze bez Booterverbindung.
+5. „Booterverbindung (lokale Verbindung)“: ako je kvačica postavljena, uspostavlja se lokalna veza sa sustavom. Kod prvog puštanja u rad uvijek koristiti Booterverbindung.
+6. „Verbindungsart“: bira se USB-Verbindung ili TCP/IP-Verbindung.
+„Nur Konfigurationsdaten lesen/schreiben“: ne očitavaju se informacije o projektiranju ni Betriebsprogrammu, nego samo Herstellerdaten poput IP-Adresszuordnung, Seriennummer, MAC-Adresse itd. Pri programiranju se u centralu prenosi samo IP-Adresszuordnung.
+„Nur Kundentext-Dateien schreiben“: prenose se samo Kundentextdaten. Nakon toga nije potreban Neustart Brandmeldeanlage i tekstovi su odmah dostupni. Ako su mijenjani Alternativtexte za FAT, za prijenos tih izmjena treba koristiti Loader.
+„Nur Log- und Coredump-Dateien lesen“: pri padu Teilzentrale uzrok greške automatski se zapisuje u Logfile. Kod kritične greške dodatno se sprema Speicherabbild za kasniju analizu. Nakon očitavanja Loaderom podaci se spremaju pod „Anhänge“, primjerice Logfile.txt.
+Prikaz odvojenog sustava pokazuje da nema veze s centralom.
+
+===== STRANICA 74 / 119 =====
+74 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+4.2 Verbindungsaufbau
+„USB-Verbindung“: koristi se za centralno programiranje. Sve Teilzentralen programiraju se istodobno. Preduvjeti su ispravan Integral LAN i rad Teilzentralen bez smetnje, Seite A + B u radu.
+Dok je veza uspostavljena, Teilzentrale je u pogonu: može prikazivati Meldungen i njome se može upravljati. Teilzentralen se ponovno pokreću tek nakon završetka programiranja.
+„Booterverbindung (lokale Verbindung)“: potrebna je za prvo programiranje centrale, a koristi se i za Booterupdate MCU-a. Veza se može uspostaviti samo s jednom Teilzentrale. Ako treba postaviti Teilzentralennummer ili IP-Adresse pojedine Teilzentrale, ova vrsta veze obavezno se mora koristiti.
+Dok je Booterverbindung uspostavljena, Teilzentrale nije operativna i ne može prikazivati Meldungen.
+Odaberite „Verbindungsbutton“.
+Nakon uspostave veze potrebno je napraviti Reset vađenjem i ponovnim umetanjem Resetstifta ili pritiskom Resettastera na sustavu. Ako je centrala još isključena, dovoljno ju je uključiti preko prekidača na napajanju, npr. B8-PSU.
+
+===== STRANICA 75 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+„Lokale Daten“: donji programski prozor prikazuje lokalno dostupne podatke Integral Application Centera koji se preko Checkboxen mogu odabrati za Download.
+Nakon uspostave veze Loader uspoređuje lokale Daten u IAC-u s podacima na MCU-u, npr. datum i verziju, i samostalno odlučuje koje podatke treba ponovno prenijeti. Korisnik naknadno može promijeniti taj odabir.
+Nakon Reseta na centrali sustav se povezuje s Loaderom.
+„Informationsfenster“: prikazuje opće informacije centrale poput Zentralentyp, TZ-Nummer, HW-Version, Booterversion i MCU-Seriennummer.
+„Daten im System“: prikazuje trenutačne podatke i particije u Flash memoriji MCU-a.
+„Symbollegende“:
+- verzija podataka vidljiva je u Projektinfodatei; dodjeljuje je IAC i korisnik je ne može mijenjati.
+- Kunden- ili Maßnahmentexte koji se nalaze u sustavu mogu se označiti i odbaciti tipkom „Entf“ ili Popupmenüom. Tada se pri Downloadu ne kopiraju u novu Userpartition, pod uvjetom da nisu odabrani odgovarajući novi tekstovi iz „lokale Daten“. Ponovnim pritiskom „Entf“ ili preko Popupmenüa oznaka se može poništiti.
+- Loader posebnim simbolima označava aktualne podatke u „lokale Daten“, aktualne podatke u „Daten im System“, podatke koji će se prenijeti u sustav te podatke koji će biti zamijenjeni.
+- Ako u lokalnim podacima ne postoji odgovarajući zapis, npr. Projektierung ili Kundentexte, a zapis na MCU-u se može zadržati, označava se zasebnim simbolom.
+
+===== STRANICA 76 / 119 =====
+76 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+4.3 Gerätedaten
+„IP-Adresszuordnung“: za umrežene Integral centrale moraju se definirati IP adrese i Subnetzmaske. Preko gumba „IP-Adresszuordnung“ izravno se otvara tablica za dodjelu IP adresa.
+Primjer tablice:
+TZ 1 = 192.168.193.1 / 255.255.255.0
+TZ 2 = 192.168.193.2 / 255.255.255.0
+TZ 3 = 192.168.193.3 / 255.255.255.0
+TZ 4 = 192.168.193.4 / 255.255.255.0
+TZ 5 = 192.168.193.5 / 255.255.255.0
+...
+TZ 14 = 192.168.193.14 / 255.255.255.0
+TZ 15 = 192.168.193.15 / 255.255.255.0
+TZ 16 = 192.168.193.16 / 255.255.255.0
+„Gerätedaten“: u ovom se prozoru definiraju parametri uređaja centrale.
+„TZ-Nummer“: može se postaviti samo kod vrste veze „Booterverbindung (lokale Verbindung)“.
+„IP-Zuordnung des Projekts“: prikazuje IP-Adresse, Subnetzmaske, Gateway, DNS i NTP-Uhrzeitserver definirane za projekt. Ako su potrebni drugi podaci, treba prilagoditi IP-Adresszuordnungstabelle, vidi odjeljak 1.7.2.
+
+===== STRANICA 77 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+4.4 Programmierung starten
+Programiranje se pokreće nakon odabira Programmierbuttona.
+Tijek programiranja sustava vidi se na Fortschrittsanzeige.
+
+===== STRANICA 78 / 119 =====
+78 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Nakon uspješnog programiranja sustav automatski izvodi Neustart i prikazuje odgovarajuću Statusmeldung.
+Nakon Neustarta i ponovnog povezivanja s Loaderom preko Booterverbindung, u prikazima „Daten im System“ i „lokale Daten“ vidi se da su sve datoteke identične. Programer tada može usporediti i Dateiversionen.
+„Projektierungsdatei“ je datoteka izrađena u Configuratoru.
+„Kundentextdatei“ je datoteka izrađena u Integral Text-u.
+Datenversionsnummer za Integral Text programer može mijenjati. Sve ostale Datenversionsnummern automatski dodjeljuje IAC.
+
+===== STRANICA 79 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+4.5 Updatemeldung nach Booterverbindung
+Nakon uspostave USB Booter-Verbindung Loader provjerava je li Booter u MCU-u aktualan. Ako nije, prikazuje se obavijest da u Programmbibliothek postoji novija verzija.
+Booter Update može se izvesti samo preko USB Booter-Verbindung, ne preko centralne veze. Preporučuje se ažuriranje B5-Bootera.
+Važno: Updatevorgang se ne smije prekidati.
+Nakon uspješnog B5-Booterupdatea može se ponovno uspostaviti veza ili završiti sesija.
+
+===== STRANICA 80 / 119 =====
+80 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+4.6 Zentrale/Daten auslesen
+Za očitavanje podataka iz postojeće centrale mora biti otvoren pripadajući projekt ili se mora izraditi novi projekt. U Loaderu treba uspostaviti vezu sa sustavom. Ne smije biti odabrana Booterverbindung; koristi se obična USB- ili TCP/IP-veza.
+Da bi se podaci mogli očitati i spremiti natrag u projekt, Configurator i IntegralText ne smiju biti otvoreni.
+Mogućnosti očitavanja:
+1. preko odgovarajućeg Icona u Menüleiste.
+2. preko izbornika „Flash“ i odgovarajućeg Icona „Projektierung zurücklesen“.
+3. desnim klikom na SCU > „Projektierung zurücklesen“.
+Ako treba očitati sve podatke centrale, Ringkonfiguration se dodatno mora očitati i spremiti preko PeripherieAssistant-a.
+
+===== STRANICA 81 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5. Peripherie Assistant
+PeripherieAssistant služi za uspostavljanje veze s centralom i konfiguriranje inteligentne periferije, odnosno svih Ringteilnehmera.
+Osim definiranja pojedinih funkcija, primjerice kod Steuerungen, glavna je zadaća dodijeliti Ringteilnehmerima Elementnummern koje su prethodno aktivirane/izrađene u Configuratoru.
+Aplikacija također sadrži korisne funkcije za Inbetriebnahme, Wartung i Fehlersuche.
+Peripherie Assistant pokreće se preko prozora „Anwendungen“.
+
+5.1 Parametrierung des Rings - 6. korak programiranja
+„Verbindungsart“: kao i u Loaderu, može se birati USB ili TCP/IP.
+
+5.2 Hauptfenster
+Glavni prozor sadrži Verbindungsstatusansicht i Baumansicht fizičke konfiguracije Ringa.
+
+===== STRANICA 82 / 119 =====
+82 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+„Ansicht“ - izbor prikaza odnosno stanja memorije:
+- „Arbeitsansicht“: u pravilu prikazuje trenutačni fizički Ringausbau. Samo se u Arbeitsansicht mogu očitavati i programirati Ringovi.
+- „EEProm - Ansicht“: prikazuje stanje iz EEPROM-a centrale, dakle kako su Ringovi stvarno programirani i kako trenutačno rade. Ovaj prikaz može pomoći kod Störunga na Ringu, posebice ako Ring nije moguće pravilno očitati.
+- „Dateiansicht“: prikazuje spremljeni Ringausbau.
+- „Arbeits- & EEProm - Ansicht“: kombinirani prikaz za prepoznavanje razlika.
+- „Arbeits- & Dateiansicht“: kombinirani prikaz Arbeitsansicht i Dateiansicht.
+
+5.2.1 Hauptfenster: Ansicht auf DCU-Ebene
+1. prikaz na DCU razini i Baumansicht Ringausbaua.
+2. Listenansicht Ringausbaua i odgovarajućih editora, npr. AbgleichAssistant.
+3. „Themenpanel“: prikazuje Fehlermeldungen, Hinweise i informacije o trenutačno izvršavanim akcijama.
+
+===== STRANICA 83 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Symbollegende der Toolbar - kratki pregled gumba:
+„Wertebereich prüfen“: provjerava parametriranje Ringova na ispravne Element- i Meldernummern.
+„Wertebereichsprüfung“: uključuje/isključuje provjeru dopuštenih raspona u editorima Elementnummern; grün = ein, rot = aus.
+„Automatische Zuordnung“: automatski dodjeljuje Elementnummern sudionicima.
+„Synchronisierung“: sinkronizira Ringove koji su premješteni u Configuratoru.
+„Ringlängenberechnung“: otvara pomoćnika za izračun duljine Ringa; dostupan na Ringebene u Baumansicht.
+„Designeditor“: otvara Designeditor. Dostupan je samo offline kada je u Baumansicht odabran Ring na DAI2, DXI2 ili LEE24. Omogućuje offline prilagodbu Ringa.
+„Teilnehmerdaten“: pokreće pomoćnika za očitavanje Teilnehmerdaten. Dostupan na svim elementima Baumansicht osim LEE24 i DTI2.
+„Priordaten“: otvara pomoćnika za očitavanje Priordaten, također na svim elementima osim LEE24 i DTI2.
+„AbgleichAssistant“: pokreće AbgleichAssistant na razinama sklopova i elemenata koji podržavaju tu funkciju.
+„RevisionsAssistant“: pokreće pomoćnika za Revision, dostupan na Ringebene.
+„Überwachter Hochlauf (Automatik)“: pokreće automatski nadzirani start, dostupan na Ringebene.
+„Ring rücksetzen“: resetira Ring, dostupno na Ringebene.
+„Ringe exportieren“: izvozi sve Ringdaten u vanjsku datoteku.
+„Adresse übernehmen“: ručno ponovno adresiranje Meldera.
+„Zentrale neu starten“: ponovno pokretanje centrale.
+„Programmieren“: zapisuje Ringdaten u EEPROM; dostupno na SCU- i DCU-Ebene.
+„Ausbau lesen“: očitava Ringausbau; dostupno na Ring-, Modul-, SCU- i DCU-Ebene.
+„Akustik ab“: potvrđuje/utišava Bedienfeldsummer.
+„Verbinden“: uspostavlja ili prekida vezu sa sustavom; grün = verbunden, gelb = nicht verbunden.
+
+===== STRANICA 84 / 119 =====
+84 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5.3 Verbindungsaufbau
+1. Odaberite „Verbindungsbutton“. Nakon toga Peripherie Assistant uspostavlja vezu sa sustavom.
+2. „Verbindungsart“: odaberite vrstu veze kojom se želite povezati s Integralsystemom.
+3. „Verbindungsparameter / Aktuell verbundene Zentralen“: prozor prikazuje vrstu veze i centrale s kojima je Peripherie Assistant povezan.
+4. „Verbindungsansicht“: prikaz stanja veze.
+
+===== STRANICA 85 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5.4 Ring einlesen
+„Arbeitsansicht“ mora biti odabrana.
+Za očitavanje svih Ringova desnom tipkom kliknite DCU. U Popupmenüu odaberite „Ausbau lesen“ ili „Ausbau mit Seriennummern lesen“.
+Ako su Seriennummern potrebni za Ringparametrierung, preporučuje se odmah odabrati „Ausbau mit Seriennummern lesen“ kako bi se serijski brojevi svih Ringteilnehmera očitali zajedno s konfiguracijom.
+Nakon odabira „Ausbau lesen / Ausbau mit Seriennummern lesen“ simbolika se mijenja: crvena točka označava da Peripherie Assistant trenutačno učitava podatke. Dodatno se prikazuju Fortschrittsbalken i informacije u Themenpanelu.
+Nakon uspješnog očitavanja svi Teilnehmer prikazuju se u Baumansicht.
+
+===== STRANICA 86 / 119 =====
+86 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5.5 Ring parametrieren
+„Arbeitsansicht“ mora biti odabrana.
+„Editview“: ovisno o Teilnehmeru odabranom u Listenansicht, ovdje se individualno podešavaju parametri.
+„Listview“: prikazuje sve Teilnehmer. Za razliku od Baumansicht, odmah prikazuje sve informacije koje modul pruža, npr. Seriennummern Ringteilnehmera, Parametereinstellungen itd.
+Ovisno o odabiru u Baumansicht, Teilnehmer se u Listenansicht „Hardware“ prikazuju ovako:
+- DCU: svi Teilnehmer svih centrala.
+- SCU: svi Teilnehmer odabrane centrale.
+- DAI2/DXI2: svi Teilnehmer odabranog sklopa.
+- Ring: svi Teilnehmer odabranog Ringa.
+
+===== STRANICA 87 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5.5.1 Ringteilnehmer parametrieren
+„Arbeitsansicht“ mora biti odabrana.
+Preporučeni postupak:
+1. Radi najveće preglednosti klikom na „Ring xxx“ prijeđite u tzv. Ringansicht. Time je i Workflow optimiziran jer se nakon potvrde automatski prelazi na sljedećeg Teilnehmera.
+2. U Listview-u odaberite prvog Teilnehmera.
+3. Postavite Elementeinstellungen, npr. Steuerungsnummer, Eingangsnummer, Gruppennummer itd.
+4. Potvrdite izmjenu; program automatski prelazi na sljedećeg Teilnehmera.
+
+===== STRANICA 88 / 119 =====
+88 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5.6 Ringdatei speichern
+„Speichern“: PeripherieAssistant nema zaseban simbol diskete. Opcija spremanja nalazi se pod izbornikom „Ansicht“, jer se sprema prikaz: „Arbeitsansicht in Dateiansicht ablegen“.
+Time se Arbeitsansicht prenosi u Dateiansicht i sprema u Arbeitsordner (WorkDir).
+Savjet: Arbeitsansicht treba uvijek spremiti prije prijenosa u centralu.
+„Projekt speichern“: da bi se spremio cijeli Container, koji sada sadrži i Dateiansicht PeripherieAssistan-ta, koristi se simbol diskete ili „Projekt > Speichern“, kao što je opisano u odjeljku 2.4.
+
+===== STRANICA 89 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5.7 Ringdatei in Zentrale übertragen
+Kada su svi Teilnehmer parametrirani, preko naredbe „Programmieren“ podaci se mogu zapisati u EEPROM BMZ-a.
+Prije samog zapisivanja Peripherie Assistant automatski provjerava Wertebereiche dodijeljenih Elementnummern. Ako su, primjerice zbog isključene „Wertebereichsprüfung“, isti Elementnummern dodijeljeni više puta, programiranje nije moguće dok se pogreške ne isprave.
+„Programmieren“ se pokreće iz Baumansicht na razini SCU ili DCU, odnosno preko izbornika „Aktion“.
+Važno: ako se programira na DCU-Ebene, centrala automatski izvodi Neustart. Ako se programira na SCU-Ebene, „Integral neu starten“ treba naknadno ručno pokrenuti. Tek nakon Neustarta centrala preuzima programirane informacije.
+Preporučuje se programirati na DCU-Ebene.
+Nakon odabira „Programmieren“ u Baumansicht se prikazuje crvena točka kao oznaka da Peripherie Assistant programira podatke. Tijekom programiranja treperi i prikaz u Themenpanelu. Nakon uspješnog programiranja sustav se ponovno pokreće, a PeripherieAssistant nakon vremena prikazanog u Themenpanelu ponovno uspostavlja vezu.
+
+===== STRANICA 90 / 119 =====
+90 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5.8 Ring Adressen übernehmen
+Nakon Neustarta centrala automatski adresira sve Ringteilnehmer: svakom Teilnehmeru na Ringu upisuje se jednoznačna Map-Adresse u EEPROM. Ringstörung se automatski resetira.
+Störungen pojedinih Teilnehmera koje se još prikazuju na Bedienfeldu treba samo potvrditi tipkom „Anlage/Alarm Rücksetzen“, od Bedienebene 2.
+Za kontrolu se Ringdaten mogu ponovno očitati. Svi Teilnehmer tada se prikazuju bez greške. Sustav je spreman za rad.
+
+5.8.1 Ring Adressen „manuell“ übernehmen
+Primjer nakon zamjene Teilnehmera istim tipom:
+Display centrale prikazuje Störung, npr. „Störung Ring 101“. Tipkom „Zusatzinfo“ dobivaju se detalji, npr. „Ringleitung xxx Konfiguration Störung Teilnehmeradresse“. To znači da još treba izvršiti Teilnehmeradressierung.
+U Baumansicht odaberite „Ausbau Lesen“.
+
+===== STRANICA 91 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nakon očitavanja Ringa Teilnehmeri se u Baumansicht prikazuju posebnim simbolom kada očitani Ringausbau ne odgovara programiranim podacima u EEPROM-u, primjerice Teilnehmeradressen.
+2. Prikaz ponovno postavite na „Arbeitsansicht“.
+3. Odaberite naredbu „Adressen übernehmen“. Centrala automatski adresira Ringteilnehmere i svakom zapisuje jednoznačnu Map-Adresse u EEPROM. Nakon te naredbe Ring Störung se automatski resetira.
+4. Störungen Meldera su memorirane i ne resetiraju se same. Potrebno ih je potvrditi tipkom „Anlage/Alarm Rücksetzen“ na Bedienfeldu.
+Naredba „Adressen übernehmen“ može se izvršiti i izravno na Bedienfeldu: odaberite aktivnu smetnju „Ringleitung xxx Konfiguration Störung Teilnehmeradresse“, pritisnite Enter, zatim „Weitere Befehle“ > „Adressen übernehmen“ > Enter.
+
+===== STRANICA 92 / 119 =====
+92 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Ako se Ringausbau ponovno očita, crvene oznake uz Teilnehmer više nisu prisutne. Ring je funkcionalan.
+
+5.9 Ring erweitern / Ringteilnehmer nachrüsten
+Polazi se od BMZ-a s postojećim Ringausbauom. Primjer: treba naknadno ugraditi dva Meldera između Teilnehmera 5 i 6.
+Postupak:
+- „Ausbau mit Seriennummern lesen“.
+- „Ansicht speichern“.
+- fizički umetnuti Melder u Ringverlauf.
+- pričekati da Ring-Hochlauf završi.
+- ponovno „Ausbau mit Seriennummern lesen“.
+- novi Melderi bit će prepoznati, a parametriranje ostalih elemenata ostaje sačuvano.
+
+===== STRANICA 93 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nastavak 5.9:
+- Parametrirajte umetnute Melder i zatim programirajte sustav.
+- Nakon Neustarta uspostavite vezu s PeripherieAssistant-om i odaberite „Ausbau mit Seriennummern lesen“.
+- Spremite „Ansicht“.
+- Po potrebi resetirajte Störungen koje su još aktivne na BMZ-u.
+Novi Melderi sada su uspješno dodani u Ring.
+
+===== STRANICA 94 / 119 =====
+94 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+5.10 Ringteilnehmer an unterschiedlichen Stellen im Ring nachrüsten
+Polazi se od postojećeg Ringausbaua. Treba naknadno dodati tri Teilnehmera, po jedan između pozicija 1+2, 5+6 i 7+8.
+Schritt 1:
+- „Ausbau mit Seriennummern lesen“.
+Schritt 2:
+- Desnim klikom odaberite odgovarajući Ring i izvršite „Ringe exportieren“. Trenutačni Ringausbau uključujući Seriennummern sprema se u vanjsku datoteku. Preporučuje se, ako je moguće, izvesti sve Ringdaten na DCU-Ebene.
+
+===== STRANICA 95 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Schritt 3:
+- Fizički umetnite nove Teilnehmer u Ringverlauf i pričekajte da Ring-Hochlauf završi.
+Schritt 4:
+- „Ausbau mit Seriennummern lesen“. Novi Teilnehmeri se prepoznaju, ali Teilnehmeri koji se nalaze između novoumetnutih elemenata izgubili su svoju Parametrierung. Zato su označeni odgovarajućim simbolom. Centrala javlja Störung „Konfiguration Störung Ausbau“.
+Schritt 5:
+- Desnim klikom odaberite odgovarajući Ring i izvršite „Ringe importieren“. Time se može uvesti prethodno spremljena Ringdatei.
+Schritt 6:
+- Otvorite odabranu Ringdatei i u dijaloškom prozoru odaberite „über Seriennummern importieren“.
+
+===== STRANICA 96 / 119 =====
+96 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Nakon uvoza Ringa svi poznati Teilnehmeri ponovno se prikazuju kao parametrirani. Novododani Teilnehmeri prepoznaju se upravo po tome što još nisu parametrirani i posebno su označeni. Njih sada treba parametrirati.
+Zatim se aktualni Ringausbau ponovno prenosi u centralu. Time su novi Melderi dodani.
+Pažnja: ako su na Ringu ranije postojali Teilnehmeri koji još nisu imali funkciju i nikada nisu bili parametrirani, i oni će se prikazati kao „unparametriert“.
+
+===== STRANICA 97 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5.11 Ringe exportieren und importieren
+Od Software 8 Ringdaten se mogu jednostavno izvoziti i kasnije ponovno uvoziti. Funkcija je korisna pri premještanju jednog ili više Ringova, uključujući premještanje između različitih Baugruppen, ili za privremeno sigurnosno spremanje Ringova tijekom izmjena.
+Ringe se mogu izvoziti i uvoziti i u Arbeitsansicht i u Dateiansicht.
+Preduvjet: Ring je upravo očitan ili je u projektu dostupna Dateiansicht. Onlineverbindung nije potrebna.
+1. Za istodobni izvoz svih Ringova svih Teilzentralen, što se preporučuje, u Baumstruktur postavite se na DCU. Ako želite izvesti samo jedan Ring, označite taj Ring.
+2. Desnim klikom na DCU ili Ring otvorite izborni izbornik i kliknite „Ringe exportieren“. Alternativno se može koristiti odgovarajući Icon u Menüleiste.
+3. Izvoznu datoteku *.b5lpd spremite pod jednoznačnim nazivom u pripadajući Projektordner.
+4-5. Primjer: Ring 201 treba preuzeti Teilnehmer od Ring 101. U Baumansicht označite Ring 201, desnim klikom otvorite izbornik i odaberite „Ringe importieren“.
+
+===== STRANICA 98 / 119 =====
+98 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6. „Importdatei“: učitajte upravo spremljenu Exportdatei.
+7. „Auswahl“: prikazuju se Ringovi sadržani u izvoznoj datoteci. Ako je na DCU izvezeno više Ringova, svi se nude za uvoz. U primjeru označite Ring 101 i potvrdite s „Übernehmen“.
+9. „Ergebnis“: Ring 101 i Ring 201 sada imaju iste podatke i identične Teilnehmere. Ring 101 bi se po potrebi morao ponovno parametrirati ili na isti način prepisati uvozom.
+Spremite izmijenjenu Ansicht/Parametrierung preko izbornika „Ansicht“.
+Na kraju se povežite sa sustavom i odmah kliknite „Programmieren“, ne „Auslesen“.
+
+===== STRANICA 99 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+5.12 Ring-Hardwareansicht und Ringtopologie archivieren
+Slično kao u Configuratoru, i u PeripherieAssistant-u dvije vrste prikaza mogu se ispisati za arhivu ili spremiti kao PDF u Projektanhänge.
+Za to postoje dva gumba. Klikom na odgovarajući simbol nude se dvije mogućnosti: „PDF“ ili „Drucken“.
+Ako se odabere „PDF“, trenutačni prikaz sprema se kao PDF datoteka u „Anhänge“. Spremanje se potvrđuje i Statusmeldungom.
+
+===== STRANICA 100 / 119 =====
+100 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Na stranici su prikazana dva primjera datoteka koje nastaju kao rezultat arhiviranja Ring-Hardwareansicht i Ringtopologie opisanim postupkom sa stranice 99.
+
+===== STRANICA 101 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6. Assistenten
+6.1 Assistenten für die Ringperipherie
+Na Ringebene u PeripherieAssistant-u dostupni su dodatni pomoćnici. Većinu je moguće otvoriti samo kada postoji veza s Teilzentrale odnosno Teilzentralenverbundom. Iznimka je „Designeditor“, koji je dostupan samo offline, te Synchronisationsassistent, koji je dostupan samo u „Arbeits- & Dateiansicht“.
+Najčešće korišteni pomoćnici:
+„Ringlängenberechnung“: otvara pomoćnika za izračun duljine Ringa; dostupan na Ringebene u Baumansicht.
+„Designeditor“: otvara Designeditor. Dostupan je samo kada je veza offline i kada je u Baumansicht odabran Ring na DAI2, DXI2 ili LEE24.
+„Teilnehmerdaten“: pokreće pomoćnika za očitavanje Teilnehmerdaten; dostupan na svim elementima Baumansicht osim LEE24 i DTI2.
+„Priordaten“: otvara pomoćnika za očitavanje Priordaten, također na svim elementima osim LEE24 i DTI2.
+„AbgleichAssistant“: pokreće AbgleichAssistant na razinama sklopova i elemenata koji podržavaju funkciju.
+„RevisionsAssistant“: pokreće pomoćnika za Revision; dostupan na Ringebene.
+„Überwachter Hochlauf (Automatik)“: pokreće automatski nadzirani start, dostupan na Ringebene.
+„Überwachter Hochlauf (Einzelschritt)“: pokreće nadzirani start korak po korak, dostupan na Ringebene.
+
+===== STRANICA 102 / 119 =====
+102 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.1.1 AbgleichAssistant
+Prema EN 54-13 sustavi dojave požara moraju nadzirati postupne kratke spojeve ili prekide. U normalnom radu sustav taj nadzor izvodi automatski.
+Standardno je Abgleich postavljen na „automatisch“. Pri svakom Ringhochlaufu ponovno se određuju vrijednosti za Ring i sve module.
+Kod „manueller Abgleich“ vrijednosti se najprije moraju ručno očitati, a zatim se spremaju u centralu. To se koristi kod priključenih elemenata čiji otpor ovisi o temperaturi, npr. zavojnice, ventili sustava gašenja i sl.
+U editoru se mogu odabrati:
+- „Kein Abgleich“
+- „Automatischer Abgleich“
+- „Manueller Abgleich“.
+Kod ručnog usklađivanja očitava se Referenzwert Teilnehmera. „Filter“ određuje što se prikazuje u Listview-u.
+Sklopovi koji se mogu usklađivati uključuju LEE23 od HW 1.1, LEE24 od HW 1.1, IM8 od HW 2.0, MTI8 od HW 4.0, B4-EIO od HW 2.0, B6-EIO, B5-OM8, B6-LXI2, B5-/B6/B7/B8-BAF, B5-DXI2 te sve ulaze i izlaze na BX modulima. Ako priključeni hardver ne podržava Abgleich, element se ne prikazuje.
+Postupak za „manueller Abgleich“:
+1. Postavite na „manuellen Abgleich“.
+2. Kliknite „Lesen“ kako biste odredili stvarni Referenzwert. Vrijednost se prikazuje u „Ist-Referenzwert“, jedinica je Digits.
+3. Kliknite „Ist-Referenzwert übernehmen“ kako biste tu vrijednost prenijeli u „Soll-Referenzwert“.
+
+===== STRANICA 103 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nastavak 6.1.1 AbgleichAssistant
+4. „Empfindlichkeit“ određuje osjetljivost prepoznavanja smetnje:
+- „Sehr empfindlich“: +/- 6 %
+- „Empfindlich“: +/- 12,5 % (EN54-13)
+- „Normal“: +/- 25 %
+- „Unempfindlich“: +/- 50 %.
+5. „Filter“ omogućuje prikaz Teilnehmera prema vrsti Abgleicha:
+- „alles“
+- „manuell und automatisch“
+- „manuell“
+- „nicht abgeglichen“
+- „automatisch“.
+6. „Filter Aktualisieren“ osvježava prikaz nakon izmjene zapisa.
+
+6.1.2 RevisionsAssistant
+Ovim editorom izvode se Revisionen. Može se otvoriti samo na Ringebene, uključujući desni klik na odabrani Ring. Ako PeripherieAssistant nije povezan s centralom, Revision se ne može pokrenuti.
+Čim se RevisionsAssistant otvori, odabrani Ring prelazi u Revision. Pažnja: svi elementi tada više nisu sposobni prijaviti alarm. Ring izlazi iz Revisionsmodusa tek zatvaranjem RevisionsAssistant-a.
+Listview se može sortirati. Primjerice, klikom na „Letzte Auslösung“ popis se sortira prema zadnjem aktiviranju i vidi se redoslijed kojim su Teilnehmeri reagirali.
+Za pokretanje Revisiona odabranog Ringa otvorite RevisionsAssistant za taj Ring.
+1-2. Prikaz u Listview-u može se individualno prilagoditi premještanjem stupaca i sortiranjem.
+
+===== STRANICA 104 / 119 =====
+104 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+Postavke „Revision“:
+„Ungeführte Revision“: Teilnehmeri se mogu provjeravati bilo kojim redoslijedom.
+„Geführte Revision“: program određuje redoslijed. Lista se obrađuje odozgo prema dolje. Treperenje LED simbola pokazuje koji Teilnehmer treba trenutačno provjeriti; ako Teilnehmer ima LED, treperi i ona.
+„Umleitung erlaubt“: kada je flag postavljen, dopušteno je odstupiti od zadanog redoslijeda, npr. zbog zaključane prostorije. Provjerom sljedećeg Teilnehmera redoslijed se nastavlja u skladu s tim.
+„Stille Revision“: kod tihog pregleda, primjerice, ne aktivira se Parallelindikator (MEA), a kod Akustikmeldera ne aktivira se akustika ako je upravljana preko PI izlaza.
+
+„Teilnehmer Löschen“ - određuje što se uklanja tipkom „Löschen“:
+- „Alle“: svi Teilnehmeri
+- „Auswahl“: svi označeni Teilnehmeri
+- „Melder“: svi Melderi
+- „Eingänge“: svi ulazi.
+„Reihenfolge laden/speichern“: redoslijed Teilnehmera u Listview-u može se mijenjati Drag & Dropom. Korisnički redoslijed može se spremiti i ponovno učitati za kasniju Revision, npr. za 3. kvartal iduće godine. Tako se mogu pripremiti različiti redoslijedi za kvartalna održavanja.
+„Revision starten“: pokreće Revision. Pažnja: ova Revision ne sprema se u Ereignisspeicher jer Ringom trenutačno upravlja PC. Zato se Revision nakon završetka obavezno treba spremiti, vidi „Report speichern“.
+„Revision beenden“: završava postupak Revisiona, ali Ring i dalje ostaje u Revisionu. Tek zatvaranjem RevisionsAssistant-a Ring se vraća centrali i izlazi iz Revisionsmodusa.
+„Rücksetzen“: već provjerene Teilnehmere vraća u status „zu prüfen“.
+„Report speichern“: sprema Revision u WorkDir. Datoteka se zatim može otvoriti i analizirati u IntegralAnalysis. Ako se zadrži predložena mapa, podaci se pri zatvaranju projekta spremaju u projekt.
+Napomena: pri Revisionu preko RevisionsAssistant-a „Brand“-LED na Bedienfeldu se ne aktivira čak ni ako je odgovarajući flag uključen u postavkama Bedienfelda.
+
+===== STRANICA 105 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6.1.2.1 Melder gezielt ansteuern
+Ansteuerung einer Melder LED - ciljano uključivanje LED-a detektora
+Funkcija je korisna kada nije poznato gdje se traženi Melder fizički nalazi, a Ring možda još nije konfiguriran.
+Postupak:
+- U PeripherieAssistant-u uspostavite vezu i izvršite „Ausbau lesen“. Teilnehmeri još nisu parametrirani i nemaju adresu.
+- Na odgovarajućem Ringu pokrenite automatsku dodjelu: desni klik na Ring > „Automatisches Zuordnen“.
+- Programirajte odgovarajući Ring.
+- Pokrenite RevisionsAssistant i desnim klikom na željeni Melder uključite LED.
+
+===== STRANICA 106 / 119 =====
+106 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.1.2.2 Separate Ansteuerung der Melderakustik
+Ansteuerung der Melderakustik - ciljano upravljanje akustikom detektora
+Funkcija se koristi kada treba zasebno provjeriti zvuk i/ili govornu reprodukciju na MTD 533X-SPCT ili MTD 533X-SCT, bez aktiviranja cijelog Alarmierungsbereicha.
+Postupak:
+- U PeripherieAssistant-u uspostavite vezu i izvršite „Ausbau lesen“; Ring je već konfiguriran.
+- Odaberite odgovarajući Ring i pokrenite RevisionsAssistant.
+- U RevisionsAssistant-u desnim klikom na željeni Melder odaberite „Akustik einschalten“.
+- Odaberite željeni „Akustikmakro“.
+- Nakon testa deaktivirajte akustiku.
+Napomena: upravljanje Melderakustik preko RevisionsAssistant-a radi samo kada se akustika Meldera aktivira preko Parallelindikatorausganga (PI).
+Ako se Melderakustik aktivira preko Steuerunga, uključivanje je moguće samo postavljanjem odgovarajuće Steuerung. Vrsta upravljanja definira se u Konfiguration.
+
+===== STRANICA 107 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6.1.3 Teilnehmerdaten auslesen
+Ovim se pomoćnikom mogu očitati Teilnehmerdaten kao što su Verschmutzung, Alter, Temperatur, Rauchlevel itd.
+Kada je Teilnehmer uspješno očitan, u stupcu „Ergebnis“ prikazuje se zelena kvačica. Očitani podaci mogu se spremiti i otvoriti u IntegralAnalysis-u radi analize i ispisa.
+Pomoćnik se može otvoriti sa svih razina Treeview-a.
+1. „Einzeln lesen“: označite željeni Teilnehmer i kliknite gumb.
+2. „Alle lesen“: očitavaju se svi postojeći Teilnehmeri.
+3. „Parametersatz“: odabire se skup parametara koji treba očitati. Kada je odabran određeni Teilnehmer, njegove očitane informacije prikazuju se u zasebnom popisu i mogu se analizirati u IntegralAnalysis-u.
+„Wartung“: očitavaju se servisni podaci, primjerice Betriebszeit, Seriennummer, Nachführungswert.
+4-5. Na raspolaganju su mogućnosti spremanja datoteke izravno ili nakon završetka očitavanja.
+
+===== STRANICA 108 / 119 =====
+108 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.1.4 Priordaten
+Ovim se pomoćnikom očitavaju Priordaten. Oni prikazuju aktualno stanje pojedinih Teilnehmera odnosno protokole koje Teilnehmer trenutačno šalje. Pomoćnik se može otvoriti sa svih razina Treeview-a.
+1. „Ansicht“: interna stanja Teilnehmera prikazuju se crvenim LED simbolima. Upaljeni LED simbol znači „aktiver Zustand“, ugašeni znači „inaktiver Zustand“.
+2. „Aktualisieren“: osvježava status označenog Teilnehmera.
+3. „Zyklisch aktualisieren“: pokreće periodičko osvježavanje. Priordaten se osvježavaju prema zadanom Intervallu. Tijekom cikličkog osvježavanja nije moguće prijeći na drugi Teilnehmer.
+4. „Stopp aktualisieren“: zaustavlja cikličko osvježavanje.
+5. „Intervall (Sekunden)“: interval se može postaviti od 5 do 30 sekundi.
+
+===== STRANICA 109 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6.1.5 Designeditor
+Designeditor omogućuje uređivanje Ringausbaua. Za otvaranje veza sa sustavom mora biti prekinuta, a mora biti odabrana Arbeitsansicht ili Dateiansicht. Dostupan je na Ringebene i mora postojati Ring koji je već definiran u Konfiguration.
+U Designeditoru se ne mogu dodavati SCU, Baugruppen ni Ringovi; oni se moraju prethodno izraditi u Konfiguration. Mogu se dodavati novi Teilnehmeri, brisati postojeći i mijenjati njihove pozicije.
+1. „Verfügbare Elemente“: odabir elementa koji treba dodati.
+2. „Anzahl“: broj prethodno odabranih elemenata.
+3. „Davor/Danach einfügen“: umeće novi element iznad ili ispod označene pozicije.
+4. „Löschen“: briše označeni element.
+5. „Hinauf/Hinunter“: pomiče označeni element za jedno mjesto gore ili dolje.
+Za prijenos ručno konfiguriranog Ringa u centralu Designeditor se mora zatvoriti. Zatim se može uspostaviti veza i programirati centrala. Ako je Designeditor korišten u Dateiansicht, Dateiansicht najprije treba učitati u Arbeitsansicht i prebaciti se u Arbeitsansicht.
+
+===== STRANICA 110 / 119 =====
+110 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.1.6 Ringlängenberechnung
+Ovim se pomoćnikom provjerava jesu li dopuštene granice sustava, primjerice Ringlänge ili Melderäquivalenz, odnosno najveći broj Teilnehmera na Ringu, u dopuštenom području. Može se otvoriti i bez aktivne veze sa sustavom.
+Ringlängenberechnung treba napraviti prije svakog prvog puštanja u rad i nakon svake izmjene Ringa.
+1. „Listview“: prikazuje sve dostupne Teilnehmere. Na Ringu se nalaze samo oni za koje je u stupcu „Anzahl am Ring“ upisan broj. Stupac „Release“ prikazuje verziju softvera modula, a „Funktion“ opisuje funkciju Teilnehmera.
+2. „Leitungsdimension“: unesite odgovarajući presjek/dimenziju vodova Ring leitung.
+3. „Alarmstrom“: definira rezerviranu struju za aktiviranje Melder-LED-ova i Parallelindikatorausgänge. Centrala zbraja struju potrebnu za aktivirane LED-ove odnosno paralelne indikatore. Kada se dosegne zadani Alarmstrom, dodatni Melder-LED ili Parallelindikator više se ne aktivira.
+Ako se Alarmstrom promijeni, treba odabrati „Werte in Config übernehmen“ i podatke prenijeti u centralu programiranjem preko DCU-Ebene.
+Dopušteni raspon za B5-DXI2 je 7-80 mA uz ISum najviše 170 mA. Za B3-DAI2 raspon je 7-70 mA uz ISum najviše 90 mA.
+Treba provjeriti i odgovarajuće postavke Parallelindikatora kod elemenata na X-Line ili Integral Loop-u. Promijenjene vrijednosti izravno utječu na dopuštenu Leitungslänge odnosno najveći Leitungswiderstand.
+
+===== STRANICA 111 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nastavak 6.1.6 Ringlängenberechnung
+4. „Leitungswiderstand“: za kontrolu pri prvom puštanju u rad i proširenjima Ringlänge se može provjeriti unosom izmjerenog otpora. Preporučuje se ovu provjeru uvijek izvršiti. Vrijednost se sprema u centralu. Mjerenje se radi preko GND voda jer je GND spojen bez prekida, primjerice na DXI2 stezaljkama C1-C2. Ring prethodno treba odvojiti od centrale.
+5. „BA-SOL im High Modus“: BA-SOL ima prekidač za High način rada. U Ringlängenberechnung označava se u kojem se načinu BA-SOL treba uzeti u izračun, što mijenja vrijednosti struje.
+6. „Erneut berechnen“: ponavlja izračun Ringlänge.
+7. „Ergebnis“ prikazuje:
+„Modus“ - način rada Ring leitung: „X-Line für maximale Leitungslänge“, „X-Line HighPower für maximale Modulanzahl“ ili „DAI für kompatiblen Modus“.
+„ISum“ - ukupna struja Teilnehmera, a u zagradi najveća dopuštena vrijednost:
+- 170 mA za DXI2
+- 140 mA za DXI2 s modulima, jer se 30 mA rezervira za punjenje modula
+- 90 mA za DAI2
+- 60 mA za DAI2 s modulima, također uz 30 mA rezervacije.
+Kod Stichbetrieb-a vrijedi polovica navedenih vrijednosti.
+„Lmax“ - najveća dopuštena duljina voda; u zagradi je tipična vrijednost.
+„RccMax“ - najveći dopušteni unutarnji otpor. Mjeri se Ohmmetrom na „C-Ader (GND)“ i ne smije biti prekoračen; u zagradi je tipična najveća vrijednost.
+„Meq“ - Melderäquivalenz, odnosno ukupni broj logičkih detektora; u zagradi je najveća moguća vrijednost. Budući da moduli troše više struje od detektora, njihov dodatni zahtjev izražava se kroz Melderäquivalenz. Time se sprječava prevelik broj modula na Ringu. Odgovarajuća tablica nalazi se u Onboard-Hilfe preko F1.
+Napomena: prije prijenosa konfigurirane Ringdatei u centralu Ringlängenberechnung se automatski izvodi u pozadini. Ako je prekoračena neka dopuštena vrijednost, prikazuje se odgovarajuća Fehlermeldung.
+
+===== STRANICA 112 / 119 =====
+112 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.1.7 Überwachter Hochlauf (Automatik)
+Ovim se pomoćnikom pokreće automatski nadzirani Ring-Hochlauf. Dostupan je samo na Ringebene i služi za kontrolu pri prvom puštanju u rad, ali i za preciznije lociranje smetnje na Ringu.
+Nakon odabira pomoćnika Hochlauf se pokreće; može proći do 30 sekundi prije nego se elementi pojave u Listview-u.
+„Überwachter Hochlauf“ može istodobno raditi na četiri Ringa. Za pokretanje drugog potrebno je ponovno prijeći na Listview, TAB „Hardware“, kako bi naredba „Überwachter Hochlauf“ bila dostupna i za sljedeći Ring.
+Ako se otkrije greška, Hochlauf se zaustavlja i, ako postoji, uključuje se LED posljednjeg ispravno prepoznatog elementa.
+Savjet: radi prepoznavanja mogućih Doppelmodulationen, kada se više Teilnehmera javlja istodobno, loše postavljenog detektora u podnožju ili drugih smetnji na Ringu, preporučuje se ovaj pomoćnik koristiti kao prvi korak pri očitavanju Ringa.
+1. „Listview“: prikazuje već prepoznate Teilnehmere. Ako nema greške, u stupcu „Fehler“ piše „ok“.
+2. „Priordaten“: prikazuje aktualne Priordaten odabranog elementa; vidi 6.1.4.
+3. „Ausgabe speichern“: sprema izlaz Hochlaufa. Ako se zadrži predloženi put, podaci se mogu spremiti unutar projekta.
+
+===== STRANICA 113 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6.1.8 Überwachter Hochlauf (Einzelschritt)
+Ovaj pomoćnik izvodi nadzirani Hochlauf korak po korak. Može se koristiti samo na Ringebene, za kontrolu pri prvom puštanju u rad ili za precizno lociranje Störunga.
+Nakon pokretanja može proći do 30 sekundi prije nego se elementi pojave u Listview-u.
+1. „Listview“: prikazuje prepoznate Teilnehmere. Ako nema greške, u stupcu „Fehler“ prikazuje se „ok“.
+2. „Priordaten/Ausgabe speichern“: može se očitati i prikazati aktualne Priordaten odabranog elementa, vidi 6.1.4, te spremiti izlaz Hochlaufa. Ako se zadrži predloženi put, podaci se mogu spremiti u projekt. Oba gumba postaju aktivna tek nakon potpunog Hochlaufa.
+3. „Nächster“: provjerava sljedećeg Teilnehmera. Ako je komunikacija uspješna, LED se aktivira i ostaje uključena do sljedećeg pritiska „Nächster“.
+
+===== STRANICA 114 / 119 =====
+114 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.2 ServiceAssistant
+ServiceAssistant se otvara preko „Anwendungen“. Da bi se pomoćnici mogli koristiti, mora postojati veza s centralom.
+Na stranici je prikazan pregled Assistenten/Funktionen, koje su većinom samorazumljive.
+Najčešće korišteni pomoćnici ukratko su opisani na sljedećim stranicama. Dodatne informacije dostupne su u Onboard-Hilfe tipkom F1.
+
+===== STRANICA 115 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+Nakon uspostave veze s centralom preko odabira Elementtypen mogu se slati Kommandos. Funkcionalno je ServiceAssistant sličan Bedienfeldu bez Displaya, preko kojeg se jednostavno mogu izvoditi npr. Abschaltungen ili Revisionen.
+1. Odabir Assistenten preko Menüleiste ili desnim klikom na DCU.
+2. „Treeview“: pregled Anlagenausbaua u Baumansicht.
+3. „Elementtyp“: odabir vrste elementa.
+4. „Berechtigung“: postavlja ovlast s kojom se šalje naredba.
+5. „Kommando senden“: šalje odabrano Kommando sa zadanom Berechtigung.
+6. „Kommando“: određuje naredbu koja se šalje, primjerice:
+- „Abschaltung“
+- „Einschalten“
+- „Rücksetzen“
+- „auf Revision schalten“ itd.
+
+===== STRANICA 116 / 119 =====
+116 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.2.1 Meldergruppen bis zu einem Zeitpunkt abschalten
+Preko ServiceAssistant-a Meldergruppen se mogu isključiti do određenog vremena, npr. do 16:30. Unese se „Wiedereinschaltzeitpunkt“ i zatim pošalje Kommando.
+Ista naredba dostupna je i na Bedienfeldu:
+„Gruppe“ > „Nr xx“ > Enter > „Weitere Befehle“ > „AB BEGRENZT“ > „Datum/Zeit“ > Enter.
+
+6.2.2 Steuerungen sichern
+Funkcija „Steuerungen sichern“ namijenjena je servisiranju i održavanju. Sve nadzirane Steuerungen na Bx-BAF, BX-OM8 i Ringmodulen IOM prelaze u „RUHE“.
+Bistabilni releji na B3-REL10, B3-REL16, B3-REL16E te Ringmodulen REL4 i OI3 zamrzavaju se u trenutačnom stanju. Fizičko stanje Steuerungen ponovno se usklađuje s logičkim stanjem tek nakon resetiranja funkcije „Steuerungen sichern“.
+Time se mogu izvoditi logički testovi Brandfallsteuerungen ili drugih upravljanja, a funkcija dodatno štiti od nenamjernih aktiviranja tijekom servisnih radova.
+Od Bedienebene 3 funkcija je dostupna i na Bedienfeldu pod „Menü“.
+Napomena: ako je naredba uspješno izvedena i sve STEU su osigurane, ServiceAssistant prikazuje status „Steuerung gesichert“, a na BF-u se prikazuje Störung „Störung Modakt 1/16“. Ako nije sve uspješno osigurano, prikazuje se „Störung Modakt 1/15“ odnosno „Steuerungen teilweise gesichert“.
+
+===== STRANICA 117 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+U ServiceAssistant-u preko „Treeview > Steuerungen sichern“ može se odabrati šalje li se aktiviranje/deaktiviranje funkcije „Steuerungen sichern“ svim centralama na DCU razini ili samo odabranoj Teilzentrale na SCU razini.
+Ako se iz određenih razloga pojedine Steuerungen ne mogu osigurati, nakon nekoliko sekundi to se prikazuje u popisu. Nakon uspješnog izvršenja pojavljuje se status „Steuerungen gesichert“.
+Klikom na „Deaktivieren“ i nakon slanja naredbe prikazuje se „Steuerungen sind nicht gesichert“.
+
+6.2.3 Ereignisspeicher auslesen
+Integral-IP-Zentralen imaju interni Ereignisspeicher. Aktualni hardver može spremiti 10.000 događaja, a uz SD-Speicherkarte do 65.000 događaja kod MXF ili CXF kao kružnu memoriju. BX-Zentrale ima samo interni Ereignisspeicher do 10.000 događaja.
+Ereignisspeicher se može očitati i spremiti preko ServiceAssistant-a, primjerice desnim klikom na DCU, a zatim analizirati u IntegralAnalysis-u.
+
+===== STRANICA 118 / 119 =====
+118 © Hekatron 2017
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+Programiranje Integral IP centrala
+
+6.2.4 Ereignislisten - Liste: Abschaltungen
+Tijekom servisa može se dogoditi da je korisnik objekta već napravio određene Abschaltungen. Nakon servisnog zahvata ta se isključenja trebaju potpuno vratiti kako bi stanje bilo identično stanju prije servisa. Dokument napominje da se u takvoj situaciji preporučuje koristiti i „Steuerungen sichern“, vidi 6.2.2.
+Postupak:
+„Ereignisliste“ > „Abschaltungen“ > „Speichern“ > „Laden“ > „Wiederherstellen“.
+Tako nije potrebno ručno prepisivati isključenja. Dodatno se popis može ispisati ili spremiti kao PDF.
+Stupci u „Ereignislisten: Abschaltungen“:
+„Typ“: pokazuje radi li se o Meldung, Befehl ili Intern događaju, npr. Warmstart centrale.
+„Meldungsnummer“: tekući broj povećava se za jedan pri svakom događaju i vraća na 0 kod Kalt- ili Warmstarta.
+„Interner Status/Elementtyp“: prikazuje Elementtyp uključujući Subtyp, npr. Steuerung, HEKATRON Remote, Ring.
+„Elementnummer“: prikazuje puni Elementnummer, čiji oblik ovisi o Elementtypu.
+„Zustand / Befehl“: prikazuje moguća stanja i Kommandos, npr. Störung ili Aktiv.
+„Zeit“: datum i vrijeme događaja.
+„Info / Befehlsquelle“: dodatne sistemske poruke te informacija s kojeg je Bedienfelda i od kojeg korisnika izvedena radnja, npr. Feuerwehrbedienfeld 1, Benutzer: ERRICHTER.
+„Speichern“: sprema aktualni Ereignisspeicher za kasniju detaljniju analizu u IntegralAnalysis-u. Ako se zadrži predloženi put, podaci se pri zatvaranju projekta mogu spremiti u projekt.
+
+===== STRANICA 119 / 119 =====
+Ovaj dokument smije se koristiti samo u svrhu školovanja.
+Ne podliježe postupku izmjena.
+© Hekatron 2017
+Programiranje Integral IP centrala
+
+6.2.5 Datum und Uhrzeit setzen
+Ovim se pomoćnikom vrijeme može ručno postaviti ili se vrijeme računala može prenijeti u centralu.
+Dodatno je moguće sinkronizirati vrijeme s prethodno definiranim NTP-Serverom, vidi 1.7.2.
+IAC pri svakom uspostavljanju veze uspoređuje vrijeme Brandmeldezentrale i PC-a, kao što je opisano u 1.2.2.1. Ako razlika iznosi više od 5 minuta, pri povezivanju se prikazuje dijalog preko kojeg se PC-Zeit može prenijeti u Brandmeldezentrale.
