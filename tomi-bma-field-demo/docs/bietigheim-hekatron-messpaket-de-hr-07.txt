@@ -1,0 +1,201 @@
+HR: Nakon spajanja i programiranja, prije primopredaje
+i nakon promjene sučelja.
+OFFEN
+ENS Störungskontakt über Eingang /
+Extern
+auswerten,
+falls
+vorgesehen
+DE: ENS-Rückmelde-/Störkontakt zur BMA.
+HR: Povratni ili Störung kontakt iz ENS-a prema BMA. Mora biti jasno
+koji status kontakt predstavlja i kako se tekstualno prikazuje u BMZ.
+DE: Definierten ENS-Zustand nach Herstellerfreigabe erzeugen und richtigen
+BMZ-Eingang/Extern-Text prüfen.
+HR: Prema ENS dokumentaciji izazovi dopušteni status/smetnju i provjeri pravi Eingang/Extern
+element i tekst na centrali.
+DE: Bei Schnittstellen-Inbetriebnahme und nach
+Änderungen.
+HR: Kod puštanja ENS sučelja i nakon promjena.
+OFFEN
+ÜE ENS Planbezeichnu
+ng - Funktion /
+Überwachung
+prüfen
+DE: Planbezeichnete ÜE-ENS-Anbindung; reale Hardwarefunktion noch
+offen.
+HR: Planom je označena ÜE ENS veza, ali iz dostupnih dokumenata još
+nije jasno koja je stvarna hardverska funkcija i kontaktna shema.
+DE: Funktion, Überwachung und Rückmeldung nach realer ENS-/ÜE-Hardware prüfen.
+HR: Kad bude poznat stvarni uređaj, provjeri njegovu funkciju, nadzor i povratni signal prema
+originalnoj dokumentaciji.
+DE: Vor Abnahme nach Vorliegen der ENS-Unterlagen.
+HR: Prije primopredaje, nakon što dobiješ ENS
+dokumentaciju.
+OFFEN
+<PARSED TEXT FOR PAGE: 39 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 39
+11. FBF / FAT / FSD / FSE / ÜE
+Element Prüfung Soll/Hinweis Beschreibung DE/HR Prüfung DE/HR Wann DE/HR Status
+FBF / FIBS Bedienebene Ebene 7 aktiv, sonst ÜE-Prüfen ohne Funktion DE: FBF-Bedienberechtigung und ÜE-Prüffunktion.
+HR: Provjera ima li FBF odgovarajuću razinu upravljanja i rade li
+predviđene vatrogasne funkcije.
+DE: Bedienebene 7 aktivieren/prüfen; ÜE-Prüfen gemäß Projekt ausführen.
+HR: Provjeri Bedienebene 7 i izvedi ÜE-Prüfung prema projektnom postupku.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+FBF / FIBS Akustische Signale ab ALB 1 / untergeordnete ALB reagieren korrekt DE: Akustik-Abschaltung über Haupt-ALB.
+HR: Provjera centralnog isključenja svih akustičnih signala preko
+glavnog ALB-a.
+DE: Alarmierung aktivieren; FBF 'Akustische Signale ab' betätigen; Reaktion aller ALB
+dokumentieren.
+HR: Aktiviraj alarmiranje, pritisni 'Akustische Signale ab' i provjeri reakciju glavnog i podređenih
+ALB-ova.
+DE: Bei Alarmierungsabnahme / nach ALB-Änderung.
+HR: Kod primopredaje alarmiranja i nakon izmjene
+ALB-a.
+OFFEN
+FBF / FIBS BMZ Rückstellen Anlage / Alarmierung korrekt rücksetzen DE: Zentralenrückstellung und Alarmierungs-Rücksetzen.
+HR: Provjera da se nakon testnog alarma centrala i alarmiranje
+pravilno resetiraju.
+DE: Testalarm auslösen; BMZ/ALB zurücksetzen; definierte Rückkehr in Normalzustand prüfen.
+HR: Izazovi testni alarm, napravi Rücksetzen i provjeri da se sustav uredno vrati u normalu.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+FAT Anzeige / Texte Alarm / Störung / Ortinfo korrekt DE: FAT Anzeige- und Textprüfung.
+HR: Provjera da vatrogasni display pokazuje točnu MG, lokaciju i vrstu
+događaja.
+DE: Alarm und Störung erzeugen; Anzeige, MG/Ort und Texte am FAT prüfen.
+HR: Izazovi alarm i smetnju te provjeri grupu, lokaciju i tekst na FAT-u.
+DE: Bei Inbetriebnahme/Abnahme / Textänderung.
+HR: Kod puštanja, primopredaje i nakon izmjene
+tekstova.
+OFFEN
+FSD FSD Funktion Öffnung / Freigabe / Rückmeldung gemäß Projekt DE: FSD Funktion gemäß Feuerwehr-/Projektablauf.
+HR: Provjera Feuerwehr-Schlüsseldepota prema odobrenom postupku
+objekta.
+DE: Funktion nur gemäß freigegebenem Feuerwehr-/Projektablauf prüfen.
+HR: Test provodi samo prema službenom objekt/Feuerwehr postupku; ne improvizirati otvaranje ili
+aktivaciju.
+DE: Vor Abnahme mit zuständiger Stelle.
+HR: Prije primopredaje uz nadležnu osobu.
+OFFEN
+FSE Freischaltelement Auslösung und Anzeige an BMZ prüfen DE: Freischaltelement FSE 1/1.
+HR: Provjera vanjskog Freischaltelementa i pripadajuće
+dojave/funkcije.
+DE: FSE gemäß Projekt auslösen; Anzeige/ÜE-Funktion kontrollieren; zurückstellen.
+HR: Aktiviraj FSE prema projektu, provjeri prikaz/funkciju i vrati u normalno stanje.
+DE: Bei Inbetriebnahme/Abnahme.
+HR: Kod puštanja/primopredaje.
+OFFEN
+ÜE Feuerwehr ÜE-Prüfung Ziel / Rückmeldung gemäß Projekt DE: Übertragungseinrichtung zur Feuerwehr.
+HR: Provjera prijenosa alarma prema vatrogascima i odgovarajuće
+povratne informacije.
+DE: ÜE-Prüfung und Rückmeldung gemäß Objekt-/Feuerwehrfreigabe prüfen.
+HR: Prema odobrenom postupku napravi ÜE test i provjeri povratni signal.
+DE: Vor Abnahme / nach ÜE-Änderung.
+HR: Prije primopredaje i nakon promjene ÜE.
+OFFEN
+ÜE ENS ENS-Anbindung Ansteuerung / Rückmeldung / Störung prüfen DE: ENS-Anbindung im UG.
+HR: Provjera veze BMZ - ENS u podrumu; stvarni tip i kontaktlogika još
+otvoreni.
+DE: Siehe Blatt 10_ENS_Sprachalarm; Prüfung nach bestätigter ENS-Hardware.
+HR: Koristi ENS list i testiraj tek prema potvrđenoj hardverskoj shemi.
+DE: Vor Abnahme nach Schnittstellenklärung.
+HR: Prije primopredaje nakon razjašnjenja sučelja.
+OFFEN
+<PARSED TEXT FOR PAGE: 40 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 40
+12. Offene Punkte / Otvorene točke
+Prio Thema Stand/Vorschlag Erklärung DE/HR Maßnahme DE/HR Status
+HOCH L05 Adresse 35/7 doppelt Korrekturvorschlag 35/8 DE: Adresse ist im Plan doppelt; 35/8 ist nur ein Korrekturvorschlag.
+HR: Adresa 35/7 se pojavljuje dvaput. 35/8 je logičan prijedlog, ali još nije dokazano
+stanje na objektu.
+DE: Ring einlesen und Plan/Iststand bestätigen; erst danach final ändern.
+HR: Učitaj ring i potvrdi stvarnu serijsku/adresnu situaciju. Tek tada promijeni na 35/8.
+OFFEN
+HOCH L05 Adresse 36/7 doppelt Korrekturvorschlag 36/8 DE: Adresse ist im Plan doppelt; 36/8 ist nur ein Korrekturvorschlag.
+HR: Adresa 36/7 se pojavljuje dvaput. 36/8 je samo prijedlog dok se ne potvrdi ring.
+DE: Ring einlesen und Plan/Iststand bestätigen.
+HR: Učitaj ring i potvrdi stvarno stanje prije konačne izmjene.
+OFFEN
+HOCH L09 Handmelder 4/3 doppelt 2.OG logisch 4/4 DE: Handmelderadresse 4/3 ist geschossbezogen doppelt; 4/4 für 2.OG ist logisch, aber
+noch zu bestätigen.
+HR: Na 1. i 2. OG postoji problem s 4/3. 4/4 za 2. OG izgleda logično, ali treba potvrdu s
+objekta.
+DE: Seriennummer/Einleseergebnis und Plan prüfen.
+HR: Provjeri serijski broj, Einlesen i plan prije promjene.
+OFFEN
+HOCH MG 2 / 3 / 4 geschossübergreifend betrifft Etagen-ALB DE: Diese MG enthalten Melder aus mehreren Geschossen und können eine reine
+Etagenalarmierung verfälschen.
+HR: MG 2/3/4 prelaze više etaža, pa mogu aktivirati više ALB-ova nego što želiš.
+DE: Alarmierungskonzept freigeben; MG ggf. geschossweise trennen oder andere BD-Logik
+projektieren.
+HR: Potvrdi koncept alarmiranja; po potrebi razdvoji MG po etaži ili napravi drugu BD logiku.
+OFFEN
+HOCH ENS / Sprachalarmierung ENS + ÜE ENS im Plan DE: ENS-Hardware, Zonen und Kontakte sind aus den vorhandenen Unterlagen nicht
+vollständig bestimmbar.
+HR: Imamo oznaku ENS i ÜE ENS, ali ne i točan model, zone, stezaljke i logiku kontakata.
+DE: ENS-Schaltplan/Herstellerunterlagen beschaffen und Schnittstelle danach finalisieren.
+HR: Nabavi originalnu ENS shemu/uputu i tek tada zaključaj Steuerung, Eingänge i Rückmeldungen.
+OFFEN
+MITTEL Signalgeber Typen 9 separate Signalgeber, Typen nicht eindeutig DE: Signalgeber sind im Plan funktional bezeichnet, genaue Hardwaretypen fehlen
+teilweise.
+HR: Znamo gdje su signalgeberi i jesu li akustični/optički, ali ne svugdje točan model.
+DE: Typenschild/Seriennummer vor Ort aufnehmen und Strom/Parametrierung korrigieren.
+HR: Na objektu zapiši model/serijski broj pa uskladi proračun struje i parametre.
+OFFEN
+MITTEL Koppler Typen K100-K104 Funktionen bekannt, Hardwaretyp offen DE: Funktion K100-K104 ist teilweise bekannt, exakter Modultyp/I-O-Aufbau fehlt.
+HR: Funkcija Kopplera je uglavnom poznata, ali tip modula i I/O raspored nisu potvrđeni.
+DE: Hardwaretyp und Klemmen/I-O-Belegung vor Ort dokumentieren.
+HR: Na objektu potvrdi tip i zapiši ulaze/izlaze i stezaljke.
+OFFEN
+MITTEL Zentralentyp / DXI-Bestückung Hekatron Integral DE: Das Messpaket enthält EvoxX-M/B8-PSU-Hinweise; reale Bietigheim-Zentrale muss
+bestätigt werden.
+HR: U paket smo stavili EvoxX M/B8-PSU postupke, ali stvarna centrala na Bietigheimu
+mora se prvo potvrditi.
+DE: Typenschild und Baugruppenbestückung aufnehmen.
+HR: Fotografiraj Typenschild i raspored kartica u centrali.
+OFFEN
+MITTEL Batterieausbau im Plan nicht angegeben DE: Akku-Ausbau und Überbrückungszeit sind noch nicht projektsicher bekannt.
+HR: Još nemamo siguran podatak o broju/kapacitetu akumulatora i zahtijevanom
+vremenu rada.
+DE: Akkudaten aufnehmen und mit Software/Projekt vergleichen.
+HR: Zapiši sve akumulatore i usporedi sa softverom/projektom.
+OFFEN
+MITTEL ASD 535 PipeFlow ASD MG8/1 bekannt DE: PipeFlow-Sollwerte und ASD-Geräteparameter fehlen im aktuellen Bietigheim-Paket.
+HR: ASD je lociran i MG poznata, ali nedostaju PipeFlow Sollwerte, SSD tip, Lüfterstufe i
+transportno vrijeme.
+DE: PipeFlow/ASD-Config beschaffen und Sollwerte in Blatt 08 ergänzen.
+HR: Nabavi PipeFlow/ASD konfiguraciju i dopuni list 08 prije završnog testa.
+OFFEN
+MITTEL Ringleitungsdimension nicht aus Import bekannt DE: Realer Leitungsaufbau ist noch aufzunehmen.
+HR: Stvarni kabel i presjek ringa još nisu potvrđeni.
+DE: Leitungstyp/Querschnitt je Ring dokumentieren.
+HR: Zapiši tip kabela i presjek za svaki ring.
+OFFEN
+<PARSED TEXT FOR PAGE: 41 / 41>
+Bietigheim - Hekatron Messpaket v4 DE/HR Seite 41
+13. Quellen / Izvori
+Montage- und Installationsanleitung Integral EvoxX M - 7002206 / 01.04.2021
+Batteriestrommessung; B8-DXI2 30 V max, 150 mA Nennstrom; STB zeigt UTA/UTB/I und speichert .stb-Datei
+Programmieranleitung Integral IP - Hekatron 2017
+Ringlängenberechnung vor Erstinbetriebnahme/Änderung; Rcc an GND/C-Ader bei getrenntem Ring; Überwachter Hochlauf als erster Schritt
+Technische Dokumentation ASD 535 - 7002570 / 20.08.2020
+Ur-Reset nach min. 5 min; Luftstrom 100 % Referenz; 80/120-%-Grenzen; Spannung 21,6-27,6 V DC; Alarm-/Fault-Test
+Inbetriebnahmeprotokoll ASD 53X - 7002607
+Messungen und Tests vollständig eintragen und unterschreiben; Protokoll beim ASD ablegen
+Bietigheim_Hekatron_Integral_Loop_Import.xlsx - Projektstand aus Plan Index B 13.05.2026
+L01-L09, 262 automatische Melder/Sondermelder, sonstige Elemente, offene Adresskorrekturen
+Bietigheim_Loop_Stromberechnung.xlsx - Arbeitsberechnung
+Vorausberechnete Ruhe-/Alarmströme L01-L09
+Programmieranleitung Integral IP - Hekatron 2017
+MTD 533X-SCT: Akustik gezielt über RevisionsAssistant prüfen; bei Steuerungsansteuerung über Steuerung.
+Programmieranleitung Integral IP - Hekatron 2017
+Bei Erstinbetriebnahme/Störung; erster Schritt beim Einlesen zur Erkennung von Doppelmodulationen.
+Technische Dokumentation ASD 535 - 7002570 / 20.08.2020
+Ur-Reset nach min. 5 min; V01/V02 Luftstrom; Alarmtest an letzter Ansaugöffnung bei Inbetriebnahme/Änderung.
+Montage- und Installationsanleitung Integral EvoxX M - 7002206 / 01.04.2021
+AUTO/MAN/REV, UTA/UTB/I, .stb-Datei, Funktions-/Standortprüfung.
+Hinweis: Die Hekatron 'Programmieranleitung Integral IP' 2017 ist als Schulungsunterlage gekennzeichnet. Aktuelle Herstellerunterlagen, reale Hardware und Projektfreigaben haben Vorrang.
