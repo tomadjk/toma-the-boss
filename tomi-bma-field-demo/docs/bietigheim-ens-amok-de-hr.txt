@@ -1,0 +1,313 @@
+Bietigheim – ENS / AMOK Inbetriebnahme-Prüfpaket
+DE/HR · Inbetriebnahme, Prüfung und Checklisten
+
+============================================================
+
+<PARSED TEXT FOR PAGE: 1 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 1
+BIETIGHEIM - ENS / SAA / AMOK
+Inbetriebnahme-, Prüf- und Projektdokumentation
+Projekt: 5325009 - Neubau und Umbau Grundschule mit Sporthalle
+Adresse: Schulstraße 9, 76467 Bietigheim
+Gewerk: Medienanlage & ENS & Uhrenanlage
+Techniker: Tomislav Poljarevic
+Stand: 16.09.2026
+Diese Unterlage verbindet den vorhandenen BMA-Programmiermaster mit dem
+ENS/SAA-Strangschema und den neu bereitgestellten Hekatron/g+m-Unterlagen. Projektdaten und
+Herstellerangaben sind als solche gekennzeichnet; offene Zuordnungen bleiben bewusst offen.
+Kennzahl Wert
+ENS-Linien 20
+Lautsprecher 112
+Planlast 2061 W
+Endverstärker 3 x BO-CD-250-EV
+Nominal gesamt 3000 W (12 x 250 W)
+Blaue AMOK-Taster 8
+Nebenuhren 11
+Projektplan - Zentralbereich (Ausschnitt)
+Ausschnitt dient nur der Orientierung; für Klemmen/Details immer Originalplan verwenden.
+<PARSED TEXT FOR PAGE: 2 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 2
+1. Systemaufbau / Hardware
+Komponente Anzahl Rolle Prüf-/Dokuhinweis
+APS9000 1 SAA/ENS Zentralgerät 8 digitale Eingänge wählbar überwacht/nicht überwacht; 4
+digitale Ausgänge; Netzwerk/Service.
+APS59.2 2 Audio-Netzwerk AES67; Subzentralen verknüpfen; 12 In / 4 Out.
+BO-CD-250-EV 3 4-Kanal Verstärker 4 x 250 W; EV mit Verstärkerüberwachung,
+Havarieumschaltung und 48-VDC-Batterieladegerät.
+APS178.1-16-EV 2 APS-Modul laut Plan Exakte Funktion/Klemmen in bereitgestellten Unterlagen nicht
+eindeutig bestätigt - vor Ort/APS-Projekt prüfen.
+APS151.1 2 APS-Modul laut Plan Exakte Funktion/Klemmen in bereitgestellten Unterlagen nicht
+eindeutig bestätigt.
+APS60 1 Kontroll-Lautsprecher Abhören internes NF-Signal / BF-Bus Auswahl laut
+Schulungsunterlage.
+APS57.1 1 Schaltuhr/Hauptuhr 8 zeitgesteuerte Schaltkreise; DCF/GPS-Synchronisation laut
+Schulungsunterlage.
+APS04.1 3 Eingangsmodul laut Plan APS-04-Familie dokumentiert; exakte .1-Variante und
+Verwendung vor Ort prüfen.
+Netgear M4250-10G2xF-PoE+ 1 Netzwerk-Switch APS/Medien-Netzwerk laut Projektplan.
+BMA-Fernzugriff Router 1 Router Netzwerkanbindung/Fernzugriff laut Plan.
+BO-CD Hinweis: APS-Adresse per Minischalter muss mit der Programmierung übereinstimmen.
+Batterieanschluss dient bei der EV-Familie als Notstrom-/Ladeanschluss; Umschaltung Netz/Notstrom
+erfolgt automatisch laut Datenblatt.
+2. ENS-Linien und Planlast
+Linie Bereich Typ Anz. W/LS Last 250W-Auslast
+ung
+Planpfad
+L1 Schulhof / Außenbereich DK 15 EN 3 15 45 W 18.0% Verstärker 1 - Planpfad; Kanal
+prüfen
+L3 1. OG Cluster DL-E 06-165/T-EN54 10 6 60 W 24.0% Verstärker 1 - APS prüfen
+L4 2. OG Cluster DL-E 06-165/T-EN54 9 6 54 W 21.6% Verstärker 1 - APS prüfen
+L5 EG-2.OG Sanitär DL-E 06-165/T-EN54 6 6 36 W 14.4% Verstärker 1 - APS prüfen
+L6 2. OG Cluster DL-E 06-165/T-EN54 9 6 54 W 21.6% Kanal 2 Verstärker 1 (Planpfad)
+L7 1. OG Cluster DL-E 06-165/T-EN54 9 6 54 W 21.6% Kanal 2 Verstärker 1 (Planpfad)
+L8 EG
+Bibliothek/Werken/Kochen
+DL-E 06-165/T-EN54 3 6 18 W 7.2% Kanal 2 Verstärker 1 (Planpfad)
+L9 EG Aufenthaltsbereich GT DL-E 06-165/T-EN54 4 6 24 W 9.6% Kanal 2 Verstärker 1 (Planpfad)
+L10 UG Lager/Technik/Flur DL-E 06-165/T-EN54 2 6 12 W 4.8% Kanal 3 Verstärker 1 (Planpfad)
+L11 Treppenhaus UG-2.OG DL-E 06-165/T-EN54 4 6 24 W 9.6% Kanal 3 Verstärker 1 (Planpfad)
+L12 EG Verwaltung DL-E 06-165/T-EN54 19 6 114 W 45.6% Verstärker 1 - APS prüfen
+L13 EG
+Sporthalle/Sanitär/Regie
+DL-E 06-165/T-EN54 11 6 66 W 26.4% Kanal 4 Verstärker 1 (Planpfad)
+L17 Foyer DX-IC6 4 60 240 W 96.0% Verstärker 2 / Havarie - APS
+prüfen
+L19 Foyer DX-IC6 3 60 180 W 72.0% Verstärker 2 / Havarie - APS
+prüfen
+L21 Mensa DX-IC6 3 60 180 W 72.0% Verstärker 2 / Havarie - APS
+prüfen
+L23 Mensa DX-IC6 3 60 180 W 72.0% Verstärker 2 / Havarie - APS
+prüfen
+L25 Musikraum DX-IC6 2 60 120 W 48.0% Kanal 4 Verstärker 3 (Planpfad)
+L27 Musikraum DX-IC6 2 60 120 W 48.0% Kanal 3 Verstärker 3 (Planpfad)
+L29 Sporthalle EX-S8-UB 3 80 240 W 96.0% Kanal 2 Verstärker 3 (Planpfad)
+L31 Sporthalle /
+Sanitärbereich
+EX-S8-UB 3 80 240 W 96.0% Kanal 1 Verstärker 3 (Planpfad)
+GESAM
+T
+112 2061 W 68.7 % von
+3000 W
+Kanalweise Prüfung erforderlich
+Kritisch: L17, L29 und L31 haben jeweils 240 W Planlast. Falls je eine dieser Linien allein auf einem
+250-W-Kanal liegt, bleiben nur 10 W bzw. 4 % Reserve. Das ist kein freigegebenes Endurteil über die
+Anlage: tatsächliche Kanal-/Havariezuordnung und Leistungsabgriffe im APS-Projekt prüfen.
+<PARSED TEXT FOR PAGE: 3 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 3
+3. AMOK / BMA -> APS Arbeitsmatrix
+Die acht blauen Handmelder/Taster MG 200/201/202 sind als AMOK-Auslöser für Sprachalarmierung zu
+behandeln. Keine Brandalarm-Logik aktivieren. Die Hekatron APS-Schulung zeigt für APS9000 digitale
+Ein-/Ausgänge und Layer/Funktionen wie "Bedrohung"; die konkrete Projektmatrix für Bietigheim ist jedoch nicht
+in den vorliegenden Unterlagen freigegeben.
+Loop Adr. MG Etage Raum Ort APS / Matrix
+L01 202/2 MG 202 2. OG 2.21 Flur BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L02 202/1 MG 202 2. OG 2.07 Flur BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L03 201/2 MG 201 1. OG 1.21 Aufenthalt GT BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L04 201/1 MG 201 1. OG 1.07.1 Flur BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L05 200/1 MG 200 EG 0.01.1 Flur BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L06 200/2 MG 200 EG 0.11 Aufenthalt GT BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L06 200/3 MG 200 EG 0.41 Mensa BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+L07 200/4 MG 200 EG 0.27 Sporthalle BMA-Ausgang/Klemme, APS-DI, Zielzonen,
+Rückmeldung und Reset: OFFEN
+Prüfablauf pro Taster
+1. Testfreigabe und definierten Testzustand herstellen.
+2. Adresse/Raum/MG gegen BMA-Liste prüfen; keine Brandalarmsteuerung aktiv.
+3. Taster auslösen und BMA-Ereignis sowie zugeordneten Ausgang/Kontakt dokumentieren.
+4. APS9000-Eingang, Kontaktüberwachung und Zustandswechsel prüfen.
+5. Richtigen Bedrohungs-/AMOK-Layer, Ansagetext, Priorität und Zielzonen prüfen.
+6. Rückmeldung / Sammelstörung / technische Anzeige prüfen, falls projektiert.
+7. Rücksetzen und Entwarnung exakt nach freigegebener Matrix testen.
+4. Inbetriebnahme-Checkliste
+Status Bereich Prüfpunkt Ist / Bemerkung
+☐ Dokumente Plan-Nr. 06_/07_ klären; Index A / 13.05.2026 bestätigen.
+☐ Backup Aktuellen APS-Programmierstand sichern.
+☐ APS9000 Typ, Seriennummer, Software/Firmware, IP und digitale I/O-Belegung
+dokumentieren.
+☐ BO-CD 3 Geräte: Typenschild, APS-Adresse, ON/FAULT und Kanalstatus
+prüfen.
+☐ Notstrom 48-VDC-Batterieanschlüsse, Batterietyp/Kapazität und Verhalten bei
+Netzausfall prüfen.
+☐ Havarie Reserve-/Havariepfad und Kanalzuordnung im APS-Programm
+dokumentieren.
+☐ APS59.2 AES67/Netzwerk und Subzentralen-Verbindungen prüfen.
+☐ APS178.1 Funktion, Steckplatz, Anschlüsse und Programmbezug dokumentieren.
+☐ APS151.1 Funktion, Steckplatz, Anschlüsse und Programmbezug dokumentieren.
+☐ APS60 Kontrollabhören/Funktionstest.
+☐ APS57.1 Uhr-/Schaltfunktion, DCF/GPS und 11 Nebenuhren testen.
+☐ APS04.1 Alle 3 Module: Verwendung/Klemmen/Ist-Funktion dokumentieren.
+☐ ENS Linien 20 Linien und 112 Lautsprecher gegen Liste prüfen.
+☐ Last Planlasten und reale Leistungsabgriffe/Kanallasten abgleichen.
+☐ Fehler Linienfehler/Überwachung gemäß eingesetzter Technik simulieren.
+☐ AMOK 8 Taster einzeln inkl. Zielzonen, Rückmeldung und Reset testen.
+☐ Medien GM-7422 / APS-442-V-BT-WS / Yamaha DZR10-D getrennt vom ENS
+prüfen.
+☐ Abnahme Gesamtfunktion, Protokoll, Änderungen und finalen Backupstand
+sichern.
+<PARSED TEXT FOR PAGE: 4 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 4
+5. Lautsprecherliste - vollständig
+Kennung Linie Raum Ort Typ W
+1/1 L1 Schulhof / Außenbereich DK 15 EN 15
+1/2 L1 Schulhof / Außenbereich DK 15 EN 15
+1/3 L1 Schulhof / Außenbereich DK 15 EN 15
+3/1 L3 1.01 Klasse DL-E 06-165/T-EN54 6
+3/2 L3 1.02 Ganztagbetreuung DL-E 06-165/T-EN54 6
+3/3 L3 1.03 Klasse DL-E 06-165/T-EN54 6
+3/4 L3 1.21 offener Aufenthaltsb. GT DL-E 06-165/T-EN54 6
+3/5 L3 1.21 Aufenthaltsb. GT DL-E 06-165/T-EN54 6
+3/6 L3 1.19 Arbeitsst. GT-P. DL-E 06-165/T-EN54 6
+3/7 L3 1.18 Ganztagbetreuung DL-E 06-165/T-EN54 6
+3/8 L3 1.17 Klasse DL-E 06-165/T-EN54 6
+3/9 L3 1.21.1 Flur DL-E 06-165/T-EN54 6
+3/10 L3 1.20 Flur DL-E 06-165/T-EN54 6
+4/1 L4 2.01 Klasse DL-E 06-165/T-EN54 6
+4/2 L4 2.02 Ganztagbetreuung DL-E 06-165/T-EN54 6
+4/3 L4 2.03 Klasse DL-E 06-165/T-EN54 6
+4/4 L4 2.21 offener Aufenthaltsb. GT DL-E 06-165/T-EN54 6
+4/5 L4 2.21.1 Flur DL-E 06-165/T-EN54 6
+4/6 L4 2.19 Arbeitsst. GT-P. DL-E 06-165/T-EN54 6
+4/7 L4 2.18 Ganztagbetreuung DL-E 06-165/T-EN54 6
+4/8 L4 2.17 Klasse DL-E 06-165/T-EN54 6
+4/9 L4 2.20 Flur DL-E 06-165/T-EN54 6
+5/1 L5 0.18 WC beh. DL-E 06-165/T-EN54 6
+5/2 L5 0.19 Vorraum J/M DL-E 06-165/T-EN54 6
+5/3 L5 1.15 WC Lehrerin DL-E 06-165/T-EN54 6
+5/4 L5 1.16 Vorraum J/M DL-E 06-165/T-EN54 6
+5/5 L5 2.15 WC Lehrerin DL-E 06-165/T-EN54 6
+5/6 L5 2.16 Vorraum J/M DL-E 06-165/T-EN54 6
+6/1 L6 2.05 Klasse DL-E 06-165/T-EN54 6
+6/2 L6 2.06 Ganztagbetreuung DL-E 06-165/T-EN54 6
+6/3 L6 2.07.1 Flur DL-E 06-165/T-EN54 6
+6/4 L6 2.07 offener Aufenthaltsb. GT DL-E 06-165/T-EN54 6
+6/5 L6 2.12 Klasse DL-E 06-165/T-EN54 6
+6/6 L6 2.11 Ganztagbetreuung DL-E 06-165/T-EN54 6
+6/7 L6 2.10 Arbeitsst. GT-P. DL-E 06-165/T-EN54 6
+6/8 L6 2.08 Klasse DL-E 06-165/T-EN54 6
+6/9 L6 2.09 Flur DL-E 06-165/T-EN54 6
+7/1 L7 1.05 Klasse DL-E 06-165/T-EN54 6
+7/2 L7 1.06 Ganztagbetreuung DL-E 06-165/T-EN54 6
+7/3 L7 1.07.1 Flur DL-E 06-165/T-EN54 6
+7/4 L7 1.07 offener Aufenthaltsb. GT DL-E 06-165/T-EN54 6
+7/5 L7 1.12 Klasse DL-E 06-165/T-EN54 6
+7/6 L7 1.11 Ganztagbetreuung DL-E 06-165/T-EN54 6
+7/7 L7 1.10 Arbeitsst. GT-P. DL-E 06-165/T-EN54 6
+7/8 L7 1.08 Klasse DL-E 06-165/T-EN54 6
+7/9 L7 1.09 Flur DL-E 06-165/T-EN54 6
+8/1 L8 0.15 Bibliothek DL-E 06-165/T-EN54 6
+8/2 L8 0.13 Werken DL-E 06-165/T-EN54 6
+8/3 L8 0.12 Kochen DL-E 06-165/T-EN54 6
+9/1 L9 0.11 Aufenthaltsbereich GT DL-E 06-165/T-EN54 6
+9/2 L9 0.11 Aufenthaltsbereich GT DL-E 06-165/T-EN54 6
+9/3 L9 0.11 Aufenthaltsbereich GT DL-E 06-165/T-EN54 6
+9/4 L9 0.11 Aufenthaltsbereich GT DL-E 06-165/T-EN54 6
+10/1 L10 -1.15 Flur DL-E 06-165/T-EN54 6
+<PARSED TEXT FOR PAGE: 5 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 5
+Kennung Linie Raum Ort Typ W
+10/2 L10 -1.14 Flur DL-E 06-165/T-EN54 6
+11/1 L11 -1.05 TRH DL-E 06-165/T-EN54 6
+11/2 L11 0.10 TRH DL-E 06-165/T-EN54 6
+11/3 L11 1.04 TRH DL-E 06-165/T-EN54 6
+11/4 L11 2.04 TRH DL-E 06-165/T-EN54 6
+12/1 L12 0.01 Bespr. GT-Partner DL-E 06-165/T-EN54 6
+12/2 L12 0.02 Kiosk DL-E 06-165/T-EN54 6
+12/3 L12 0.03 Leitung GT-Partner DL-E 06-165/T-EN54 6
+12/4 L12 0.04 Stv. Schulleitung DL-E 06-165/T-EN54 6
+12/5 L12 0.05 Besprechung groß DL-E 06-165/T-EN54 6
+12/6 L12 0.06 Schulleitung DL-E 06-165/T-EN54 6
+12/7 L12 0.07 Sekretariat DL-E 06-165/T-EN54 6
+12/8 L12 0.08 Schulsozialarbeit DL-E 06-165/T-EN54 6
+12/9 L12 0.09 Eltern/Arzt DL-E 06-165/T-EN54 6
+12/10 L12 0.26 offener Arbeitsber. DL-E 06-165/T-EN54 6
+12/11 L12 0.26.1 Flurbereich DL-E 06-165/T-EN54 6
+12/12 L12 0.25 Stillarbeit Lehrerkoll. DL-E 06-165/T-EN54 6
+12/13 L12 0.24 Kom.-päd. Pers. GT DL-E 06-165/T-EN54 6
+12/14 L12 0.23 Ruher.-päd. Pers. GT DL-E 06-165/T-EN54 6
+12/15 L12 0.22 Lehrmittel DL-E 06-165/T-EN54 6
+12/16 L12 0.21 WC GT-Partner DL-E 06-165/T-EN54 6
+12/17 L12 0.20 WC GT-Partner DL-E 06-165/T-EN54 6
+12/18 L12 0.01.1 Flur DL-E 06-165/T-EN54 6
+12/19 L12 0.26.1 Flurbereich DL-E 06-165/T-EN54 6
+13/1 L13 0.39 Flur DL-E 06-165/T-EN54 6
+13/2 L13 0.39 Flur DL-E 06-165/T-EN54 6
+13/3 L13 0.30 Umkleide He. DL-E 06-165/T-EN54 6
+13/4 L13 0.31 WC Da. DL-E 06-165/T-EN54 6
+13/5 L13 0.31 Umkleide Da. DL-E 06-165/T-EN54 6
+13/6 L13 0.32 Lehrerin Umkl. DL-E 06-165/T-EN54 6
+13/7 L13 0.33 Regie/1.Hilfe DL-E 06-165/T-EN54 6
+13/8 L13 0.35 Lehrerin Umkl. DL-E 06-165/T-EN54 6
+13/9 L13 0.36 Vorraum WC He DL-E 06-165/T-EN54 6
+13/10 L13 0.37 Vorraum WC Da. DL-E 06-165/T-EN54 6
+13/11 L13 0.38 WC beh. DL-E 06-165/T-EN54 6
+17/1 L17 0.11.1 Foyer DX-IC6 60
+17/2 L17 0.11.1 Foyer DX-IC6 60
+17/3 L17 0.11.1 Foyer DX-IC6 60
+17/4 L17 0.11.1 Foyer DX-IC6 60
+19/1 L19 0.11.1 Foyer DX-IC6 60
+19/2 L19 0.11.1 Foyer DX-IC6 60
+19/3 L19 0.11.1 Foyer DX-IC6 60
+21/1 L21 0.41 Mensa DX-IC6 60
+21/2 L21 0.41 Mensa DX-IC6 60
+21/3 L21 0.41 Mensa DX-IC6 60
+23/1 L23 0.41 Mensa DX-IC6 60
+23/2 L23 0.41 Mensa DX-IC6 60
+23/3 L23 0.41 Mensa DX-IC6 60
+25/1 L25 Musikraum DX-IC6 60
+25/2 L25 Musikraum DX-IC6 60
+27/1 L27 Musikraum DX-IC6 60
+27/2 L27 Musikraum DX-IC6 60
+29/1 L29 Sporthalle EX-S8-UB 80
+29/2 L29 Sporthalle EX-S8-UB 80
+29/3 L29 Sporthalle EX-S8-UB 80
+31/1 L31 0.33 Regie/1.Hilfe EX-S8-UB 80
+<PARSED TEXT FOR PAGE: 6 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 6
+Kennung Linie Raum Ort Typ W
+31/2 L31 Sporthalle / Sanitärbereich EX-S8-UB 80
+31/3 L31 Sporthalle / Sanitärbereich EX-S8-UB 80
+<PARSED TEXT FOR PAGE: 7 / 7>
+GS Bietigheim - ENS / SAA / AMOK Arbeitsunterlage | Stand 16.09.2026 Seite 7
+6. Offene Punkte / Gap Analysis
+Priorität Thema Befund Nächster Schritt
+HOCH AMOK-Matrix Zielzonen, Ansagetext, Priorität, Rücksetzen/Entwarnung
+nicht freigegeben.
+Freigegebene AMOK-/SAA-Matrix
+beschaffen.
+HOCH BMA -> APS Exakte Klemmen/Kontaktart nicht eindeutig bezeichnet. Ist-Verdrahtung + Überwachung
+aufnehmen.
+HOCH Verstärker/Havarie Planpfade nicht automatisch finale APS-Programmierung. Channel/Layer/Reserve-Zuordnung im
+APS-Projekt exportieren.
+HOCH L17/L29/L31 Je 240 W Planlast. Ist-Last / Kanalreserve zwingend prüfen.
+HOCH Notstrom Keine projektspezifische Batterieberechnung bestätigt. Batterietyp, Kapazität,
+Ruhe-/Alarmstrom, Überbrückungszeit
+erfassen.
+MITTEL APS178.1-16-EV Exakte Funktion nicht aus Unterlagen bestätigt. Datenblatt/Typenschild/APS-Konfiguratio
+n prüfen.
+MITTEL APS151.1 Exakte Funktion nicht aus Unterlagen bestätigt. Datenblatt/Typenschild/APS-Konfiguratio
+n prüfen.
+MITTEL Plan-Nr. Dateiname 06_, Titelblock 07_. Dokumentenstand klären.
+MITTEL GM-2022 DCF Position noch zu klären. Montageort festlegen.
+MITTEL Netzwerk IP/VLAN/Ports/Fernzugriff unvollständig. Netzwerkparameter aufnehmen.
+HINWEIS VA-500 Schulungsunterlage ist Referenz, nicht Projekt-Hardware. VA-500-Grenzwerte nicht ungeprüft auf
+APS-System übertragen.
+7. Quellen und Gültigkeit
+• Bietigheim ENS/Medien/Uhren Strangschema 06_/07_5325009_MA_ENS_UA_000_S_8_00_A, Index A,
+13.05.2026.
+• Bietigheim BMA Programmier-Master v2 inkl. 8 blaue AMOK-Taster MG 200/201/202.
+• Hekatron: 01 SAA 1.1 Grundlagen und Hardware.pdf - APS9000/APS-System/BO-CD/Module und
+SAA-Grundlagen.
+• g+m: ds_bo-cd-xxx-4-xx-xx_de.pdf - BO-CD Anschlüsse, Adressierung, 100-V-Ausgänge, Batterie/Netz.
+• Hekatron: VA-500_Schulungsdokumentation.pdf - nur allgemeine Referenz für SAA-Inbetriebnahme; VA-500
+nicht als Bietigheim-Projekthardware bestätigt.
+Wichtig: Diese Arbeitsunterlage ersetzt keine freigegebene Brandfall-/AMOK-Steuermatrix, keine
+Herstellerfreigabe und keine Abnahme. Wo Projektunterlagen keine eindeutige Zuordnung
+enthalten, ist das Feld bewusst als OFFEN markiert.
+Datum / Ort Techniker Prüfer / Bauleitung
+________________________ ________________________ ________________________
