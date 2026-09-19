@@ -148,7 +148,7 @@ function closeReader(){
 }
 $('#libSearch').oninput=renderCards;
 $('#readerBack').onclick=closeReader;
-$('#homeBtn').onclick=()=>{if(history.length>1)history.back();else location.href='./r12.html'};
+$('#homeBtn').onclick=()=>{if(window.parent!==window){window.parent.postMessage({type:'tbma-close-docs'},'*')}else if(history.length>1)history.back();else location.href='./r12.html'};
 $('#findNext').onclick=findNext;
 $('#docSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();findNext()}});
 $('#fontMinus').onclick=()=>{fontSize=Math.max(11,fontSize-1);renderDocument(lastQuery);localStorage.setItem('tbma-doc-font',fontSize)};
