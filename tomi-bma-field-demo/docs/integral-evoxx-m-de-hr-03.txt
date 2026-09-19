@@ -1,0 +1,1000 @@
+Schaltspannung max. 60 V DC
+Schaltstrom max. 3 A
+Schaltleistung max. 300 W / 2.500 VA
+Mechanisch 6-polige steckbare Schraubklemme
+Nennquerschnitt 0,25 bis 1,5 mm2
+Anzugsdrehmoment 0,22 bis 0,25 Nm
+Anschlussklemmen 
+MMI-BUS 
+(X6)
+Klemme Bezeichnung Funktion
+1 GND (-)
+2 MMIB- Leitung B￾3 MMIB+ Leitung B+
+4 GND (-)
+5 MMIA- Leitung A￾6 MMIA+ Leitung A+
+Technische Daten
+Ausgangsspannung 4,75 bis 5,25 V
+Ausgangsstrom 62 bis 83 mA
+Übertragung RS 485
+Reichweite max. 1.200 m
+Übertragungsart asynchron, seriell, Start-Stop, 
+38,4 kbit/s und 96 kbit/s
+Richtung halbduplex, bidirektional
+Mechanisch 6-polige steckbare Schraubklemme 
+Nennquerschnitt 0,25 bis 1,5 mm2
+Anzugsdrehmoment 0,22 bis 0,25 Nm
+Steckbrücken 
+Abschluss MMI-BUS
+ (X7/X8)
+Für die Steckbrücken X17 und X18 gilt:
+Brücke offen (Auslieferzustand) MMI-BUS nicht abgeschlossen
+Brücke gesteckt MMI-BUS abgeschlossen
+ACHTUNG
+Die Steckbrücken am ersten und letzten MMI-BUS Teilnehmer immer stecken! Werden an 
+den MMI-BUS jedoch Teilnehmer bis Version -E angeschaltet, dann dürfen die Brücken nicht 
+gesteckt werden!
+HRVATSKI PRIJEVOD - stranica 28
+Sklopovi
+Priključne stezaljke releja / Relais-BUS (X5 prema prikazu sklopa)
+Slobodno programabilne za priključivanje Brandfallsteuerungen, odnosno upravljanja u slučaju požara.
+R1, R2, R3 = releji 1, 2 i 3.
+Tehnički podaci: bistabilni releji; kontaktni otpor maks. 30 mΩ; sklopni napon maks. 60 V DC; sklopna struja
+maks. 3 A; sklopna snaga maks. 300 W / 2.500 VA; 6-polna utična vijčana stezaljka; presjek 0,25-1,5 mm²;
+moment 0,22-0,25 Nm.
+Priključne stezaljke MMI-BUS (X6)
+GND = minus. MMIB- / MMIB+ = vod B- / B+. MMIA- / MMIA+ = vod A- / A+.
+Tehnički podaci: izlazni napon 4,75-5,25 V; izlazna struja 62-83 mA; prijenos RS-485; domet maks. 1.200 m;
+asinkroni serijski Start-Stop prijenos 38,4 kbit/s i 96 kbit/s; half-duplex, dvosmjerno; 6-polna utična vijčana
+stezaljka; presjek 0,25-1,5 mm²; moment 0,22-0,25 Nm.
+Premosnici za završetak MMI-BUS-a (X7/X8)
+Za premosnike vrijedi: otvoren premosnik = MMI-BUS nije terminiran; postavljen premosnik = MMI-BUS
+terminiran.
+PAŽNJA
+Premosnike na prvom i posljednjem MMI-BUS sudioniku uvijek postaviti. Ako su na MMI-BUS priključeni sudionici
+do verzije -E, premosnici se NE smiju postaviti.
+<PARSED TEXT FOR PAGE: 29 / 294>
+31/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Montage Die Baugruppe B8-BAF ist ein Einschubmodul mit einer Frontplatte aus verzinktem Stahlblech. Sie 
+wird in einen der Steckplätze 2 bis 9 des Baugruppenträgers eingeschoben, bis die Messerleisten 
+auf dem B8-BUS und B3-BSR5 einrasten und mit zwei Schrauben oben und unten am Baugrup￾penträger befestigt.
+Anschaltung Die Anschaltung Feuerwehr-Bedienfeld kann den jeweiligen Dokumentationen der verschiedenen 
+Feuerwehr-Bedienfelder (siehe auch Kapitel 10) entnommen werden.
+Ausgang für 
+Übertragungs￾einrichtung (ÜE)
++
+_
+RM
+Übertragungs￾einrichtung X3
+IM1-
+IM1+
+OM2-
+OM2+
+OM1-
+OM1+
+B8-BAF
+1 ...
+Max. Entfernung zwischen ÜE und B8-BAF: 200 Meter
+Ausgang für Alarmierungseinrichtung Eingang
++
+_
+680R
+X3
+IM1-
+IM1+
+OM2-
+OM2+
+OM1-
+OM1+
+B8-BAF
+1 ...
+220R
+220R
+max. 700 m
+X3
+IM1-
+IM1+
+OM2-
+OM2+
+OM1-
+OM1+
+B8-BAF
+1 ...
+Relais Relais
+VExt
+GndExt
+X5
+B8-BAF
++_
+Sirene
+X5
+1 R3
+R3
+R2
+R2
+R1
+R1
+B8-PSU
+VExt
+GndExt
+X5
+B8-BAF
+X5
+1 R3
+R3
+R2
+R2
+R1
+R1
+B8-PSU
++_
+Haltemagnet
+HRVATSKI PRIJEVOD - stranica 29
+Sklopovi
+Montaža
+B8-BAF je utični sklop s prednjom pločom od pocinčanog čeličnog lima. Umeće se u Steckplatz 2-9 nosača
+sklopova dok konektori ne sjednu u B8-BUS i B3-BSR5 te se učvršćuje s dva vijka, gore i dolje.
+Spajanje
+Način spajanja vatrogasnog upravljačkog polja nalazi se u dokumentaciji odgovarajućeg tipa vatrogasnog
+upravljačkog polja; vidi i poglavlje 10.
+Primjeri na shemi:
+Ausgang für Übertragungseinrichtung (ÜE) = izlaz za uređaj za prijenos dojave.
+Übertragungseinrichtung = uređaj za prijenos dojave.
+RM = povratna dojava prema prikazanoj shemi.
+Maksimalna udaljenost između ÜE i B8-BAF: 200 m.
+Ausgang für Alarmierungseinrichtung = izlaz za uređaj za alarmiranje.
+Eingang = ulaz.
+Na shemi su prikazani završni/aktivacijski otpornici 680 Ω i 220 Ω te maksimalna duljina ulaznog voda 700 m.
+Relais = relej. Sirene = sirena. Haltemagnet = pridržni elektromagnet.
+VExt/GndExt = vanjsko napajanje i masa.
+Brojevi priključaka X3/X5 te OM/IM/R oznake ostaju 1:1 prema originalnoj shemi.
+<PARSED TEXT FOR PAGE: 30 / 294>
+32/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+MMI-BUS
+3
+MMI-BUS
+B8-BAF
+X6
+B8-PSU
+X5
+MMI-BUS TN 1
+X1
+MMI-BUS TN 2
+X1
+MMI-BUS TN 1
+X1
+VExt1 9 8 MMI+24VA 6 8 MMI+24VA
+GNDExt2 8 3 MMIGNDB 1 3 MMIGNDB
+VExt2 7 4 MMI+24VB 2 4 MMI+24VB
+GNDExt1 10 7 MMIGNDA 5 7 MMIGNDA
+GND 1 4 4 BUSGNDB 1 BUSGNDB
+GND 4 10 BUSGNDA B 7 10 USGNDA
+MMIB- 2 5 5 MMIBUSB- 2 MMIBUSB￾MMIA- 5 11 MMIBUSA- 8 11 MMIBUSA￾MMIB+ 3 6 MMIBUSB- 3 6 MMIBUSB+
+MMIA+ 6 12 MMIBUSA+ 9 12 MMIBUSA+
+GndExt1
+VExt1
+GndExt2
+VExt2
+GndExt3
+VExt3
+GndExt4
+VExt4
+GndExt5
+VExt5
+Integral EvoxX M
+B8-PSU
+X5
+1
+1 X2
+MMI-BUS Teilnehmer 1 MMI+24VA MMI+24VB MMI+24VA MMI+24VB MMIGNDA MMIGNDB MMIGNDA MMIGNDB
+Abschluss
+1 X1 MMIBUSB- MMIBUSB+ MMIBUSB- MMIBUSB+ MMIBUSA- MMIBUSA+ BUSGND MMIBUSA- MMIBUSA+
+A
+BUSGNDB
+BUSGNDA
+BUSGNDB
+1 X2
+MMI-BUS Teilnehmer 2 MMI+24VA MMI+24VB MMI+24VA MMI+24VB MMIGNDA MMIGNDB MMIGNDA MMIGNDB
+1 X1 MMIBUSB- MMIBUSB+ MMIBUSB- MMIBUSB+ MMIBUSA- MMIBUSA+ BUSGND MMIBUSA- MMIBUSA+
+A
+BUSGNDB
+BUSGNDA
+BUSGNDB
+3
+2
+2 2
+2
+3
+3
+Abschluss
+MMI-BUS TN 1
+X2
+MMI-BUS TN 2
+X2
+MMI-BUS TN 1
+X2
+BUSGNDB
+BUSGNDA
+MMIBUSB￾MMIBUSA￾MMIBUSB+
+MMIBUSA+
+MMI+24VA
+MMIGNDB
+MMI+24VB
+MMIGNDA
+Max. 15 Teilnehmer, max. 1.200 m
+B8-BAF X7 X8
+X6
+1 GND
+MMIB￾MMIB+
+GND
+MMIA￾MMIA+
+HRVATSKI PRIJEVOD - stranica 30
+Sklopovi
+MMI-BUS - shema ožičenja.
+B8-BAF se povezuje s B8-PSU i MMI-BUS sudionicima (Teilnehmer/TN). Tehničke oznake MMIA+/-, MMIB+/-,
+BUSGNDA/B, MMIGNDA/B, MMI+24VA/B, VExt i GndExt ostaju nepromijenjene i moraju se spojiti točno prema
+originalnoj shemi.
+Teilnehmer = sudionik/uređaj na sabirnici.
+Abschluss = završetak/terminacija sabirnice.
+Prvi i posljednji MMI-BUS sudionik terminiraju se prema pravilima iz prethodnog poglavlja.
+Maksimalno 15 sudionika, maksimalna ukupna duljina MMI-BUS-a 1.200 m.
+B8-BAF: X6 = MMI-BUS priključak; X7/X8 = premosnici terminacije.
+GND = masa/minus; MMIB-/MMIB+ = vod B; MMIA-/MMIA+ = vod A.
+Za konkretno ožičenje koristiti raspored pinova i žica točno kao na originalnom crtežu lijevo.
+<PARSED TEXT FOR PAGE: 31 / 294>
+33/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+5.6 Baugruppe für überwachte Ausgänge B8-OM8
+Funktion Die Baugruppe für überwachte Ausgänge B8-OM8 dient zum 
+Anschluss von peripheren Geräten (z.B akustische und optische 
+Signalgeber oder Löschventile) und verfügt über acht über￾wachte Ausgänge mit einem Ausgangsstrom von je 1,5 A. 
+Der Systemanschluss erfolgt auf der Rückseite über eine Messer￾leiste zum System-BUS. Auf der Frontseite der Baugruppe 
+befindet sich eine Klemme zum Anschluss der überwachten 
+Ausgänge. 
+X1
+X2
+Schnittstellen X1 Anschluss System-BUS
+X2 Anschlussklemmen überwachte Ausgänge
+Anschluss System-BUS 
+(X1)
+Technische Daten
+Anschluss B5-BUS, B8-BUS 
+Mechanisch 96-polige Messerleiste
+Anschlussklemmen 
+überwachte Ausgänge 
+(X2)
+Zum Anschluss von Lasten zwischen 20 Ω und 1.000 Ω. 
+Die Lastbereiche 1, 2 und 3 der Ausgänge werden über die Integral IP Software eingestellt.
+Ausgang Klemme Bezeichnung Funktion
+8
+1 8- GND (-)
+2 8+ 24 V (+)
+7
+3 7- GND (-)
+4 7+ 24 V (+)
+6 5 6- GND (-)
+6 6+ 24 V (+)
+5
+7 5- GND (-)
+8 5+ 24 V (+)
+4
+9 4- GND (-)
+10 4+ 24 V (+)
+3
+11 3- GND (-)
+12 3+ 24 V (+)
+2 13 2- GND (-)
+14 2+ 24 V (+)
+1
+15 1- GND (-)
+16 1+ 24 V (+)
+HRVATSKI PRIJEVOD - stranica 31
+Sklopovi
+5.6 Sklop za nadzirane izlaze B8-OM8
+Funkcija
+B8-OM8 služi za priključivanje perifernih uređaja, npr. akustičnih i optičkih signalizatora ili ventila sustava
+gašenja, te ima osam nadziranih izlaza, svaki s izlaznom strujom do 1,5 A.
+Sistemski priključak nalazi se straga preko višepolnog konektora na System-BUS. Na prednjoj strani nalazi se
+stezaljka za nadzirane izlaze.
+Sučelja:
+X1 - System-BUS.
+X2 - priključne stezaljke nadziranih izlaza.
+System-BUS X1: B5-BUS, B8-BUS; mehanički 96-polni konektor.
+X2 služi za priključivanje tereta između 20 Ω i 1.000 Ω. Područja opterećenja 1, 2 i 3 postavljaju se u Integral IP
+Software.
+Izlazi 1-8: priključak „-” = GND (-), priključak „+” = 24 V (+).
+<PARSED TEXT FOR PAGE: 32 / 294>
+34/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Technische Daten X2
+Ausgangsspannung 22 bis 28 V DC
+Ausgangsstrom max. 1,5 A
+Kurzschlussstrom 1,45 bis 2,76 A
+Lastbereich 1 160 bis 1.000 Ω
+Lastbereich 2 57 bis 375 Ω
+Lastbereich 3 20 bis 75 Ω
+Überwachungsstrom
+Lastbereich 1
+Lastbereich 2
+Lastbereich 3
+1 mA
+3 mA
+15 mA
+Leitungswiderstand
+Lastbereich 1
+Lastbereich 2
+Lastbereich 3
+max. 50 Ω
+max. 20 Ω
+max. 5 Ω
+Mechanisch 16-polige Schraubklemme RM 5,08
+Nennquerschnitt max. 2,5 mm2
+Anzugsdrehmoment min. 0,5/max. 0,6 Nm
+Montage Die B8-OM8 ist ein Einschubmodul mit einer Frontplatte aus verzinktem Stahlblech und wird zur 
+Montage in einen der Steckplätze 2 bis 9 des Baugruppenträgers der Zentrale eingeschoben, bis 
+die Messerleiste auf dem B8-BUS einrastet. 
+Anschaltung Ruhestromüberwachte Steuerungen Elektronische Lasten
+-
++
+B8-OM8
+X2
+OM￾OM+
+-
++
+B8-OM8
+X2
+OM￾OM+
+680R
+HRVATSKI PRIJEVOD - stranica 32
+Sklopovi
+Tehnički podaci B8-OM8, X2:
+Izlazni napon 22-28 V DC.
+Izlazna struja maks. 1,5 A.
+Struja kratkog spoja 1,45-2,76 A.
+Područje opterećenja 1: 160-1.000 Ω.
+Područje opterećenja 2: 57-375 Ω.
+Područje opterećenja 3: 20-75 Ω.
+Struja nadzora: područje 1 = 1 mA, područje 2 = 3 mA, područje 3 = 15 mA.
+Maks. otpor voda: područje 1 = 50 Ω, područje 2 = 20 Ω, područje 3 = 5 Ω.
+Mehanički: 16-polna vijčana stezaljka RM 5,08; presjek vodiča maks. 2,5 mm²; moment pritezanja 0,5-0,6 Nm.
+Montaža
+B8-OM8 je utični modul s prednjom pločom od pocinčanog čeličnog lima. Umeće se u Steckplatz 2-9 nosača
+centrale dok konektor ne sjedne u B8-BUS.
+Spajanje
+Ruhestromüberwachte Steuerungen = upravljanja nadzirana strujom mirovanja.
+Elektronische Lasten = elektronički tereti.
+Na primjeru je za elektronički teret prikazan otpornik 680 Ω prema originalnoj shemi. Oznake OM-/OM+ ostaju
+nepromijenjene.
+<PARSED TEXT FOR PAGE: 33 / 294>
+35/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+5.7 Baugruppe für überwachte Eingänge B8-IM8
+Funktion Die Baugruppe für überwachte Eingänge B8-IM8 dient zum 
+Anschluss von acht Primäreingängen oder zum Anschluss von 
+acht Stichleitungen mit den zugehörigen Meldern der Integral 
+Stichleitungstechnik. An diese Stichleitungen können jeweils bis 
+zu 32 Teilnehmer (Melder) angeschlossen werden.
+Der Systemanschluss erfolgt auf der Rückseite über eine Messer￾leiste zum System-BUS. Auf der Frontseite der Baugruppe befin￾det sich eine Klemme zum Anschluss der überwachten Eingänge.
+X1
+X13
+X10
+X9
+X8
+X7
+X6
+X5
+X4
+X3
+Schnittstellen X1 Anschluss System-BUS
+X3-
+X10
+Steckbrücken 
+Zum Einstellen der Betriebsart
+X13 Anschlussklemmen überwachte Eingänge
+Anschluss System-BUS 
+(X1)
+Technische Daten
+Anschluss B5-BUS, B8-BUS 
+Mechanisch 96-polige Messerleiste
+Steckbrücken
+(X3-X10)
+Eingang Steck￾brücke
+Betriebsart
+Hekatron
+Meldergruppe
+Überwachter 
+Eingang
+Primäreingang
+Löscheingang
+Ventilüberwachung
+8 X10 1 2 3 1 2 3 1 2 3
+7 X9 1 2 3 1 2 3 1 2 3
+6 X8 1 2 3 1 2 3 1 2 3
+5 X7 1 2 3 1 2 3 1 2 3
+4 X6 1 2 3 1 2 3 1 2 3
+3 X5 1 2 3 1 2 3 1 2 3
+2 X4 1 2 3 1 2 3 1 2 3
+1 X3 1 2 3 1 2 3 1 2 3
+HRVATSKI PRIJEVOD - stranica 33
+Sklopovi
+5.7 Sklop za nadzirane ulaze B8-IM8
+Funkcija
+B8-IM8 služi za priključivanje osam primarnih ulaza ili osam odvojnih vodova s pripadajućim javljačima Integral
+tehnologije odvojnih vodova. Na svaki takav vod može se priključiti do 32 sudionika (javljača).
+Sistemski priključak nalazi se straga preko višepolnog konektora na System-BUS. Na prednjoj strani nalazi se
+stezaljka za nadzirane ulaze.
+Sučelja:
+X1 - System-BUS.
+X3-X10 - premosnici za postavljanje načina rada.
+X13 - priključne stezaljke nadziranih ulaza.
+System-BUS X1: B5-BUS, B8-BUS; 96-polni konektor.
+Premosnici X3-X10 određuju način rada svakog ulaza. Mogući načini rada prema tablici: Hekatron Meldergruppe
+= Hekatron grupa javljača; Überwachter Eingang = nadzirani ulaz; Primäreingang = primarni ulaz; Löscheingang
+= ulaz sustava gašenja; Ventilüberwachung = nadzor ventila.
+Položaje premosnika 1-2-3 postaviti točno prema originalnoj tablici lijevo.
+<PARSED TEXT FOR PAGE: 34 / 294>
+36/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Anschlussklemmen 
+überwachte Eingänge
+(X13)
+EIngang Klemme Bezeichnung Funktion
+8
+1 C8 GND (-)
+2 L8 24 V (+)
+7
+3 C7 GND (-)
+4 L7 24 V (+)
+6 5 C6 GND (-)
+6 L6 24 V (+)
+5
+7 C5 GND (-)
+8 L5 24 V (+)
+4
+9 C4 GND (-)
+10 L4 24 V (+)
+3
+11 C3 GND (-)
+12 L3 24 V (+)
+2 13 C2 GND (-)
+14 L2 24 V (+)
+1
+15 C1 GND (-)
+16 L1 24 V (+)
+Technische Daten
+Ausgangsspannung 22 bis 28 V DC
+Kurzschlussstrom 170 bis 288 mA
+Leitungswiderstand max. 50 Ω
+Leitungslänge max. 1.000 m
+Mechanisch 16-polige steckbare Schraubklemme
+Nennquerschnitt 0,25 bis 2,5 mm2
+Anzugsdrehmoment 0,5 bis 0,6 Nm
+Montage Die B8-IM8 ist ein Einschubmodul mit einer Frontplatte aus verzinktem Stahlblech und wird zur 
+Montage in einen der Steckplätze 2 bis 9 des Baugruppenträgers der Zentrale eingeschoben, bis 
+die Messerleiste auf dem B8-BUS einrastet.
+HRVATSKI PRIJEVOD - stranica 34
+Sklopovi
+Priključne stezaljke nadziranih ulaza B8-IM8 (X13)
+Za ulaze 1-8 vrijedi: C1-C8 = GND (-), L1-L8 = 24 V (+).
+Tehnički podaci: izlazni napon 22-28 V DC; struja kratkog spoja 170-288 mA; maksimalni otpor voda 50 Ω;
+maksimalna duljina voda 1.000 m; 16-polna utična vijčana stezaljka; presjek vodiča 0,25-2,5 mm²; moment
+pritezanja 0,5-0,6 Nm.
+Montaža
+B8-IM8 je utični modul s prednjom pločom od pocinčanog čeličnog lima i ugrađuje se u Steckplatz 2-9 nosača
+centrale dok konektor ne sjedne u B8-BUS.
+<PARSED TEXT FOR PAGE: 35 / 294>
+37/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Anschaltung
+Primäreingang
+3k
+1k5 max. 1.000 m
+L4 (+)
+C5 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+B8-IM8
+1 2 3
+1
+X13
+Standardschnittstelle 
+Löschen 
+(Löscheingänge nach 
+VDE 0833-2 und VdS 2496)
+3k3
+680R
+EST
+Störung
+Löschanlage 3k3
+680R
+Löschanlage
+ausgelöst
+max. 1.000 m
+SST
+L4 (+)
+C4 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+B8-IM8
+1 2 3
+1
+X13
+Ventilüberwachung
+a b
+a = Voraktiv
+b = Aktiv
+3k
+1k5
+max. 1.000 m 750R
+L4 (+)
+C4 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+B8-IM8
+1 2 3
+1
+X13
+alternativ Parallelschaltung
+von zwei 1k5 Widerständen
+HRVATSKI PRIJEVOD - stranica 35
+Sklopovi - primjeri spajanja B8-IM8.
+Primäreingang = primarni ulaz. Prikazani otpornici: 3 kΩ i 1,5 kΩ; maksimalna duljina voda 1.000 m.
+Standardschnittstelle Löschen = standardno sučelje sustava gašenja. Löscheingänge nach VDE 0833-2 und VdS
+2496 = ulazi sustava gašenja prema VDE 0833-2 i VdS 2496.
+EST / SST = oznake sučelja prema originalnoj shemi.
+Störung Löschanlage = smetnja sustava gašenja.
+Löschanlage ausgelöst = sustav gašenja aktiviran.
+Za shemu gašenja prikazani su otpornici 3,3 kΩ i 680 Ω; maks. duljina 1.000 m.
+Ventilüberwachung = nadzor ventila.
+a = Voraktiv = predaktivirano.
+b = Aktiv = aktivirano.
+Za nadzor ventila prikazani su 3 kΩ, 1,5 kΩ i 750 Ω.
+alternativ Parallelschaltung von zwei 1k5 Widerständen = alternativno paralelno spajanje dva otpornika 1,5 kΩ.
+L/C priključke i položaje premosnika 1-2-3 spojiti točno prema originalnoj shemi.
+<PARSED TEXT FOR PAGE: 36 / 294>
+38/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+L4 (+)
+C4 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+X13
+B8-IM8
+USB 502
+SHLD 6
+L ( 2 3 +)
+L ( 1 2 +)
+GND (-) 1
+X1
+GND (-) 4
+24 V +( ) 5
+USB 502
+SHLD 6
+L ( 2 3 +)
+L ( 1 2 +)
+GND (-) 1
+X1
+GND (-) 4
+24 V +( ) 5
+3k
+MCP 525
+1 2 3 4 +24 V GND +24 V
+X1 KL1
+max. 32 Stück, max. 1.000 m
+max. 10 Stück, max. 1.000 m
+1 2 3
+1
+L4 (+)
+C4 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+B8-IM8
+USB 502-7
+SHLD 6
+L ( 2 3 +)
+L ( 1 2 +)
+GND (-) 1
+X1
+GND (-) 4
+24 V +( ) 5
+2k7
+max. 10 Stück, max. 1.000 m
+1 2 3
+1
+5
+1
+8
+4
+Potenzialausgleich
+mit 10mm² zur BMZ Erdung
++
+-
+Sicherheitsbarriere
+EXBAR 02 (Z787)
+R4
+R5
+R1
+R3
+R2 (RE)
+R2 (RE) entfernen!
+GND max. 500 m
+MCP 525
+1 2 3 4 +24 V GND +24 V
+X1 KL1
+R4
+R5
+R1
+R3
+R2 (RE)
+R2 (RE) nicht entfernen!
+GND
+L4 (+)
+C4 (-)
+L1 (+)
+C1 (-)
+L2 (+)
+C2 (-)
+L3 (+)
+C3 (-)
+B8-IM8
+1 2 3
+1
+USB 502-7
+X1
+GND (-) 1
+SHLD 6
+L ( 1 2 +)
+24 V +( ) 5
+L ( 2 3 +)
+GND (-) 4
+X13
+X13 .
+Automatischer Melder MSD 523/UTD 523
+Automatischer Melder MMD 130 Ex-i
+Handfeuermelder MCP 525
+HRVATSKI PRIJEVOD - stranica 36
+Sklopovi - primjeri spajanja javljača na B8-IM8.
+Prikazani su USB 502, MCP 525, USB 502-7, sigurnosna barijera EXBAR 02 (Z787), automatski javljači MSD
+523/UTD 523, automatski Ex-i javljač MMD 130 Ex-i i ručni javljač MCP 525.
+Ograničenja:
+- automatski standardni javljači: maks. 32 komada, maks. 1.000 m;
+- MCP 525: maks. 10 komada, maks. 1.000 m;
+- prikazana Ex-i konfiguracija: maks. 10 komada, do 1.000 m na strani prema B8-IM8; Ex dio prema prikazu
+maks. 500 m.
+Potenzialausgleich mit 10 mm² zur BMZ Erdung = izjednačenje potencijala vodičem 10 mm² prema uzemljenju
+BMZ.
+Sicherheitsbarriere = sigurnosna barijera.
+R2 (RE) entfernen! = ukloniti R2 (RE).
+R2 (RE) nicht entfernen! = ne uklanjati R2 (RE).
+Otpornici 3 kΩ i 2,7 kΩ te položaj svih R1-R5 postavljaju se točno prema originalnoj shemi.
+Oznake SHLD, GND, L(+), +24 V i pinovi X1/X13 ostaju nepromijenjeni.
+<PARSED TEXT FOR PAGE: 37 / 294>
+39/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+5.8 Baugruppe für Melderserie 140 B8-LEE23
+Funktion Die Baugruppe für Melderserie 140 B8-LEE23 dient zum 
+Anschluss von acht Stichleitungen mit den zugehörigen Meldern 
+und Modulen der Serie 140. Sie ermöglicht es, bestehende 
+Brandmelderzentralen mit Meldern der Serie 140 durch eine 
+Integral EvoxX M zu ersetzen und die Peripherie unverändert 
+anzuschalten.
+An jede Stichleitung können bis zu 30 Teilnehmer angeschlossen 
+werden. Der Systemanschluss erfolgt auf der Rückseite über eine 
+Messerleiste zum System-BUS. Auf der Frontseite der Baugruppe 
+befindet sich eine Klemme zum Anschluss der acht Stichlei￾tungen.
+X1
+X2
+Schnittstellen X1 Anschluss System-BUS
+X2 Anschlussklemmen Stichleitung
+Anschluss System-BUS 
+(X1)
+Technische Daten
+Anschluss B5-BUS, B8-BUS 
+Mechanisch 96-polige Messerleiste
+Anschlussklemmen 
+Stichleitung 
+(X2)
+Stich Klemme Bezeichnung Funktion
+8
+1 L8- GND (-)
+2 L8+ 24 V (+)
+7
+3 L7- GND (-)
+4 L7+ 24 V (+)
+6 5 L6- GND (-)
+6 L6+ 24 V (+)
+5
+7 L5- GND (-)
+8 L5+ 24 V (+)
+4
+9 L4- GND (-)
+10 L4+ 24 V (+)
+3
+11 L3- GND (-)
+12 L3+ 24 V (+)
+2 13 L2- GND (-)
+14 L2+ 24 V (+)
+1
+15 L1- GND (-)
+16 L1+ 24 V (+)
+Technische Daten
+Ausgangsspannung 22 bis 27 V DC
+Kurzschlussstrom 500 mA
+Leitungswiderstand max. 200 Ω
+Leitungslänge max. 1.000 m
+Mechanisch 16-polige Schraubklemme
+Nennquerschnitt 0,2 bis 2,5 mm2
+Anzugsdrehmoment min. 0,5/max. 0,6 Nm
+HRVATSKI PRIJEVOD - stranica 37
+Sklopovi
+5.8 Sklop za seriju javljača 140 B8-LEE23
+Funkcija
+B8-LEE23 služi za priključivanje osam odvojnih vodova s pripadajućim javljačima i modulima serije 140.
+Omogućuje zamjenu postojeće Hekatron centrale koja koristi seriju 140 centralom Integral EvoxX M, uz
+zadržavanje postojeće periferije i njenog načina spajanja.
+Na svaki odvojni vod može se priključiti do 30 sudionika. Sistemski priključak nalazi se straga preko konektora na
+System-BUS, a na prednjoj strani je stezaljka za osam vodova.
+Sučelja: X1 = System-BUS; X2 = priključne stezaljke odvojnih vodova.
+System-BUS X1: B5-BUS, B8-BUS; 96-polni konektor.
+X2: za Stich 1-8, Lx- = GND (-), Lx+ = 24 V (+).
+Tehnički podaci: izlazni napon 22-27 V DC; struja kratkog spoja 500 mA; maks. otpor voda 200 Ω; maks. duljina
+1.000 m; 16-polna vijčana stezaljka; presjek 0,2-2,5 mm²; moment pritezanja 0,5-0,6 Nm.
+<PARSED TEXT FOR PAGE: 38 / 294>
+40/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Montage Die B8-LEE23 ist ein Einschubmodul mit einer Frontplatte aus verzinktem Stahlblech und wird zur 
+Montage in einen der Steckplätze 2 bis 9 des Baugruppenträgers der Zentrale eingeschoben, bis 
+die Messerleiste auf dem B8-BUS einrastet.
+Anschaltung Bei Austausch von bestehenden Hekatron Brandmelderzentralen müssen nach dem Tausch alle 
+Melder auf ihre Funktion überprüft werden. Dabei ist es zwingend erforderlich über den Revisi￾onsmodus bei jedem Melder einen Alarm auszulösen. Da nicht alle 30 Melder einer Meldergruppe 
+gleichzeitig in Alarmzustand gebracht werden können, ist folgender Ablauf einzuhalten:
+• Meldergruppe auf Revision schalten
+• Melder auslösen
+• Warten bis Melder LED erlischt
+• Nächsten Melder prüfen
+Automatische Melder
+(Durch die Parallelschaltung 
+der Melder ist eine Abzwei￾gung von der Stichleitung 
+möglich)
+6
+5
+3
+4
+1
+2
+6
+5
+3
+4
+1
+2
+6
+5
+3
+4
+1
+2
+L￾L+
+X2
+B8-LEE23
+max. 1.000 m
+Leitungslänge
+Sockel 143 Sockel 143
+Sockel 143
+Erdungsklemme
+auf Hutschiene
+Nichtautomatische Melder
+(Durch die Parallelschaltung 
+der Melder ist eine Abzwei￾gung von der Stichleitung 
+möglich)
+L￾L+
+X2
+B8-LEE23
+DFM 155
+DFM 155
+1 2 3 4
+DFM 155
+1 2 3 4
+DFM 155
+DFM 155
+1 2 3 4 Erdungsklemme
+auf Hutschiene
+max. 1.000 m
+Leitungslänge
+HRVATSKI PRIJEVOD - stranica 38
+Sklopovi
+Montaža
+B8-LEE23 je utični modul s prednjom pločom od pocinčanog čeličnog lima i ugrađuje se u Steckplatz 2-9 dok
+konektor ne sjedne u B8-BUS.
+Spajanje / provjera nakon zamjene centrale
+Pri zamjeni postojeće Hekatron centrale nakon zamjene moraju se funkcijski provjeriti svi javljači. Obavezno je u
+Revisionsmodus-u izazvati alarm na svakom javljaču. Budući da svih 30 javljača jedne Meldergruppe ne može
+istodobno biti u alarmu, slijedi ovaj postupak:
+• Meldergruppe prebaciti na Revision.
+• Aktivirati javljač.
+• Pričekati da se LED javljača ugasi.
+• Provjeriti sljedeći javljač.
+Automatische Melder = automatski javljači. Zbog paralelnog spoja javljača moguć je odvojak s odvojnog voda.
+Maks. duljina voda 1.000 m. Prikazana su podnožja Sockel 143.
+Nichtautomatische Melder = neautomatski/ručni javljači. Također je moguć odvojak zbog paralelnog spoja;
+prikazani su DFM 155.
+Erdungsklemme auf Hutschiene = stezaljka uzemljenja na DIN šini.
+<PARSED TEXT FOR PAGE: 39 / 294>
+41/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Sondermelder mit Reset 
+über PMR 81
+Die Klemmen 5 und 6 des ADX 156 werden über den Störausgang (Ruhekontakt) des Sondermel￾ders miteinander verbunden. In diesem Zustand wird keine Meldung an die Brandmelderzentrale 
+gemeldet. Wird der Kontakt unterbrochen, wird eine Störungsmeldung an die B8-LEE23 übertragen. 
+Werden die Klemmen 6 und 7 des ADX 156 miteinander verbunden, wird eine Alarmmeldung an 
+die Brandmelderzentrale übertragen. 
+Das Adressiermodul ADX 156 muss in diesem Fall auf Alarm programmiert werden (DIP 8 = OFF), 
+mit dem restlichen DIP-Schalter muss die entsprechende Melderadresse eingestellt werden. Das 
+PMR 81 dient zum Rücksetzen des Sondermelders, indem die Spannungsversorgung kurzzeitig 
+unterbrochen wird. Das PMR 81 kann direkt an die Stichleitung oder auch an die Klemmen 3 und 4 
+des ADX 156 angeschlossen werden.
+L￾L+
+X2
+B8-LEE23
+VExt
+GND
+X5
+B8-PSU
+3
+ADX 156
+PMR 81
+mit potenzialfreien Kontakten
+Alarmkontakt
+Störkontakt
+Spannungs￾versorgung
++
+–
+Sondermelder
+4
+2
+1
+5
+6
+7
+4 3 2 1
+Erdungsklemme
+auf Hutschiene
+Sondermelder mit Reset 
+über Steuerung
+Der Sondermelder wird über eine beliebige Steuerung der Brandmelderzentrale rückgesetzt, die in 
+der Integral Software programmiert werden muss. Die Funktion des ADX 156 ist identisch wie im 
+vorgehenden Anschaltbeispiel beschrieben.
+Öffner
+L￾L+
+X2
+B8-LEE23
+VExt
+GND
+X5
+ADX 156 B8-PSU
+Steuerung
+mit potenzialfreien Kontakten
+Alarmkontakt
+Störkontakt
+Spannungs￾versorgung
++
+–
+Sondermelder
+5
+6
+7
+4 3 2 1
+Erdungsklemme
+auf Hutschiene
+HRVATSKI PRIJEVOD - stranica 39
+Sklopovi
+Posebni javljač s resetom preko PMR 81
+Stezaljke 5 i 6 modula ADX 156 povezuju se preko izlaza smetnje (mirovni kontakt) posebnog javljača. U tom
+stanju centrala ne prima dojavu. Ako se kontakt prekine, B8-LEE23 prima dojavu smetnje. Ako se međusobno
+povežu stezaljke 6 i 7 ADX 156, centrali se prenosi alarm.
+ADX 156 u toj konfiguraciji mora biti programiran na Alarm (DIP 8 = OFF), a ostalim DIP prekidačima postavlja se
+odgovarajuća adresa javljača. PMR 81 služi za reset posebnog javljača kratkotrajnim prekidom napajanja. PMR
+81 može se spojiti izravno na odvojni vod ili na stezaljke 3 i 4 ADX 156.
+Oznake na shemi: Alarmkontakt = alarmni kontakt; Störkontakt = kontakt smetnje; Spannungsversorgung =
+napajanje; Sondermelder = posebni javljač; mit potenzialfreien Kontakten = s beznaponskim kontaktima;
+Erdungsklemme auf Hutschiene = stezaljka uzemljenja na DIN šini.
+Posebni javljač s resetom preko upravljanja (Steuerung)
+Posebni javljač resetira se preko proizvoljne upravljačke funkcije centrale koja se mora programirati u Integral
+Software. Funkcija ADX 156 jednaka je kao u prethodnom primjeru.
+Öffner = NC/otvarajući kontakt.
+Ostale priključke spojiti točno prema originalnoj shemi.
+<PARSED TEXT FOR PAGE: 40 / 294>
+42/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+Sondermelder mit ORM 140 Sondermelder mit eingebautem optischen Rauchmelder ORM 140 können direkt an die Stichleitung 
+der B8-LEE23 angeschlossen werden. Der Melder wird direkt von der Stichleitung versorgt und aus￾gewertet. Dementsprechend ist auch die physikalische Melderadresse auf dem Melder einzustellen. 
+Das ADX 156 wird an die Klemmen des Störkontaktes angeschlossen und muss auf Störung (DIP 8 
+= ON) programmiert werden.
+ACHTUNG
+Bei dieser Anschaltung müssen beim Sondermelder die Alarme und Störungen auf nicht 
+selbsthaltend programmiert werden! Alarme werden direkt von der B8-LEE23 rückgesetzt! 
+Ist die „Selbsthaltung“ der Störmeldungen am Sondermelder nicht einstellbar, so muss wie im 
+vorigen Anschaltbeispiel eine Steuerung für das Rücksetzen des Sondermelders programmiert 
+und angeschlossen werden. Eine Melderüberwachung durch den Sondermelder gehört ebenfalls 
+ausgeschaltet.
+L￾L+
+X2
+B8-LEE23
+VExt
+GND
+X5
+Störkontakt
+ADX 156 B8-PSU
+Spannungs￾versorgung
++
+–
+Sondermelder
+5
+6
+7
+4 3 2 1
+6
+5
+3
+4
+1
+2
+Erdungsklemme
+auf Hutschiene
+HRVATSKI PRIJEVOD - stranica 40
+Sklopovi
+Posebni javljač s ORM 140
+Posebni javljači s ugrađenim optičkim javljačem dima ORM 140 mogu se izravno priključiti na odvojni vod
+B8-LEE23. Javljač se izravno napaja i obrađuje preko odvojnog voda. Fizička adresa javljača zato se mora
+postaviti na samom javljaču.
+ADX 156 spaja se na stezaljke kontakta smetnje i mora biti programiran na smetnju: DIP 8 = ON.
+PAŽNJA
+Kod ovog načina spajanja alarmi i smetnje posebnog javljača moraju biti programirani bez samodržanja (nicht
+selbsthaltend). Alarme izravno resetira B8-LEE23.
+Ako se samodržanje smetnji na posebnom javljaču ne može isključiti, mora se, kao u prethodnom primjeru,
+programirati i spojiti upravljanje za reset posebnog javljača. Također treba isključiti nadzor javljača koji provodi
+sam posebni javljač.
+Oznake: Störkontakt = kontakt smetnje; Spannungsversorgung = napajanje; Sondermelder = posebni javljač;
+Erdungsklemme auf Hutschiene = stezaljka uzemljenja na DIN šini.
+<PARSED TEXT FOR PAGE: 41 / 294>
+43/296
+Baugruppen
+7002206 MIA Integral EvoxX M, Ausgabe 01.04.2021
+5.9 Baugruppe für Melderserie 150 B8-LEE24
+Funktion Die Baugruppe für Melderserie 150 B8-LEE24 dient zum Anschluss 
+von vier Ringleitungen mit den zugehörigen Meldern und Modulen 
+der Serie 150. Sie ermöglicht es, bestehende Brandmelderzentralen 
+mit Meldern der Serie 150 durch eine Integral IP MX zu ersetzen und 
