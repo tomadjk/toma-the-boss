@@ -1,0 +1,121 @@
+Bietigheim – BMZ ↔ APS9000 Anschlussplan
+DE/HR · Anschluss- und Funktionsübersicht
+
+============================================================
+
+<PARSED TEXT FOR PAGE: 1 / 5>
+BIETIGHEIM - BMZ -> APS-9000 ANSCHLUSSPLAN
+Njemački stručni nazivi + hrvatsko objašnjenje | Direkt Gerät -> Gerät, bez dodatnih Zwischenklemmen
+STATUS: Hekatron-Funktionen bestätigt. Exakte Klemmennummern/Widerstandswerte sind in der gesendeten Schulungsunterlage nicht angegeben - vor Verdrahtung am Gerät/Installationsplan prüfen.
+HR: Funkcije su potvrđene iz Hekatron knjige; točne brojeve klema i otpornike ne nagađamo.
+HEKATRON BMZ / INTEGRAL
+Brandmeldezentrale / centrala BMA
+Projekt Bietigheim: 8 blaue
+AMOK-Taster in MG 200/201/202.
+BMZ wertet Brandalarm und AMOK als
+getrennte Ereignisse aus.
+Ausgänge direkt zum APS-9000, ohne
+zusätzliche Klemmleiste.
+Für AMOK: eigene logische Steuerung,
+nicht als Brandalarm behandeln.
+APS-9000 - DIGITAL INPUTS
+DI1 = ALB 1 (von BMZ) - überwacht
+DI2 = ALB 2 (von BMZ) - überwacht
+DI3 = ALB 3 (von BMZ) - überwacht
+DI4 = ALB 4 (von BMZ) - überwacht
+DI5 = SAL (von BMZ) - überwacht
+DI6 = BMZ in BFB - überwacht
+DI7 = ext. Uhr in Hekatron-Vorlage
+DI8 = Reserve in Hekatron-Vorlage
+SAA / ENS FUNKTION
+Brandalarm BMZ -> Layer
+„Brandalarm BMZ“
+AMOK -> eigener Layer „Bedrohung“
+(Projektlogik)
+Zonen / Durchsage gemäß
+freigegebener SAA-/AMOK-Matrix.
+Rückmeldung / Sammelstörung
+zurück zur BMZ prüfen.
+DI8 ist nur Vorschlag für AMOK,
+weil in der Hekatron-Vorlage als
+Reserve bezeichnet.
+ALB1-4 / SAL / BFB Brandalarm BMZ
+AMOK-Ausgang Bedrohung
+Quellen / Izvori:
+Hekatron „SAA 1.1 Grundlagen und Hardware“: S. 67 (APS-9000 Funktionen), S. 70 (BMA-Schnittstelle / Vorbelegung Digital Inputs), S. 74 (Anschlussübersicht).
+Bietigheim: Projekt 5325009 / ENS-Strangschema 06_5325009_MA_ENS_UA_000_S_8_00_A sowie BMA-/AMOK-Arbeitsstand.
+GS Bietigheim | Projekt 5325009 | Arbeitsunterlage DE/HR | 16.09.2026 Seite / Stranica 1
+<PARSED TEXT FOR PAGE: 2 / 5>
+ANSCHLUSS- UND FUNKTIONSMATRIX / MATRICA SPAJANJA I FUNKCIJA
+Potvrđeno iz Hekatron knjige odvojeno je od projektnog prijedloga za Bietigheim
+Status Signal / Ereignis BMZ -> APS-9000 APS-9000 Funktion HR objašnjenje
+BESTÄTIGT ALB 1 Digital Input 1, überwacht Brandalarm BMZ / projektabhängig Nadzirani ulaz iz BMZ-a.
+BESTÄTIGT ALB 2 Digital Input 2, überwacht Brandalarm BMZ / projektabhängig Nadzirani ulaz iz BMZ-a.
+BESTÄTIGT ALB 3 Digital Input 3, überwacht Brandalarm BMZ / projektabhängig Nadzirani ulaz iz BMZ-a.
+BESTÄTIGT ALB 4 Digital Input 4, überwacht Brandalarm BMZ / projektabhängig Nadzirani ulaz iz BMZ-a.
+BESTÄTIGT SAL Digital Input 5, überwacht SAA-Signal gemäß Vorlage Signal iz BMZ-a prema SAA prema predlošku.
+BESTÄTIGT BMZ in BFB Digital Input 6, überwacht Brandfallbetrieb Informacija da je BMZ u Brandfallbetrieb.
+BESTÄTIGT ext. Uhr Digital Input 7, nicht überwacht Pausengong / Uhr U Hekatron predlošku DI7 je za vanjski sat.
+BESTÄTIGT Reserve Digital Input 8, nicht überwacht Reserve U predlošku slobodan ulaz.
+PROJEKTVORSCHLA
+G
+AMOK / Bedrohung BMZ-Logik -> freier APS-DI, bevorzugt DI8 nur
+nach Prüfung
+Layer „Bedrohung“ 8 plavih tastera ne smiju ići kao Brandalarm. DI8 koristiti samo ako je
+stvarno slobodan.
+OFFEN Sammelstörung APS -> BMZ separater Rückmeldeweg Technische Störung Točan izlaz i kleme potvrditi u instalacijskom planu / na uređaju.
+Wichtig / Važno: „BESTÄTIGT“ bedeutet: in der von dir gesendeten Hekatron-Schulungsunterlage ausdrücklich dargestellt. „PROJEKTVORSCHLAG“ muss mit realer APS-Konfiguration und freigegebener Matrix abgeglichen werden.
+Keine Brandalarm-Logik für die blauen AMOK-Taster. Kein endgültiger Anschluss nach Klemmennummern, solange der konkrete APS-9000 Installationsplan nicht vorliegt.
+GS Bietigheim | Projekt 5325009 | Arbeitsunterlage DE/HR | 16.09.2026 Seite / Stranica 2
+<PARSED TEXT FOR PAGE: 3 / 5>
+BIETIGHEIM - AMOK / BEDROHUNG LOGIK
+8 blaue Handmelder / plavi AMOK tasteri - odvojeno od Brandalarm
+Loop Adresse Etage Raum / Ort Logische Funktion
+L01 202/2 2. OG 2.21 Flur AMOK manuell
+L02 202/1 2. OG 2.07 Flur AMOK manuell
+L03 201/2 1. OG 1.21 Aufenthalt GT AMOK manuell
+L04 201/1 1. OG 1.07.1 Flur AMOK manuell
+L05 200/1 EG 0.01.1 Flur AMOK manuell
+L06 200/2 EG 0.11 Aufenthalt GT AMOK manuell
+L06 200/3 EG 0.41 Mensa AMOK manuell
+L07 200/4 EG 0.27 Sporthalle AMOK manuell
+1. AMOK-Taster / AMOK tipkalo
+Adressiertes Ereignis in der BMZ /
+adresirani događaj
+2. BMZ LOGIK
+S_AMOK_GESAMT - keine
+Brandalarm-Auswertung
+3. BMZ AUSGANG -> APS
+Direkter potentialfreier Ausgang /
+Koppler -> freier Digital Input
+4. APS-9000
+Layer „Bedrohung“ -> freigegebene
+ENS-Zonen / AMOK-Durchsage
+NICHT ALS BRANDALARM PROGRAMMIEREN / NE PROGRAMIRATI KAO POŽARNI ALARM
+AMOK muss als eigenes Ereignis mit eigener SAA-Steuerung behandelt werden. DI8 ist in Hekatron S.70 als Reserve gezeigt und daher nur ein sinnvoller Arbeitsvorschlag.
+Vor Freigabe: reale APS-9000 Programmierung, Eingangsfunktion, Kontaktart, Rücksetzlogik und AMOK-/SAA-Matrix gemeinsam prüfen.
+GS Bietigheim | Projekt 5325009 | Arbeitsunterlage DE/HR | 16.09.2026 Seite / Stranica 3
+<PARSED TEXT FOR PAGE: 4 / 5>
+HEKATRON-QUELLSEITEN / IZVORNE STRANICE
+Izvadak iz dokumenta koji si poslao - stranice 67, 70 i 74
+Seite 67 - APS-9000 Funktionen Seite 70 - BMA-Schnittstelle / Digital Inputs Seite 74 - APS-9000 Anschlüsse Übersicht
+S.70 ist für die BMZ-Kopplung die wichtigste Seite. S.74 zeigt den Funktionsblock „Digitale Ein- und Ausgänge“ für BMZ, Nottaster, Schalter und Signalgeber.
+GS Bietigheim | Projekt 5325009 | Arbeitsunterlage DE/HR | 16.09.2026 Seite / Stranica 4
+<PARSED TEXT FOR PAGE: 5 / 5>
+INBETRIEBNAHME-CHECKLISTE BMZ <-> APS-9000
+Praktična kontrola prije puštanja u rad - bez nagađanja klema
+Nr. Prüfpunkt / kontrolna točka Status
+1 APS-9000 Gerätetyp und reale Bestückung fotografieren / dokumentieren OFFEN
+2 Aktuelle APS-9000 Programmierung sichern / Backup erstellen OFFEN
+3 Prüfen, welche Digital Inputs 1-8 bereits belegt sind OFFEN
+4 DI1-6 mit Hekatron-Vorlage ALB1-4 / SAL / BFB vergleichen OFFEN
+5 DI7: ext. Uhr vorhanden? Wenn ja, nicht für AMOK verwenden OFFEN
+6 DI8: wirklich Reserve? Erst dann AMOK als Kandidat verwenden OFFEN
+7 BMZ-Ausgang für AMOK als eigenes Ereignis S_AMOK_GESAMT anlegen OFFEN
+8 Kontaktart und Überwachungsprinzip aus Installationsplan prüfen OFFEN
+9 AMOK -> Layer „Bedrohung“ und Zielzonen gegen freigegebene Matrix testen OFFEN
+10 Brandalarm BMZ -> korrekte Brandalarm-Durchsage/Zonen testen OFFEN
+11 APS Sammelstörung / Rückmeldung zur BMZ prüfen und texten OFFEN
+12 Reset-Verhalten BMZ + APS nach Brandalarm und AMOK prüfen OFFEN
+13 Gesamttest dokumentieren: Auslöser, Zone, Durchsage, Rückmeldung, Reset OFFEN
+GS Bietigheim | Projekt 5325009 | Arbeitsunterlage DE/HR | 16.09.2026 Seite / Stranica 5
