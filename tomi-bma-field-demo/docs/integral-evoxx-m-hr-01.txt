@@ -1,0 +1,400 @@
+===== STRANICA 1 =====
+HRVATSKI PRIJEVOD - stranica 1
+Vaš 100Pro partner za protupožarnu zaštitu.
+hekatron-brandschutz.de
+Izvorne upute na njemačkom
+Br. artikla 7002206
+Izdanje 01.04.2021
+Upute za montažu i instalaciju
+Centrala za dojavu požara
+Integral EvoxX M
+(softverska verzija 8.4)
+
+===== STRANICA 2 =====
+HRVATSKI PRIJEVOD - stranica 2
+
+===== STRANICA 3 =====
+HRVATSKI PRIJEVOD - stranica 3
+Sadržaj
+1. Općenito
+1.1 Simboli i signalne riječi
+1.2 Namjenska uporaba
+1.3 Sigurnost
+2. Konstrukcija kućišta
+2.1 Nosač sklopova (Baugruppenträger)
+2.2 Mrežni priključak i uzemljenje
+2.3 Zaštita od prenapona
+2.4 Preporučeni tipovi kabela
+3. Mjerni crtež
+4. Montaža
+5. Sklopovi (Baugruppen)
+5.1 Glavna procesorska jedinica B8-MCU
+5.2 Napajanje B8-PSU
+5.3 X-LINE sklop za prstenaste vodove B8-DXI2
+5.4 X-LINE sklop za odvojne vodove B8-SXI8
+5.5 Upravljački sklop B8-BAF
+5.6 Sklop za nadzirane izlaze B8-OM8
+5.7 Sklop za nadzirane ulaze B8-IM8
+5.8 Sklop za seriju javljača 140 B8-LEE23
+5.9 Sklop za seriju javljača 150 B8-LEE24
+5.10 Univerzalni komunikacijski sklop B8-USI4
+5.11 Mrežni sklop B8-NET4-485
+5.12 Mrežni sklop B8-NET2-485
+5.13 Mrežni sklop B8-NET2-FX4
+5.14 Mrežni sklop B8-NET-FX8
+5.15 Relejni sklop B8-MRI16
+5.16 Relejni sklop B3-REL16
+5.17 Relejni sklop B3-REL16E
+5.18 Relejni sklop B3-REL10
+6. Upravljačka i prikazna polja
+6.1 Ugradbeno upravljačko polje B8-CII
+6.2 Vanjsko upravljačko polje B8-MMI-CIP
+6.3 Vanjsko prikazno polje B5-MMI-PIP
+6.4 Vanjsko prikazno i upravljačko polje B5-EPI-PIC
+6.5 Vanjsko prikazno polje B3-MMI-IPEL/B3-MMI-EAT64
+7. Moduli
+7.1 Ulazno/izlazni modul BX-OI3
+7.2 Ulazno/izlazni modul BX-O2I4
+7.3 Ulazno/izlazni modul BX-IOM
+7.4 Ulazno/izlazni modul SDI 82X-1
+7.5 Ulazni modul BX-IM4
+7.6 Ulazni modul BX-MDI8
+7.7 Ulazni modul BX-AIM
+
+===== STRANICA 4 =====
+HRVATSKI PRIJEVOD - stranica 4
+7.8 Modul za odvojak voda BX-SCU
+7.9 Relejni modul BX-REL4
+7.10 Ulazno/izlazni modul B3-MMI-UIO
+7.11 Univerzalni alarmni i kontrolni modul UAC 150
+8. Napajanje
+8.1 BE-PSE01-IOM
+8.2 BE-PSE02-IOM
+8.3 BE-PSE03
+8.4 BE-PSE12
+9. Javljači požara
+9.1 Podnožje javljača USB 502
+9.2 Podnožje javljača USB 502-7 Ex-i
+9.3 Ručni javljač požara MCP 535X
+9.4 Ručni javljač požara MCP 525
+9.5 Ručni javljač požara NAM ADGX
+9.6 Ručni javljač požara C31X
+9.7 Bežični javljači FDOOT271-O i FDM273-O (BX-WGW)
+9.8 Javljač plamena FDF 241-9
+9.9 Javljač plamena DF 1101-Ex
+9.10 Aspiracijski javljač dima ASD 53X (preko XLM 35)
+9.11 Linijski javljač dima ILIA-OZ / ER(R)HS0712(-PRO)
+9.12 Linijski javljač topline ADW 535 (preko XLM 35)
+10. Vatrogasna periferija
+10.1 Vatrogasni prikazni panel B3-MMI-FAT
+10.2 Vatrogasno upravljačko polje FBF 2001
+10.3 Vatrogasno upravljačko polje B5-MMI-FPD
+10.4 Vatrogasni informacijski/upravljački sustav FIBS
+10.5 Vatrogasni depo ključa FSD basic
+10.6 Element za vanjsko aktiviranje FSE
+11. Signalizatori
+11.1 Akustični X-LINE signalizator BX-SBL 502
+11.2 Akustični signalizator Squashni G3
+11.3 Akustični X-LINE signalizator BX-SOL-CT
+11.4 Akustični signalizator Sonos-S
+11.5 Akustični signalizator Symphoni HO
+11.6 Optički X-LINE signalizator BX-FLES
+11.7 Optički signalizator Sonos-B
+11.8 Optički X-LINE pokazni uređaj BX-FOL
+11.9 Optički pokazni uređaj Solex 10
+11.10 Akustični/optički signalizator Sonos-SB
+12. Ostalo
+12.1 Protupožarno kućište BSG FWE 30-H
+12.2 Protupožarno kućište BSG FSE 30-H
+12.3 Ispitni uređaj za prstenasti vod STB 01X
+12.4 Pisač protokola
+13. Dokumenti i sheme spajanja
+
+===== STRANICA 5 =====
+HRVATSKI PRIJEVOD - stranica 5
+Općenito
+1. Općenito
+Ovaj dokument opisuje centralu za dojavu požara Integral EvoxX M sa stanjem hardvera i softvera važećim na
+datum izdavanja dokumenta (softverska verzija 8.4). Zadržava se pravo na izmjene, posebno one uzrokovane
+tehničkim napretkom.
+U pravilu preporučujemo da se uvijek koristi najnovija važeća verzija softvera.
+Integral EvoxX M opremljen je višeprogramskim operacijskim sustavom u stvarnom vremenu u koji se učitava
+osnovni funkcijski program. Taj osnovni program mora se pomoću Integral Software prilagoditi objektu koji se
+štiti kroz programiranje specifično za korisnika.
+Dizajn i sadržaj ovog dokumenta zaštićeni su autorskim pravom. Umnožavanje ili preuzimanje tekstova, slika i
+fotografija iz ovog dokumenta u bilo kojem mediju (npr. tisak, CD-ROM, internet itd.), čak i djelomično,
+dopušteno je samo uz izričito pisano odobrenje proizvođača. Ne preuzima se odgovornost za tiskarske pogreške i
+očite omaške.
+Baterije/akumulatori ne smiju se odlagati u kućni otpad. Nakon uporabe mogu se besplatno vratiti prodavatelju ili
+predati na za to predviđenim mjestima za povrat (npr. komunalna sabirna mjesta ili trgovine).
+1.1 Simboli i signalne riječi
+U ovim uputama koriste se sljedeće signalne riječi:
+OPASNOST (GEFAHR) znači visok rizik opasnosti; moguće su teške ozljede ili ozljede opasne po život.
+UPOZORENJE (WARNUNG) znači srednji rizik opasnosti; moguće su teške ozljede ili ozljede opasne po život.
+OPREZ (VORSICHT) znači nizak rizik opasnosti; moguće su lakše do umjerene ozljede.
+Struktura upozorenja:
+SIGNALNA RIJEČ
+Vrsta i izvor opasnosti
+► Mjere za izbjegavanje opasnosti
+PAŽNJA (ACHTUNG)
+Nepridržavanje može prouzročiti materijalnu štetu ili štetu okolišu odnosno narušiti funkciju proizvoda.
+Napomena (Hinweis)
+Obavještava o posebnostima uređaja, pojašnjava važne činjenice ili preporučuje posebne postupke.
+
+===== STRANICA 6 =====
+HRVATSKI PRIJEVOD - stranica 6
+Općenito
+1.2 Namjenska uporaba
+Proizvodi opisani u ovom dokumentu smiju se koristiti samo za ovdje opisane namjene (odnosno namjene
+navedene u pripadajućoj dodatnoj tehničkoj dokumentaciji ili podatkovnim listovima) i samo zajedno s
+preporučenim odnosno odobrenim komponentama. U slučaju nenamjenske uporabe ne postoje zahtjevi za
+odgovornost i jamstvo prema Hekatron Vertriebs GmbH.
+1.3 Sigurnost
+Ako se ne poštuju sigurnosne i uporabne upute, ne postoje zahtjevi za odgovornost i jamstvo prema Hekatron
+Vertriebs GmbH.
+Planiranje i projektiranje sustava za dojavu požara, kao i njihova montaža, instalacija, puštanje u pogon,
+primopredaja i održavanje zahtijevaju posebno stručno znanje i smiju ih obavljati samo dokazano kvalificirani i
+certificirani stručnjaci. Obuku tih stručnjaka specifičnu za proizvod mora provesti Hekatron ili osobe koje je
+Hekatron za to izričito ovlastio.
+Sve radove treba izvoditi u beznaponskom stanju!
+Pri rukovanju centralom za dojavu požara i njezinim komponentama obvezno je poštovati propise o zaštiti od
+elektrostatičkog naboja (ESD zaštitne mjere).
+Osim toga moraju se poštovati i pridržavati odgovarajuće nacionalne norme i smjernice. Štete i posljedične štete
+nastale zahvatima ili izmjenama na proizvodima, kao i nestručnim rukovanjem, isključene su iz odgovornosti.
+Isto vrijedi za nepravilno skladištenje ili druge vanjske utjecaje.
+Izričito se upozorava da se sustav za dojavu požara, u skladu s relevantnim normama (npr. DIN 14675, VDE 0833
+itd.), mora periodički održavati od strane dokazano kvalificiranih i certificiranih stručnjaka kako bi se dugoročno
+očuvali funkcionalnost i razina zaštite.
+Za ispravnu i sigurnu uporabu centrale upute treba u cijelosti pročitati i slijediti njihove odredbe.
+Upute sačuvati za kasniju uporabu.
+
+===== STRANICA 7 =====
+HRVATSKI PRIJEVOD - stranica 7
+Konstrukcija kućišta
+2. Konstrukcija kućišta
+Integral EvoxX M je centrala za dojavu požara prema EN 54-2 i EN 54-4.
+Osnovna izvedba sastoji se od kućišta od čeličnog lima s ugrađenim nosačem sklopova, u kojem su već ugrađeni
+glavna procesorska jedinica i napajanje, te prostorom za ugradnju dva akumulatora od 45 Ah za rezervno
+napajanje centrale.
+Ova osnovna izvedba jednaka je kod svih varijanti Integral EvoxX M; razlikuju se samo izvedbe vrata:
+■ zatvorena (vidi sliku lijevo)
+■ s izrezom za upravljačko polje
+■ s izrezom za upravljačko polje i pisač protokola
+Napomena
+Za posebne primjene osnovne izvedbe dostupne su i u varijanti IP 54 sa slobodno opremivom prednjom stranom
+(vidi podatkovni list 7002725) ili s prikaznim poljem za četiri ili osam područja gašenja (vidi tehničku
+dokumentaciju 7002435). Za primjene s više centrala u jednom kućištu dostupna je izvedba u samostojećem
+ormaru (vidi tehničku dokumentaciju 7002436).
+
+===== STRANICA 8 =====
+HRVATSKI PRIJEVOD - stranica 8
+Konstrukcija kućišta
+2.1 Nosač sklopova (Baugruppenträger)
+Nosač sklopova sadrži, osim upravljačkog polja i pisača protokola, kompletnu elektroniku centrale Integral EvoxX
+M. Pričvršćen je na stražnju stijenku kućišta i ima 13 utornih mjesta (Steckplätze) u koja se mogu ugraditi
+odgovarajući sklopovi.
+Napajanje i podatkovna komunikacija između pojedinih sklopova odvijaju se preko BUS ploča na stražnjoj strani
+nosača (System-BUS i Relais-BUS).
+Mogućnosti opremanja - Steckplatz / dopušteni sklopovi:
+Steckplatz 1: isključivo glavna procesorska jedinica B8-MCU.
+Steckplätze 2-9: slobodno za B8-DXI2, B8-BAF, B8-OM8, B8-IM8, B8-LEE23, B8-LEE24, B8-USI4 i B8-MRI16.
+Mrežni sklopovi B8-NET4-485, B8-NET2-485, B8-NET2-FX4 ili B8-NET-FX8 smiju se ugraditi samo na Steckplatz 2.
+Ako su potrebni relejni sklopovi na Steckplatz 11-13, na Steckplatz 9 mora se nalaziti B8-BAF ili B8-MRI16, jer
+samo ti sklopovi mogu upravljati Relais-BUS-om. Ako relejni sklopovi nisu potrebni, i Steckplatz 9 je slobodan.
+Steckplatz 10: isključivo napajanje B8-PSU.
+Steckplätze 11-13: isključivo relejni sklopovi B3-REL10, B3-REL16 i B3-REL16E.
+
+===== STRANICA 9 =====
+HRVATSKI PRIJEVOD - stranica 9
+Konstrukcija kućišta
+2.2 Mrežni priključak i uzemljenje
+OPASNOST
+Opasnost po život zbog visokog priključnog napona (230 V)! Postoji opasnost od smrtonosnog strujnog udara.
+► Priključivanje smiju obavljati samo kvalificirani električari.
+► Poštovati pet sigurnosnih pravila.
+► Sve radove na uređaju izvoditi samo u beznaponskom stanju.
+► Prije prvog uključivanja ponovno provjeriti ispravnost svih priključaka.
+U gornjem desnom kutu kućišta nalazi se uvod za mrežni kabel, koji se spaja na predviđenu mrežnu priključnu
+stezaljku lijevo od uvoda. Za mrežni priključak treba osigurati poseban strujni krug 230 V/50 Hz, zaštićen crveno
+označenim automatskim osiguračem (najmanje 10 A, otporan na strujne udare). Opcionalno se može dodatno
+zaštititi zasebnim FI/RCD zaštitnim prekidačem karakteristike U.
+Uz visokoomsko uzemljenje centrale preko zaštitnog vodiča mrežnog priključka mora se izvesti i niskoomsko
+uzemljenje na masu zgrade (sabirnicu izjednačenja potencijala), vodičem presjeka najmanje 6 mm². Stezaljka
+uzemljenja također se nalazi u gornjem desnom kutu, desno od uvoda mrežnog kabela.
+2.3 Zaštita od prenapona
+Centrale za dojavu požara (ormar centrale sa sklopovima uključujući mrežno napajanje) i vanjska napajanja
+(BE-PSE) imaju interne mjere zaštite od prenapona prema EN 50130-4 (EMC) i EN 61000-6-2 (otpornost na
+smetnje u industrijskom okruženju).
+Zbog toga za rad unutar zgrada s ugrađenom grubom i srednjom zaštitom (gromobranska zaštita i mrežni
+odvodnici prenapona) nisu potrebne dodatne mjere poput dodatnih odvodnika prenapona.
+Kod instalacija koje prelaze iz jedne zgrade u drugu, dodatnim vanjskim uređajima za zaštitu od prenapona
+prema EN 61643-11 i EN 61643-21 prenapon se može odvesti još izvan centrale te zaštititi priključenu periferiju
+od prenapona induciranog u vodove. Višestupanjski pokazivač stanja vanjskih zaštitnih uređaja omogućuje
+jednostavnu provjeru stanja i prijenos statusa preko daljinskog signalnog kontakta na centralu. Detalji o primjeni
+i spajanju nalaze se u odgovarajućim podatkovnim listovima zaštitnih uređaja.
+2.4 Preporučeni tipovi kabela
+Bez zahtjeva za očuvanjem funkcije: J-Y(St)Y prema VDE 0815.
+Sa zahtjevom za očuvanjem funkcije: JE-H(St)H FE180/E30-E90 prema VDE 0815 ili JE-H(St)HRH FE180/E30-E90
+prema VDE 0815.
+
+===== STRANICA 10 =====
+HRVATSKI PRIJEVOD - stranica 10
+Mjerni crtež
+3. Mjerni crtež
+Izrez za upravljačko polje i pisač protokola ovisi o odgovarajućoj varijanti kućišta. Mjere su u mm.
+4. Montaža
+Za montažu centrale postupiti ovako:
+■ Otvoriti vrata, otpustiti dva donja vijka i skinuti kućište. Ako postoji upravljačko polje, odspojiti plosnati kabel s
+glavne procesorske jedinice.
+■ Stražnju stijenku montirati prema planu bušenja s četiri vijka s poluokruglom glavom 5 x 40 mm i četiri tiple
+S8. Kod montaže na gipskartonske ploče koristiti odgovarajuće tiple i po potrebi ojačanje; masa centrale s
+akumulatorima iznosi približno 50 kg.
+■ Uvesti kabele i izvesti rasterećenje od potezanja. Kabeli se mogu uvoditi odozgo, odozdo ili straga kroz dva
+otvora u stražnjoj stijenci. Rubovi otvora imaju rupe koje omogućuju učvršćivanje kabelskim vezicama radi
+rasterećenja.
+■ Ponovno postaviti kućište i učvrstiti ga s dva vijka. Ako postoji upravljačko polje, ponovno priključiti plosnati
+kabel na glavnu procesorsku jedinicu.
+
+===== STRANICA 11 =====
+HRVATSKI PRIJEVOD - stranica 11
+Montaža
+Plan bušenja za sve varijante kućišta Integral EvoxX M (mjere u mm).
+Potrebna slobodna širina: min. 670 mm.
+Potrebna slobodna visina: min. 800 mm.
+Otvori/zone: 40 x 70 i 40 x 336 mm.
+Set odstojnika (Distanzhalter-Set)
+Za sva kućišta Integral EvoxX M, osim varijante IP 54 i samostojećeg ormara, dostupne su opcionalne odstojne
+šine kojima se centrala može odmaknuti dodatna 2 cm od zida. Potrebne rupe već postoje u kućištu. Treba
+koristiti odgovarajuće dulje vijke (najmanje 5 x 60 mm).
+Držač akumulatora (Akkubügel)
+Za sva kućišta Integral EvoxX M, osim IP 54 i samostojećeg ormara, dostupan je opcionalni držač za učvršćenje
+akumulatora u kućištu sukladno VdS i EN 54-2. Potrebne rupe već su predviđene.
+DIN šina (Hutschiene)
+Za sva kućišta Integral EvoxX M, osim IP 54 i samostojećeg ormara, dostupna je opcionalna DIN šina za
+pričvršćenje komponenti koje imaju odgovarajući priključak za DIN šinu. Rupe za pričvršćenje već su predviđene.
+Tipske pločice (Typenschilder)
+Svako kućište Integral EvoxX M isporučuje se s dvije tipske pločice. Jedna je tvornički postavljena unutar kućišta.
+Druga je priložena i prije puštanja u pogon mora se postaviti na razini pristupa 1, odnosno izvana na kućištu, na
+dobro vidljivom mjestu.
+
+===== STRANICA 12 =====
+HRVATSKI PRIJEVOD - stranica 12
+Sklopovi (Baugruppen)
+5. Sklopovi
+5.1 Glavna procesorska jedinica B8-MCU
+Funkcija
+B8-MCU je sastavni dio svake centrale Integral EvoxX M i uvijek se ugrađuje na Steckplatz 1. Zajedno s
+napajanjem B8-PSU i B8-BUS-om čini osnovu platforme centrale B8-SCU.
+B8-MCU pohranjuje sve podatke koje obrade ostali sklopovi, izvršava sve obrade potrebne za logičko ponašanje
+sustava te upravlja projektnim podacima i sistemskim vremenom. Ima internu memoriju događaja za do 10.000
+događaja.
+Sistemski priključak nalazi se straga preko višepolnog konektora na System-BUS. Na prednjoj strani nalaze se
+USB i Ethernet sučelje, tipka Reset, dvije LED indikacije, konektor plosnatog kabela za interno upravljačko polje i
+utor za SD memorijsku karticu.
+Sučelja:
+X1 - priključak System-BUS
+X2 - priključak internog upravljačkog polja
+X3 - Ethernet sučelje
+X4 - utor za SD memorijsku karticu
+X5 - USB sučelje (tip B Mini)
+X7 - Bluetooth sučelje
+T1 - tipka Reset
+V1 - statusne LED za procesore A i B
+System-BUS (X1): priključak B8-BUS; mehanički 96-polni višepolni konektor.
+Ugradbeno upravljačko polje (X2): priključak B5-CII ili B8-CII; brzina prijenosa 700 kbit/s; 50-polni plosnati kabel.
+
+===== STRANICA 13 =====
+HRVATSKI PRIJEVOD - stranica 13
+Sklopovi
+Ethernet sučelje (X3)
+PIN / oznaka: 1 Tx+, 2 Tx-, 3 Rx+, 6 Rx-; ostali pinovi nisu korišteni.
+Tehnički podaci: 10/100 Base TX Ethernet; domet maks. 100 m; TCP/IP; brzina maks. 100 Mbit/s; dvosmjerno,
+puni duplex; RJ-45 utičnica, 8-polna.
+Ako je na Steckplatz 2 nosača sklopova ugrađen mrežni sklop, aktivno je Ethernet sučelje na tom mrežnom
+sklopu, dok je Ethernet sučelje na B8-MCU izvan funkcije.
+Utor za SD memorijsku karticu (X4)
+Služi za proširenje interne memorije događaja s 10.000 na 65.000 događaja. Podržane su SDHC i SDXC kartice.
+Kod uporabe neodobrenih memorijskih kartica ne može se jamčiti besprijekoran rad.
+USB sučelje (X5)
+Služi za učitavanje softvera sustava ili projektnih podataka i za sistemsku dijagnostiku. Priključak: servisni PC;
+USB 2.0; domet maks. 3 m; brzina prijenosa 400 Mbit/s; USB konektor tip B mini.
+Statusne LED za procesore A i B (V1)
+Dvije žute LED pokazuju stanje procesora A odnosno B:
+LED ugašena - smetnja (Störung).
+LED stalno svijetli - pokretanje (Hochlauf).
+LED brzo treperi - aktivan (Aktiv).
+LED sporo treperi - pasivan (Passiv).
+
+===== STRANICA 14 =====
+HRVATSKI PRIJEVOD - stranica 14
+Sklopovi
+5.2 Napajanje B8-PSU
+Funkcija
+B8-PSU je sastavni dio svake centrale Integral EvoxX M i uvijek se ugrađuje na Steckplatz 10. Zajedno s glavnom
+procesorskom jedinicom B8-MCU i B8-BUS-om čini osnovu platforme B8-SCU.
+B8-PSU osigurava potrebne izlazne napone i ima nazivnu izlaznu struju 7,1 A. Za rezervno napajanje mogu se
+priključiti do četiri akumulatora.
+Sistemski priključak nalazi se straga preko višepolnog konektora na System-BUS. Na prednjoj strani nalaze se
+mrežni priključak, dvije LED indikacije, prekidač uključeno/isključeno, stezaljke za vanjske potrošače i priključak
+akumulatora.
+Sučelja i elementi:
+X1 - mrežni priključak
+X4 - priključak System-BUS
+X5 - priključne stezaljke vanjskih potrošača (frontalno vijčani priključni konektor uključen u isporuku)
+X13 - priključak akumulatora VBAT
+X14 - priključak akumulatora GNDBAT
+S1 - prekidač uključeno/isključeno
+V45 - LED indikacije
+X8 - premosnik za završetak MMI-BUS-a
+A10 - izlazni osigurači F1-F5
+Mrežni priključak X1: 110 V (-15 %) do 230 V (+10 %) AC; 47-63 Hz; osigurač 6,3 A tromi (T); uređajni konektor.
+System-BUS X4: B3-BUS, B5-BUS, B8-BUS. Izlazni naponi za interne/vanjske potrošače: 3,3 V / 3 A; 5 V / 1 A; 27 V
+/ 7 A. Mehanički: 96-polni višepolni konektor.
+
+===== STRANICA 15 =====
+HRVATSKI PRIJEVOD - stranica 15
+Sklopovi
+Priključne stezaljke za vanjske potrošače (X5)
+Za priključak najviše pet vanjskih potrošača. Izlazi su zaštićeni elektroničkim osiguračima koji se pojedinačno
+nadziru.
+Stezaljke: VExt5 izlaz 5 (+), GNDExt5 izlaz 5 (-), VExt4 izlaz 4 (+), GNDExt4 izlaz 4 (-), VExt3 izlaz 3 (+), GNDExt3
+izlaz 3 (-), VExt2 izlaz 2 (+), GNDExt2 izlaz 2 (-), VExt1 izlaz 1 (+), GNDExt1 izlaz 1 (-).
+Tehnički podaci X5: izlazni napon 21-27,9 V; nazivna struja svakog izlaza 2 A; elektronička zaštita 2,95 A ± 0,55
+A (odgovara karakteristici vrlo brzog taljivog osigurača 2 A); 10-polna utična vijčana stezaljka; nazivni presjek
+vodiča min. 0,25 / maks. 2,5 mm²; moment pritezanja min. 0,5 / maks. 0,6 Nm.
+Priključak akumulatora VBAT/GNDBAT (X13/X14)
+Za priključak jednog para akumulatora 12 V/45 Ah.
+Tehnički podaci: napon punjenja U(0 °C) = 28,02 V ± 0,3 V; U(50 °C) = 26,22 V ± 0,3 V. Ograničenje struje
+punjenja 4,9-5,5 A pri I sustava = 0 A. Isključenje zbog podnapona 17,9-18,8 V. Prag detekcije neispravnosti pri
+testu akumulatora 22,17-22,82 V. Prag za previsok unutarnji otpor akumulatora 0,495-0,615 V. Prag isključenja
+potrošača pri nestanku mreže (zaštita od dubokog pražnjenja) 19,6-20,2 V. Mehanički: 2 plosnata priključka 6,3
+mm.
+LED indikacije (V45)
+Dvije žute LED pokazuju stanje B8-PSU. Indikacija NET OK svijetli čim je mrežni napon prisutan na B8-PSU,
+neovisno o tome je li napajanje uključeno ili isključeno.
+NET OK - LED uključena: mrežni napon prisutan. LED isključena: nema mrežnog napona / prekomjerna
+temperatura.
++5 V; 3,3 V - LED uključena: prisutni svi sistemski naponi (27 V, 5 V, 3,3 V). LED isključena: nedostaje najmanje
+jedan sistemski napon / napajanje isključeno.
+
+===== STRANICA 16 =====
+HRVATSKI PRIJEVOD - stranica 16
+Sklopovi
+Spajanje akumulatora
+UPOZORENJE
+Opasnost od opeklina zbog električnog luka ili užarenih dijelova!
+► Paziti da nazivni napon odgovara i obavezno poštovati polaritet.
+NIKADA ne zamijeniti polaritet akumulatora niti ih kratko spojiti!
+► Koristiti samo nove akumulatore istog tipa (isti proizvođač, isti kapacitet, isti napon i isti datum proizvodnje).
+► Polove akumulatora prekriti odgovarajućim zaštitnim kapicama.
+Napomena
+Uz centralu Integral EvoxX M i akumulatorski ormar B5-CBE priloženi su odgovarajući setovi kabela za
+priključivanje akumulatora.
+Akumulatore postaviti u kućište i opcionalnim držačem akumulatora osigurati od pomicanja. Hekatronovi
+akumulatori (G 105087) isporučuju se s dva vijka M6 i maticama. Pri pričvršćivanju priključnih kabela na
+akumulator pridržavati se navedenih momenata pritezanja, jer preveliki moment može uzrokovati mikropukotine
+i ispuštanje plinova, a time i stvaranje kristala na akumulatorima.
+Akumulator 12 V / 45 Ah (G 105087)
+Preporučeni moment pritezanja: 5,39 Nm.
+Maksimalni moment pritezanja: 8,82 Nm.
+Kod uporabe drugih akumulatora potreban moment pritezanja treba provjeriti kod odgovarajućeg proizvođača.
